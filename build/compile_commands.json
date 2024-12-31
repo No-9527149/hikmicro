@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/fins/hikmicro/build",
+  "command": "/usr/bin/g++  -I/home/fins/hikmicro/include -I/home/fins/hikmicro/demo/linux -g -std=gnu++17 -o CMakeFiles/Infrared.dir/demo/linux/DeviceBase.cpp.o -c /home/fins/hikmicro/demo/linux/DeviceBase.cpp",
+  "file": "/home/fins/hikmicro/demo/linux/DeviceBase.cpp"
+},
+{
+  "directory": "/home/fins/hikmicro/build",
+  "command": "/usr/bin/g++  -I/home/fins/hikmicro/include -I/home/fins/hikmicro/demo/linux -g -std=gnu++17 -o CMakeFiles/Infrared.dir/demo/linux/GetStream.cpp.o -c /home/fins/hikmicro/demo/linux/GetStream.cpp",
+  "file": "/home/fins/hikmicro/demo/linux/GetStream.cpp"
+},
+{
+  "directory": "/home/fins/hikmicro/build",
+  "command": "/usr/bin/g++  -I/home/fins/hikmicro/include -I/home/fins/hikmicro/demo/linux -g -std=gnu++17 -o CMakeFiles/Infrared.dir/demo/linux/Thermal.cpp.o -c /home/fins/hikmicro/demo/linux/Thermal.cpp",
+  "file": "/home/fins/hikmicro/demo/linux/Thermal.cpp"
+},
+{
+  "directory": "/home/fins/hikmicro/build",
+  "command": "/usr/bin/g++  -I/home/fins/hikmicro/include -I/home/fins/hikmicro/demo/linux -g -std=gnu++17 -o CMakeFiles/Infrared.dir/demo/linux/main.cpp.o -c /home/fins/hikmicro/demo/linux/main.cpp",
+  "file": "/home/fins/hikmicro/demo/linux/main.cpp"
+}
+]

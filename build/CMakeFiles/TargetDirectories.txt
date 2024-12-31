@@ -1,0 +1,3 @@
+/home/fins/hikmicro/build/CMakeFiles/Infrared.dir
+/home/fins/hikmicro/build/CMakeFiles/edit_cache.dir
+/home/fins/hikmicro/build/CMakeFiles/rebuild_cache.dir

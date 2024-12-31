@@ -4,6 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 
+#include <iostream>
 
 using namespace std;
 
@@ -22,7 +23,9 @@ void CGetStream::StartStreamCallback() {
 
   //启动码流回调
   USB_STREAM_CALLBACK_PARAM struDecCbInfo = {0};
-  struDecCbInfo.dwStreamType = USB_STREAM_PS_H264;
+  // struDecCbInfo.dwStreamType = USB_STREAM_PS_H264;
+  struDecCbInfo.dwStreamType = USB_STREAM_PS_YUY2;
+  printf("\rCallBack type: %d\r\n", struDecCbInfo.dwStreamType);
   struDecCbInfo.pUser = this;
   struDecCbInfo.funcStreamCallBack = fnStreamCallBack(DeviceCallBack);
   struDecCbInfo.dwSize = sizeof(struDecCbInfo);
@@ -56,6 +59,7 @@ void CGetStream::StartStreamCallback() {
 void __stdcall CGetStream::DeviceCallBack(LONG handle,
                                           USB_FRAME_INFO *pFrameInfo,
                                           void *pUser) {
+  printf("START DeviceCallBack");
   CGetStream *pThis = (CGetStream *)pUser;
   if (pThis != NULL) {
     pThis->DeviceCallBackLocal(handle, pFrameInfo, pUser);

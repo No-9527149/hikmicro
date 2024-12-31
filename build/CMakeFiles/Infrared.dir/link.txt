@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Infrared.dir/demo/linux/DeviceBase.cpp.o CMakeFiles/Infrared.dir/demo/linux/GetStream.cpp.o CMakeFiles/Infrared.dir/demo/linux/Thermal.cpp.o CMakeFiles/Infrared.dir/demo/linux/main.cpp.o -o Infrared   -L/home/fins/hikmicro/library/linux64  -Wl,-rpath,/home/fins/hikmicro/library/linux64 -lHCUSBSDK -lpthread 

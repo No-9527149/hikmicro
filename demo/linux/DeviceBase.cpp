@@ -29,7 +29,8 @@ DeviceBase::DeviceBase()
       m_lUpgradeHandle(USB_INVALID_UPGRADE_HANDLE),
       m_tid(0),
       m_bExit(FALSE) {
-  memset(m_aDevInfo, 0, MAX_USB_DEV_LEN);
+  // memset(m_aDevInfo, 0, MAX_USB_DEV_LEN);
+  memset(m_aDevInfo, 0, MAX_USB_DEV_LEN * sizeof(USB_DEVICE_INFO));
   memset(&m_struCurUsbLoginInfo, 0, sizeof(m_struCurUsbLoginInfo));
   memset(&m_struUpgradeState, 0, sizeof(m_struUpgradeState));
 }
@@ -50,16 +51,16 @@ void DeviceBase::UsbImplement() {}
 void DeviceBase::FuncGetSdkVersion() {
   unsigned int dwVersion = USB_GetSDKVersion();
   printf("HCUSBSDK V%d.%d.%d.%d\r\n", (0xff000000 & dwVersion) >> 24,
-         (0x00ff0000 & dwVersion) >> 16, (0x0000ff00 & dwVersion) >> 8,
-         (0x000000ff &
-          dwVersion));  //%.d,0x0000ff & dwVersion,build NO. do not expose
+          (0x00ff0000 & dwVersion) >> 16, (0x0000ff00 & dwVersion) >> 8,
+          (0x000000ff &
+          dwVersion));
 }
 
 void DeviceBase::FuncSdkInit() {
   if (!USB_Init()) {
     DWORD dwError = USB_GetLastError();
     printf("FAILED USB_Init() ErrorCode = [%d], ErrorMsg = [%s]\r\n", dwError,
-           USB_GetErrorMsg(dwError));
+            USB_GetErrorMsg(dwError));
   } else {
     printf("SUCCESS USB_Init()\r\n");
   }
@@ -67,7 +68,10 @@ void DeviceBase::FuncSdkInit() {
 
 void DeviceBase::FuncGetDeviceCount() {
   m_iDevNum = USB_GetDeviceCount();
+  DWORD dwError = USB_GetLastError();
   printf("DeviceCount %d\r\n", m_iDevNum);
+  printf("ErrorCode = [%d], ErrorMes = [%s]\r\n", dwError,
+          USB_GetErrorMsg(dwError));
 }
 
 void DeviceBase::FuncEnumDevices() {
@@ -78,7 +82,7 @@ void DeviceBase::FuncEnumDevices() {
   if (USB_EnumDevices(m_iDevNum, &m_aDevInfo[0])) {
     printf("SUCCESS USB_EnumDevices()\r\n");
     printf("dwVID [%x] dwPID [%x]\r\n", m_aDevInfo[0].dwVID,
-           m_aDevInfo[0].dwPID);
+            m_aDevInfo[0].dwPID);
   } else {
     printf("failed USB_EnumDevices()  err[%d]\r\n", USB_GetLastError());
   }
@@ -98,7 +102,7 @@ void DeviceBase::FuncLoginDevices(int iDevIndex) {
   m_struCurUsbLoginInfo.dwPID = struUsbDeviceInfo.dwPID;
 
   memcpy(m_struCurUsbLoginInfo.szSerialNumber, struUsbDeviceInfo.szSerialNumber,
-         MAX_SERIAL_NUMBER_LEN);
+          MAX_SERIAL_NUMBER_LEN);
   memcpy(m_struCurUsbLoginInfo.szUserName, "admin", strlen("admin"));
   memcpy(m_struCurUsbLoginInfo.szPassword, "12345", strlen("12345"));
   m_struCurUsbLoginInfo.byLoginMode = 1;
@@ -110,11 +114,11 @@ void DeviceBase::FuncLoginDevices(int iDevIndex) {
   if (USB_INVALID_USERID == lUserID) {
     DWORD dwError = USB_GetLastError();
     printf("FAILED USB_Login() ErrorCode = [%d], ErrorMsg = [%s]\r\n", dwError,
-           USB_GetErrorMsg(dwError));
+            USB_GetErrorMsg(dwError));
   } else {
     m_lUserID = lUserID;
     printf(
-        "SUCCESS USB_Login() \r\nDevice Register Information:\r\n Deviec "
+        "SUCCESS USB_Login() \r\nDevice Register Information:\r\n Device "
         "Name:%s\r\n Device Serial Number:%s\r\n",
         struDeviceRegRes.szDeviceName, struDeviceRegRes.szSerialNumber);
     printf("error code [%d]\r\n", USB_GetLastError());  //缺陷测试
@@ -125,21 +129,31 @@ void DeviceBase::DeviceLogout() {
   if (!USB_Logout(m_lUserID)) {
     DWORD dwError = USB_GetLastError();
     printf("FAILED USB_Logout() ErrorCode = [%d], ErrorMsg = [%s]\r\n", dwError,
-           USB_GetErrorMsg(dwError));
+            USB_GetErrorMsg(dwError));
   } else {
     printf("SUCCESS USB_Logout()\r\n[%d]", m_lUserID);
   }
 }
 
 void DeviceBase::SetLogFile() {
-  const char* szLogPath = "./USBSDKLog";
+  const char* szLogPath = "../Log";
   if (!USB_SetLogToFile(3, szLogPath, TRUE)) {
     DWORD dwError = USB_GetLastError();
     printf("FAILED USB_SetLogToFile() ErrorCode = [%d], ErrorMsg = [%s]\r\n",
-           dwError, USB_GetErrorMsg(dwError));
+            dwError, USB_GetErrorMsg(dwError));
   } else {
     printf("SUCCESS USB_SetLogToFile()\r\n");
   }
+}
+
+void DeviceBase::GetDevInfo(int& iDevNum, LPUSB_DEVICE_INFO pDevInfo) {
+  iDevNum = m_iDevNum;
+  memcpy(pDevInfo, m_aDevInfo, sizeof(USB_DEVICE_INFO) * MAX_USB_DEV_LEN);
+}
+
+void DeviceBase::SetDevInfo(int iDevNum, LPUSB_DEVICE_INFO pDevInfo) {
+  m_iDevNum = iDevNum;
+  memcpy(m_aDevInfo, pDevInfo, sizeof(USB_DEVICE_INFO) * MAX_USB_DEV_LEN);
 }
 
 void DeviceBase::FuncSdkCleanup() {
@@ -168,7 +182,7 @@ void DeviceBase::SetSystemUpdateFirmware() {
   char szFilePatch[256] = "./digicap.dav";
   DWORD dwError = 0;
   m_lUpgradeHandle = USB_Upgrade(m_lUserID, 0, szFilePatch, &struUpgradeCond,
-                                 sizeof(struUpgradeCond));
+                                  sizeof(struUpgradeCond));
   if (-1 == m_lUpgradeHandle) {
     dwError = USB_GetLastError();
     printf("FAILED USB_Upgrade ErrorCode = [%d], ErrorMsg = [%s]\r\n", dwError,
@@ -217,7 +231,7 @@ void DeviceBase::GetDeviceUpgradeState() {
       struct timeval tEnd;
       gettimeofday(&tEnd, NULL);
       printf(
-          "[%d]m_lUpgradeHandle = [%ld] byState = [%d], byProgress = [%d]\r\n",
+          "[%ld]m_lUpgradeHandle = [%ld] byState = [%d], byProgress = [%d]\r\n",
           tEnd.tv_sec - tBegin.tv_sec, m_lUpgradeHandle,
           m_struUpgradeState.byState, m_struUpgradeState.byProgress);
       switch (m_struUpgradeState.byState) {
@@ -271,14 +285,4 @@ void DeviceBase::GetDeviceUpgradeState() {
     sleep(5);
   }
   printf("GetDeviceUpgradeState exit\r\n");
-}
-
-void DeviceBase::GetDevInfo(int& iDevNum, LPUSB_DEVICE_INFO pDevInfo) {
-  iDevNum = m_iDevNum;
-  memcpy(pDevInfo, m_aDevInfo, sizeof(USB_DEVICE_INFO) * MAX_USB_DEV_LEN);
-}
-
-void DeviceBase::SetDevInfo(int iDevNum, LPUSB_DEVICE_INFO pDevInfo) {
-  m_iDevNum = iDevNum;
-  memcpy(m_aDevInfo, pDevInfo, sizeof(USB_DEVICE_INFO) * MAX_USB_DEV_LEN);
 }

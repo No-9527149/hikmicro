@@ -102,7 +102,7 @@ typedef  signed   __int64   INT64;
 
 #define USB_SUCCESS                    (USB_ERROR_BASE+0)   // Success (no error)
 
-    //SDKÄÚ²¿´íÎóÂë
+    //SDKï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define USB_ERROR_INIT_SDK             (USB_ERROR_BASE+1)
 #define USB_ERROR_SDK_NOT_INIT         (USB_ERROR_BASE+2)
 #define USB_ERROR_NO_DEVICE            (USB_ERROR_BASE+3)   // No such device (it may have been disconnected)
@@ -130,12 +130,12 @@ typedef  signed   __int64   INT64;
 #define USB_ERROR_RECV_PACK_TIMEOUT    (USB_ERROR_BASE+27)
 #define USB_ERROR_RECV_DATA_LEN        (USB_ERROR_BASE+28)
 #define USB_ERROR_PARAM_INVALID        (USB_ERROR_BASE+29)
-#define USB_ERROR_INVALID_PORT          (USB_ERROR_BASE+30)   // ÎÞÐ§Port
-#define USB_ERROR_INVALID_PATH          (USB_ERROR_BASE+31)   // ÎÞÐ§Â·¾¶
-#define USB_ERROR_INVALID_CMD           (USB_ERROR_BASE+32)   // ÎÞÐ§ÃüÁîÂë
-#define USB_ERROR_INVALID_POINTER       (USB_ERROR_BASE+33)   // ÎÞÐ§Ö¸Õë
+#define USB_ERROR_INVALID_PORT          (USB_ERROR_BASE+30)   // ï¿½ï¿½Ð§Port
+#define USB_ERROR_INVALID_PATH          (USB_ERROR_BASE+31)   // ï¿½ï¿½Ð§Â·ï¿½ï¿½
+#define USB_ERROR_INVALID_CMD           (USB_ERROR_BASE+32)   // ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_INVALID_POINTER       (USB_ERROR_BASE+33)   // ï¿½ï¿½Ð§Ö¸ï¿½ï¿½
 
-#define USB_ERROR_INVALID_HANDLE       (USB_ERROR_BASE+38)    // ÎÞÐ§¾ä±ú
+#define USB_ERROR_INVALID_HANDLE       (USB_ERROR_BASE+38)    // ï¿½ï¿½Ð§ï¿½ï¿½ï¿½
 #define USB_ERROR_INVALID_USER_ID      (USB_ERROR_BASE+39)
 #define USB_ERROR_INVALID_DEVICE_ID    (USB_ERROR_BASE+40)
 #define USB_ERROR_INVALID_SEESSION_ID  (USB_ERROR_BASE+41)
@@ -173,68 +173,68 @@ typedef  signed   __int64   INT64;
 #define USB_ERROR_NO_LOGIN             (USB_ERROR_BASE+73)  
 #define USB_ERROR_RECEIVED_DATA        (USB_ERROR_BASE+74)   // The data is invalid received from device
 #define USB_ERROR_RISKY_PASSWORD       (USB_ERROR_BASE+75)   //The risky password
-#define USB_ERROR_LOAD_LIBRARY         (USB_ERROR_BASE+76)  //¼ÓÔØ¿âÊ§°Ü
-#define USB_ERROR_ALLOC_RESOURCE       (USB_ERROR_BASE+77)  //×ÊÔ´·ÖÅä³ö´í£ºÏß³Ì£¬ËøµÈ
+#define USB_ERROR_LOAD_LIBRARY         (USB_ERROR_BASE+76)  //ï¿½ï¿½ï¿½Ø¿ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_ALLOC_RESOURCE       (USB_ERROR_BASE+77)  //ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì£ï¿½ï¿½ï¿½ï¿½ï¿½
 
-#define USB_ERROR_FILE_OPEN            (USB_ERROR_BASE+80)  // ÎÄ¼þ´ò¿ªÊ§°Ü
-#define USB_ERROR_FILE_WRITE           (USB_ERROR_BASE+81)  // ÎÄ¼þÐ´Ê§°Ü
-#define USB_ERROR_CALL_DISORDER        (USB_ERROR_BASE+82)  // µ÷ÓÃË³Ðò²»¶Ô
-#define USB_ERROR_INITOBSERVER         (USB_ERROR_BASE+83)  // ³õÊ¼»¯¹Û²ìÕßÊ§°Ü
-#define USB_ERROR_NOT_SUPPORTED_FORMAT (USB_ERROR_BASE+84)  // ²»Ö§³ÖµÄÒôÊÓÆµ¸ñÊ½
-#define USB_ERROR_NOT_SUPPORTED_AUDIO  (USB_ERROR_BASE+85)  // ¸ÃÉè±¸²»Ö§³ÖÒôÆµ
-#define USB_ERROR_INIT_LIBUSB          (USB_ERROR_BASE+86)  // ³õÊ¼»¯libusbÊ§°Ü
-#define USB_ERROR_INIT_LIBUVC          (USB_ERROR_BASE+87)  // ³õÊ¼»¯libuvcÊ§°Ü
-#define USB_ERROR_INIT_DIRECTSHOW      (USB_ERROR_BASE+88)  // ³õÊ¼»¯directshowÊ§°Ü
-#define USB_ERROR_NO_MATCH_IR_FRAME    (USB_ERROR_BASE+89)  // Î´Æ¥Åäµ½IRÖ¡
+#define USB_ERROR_FILE_OPEN            (USB_ERROR_BASE+80)  // ï¿½Ä¼ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_FILE_WRITE           (USB_ERROR_BASE+81)  // ï¿½Ä¼ï¿½Ð´Ê§ï¿½ï¿½
+#define USB_ERROR_CALL_DISORDER        (USB_ERROR_BASE+82)  // ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ò²»¶ï¿½
+#define USB_ERROR_INITOBSERVER         (USB_ERROR_BASE+83)  // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_NOT_SUPPORTED_FORMAT (USB_ERROR_BASE+84)  // ï¿½ï¿½Ö§ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ê½
+#define USB_ERROR_NOT_SUPPORTED_AUDIO  (USB_ERROR_BASE+85)  // ï¿½ï¿½ï¿½è±¸ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½Æµ
+#define USB_ERROR_INIT_LIBUSB          (USB_ERROR_BASE+86)  // ï¿½ï¿½Ê¼ï¿½ï¿½libusbÊ§ï¿½ï¿½
+#define USB_ERROR_INIT_LIBUVC          (USB_ERROR_BASE+87)  // ï¿½ï¿½Ê¼ï¿½ï¿½libuvcÊ§ï¿½ï¿½
+#define USB_ERROR_INIT_DIRECTSHOW      (USB_ERROR_BASE+88)  // ï¿½ï¿½Ê¼ï¿½ï¿½directshowÊ§ï¿½ï¿½
+#define USB_ERROR_NO_MATCH_IR_FRAME    (USB_ERROR_BASE+89)  // Î´Æ¥ï¿½äµ½IRÖ¡
 
-//Éè±¸Ïà¹Ø´íÎóÂë
-#define USB_ERROR_DEV_OPER_FAILED      (USB_ERROR_BASE+257)  // ²Ù×÷Ê§°Ü
-#define USB_ERROR_DEV_OPER_NOT_SUPPORT (USB_ERROR_BASE+258)  // Éè±¸²»Ö§³Ö¸Ã²Ù×÷
-#define USB_ERROR_DEV_CHECK_SUM        (USB_ERROR_BASE+259)  // Ð£ÑéºÍ´íÎó
-#define USB_ERROR_DEV_USER_ID          (USB_ERROR_BASE+260)  // ·Ç·¨µÄUserID
-#define USB_ERROR_DEV_SESSION_ID       (USB_ERROR_BASE+261)  // ·Ç·¨µÄSessionID
-#define USB_ERROR_DEV_OPER_TIMEOUT     (USB_ERROR_BASE+262)  // Éè±¸²Ù×÷³¬Ê±
+//ï¿½è±¸ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_DEV_OPER_FAILED      (USB_ERROR_BASE+257)  // ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_DEV_OPER_NOT_SUPPORT (USB_ERROR_BASE+258)  // ï¿½è±¸ï¿½ï¿½Ö§ï¿½Ö¸Ã²ï¿½ï¿½ï¿½
+#define USB_ERROR_DEV_CHECK_SUM        (USB_ERROR_BASE+259)  // Ð£ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+#define USB_ERROR_DEV_USER_ID          (USB_ERROR_BASE+260)  // ï¿½Ç·ï¿½ï¿½ï¿½UserID
+#define USB_ERROR_DEV_SESSION_ID       (USB_ERROR_BASE+261)  // ï¿½Ç·ï¿½ï¿½ï¿½SessionID
+#define USB_ERROR_DEV_OPER_TIMEOUT     (USB_ERROR_BASE+262)  // ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±
 #define USB_ERROR_DEV_PASSWORD_ERROR   (USB_ERROR_BASE+266)  // Username or Password Error
 #define USB_ERROR_DEV_USER_LOCKED      (USB_ERROR_BASE+267)  // Device locked
-#define USB_ERROR_DEV_UNKNOW_OPER_RES  (USB_ERROR_BASE+512)  // Î´ÖªµÄÉè±¸²Ù×÷·µ»ØÂë
+#define USB_ERROR_DEV_UNKNOW_OPER_RES  (USB_ERROR_BASE+512)  // Î´Öªï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 /************************************************************************
-* ×ª·â×°¿â´íÎóÂë
+* ×ªï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_ERROR_SYSTRANS_HANDLE       (USB_ERROR_BASE+600)  //×ª»»¾ä±ú´íÎó
-#define USB_ERROR_SYSTRANS_SUPPORT      (USB_ERROR_BASE+601)  //ÀàÐÍ²»Ö§’·
-#define USB_ERROR_SYSTRANS_RESOURCE     (USB_ERROR_BASE+602)  //×ÊÔ´ÉêÇë»òÊÍ·Å´íÚÃ
-#define USB_ERROR_SYSTRANS_PARA         (USB_ERROR_BASE+603)  //²ÎÊý´íÎó
-#define USB_ERROR_SYSTRANS_PRECONDITION (USB_ERROR_BASE+604)  //Ç°ÖÃÌõ¼þÎ´Âú×ã£¬µ÷ÓÃË³Ðò
-#define USB_ERROR_SYSTRANS_OVERFLOW     (USB_ERROR_BASE+605)  //»º´æÒç³ö
-#define USB_ERROR_SYSTRANS_STOP         (USB_ERROR_BASE+606)  //Í£Ö¹×´âø
-#define USB_ERROR_SYSTRANS_FILE         (USB_ERROR_BASE+607)  //ÎÄ¼þ´íÎó
-#define USB_ERROR_SYSTRANS_MAX_HANDLE   (USB_ERROR_BASE+608)  //×î´óÂ·ÊýÏÞØÛ
-#define USB_ERROR_SYSTRANS_MUXER        (USB_ERROR_BASE+609)  //µ×²ãmp4´ò°ü¿â´ò°ü´íÚÃ
-#define USB_ERROR_SYSTRANS_FAIL         (USB_ERROR_BASE+610)  //Ì½²âÊ§°Ü
-#define USB_ERROR_SYSTRANS_ENCAP        (USB_ERROR_BASE+611)  //Á÷Ê½Ä£Ê½²»Ö§³Ö£¨ÈçASF¡¢AVIºÍMP4£ß
+#define USB_ERROR_SYSTRANS_HANDLE       (USB_ERROR_BASE+600)  //×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_SUPPORT      (USB_ERROR_BASE+601)  //ï¿½ï¿½ï¿½Í²ï¿½Ö§ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_RESOURCE     (USB_ERROR_BASE+602)  //ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·Å´ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_PARA         (USB_ERROR_BASE+603)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_PRECONDITION (USB_ERROR_BASE+604)  //Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_OVERFLOW     (USB_ERROR_BASE+605)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_STOP         (USB_ERROR_BASE+606)  //Í£Ö¹×´ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_FILE         (USB_ERROR_BASE+607)  //ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_MAX_HANDLE   (USB_ERROR_BASE+608)  //ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_MUXER        (USB_ERROR_BASE+609)  //ï¿½×²ï¿½mp4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_FAIL         (USB_ERROR_BASE+610)  //Ì½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_SYSTRANS_ENCAP        (USB_ERROR_BASE+611)  //ï¿½ï¿½Ê½Ä£Ê½ï¿½ï¿½Ö§ï¿½Ö£ï¿½ï¿½ï¿½ASFï¿½ï¿½AVIï¿½ï¿½MP4ï¿½ï¿½
 
 /************************************************************************
-* ×ªÂë¿â´íÎóÂë
+* ×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_ERROR_FC_HANDLE         (USB_ERROR_BASE+700)  ///< ´íÎó»òÎÞÐ§µÄ¾ä±ú
-#define USB_ERROR_FC_SUPPORT        (USB_ERROR_BASE+701)  ///< ²»Ö§³ÖµÄ¹¦ÄÜ
-#define USB_ERROR_FC_BUFOVER        (USB_ERROR_BASE+702)  ///< »º´æÒÑÂú
-#define USB_ERROR_FC_CALLORDER      (USB_ERROR_BASE+703)  ///< º¯Êýµ÷ÓÃË³Ðò´íÎó
-#define USB_ERROR_FC_PARAMETER      (USB_ERROR_BASE+704)  ///< ´íÎóµÄ²ÎÊý
-#define USB_ERROR_FC_NEEDMOREDATA   (USB_ERROR_BASE+705)  ///< ÐèÒª¸ü¶àµÄÊý¾Ý
-#define USB_ERROR_FC_RESOURCE       (USB_ERROR_BASE+706)  ///< ×ÊÔ´ÉêÇëÊ§°Ü
-#define USB_ERROR_FC_STREAM         (USB_ERROR_BASE+707)  ///< ÂëÁ÷³ö´í
-#define USB_ERROR_FC_DEMUXER        (USB_ERROR_BASE+708)  ///< ½âÎöÒì³£
-#define USB_ERROR_FC_MUXER          (USB_ERROR_BASE+709)  ///< ´ò°üÒì³£
-#define USB_ERROR_FC_DECODER        (USB_ERROR_BASE+710)  ///< ½âÂëÒì³£
-#define USB_ERROR_FC_ENCODER        (USB_ERROR_BASE+711)  ///< ±àÂëÒì³£
-#define USB_ERROR_FC_POSTPROC       (USB_ERROR_BASE+712)  ///< ºó´¦ÀíÒì³£
-#define USB_ERROR_FC_FILE           (USB_ERROR_BASE+713)  ///< ÎÄ¼þ²Ù×÷Òì³£
+#define USB_ERROR_FC_HANDLE         (USB_ERROR_BASE+700)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½Ä¾ï¿½ï¿½
+#define USB_ERROR_FC_SUPPORT        (USB_ERROR_BASE+701)  ///< ï¿½ï¿½Ö§ï¿½ÖµÄ¹ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_BUFOVER        (USB_ERROR_BASE+702)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_CALLORDER      (USB_ERROR_BASE+703)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_PARAMETER      (USB_ERROR_BASE+704)  ///< ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_NEEDMOREDATA   (USB_ERROR_BASE+705)  ///< ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_RESOURCE       (USB_ERROR_BASE+706)  ///< ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_ERROR_FC_STREAM         (USB_ERROR_BASE+707)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_ERROR_FC_DEMUXER        (USB_ERROR_BASE+708)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+#define USB_ERROR_FC_MUXER          (USB_ERROR_BASE+709)  ///< ï¿½ï¿½ï¿½ï¿½ì³£
+#define USB_ERROR_FC_DECODER        (USB_ERROR_BASE+710)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+#define USB_ERROR_FC_ENCODER        (USB_ERROR_BASE+711)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+#define USB_ERROR_FC_POSTPROC       (USB_ERROR_BASE+712)  ///< ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+#define USB_ERROR_FC_FILE           (USB_ERROR_BASE+713)  ///< ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
 
 /************************************************************************
-* ²¥·Å¿â´íÎóÂë
+* ï¿½ï¿½ï¿½Å¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
 #define  USB_ERROR_PLAYM4_PARA_OVER                       (USB_ERROR_BASE+801)   //input parameter is invalid;
 #define  USB_ERROR_PLAYM4_ORDER_ERROR                     (USB_ERROR_BASE+802)   //The order of the function to be called is error.
@@ -272,58 +272,58 @@ typedef  signed   __int64   INT64;
 #define  USB_ERROR_PLAYM4_NEED_LARGER_BUFFER              (USB_ERROR_BASE+834)  //add by pzj 20130528
 
 /************************************************************************
-* directshow´íÎóÂë
+* directshowï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
 #define  USB_ERROR_DIRECT_SHOW              (USB_ERROR_BASE+900)
 
 /************************************************************************
-* ÈËÁ³¿â´íÎóÂë
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_HIA_ERROR_MALLOC      (USB_ERROR_BASE + 1001)     ///< ÄÚ´æÉêÇëÊ§°Ü
-#define USB_HIA_ERROR_THREAD      (USB_ERROR_BASE + 1002)     ///< ´´½¨Ïß³ÌÊ§°Ü
-#define USB_HIA_ERROR_RESOURCE    (USB_ERROR_BASE + 1003)     ///< ×ÊÔ´²»×ã
-#define USB_HIA_ERROR_SUPPORT     (USB_ERROR_BASE + 1004)     ///< ²»Ö§³Ö²Ù×÷
-#define USB_HIA_ERROR_PARAM       (USB_ERROR_BASE + 1005)     ///< ²ÎÊý´íÎó
-#define USB_HIA_ERROR_INIT        (USB_ERROR_BASE + 1006)     ///< Î´³õÊ¼»¯
-#define USB_HIA_ERROR_OPERATE     (USB_ERROR_BASE + 1007)     ///< ²Ù×÷Ë³Ðò´íÎó
+#define USB_HIA_ERROR_MALLOC      (USB_ERROR_BASE + 1001)     ///< ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_THREAD      (USB_ERROR_BASE + 1002)     ///< ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_RESOURCE    (USB_ERROR_BASE + 1003)     ///< ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_SUPPORT     (USB_ERROR_BASE + 1004)     ///< ï¿½ï¿½Ö§ï¿½Ö²ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_PARAM       (USB_ERROR_BASE + 1005)     ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_INIT        (USB_ERROR_BASE + 1006)     ///< Î´ï¿½ï¿½Ê¼ï¿½ï¿½
+#define USB_HIA_ERROR_OPERATE     (USB_ERROR_BASE + 1007)     ///< ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½
 
-#define USB_HIA_ERROR_DECODE      (USB_ERROR_BASE + 1008)     ///< ½âÂëÊ§°Ü
-#define USB_HIA_ERROR_XML         (USB_ERROR_BASE + 1009)     ///< xml½âÎö³ö´í
-#define USB_HIA_ERROR_NOT_MATCH   (USB_ERROR_BASE + 1010)    ///< °æ±¾²»Æ¥Åä
-#define USB_HIA_ERROR_OVERFLOW    (USB_ERROR_BASE + 1011)    ///<  Òç³ö
-#define USB_HIA_ERROR_RESOLUTION  (USB_ERROR_BASE + 1012)    ///< ·Ö±æÂÊ²»Ö§³Ö
-#define USB_HIA_ERROR_FORMAT      (USB_ERROR_BASE + 1013)    ///< ½âÂë¸ñÊ½²»Ö§³Ö
-#define USB_HIA_ERROR_SEND        (USB_ERROR_BASE + 1014)    ///< ·¢ËÍÊý¾ÝÊ§°Ü
-#define USB_HIA_ERROR_RECV        (USB_ERROR_BASE + 1015)    ///< ½ÓÊÜÊý¾ÝÊ§°Ü
-#define USB_HIA_ERROR_SOCKET      (USB_ERROR_BASE + 1016)    ///< socket´íÎó£¬°üÀ¨´´½¨£¬Á´½ÓµÈ
-#define USB_HIA_ERROR_OSAPI       (USB_ERROR_BASE + 1017)    ///< ÏµÍ³º¯Êý´íÎó
-#define USB_HIA_ERROR_JSON        (USB_ERROR_BASE + 1018)    ///< json´íÎó
-#define USB_HIA_ERROR_IMG         (USB_ERROR_BASE + 1019)    ///< Í¼Æ¬´¦ÀíÊ§°Ü£¬ °üÀ¨¿ÙÍ¼£¬ Ñ¹Ëõ£¬»æÍ¼£¬Í¼Æ¬×ª»»µÈ¡£
-#define USB_HIA_ERROR_LACK        (USB_ERROR_BASE + 1020)    //   Êý¾Ý²»×ã
-#define USB_HIA_ERROR_ENCRYTE     (USB_ERROR_BASE + 1021)     ///< ¼ÓÃÜÊ§°Ü
-#define USB_HIA_ERROR_CREATE      (USB_ERROR_BASE + 1022)     ///< Ëã·¨¿â´´½¨Ê§°Ü
-#define USB_HIA_ERROR_PROCESS     (USB_ERROR_BASE + 1023)     ///< Ëã·¨´¦Àí±¨´í
-#define USB_HIA_ERROR_LOADMODE    (USB_ERROR_BASE + 1024)     ///< ¼ÓÔØÄ£ÐÍ´íÎó
-#define USB_HIA_ERROR_SETPARAM    (USB_ERROR_BASE + 1025)     //   ÉèÖÃ²ÎÊý´íÎó
-#define USB_HIA_ERROR_GETPARAM    (USB_ERROR_BASE + 1026)     //   »ñÈ¡²ÎÊý´íÎó
-#define USB_HIA_ERROR_DESTROY	  (USB_ERROR_BASE + 1027)	  ///<  Ëã·¨¿âÏú»ÙÊ§°Ü
-#define USB_HIA_ERROR_FRCNN       (USB_ERROR_BASE + 1028)    //   FRCNNÊ§°Ü
-#define USB_HIA_ERROR_EXCUTE      (USB_ERROR_BASE + 1029)    ///< Ö´ÐÐÊ§°Ü
-#define USB_HIA_ERROR_TPC         (USB_ERROR_BASE + 1030)    //   TPCÊ§°Ü
-#define USB_HIA_ERROR_FDRL        (USB_ERROR_BASE + 1031)    //   FDRLÊ§°Ü
-#define USB_HIA_ERROR_SKIP        (USB_ERROR_BASE + 1032)    //   Ìø¹ýËã·¨·ÖÎö
-#define USB_HIA_ERROR_BLOCK       (USB_ERROR_BASE + 1033)    //<  ×èÈû
-#define USB_HIA_ERROR_GPUMEMORY    (USB_ERROR_BASE + 1034)   ///< ÏÔ´æÉêÇëÊ§°Ü
-#define USB_HIA_ERROR_CPUMEMORY    (USB_ERROR_BASE + 1035)   ///< ÄÚ´æÉêÇëÊ§°Ü
-#define USB_HIA_ERROR_AUTHORIZE    (USB_ERROR_BASE + 1036)   ///< ÊÚÈ¨Ê§°Ü
-#define USB_HIA_ERROR_DATACHANGE  (USB_ERROR_BASE + 1047)    //   ·Ö±æÂÊ¸Ä±ä
+#define USB_HIA_ERROR_DECODE      (USB_ERROR_BASE + 1008)     ///< ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_XML         (USB_ERROR_BASE + 1009)     ///< xmlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_NOT_MATCH   (USB_ERROR_BASE + 1010)    ///< ï¿½æ±¾ï¿½ï¿½Æ¥ï¿½ï¿½
+#define USB_HIA_ERROR_OVERFLOW    (USB_ERROR_BASE + 1011)    ///<  ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_RESOLUTION  (USB_ERROR_BASE + 1012)    ///< ï¿½Ö±ï¿½ï¿½Ê²ï¿½Ö§ï¿½ï¿½
+#define USB_HIA_ERROR_FORMAT      (USB_ERROR_BASE + 1013)    ///< ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ö§ï¿½ï¿½
+#define USB_HIA_ERROR_SEND        (USB_ERROR_BASE + 1014)    ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_RECV        (USB_ERROR_BASE + 1015)    ///< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_SOCKET      (USB_ERROR_BASE + 1016)    ///< socketï¿½ï¿½ï¿½ó£¬°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½
+#define USB_HIA_ERROR_OSAPI       (USB_ERROR_BASE + 1017)    ///< ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_JSON        (USB_ERROR_BASE + 1018)    ///< jsonï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_IMG         (USB_ERROR_BASE + 1019)    ///< Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Í¼Æ¬×ªï¿½ï¿½ï¿½È¡ï¿½
+#define USB_HIA_ERROR_LACK        (USB_ERROR_BASE + 1020)    //   ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_ENCRYTE     (USB_ERROR_BASE + 1021)     ///< ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_CREATE      (USB_ERROR_BASE + 1022)     ///< ï¿½ã·¨ï¿½â´´ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_PROCESS     (USB_ERROR_BASE + 1023)     ///< ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_LOADMODE    (USB_ERROR_BASE + 1024)     ///< ï¿½ï¿½ï¿½ï¿½Ä£ï¿½Í´ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_SETPARAM    (USB_ERROR_BASE + 1025)     //   ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_GETPARAM    (USB_ERROR_BASE + 1026)     //   ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_DESTROY	  (USB_ERROR_BASE + 1027)	  ///<  ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_FRCNN       (USB_ERROR_BASE + 1028)    //   FRCNNÊ§ï¿½ï¿½
+#define USB_HIA_ERROR_EXCUTE      (USB_ERROR_BASE + 1029)    ///< Ö´ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_TPC         (USB_ERROR_BASE + 1030)    //   TPCÊ§ï¿½ï¿½
+#define USB_HIA_ERROR_FDRL        (USB_ERROR_BASE + 1031)    //   FDRLÊ§ï¿½ï¿½
+#define USB_HIA_ERROR_SKIP        (USB_ERROR_BASE + 1032)    //   ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_BLOCK       (USB_ERROR_BASE + 1033)    //<  ï¿½ï¿½ï¿½ï¿½
+#define USB_HIA_ERROR_GPUMEMORY    (USB_ERROR_BASE + 1034)   ///< ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_CPUMEMORY    (USB_ERROR_BASE + 1035)   ///< ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_AUTHORIZE    (USB_ERROR_BASE + 1036)   ///< ï¿½ï¿½È¨Ê§ï¿½ï¿½
+#define USB_HIA_ERROR_DATACHANGE  (USB_ERROR_BASE + 1047)    //   ï¿½Ö±ï¿½ï¿½Ê¸Ä±ï¿½
 
 
 #define USB_ERROR_NOT_DEFINED          (USB_ERROR_BASE+0x02FE)
 #define USB_ERROR_OTHER                (USB_ERROR_BASE+0x02FF)  // Other error
 //-----------------------------------------------------------------------------------------
 
-/********************ÅäÖÃ´íÎó×´Ì¬Âë*******************/
+/********************ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½*******************/
 #define  USB_ERROR_NO_ERROR                                0x00    // No error: The request succeeded
 #define  USB_ERROR_DEVICE_REQUEST_NOT_COMPLETE             0x01    // Not Ready: Previous request has not completed
 #define  USB_ERROR_DEVICE_WRONG_STATE                      0x02    // Wrong State: In a state that disallows the specific request
@@ -338,7 +338,7 @@ typedef  signed   __int64   INT64;
 #define  USB_ERROR_DEVICE_PROTOCOL_EXCEPTION               0x0b    // Custom: Device inner processing protocol exceptions
 #define  USB_ERROR_BULK_DATA_EXCEPTION                     0x0c    // Custom: Bulk data transfer process exceptions
 #define  USB_ERROR_UNKNOWN                                 0xff    // Unknown: Unknown
-/********************ÅäÖÃ´íÎó×´Ì¬Âë*******************/
+/********************ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½*******************/
 
 #define MAX_MANUFACTURE_LEN    32
 #define MAX_DEVICE_NAME_LEN    32
@@ -356,9 +356,9 @@ typedef  signed   __int64   INT64;
 #define ADDR_LEN               128
 #define MAC_LEN                16
 #define CARD_NO_LEN            32
-#define FINGER_PRINT_MODULE_VERSION_LEN    32    //Ö¸ÎÆÄ£×éÈí¼þ°æ±¾³¤¶È
-#define FINGER_PRINT_MODULE_SERIAL_LEN     64    //Ö¸ÎÆÄ£×éÐòÁÐºÅ³¤¶È
-#define SECURITY_MODULE_SERIAL_LEN         16    //°²È«Ä£¿éÐòÁÐºÅ³¤¶È
+#define FINGER_PRINT_MODULE_VERSION_LEN    32    //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½
+#define FINGER_PRINT_MODULE_SERIAL_LEN     64    //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ³ï¿½ï¿½ï¿½
+#define SECURITY_MODULE_SERIAL_LEN         16    //ï¿½ï¿½È«Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ³ï¿½ï¿½ï¿½
 #define MAX_FINGER_PRINT       1024*100
 #define MAX_PATH_LEN		   260
 
@@ -388,421 +388,421 @@ typedef  signed   __int64   INT64;
 #define USB_GET_CERTIFICATE_ADD_ADDR_INFO  (USB_ACS_BASE + 21)
 #define USB_GET_CERTIFICATE_MAC            (USB_ACS_BASE + 22)
 #define USB_GET_IC_CARD_NO                 (USB_ACS_BASE + 23)
-#define USB_DETECT_CARD                 (USB_ACS_BASE + 24)   //¼ì²â¿¨Æ¬
-#define USB_SET_IDENTITY_INFO           (USB_ACS_BASE + 25)   //Éí·ÝÐÅÏ¢ÏÂ·¢
+#define USB_DETECT_CARD                 (USB_ACS_BASE + 24)   //ï¿½ï¿½â¿¨Æ¬
+#define USB_SET_IDENTITY_INFO           (USB_ACS_BASE + 25)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½Â·ï¿½
 #define USB_GET_EXTERNAL_DEV_INFO       (USB_ACS_BASE + 26)
 #define USB_SET_FINGER_PRINT_OPER_PARAM (USB_ACS_BASE + 27)
 #define USB_CAPTURE_FINGER_PRINT         (USB_ACS_BASE + 28)
 #define USB_GET_FINGER_PRINT_CONTRAST_RESULT (USB_ACS_BASE + 29)
-#define USB_CPU_CARD_ENCRYPT_CFG             (USB_ACS_BASE + 30)  //CPU¿¨¼ÓÃÜÅäÖÃ
-#define USB_SET_M1_SECTION_ENCRYPT           (USB_ACS_BASE + 31)   //M1¿¨Ö¸¶¨ÉÈÇø¼ÓÃÜ
+#define USB_CPU_CARD_ENCRYPT_CFG             (USB_ACS_BASE + 30)  //CPUï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_M1_SECTION_ENCRYPT           (USB_ACS_BASE + 31)   //M1ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-//ÈÈ³ÉÏñÃüÁîÂë
+//ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define USB_THERMAL_BASE                 2000
-//#define USB_GET_VIDEO_CAP        (USB_THERMAL_BASE+1)          //»ñÈ¡ÊÓÆµÄÜÁ¦
-//#define USB_GET_AUDIO_CAP        (USB_THERMAL_BASE+2)          //»ñÈ¡ÒôÆµÄÜÁ¦
-//#define USB_GET_VIDEO_FORMAT     (USB_THERMAL_BASE+3)            //»ñÈ¡ÊÓÆµ¸ñÊ½
-//#define USB_SET_VIDEO_FORMAT     (USB_THERMAL_BASE+4)             //ÉèÖÃÊÓÆµ¸ñÊ½
-//#define USB_GET_AUDIO_FORMAT     (USB_THERMAL_BASE+5)           //»ñÈ¡ÒôÆµ¸ñÊ½
-//#define USB_SET_AUDIO_FORMAT     (USB_THERMAL_BASE+6)            //ÉèÖÃÒôÆµ¸ñÊ½
-//#define USB_GET_RESOLUTION       (USB_THERMAL_BASE+7)            //»ñÈ¡·Ö±æÂÊ
-//#define USB_SET_RESOLUTION    (USB_THERMAL_BASE+8)            //ÉèÖÃ·Ö±æÂÊ
-//#define USB_GET_FRAMERATE     (USB_THERMAL_BASE+9)           //»ñÈ¡Ö¡ÂÊ
-//#define USB_SET_FRAMERATE     (USB_THERMAL_BASE+10)          //ÉèÖÃÖ¡ÂÊ
-#define USB_GET_SYSTEM_DEVICE_INFO					(USB_THERMAL_BASE+11)   //»ñÈ¡Éè±¸ÐÅÏ¢
-#define USB_SET_SYSTEM_REBOOT						(USB_THERMAL_BASE+12)   //Éè±¸ÖØÆô
-#define USB_SET_SYSTEM_RESET						(USB_THERMAL_BASE+13)   //»Ö¸´Ä¬ÈÏ
-#define USB_GET_SYSTEM_HARDWARE_SERVER				(USB_THERMAL_BASE+14)   //»ñÈ¡Ó²¼þ·þÎñ²ÎÊý
-#define USB_SET_SYSTEM_HARDWARE_SERVER				(USB_THERMAL_BASE+15)   //ÉèÖÃÓ²¼þ·þÎñ²ÎÊý
-#define USB_GET_SYSTEM_LOCALTIME					(USB_THERMAL_BASE+16)   //»ñÈ¡ÏµÍ³±¾µØÊ±¼ä
-#define USB_SET_SYSTEM_LOCALTIME					(USB_THERMAL_BASE+17)   //ÉèÖÃÏµÍ³±¾µØÊ±¼ä
-#define USB_GET_IMAGE_BRIGHTNESS					(USB_THERMAL_BASE+18)   //»ñÈ¡Í¼ÏñÁÁ¶È²ÎÊý
-#define USB_SET_IMAGE_BRIGHTNESS					(USB_THERMAL_BASE+19)   //ÉèÖÃÍ¼ÏñÁÁ¶È²ÎÊý
-#define USB_GET_IMAGE_CONTRAST						(USB_THERMAL_BASE+20)   //»ñÈ¡Í¼Ïñ¶Ô±È¶È²ÎÊý
-#define USB_SET_IMAGE_CONTRAST						(USB_THERMAL_BASE+21)   //ÉèÖÃÍ¼Ïñ¶Ô±È¶È²ÎÊý
-#define USB_SET_SYSTEM_UPDATE_FIRMWARE				(USB_THERMAL_BASE+22)   //Éè±¸Éý¼¶
-#define USB_SET_IMAGE_BACKGROUND_CORRECT			(USB_THERMAL_BASE+23)   //Ò»¼ü±³¾°Ð£Õý
-#define USB_GET_SYSTEM_DIAGNOSED_DATA				(USB_THERMAL_BASE+24)   //Õï¶ÏÐÅÏ¢µ¼³ö
-#define USB_SET_IMAGE_MANUAL_CORRECT				(USB_THERMAL_BASE+25)   //Ò»¼üÊÖ¶¯Ð£Õý
-#define USB_GET_IMAGE_ENHANCEMENT					(USB_THERMAL_BASE+26)   //»ñÈ¡Í¼ÏñÔöÇ¿²ÎÊý
-#define USB_SET_IMAGE_ENHANCEMENT					(USB_THERMAL_BASE+27)   //ÉèÖÃÍ¼ÏñÔöÇ¿²ÎÊý
-#define USB_GET_IMAGE_VIDEO_ADJUST					(USB_THERMAL_BASE+28)   //»ñÈ¡ÊÓÆµµ÷Õû²ÎÊý
-#define USB_SET_IMAGE_VIDEO_ADJUST					(USB_THERMAL_BASE+29)   //ÉèÖÃÊÓÆµµ÷Õû²ÎÊý
-#define USB_GET_THERMOMETRY_BASIC_PARAM				(USB_THERMAL_BASE+30)   //»ñÈ¡²âÎÂ»ù±¾²ÎÊý
-#define USB_SET_THERMOMETRY_BASIC_PARAM				(USB_THERMAL_BASE+31)   //ÉèÖÃ²âÎÂ»ù±¾²ÎÊý
-#define USB_GET_THERMOMETRY_MODE					(USB_THERMAL_BASE+32)   //»ñÈ¡²âÎÂÄ£Ê½
-#define USB_SET_THERMOMETRY_MODE					(USB_THERMAL_BASE+33)   //ÉèÖÃ²âÎÂÄ£Ê½
-#define USB_GET_THERMOMETRY_REGIONS					(USB_THERMAL_BASE+34)   //»ñÈ¡²âÎÂ¹æÔò²ÎÊý
-#define USB_SET_THERMOMETRY_REGIONS					(USB_THERMAL_BASE+35)   //ÉèÖÃ²âÎÂ¹æÔò²ÎÊý
-#define USB_GET_THERMAL_ALG_VERSION					(USB_THERMAL_BASE+36)   //»ñÈ¡ÈÈ³ÉÏñÏà¹ØËã·¨°æ±¾ÐÅÏ¢
-//#define USB_SET_THERMAL_ALG_VERSION				(USB_THERMAL_BASE+37)   //Ô¤Áô
-#define USB_GET_THERMAL_STREAM_PARAM				(USB_THERMAL_BASE+38)   //»ñÈ¡ÈÈ³ÉÏñÂëÁ÷²ÎÊý
-#define USB_SET_THERMAL_STREAM_PARAM				(USB_THERMAL_BASE+39)   //ÉèÖÃÈÈ³ÉÏñÂëÁ÷²ÎÊý
-#define USB_GET_TEMPERATURE_CORRECT					(USB_THERMAL_BASE+40)   //»ñÈ¡²âÎÂÐÞÕý²ÎÊý
-#define USB_SET_TEMPERATURE_CORRECT					(USB_THERMAL_BASE+41)   //ÉèÖÃ²âÎÂÐÞÕý²ÎÊý
-#define USB_GET_BLACK_BODY							(USB_THERMAL_BASE+42)   //»ñÈ¡ºÚÌå²ÎÊý
-#define USB_SET_BLACK_BODY							(USB_THERMAL_BASE+43)   //ÉèÖÃºÚÌå²ÎÊý
-#define USB_GET_BODYTEMP_COMPENSATION				(USB_THERMAL_BASE+44)   //»ñÈ¡ÌåÎÂ²¹³¥²ÎÊý
-#define USB_SET_BODYTEMP_COMPENSATION				(USB_THERMAL_BASE+45)   //ÉèÖÃÌåÎÂ²¹³¥²ÎÊý
-#define USB_GET_JPEGPIC_WITH_APPENDDATA				(USB_THERMAL_BASE+46)   //»ñÈ¡ÈÈÍ¼
-#define USB_GET_ROI_MAX_TEMPERATURE_SEARCH			(USB_THERMAL_BASE+47)   //ROI×î¸ßÎÂÐÅÏ¢²éÑ¯
-#define USB_GET_P2P_PARAM							(USB_THERMAL_BASE+48)   //»ñÈ¡È«ÆÁ²âÎÂ²ÎÊý
-#define USB_SET_P2P_PARAM							(USB_THERMAL_BASE+49)   //ÉèÖÃÈ«ÆÁ²âÎÂ²ÎÊý
-#define USB_GET_SYSTEM_DIAGNOSED_DATA_EX            (USB_THERMAL_BASE+50)   //´ø²ÎÊýÌõ¼þÕï¶ÏÐÅÏ¢µ¼³ö
-#define USB_POST_DOUBLE_LIGHTS_CORRECT				(USB_THERMAL_BASE+51)   //Ë«¹âÐ£×¼
-#define USB_GET_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL	(USB_THERMAL_BASE+52)	//»ñÈ¡Ë«¹âÐ£×¼×ø±ê¿ØÖÆ²ÎÊý
-#define USB_SET_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL   (USB_THERMAL_BASE+53)   //ÉèÖÃË«¹âÐ£×¼×ø±ê¿ØÖÆ²ÎÊý
-#define USB_GET_THERMOMETRY_CALIBRATION_FILE		(USB_THERMAL_BASE+54)   //²âÎÂ±ê¶¨ÎÄ¼þµ¼³ö
-#define USB_SET_THERMOMETRY_CALIBRATION_FILE		(USB_THERMAL_BASE+55)   //²âÎÂ±ê¶¨ÎÄ¼þµ¼Èë
-#define USB_GET_THERMOMETRY_EXPERT_REGIONS			(USB_THERMAL_BASE+56)   //»ñÈ¡×¨¼Ò²âÎÂ¹æÔò
-#define USB_SET_THERMOMETRY_EXPERT_REGIONS			(USB_THERMAL_BASE+57)   //ÉèÖÃ×¨¼Ò²âÎÂ¹æÔò
-#define USB_GET_EXPERT_CORRECTION_PARAM				(USB_THERMAL_BASE+58)   //»ñÈ¡×¨¼Ò²âÎÂÐ£Õý²ÎÊý
-#define USB_SET_EXPERT_CORRECTION_PARAM				(USB_THERMAL_BASE+59)   //ÉèÖÃ×¨¼Ò²âÎÂÐ£Õý²ÎÊý
-#define USB_START_EXPERT_CORRECTION					(USB_THERMAL_BASE+60)   //¿ªÊ¼×¨¼Ò²âÎÂÐ£Õý
-#define USB_GET_THERMOMETRY_RISE_SETTINGS           (USB_THERMAL_BASE+61)    //»ñÈ¡ÎÂÉýÅäÖÃ²ÎÊý
-#define USB_SET_THERMOMETRY_RISE_SETTINGS           (USB_THERMAL_BASE+62)    //ÉèÖÃÎÂÉýÅäÖÃ²ÎÊý
-#define USB_GET_ENVIROTEMPERATURE_CORRECT           (USB_THERMAL_BASE+63)       //»ñÈ¡»·¾³ÎÂ¶ÈÐ£Õý²ÎÊý
-#define USB_SET_ENVIROTEMPERATURE_CORRECT           (USB_THERMAL_BASE+64)       //ÉèÖÃ»·¾³ÎÂ¶ÈÐ£Õý²ÎÊý
-#define USB_GET_SYSTEM_CAPABILITIES                 (USB_THERMAL_BASE+65)       //»ñÈ¡ÏµÍ³ÄÜÁ¦
-#define USB_GET_SYSTEM_ISP_BIN_FILE                 (USB_THERMAL_BASE+66)       //»ñÈ¡Éè±¸ISP binÎÄ¼þ
-#define USB_GET_SYSTEM_FUSION_BIN_FILE              (USB_THERMAL_BASE+67)       //»ñÈ¡Éè±¸ÈÚºÏ²ÎÊýbinÎÄ¼þ
-#define USB_GET_VIDEO_CODE                          (USB_THERMAL_BASE+68)       //»ñÈ¡ÊÓÆµ±àÂë²ÎÊý
-#define USB_SET_VIDEO_CODE                          (USB_THERMAL_BASE+69)       //ÉèÖÃÊÓÆµ±àÂë²ÎÊý
-#define USB_GET_VIDEO_FUSION                        (USB_THERMAL_BASE+70)       //»ñÈ¡ÊÓÆµÍ¼ÏñÈÚºÏ²ÎÊý
-#define USB_SET_VIDEO_FUSION                        (USB_THERMAL_BASE+71)       //ÉèÖÃÊÓÆµÍ¼ÏñÈÚºÏ²ÎÊý
-#define USB_GET_VIDEO_LEN_CALIBRATION               (USB_THERMAL_BASE+72)       //»ñÈ¡¾µÍ·±ê¶¨²ÎÊý
-#define USB_SET_VIDEO_LEN_CALIBRATION               (USB_THERMAL_BASE+73)       //ÉèÖÃ¾µÍ·±ê¶¨²ÎÊý
-#define USB_GET_IMAGE_CAPABILITIES                  (USB_THERMAL_BASE+74)       //»ñÈ¡Í¼Ïñ¹ÜÀí×ÜÄÜÁ¦
-#define USB_GET_IMAGE_ENHANCEMENT_CAPABILITIES      (USB_THERMAL_BASE+75)       //»ñÈ¡Í¼ÏñÔöÇ¿ÄÜÁ¦
-#define USB_GET_THERMAL_CAPABILITIES                (USB_THERMAL_BASE+76)       //»ñÈ¡ÈÈ³ÉÏñ×ÜÄÜÁ¦
-#define USB_GET_THERMOMETRY_BASIC_PARAM_CAPABILITIES          (USB_THERMAL_BASE+77)       //»ñÈ¡²âÎÂ»ù±¾²ÎÊýÄÜÁ¦
-#define USB_GET_VIDEO_COMMON_CAPABILITIES           (USB_THERMAL_BASE+78)       //»ñÈ¡ÊÓÆµÍ¨ÓÃ×ÜÄÜÁ¦
-#define USB_GET_VIDEO_LEN_CALIBRATION_CAPABILITIES            (USB_THERMAL_BASE+79)       //»ñÈ¡¾µÍ·±ê¶¨ÄÜÁ¦
-#define USB_GET_IMAGE_ENHANCEMENT_V20               (USB_THERMAL_BASE+80)    //»ñÈ¡Í¼ÏñÔöÇ¿²ÎÊýV20
-#define USB_SET_IMAGE_ENHANCEMENT_V20               (USB_THERMAL_BASE+81)     //ÉèÖÃÍ¼ÏñÔöÇ¿²ÎÊýV20
-#define USB_GET_THERMAL_STREAM_PARAM_CAPABILITIES   (USB_THERMAL_BASE+82)     //»ñÈ¡ÈÈ³ÉÏñÂëÁ÷²ÎÊýÅäÖÃÄÜÁ¦
-#define USB_GET_VIDEO_CODE_CAPABILITIES             (USB_THERMAL_BASE+83)     //»ñÈ¡ÊÓÆµ±àÂëÄÜÁ¦
-#define USB_GET_SYSTEM_INIT                         (USB_THERMAL_BASE+84)     //»ñÈ¡ÏµÍ³³õÊ¼»¯²ÎÊý
-#define USB_SET_SYSTEM_INIT                         (USB_THERMAL_BASE+85)     //ÉèÖÃÏµÍ³³õÊ¼»¯²ÎÊý
-#define USB_GET_SYSTEM_CTRL_CAPABILITIES            (USB_THERMAL_BASE+86)     //»ñÈ¡ÏµÍ³¹ÜÀí×ÜÄÜÁ¦
-#define USB_GET_SYSTEM_DEVICE_INFO_CAPABILITIES     (USB_THERMAL_BASE+87)     //»ñÈ¡Éè±¸ÐÅÏ¢ÄÜÁ¦
-#define USB_GET_SYSTEM_HARDWARE_SERVER_CAPABILITIES           (USB_THERMAL_BASE+88)     //»ñÈ¡Ó²¼þ·þÎñ²ÎÊýÄÜÁ¦
-#define USB_GET_SYSTEM_LOCALTIME_CAPABILITIES       (USB_THERMAL_BASE+89)     //»ñÈ¡ÏµÍ³Ê±¼ä²ÎÊýÄÜÁ¦
-#define USB_GET_IMAGE_BRIGHTNESS_CAPABILITIES       (USB_THERMAL_BASE+90)     //»ñÈ¡Í¼ÏñÁÁ¶Èµ÷½ÚÄÜÁ¦
-#define USB_GET_IMAGE_CONTRAST_CAPABILITIES         (USB_THERMAL_BASE+91)     //»ñÈ¡Í¼Ïñ¶Ô±È¶Èµ÷½ÚÄÜÁ¦
-#define USB_GET_IMAGE_VIDEO_ADJUST_CAPABILITIES     (USB_THERMAL_BASE+92)     //»ñÈ¡ÊÓÆµµ÷ÕûÄÜÁ¦
-#define USB_GET_THERMAL_THERMOMETRY_MODE_CAPABILITIES         (USB_THERMAL_BASE+93)       //»ñÈ¡²âÎÂÄ£Ê½ÅäÖÃÄÜÁ¦
-#define USB_GET_THERMAL_THERMOMETRY_REGIONS_CAPABILITIES      (USB_THERMAL_BASE+94)       //»ñÈ¡²âÎÂ¹æÔòÅäÖÃÄÜÁ¦
-#define USB_GET_THERMAL_TEMPERATURE_CORRECT_CAPABILITIES      (USB_THERMAL_BASE+95)       //»ñÈ¡²âÎÂÐÞÕý£¨ÈËÌå²âÎÂ£©ÄÜÁ¦
-#define USB_GET_THERMAL_BLACK_BODY_CAPABILITIES               (USB_THERMAL_BASE+96)       //»ñÈ¡ºÚÌå²ÎÊýÅäÖÃÄÜÁ¦
-#define USB_GET_THERMAL_BODYTEMP_COMPENSATION_CAPABILITIES    (USB_THERMAL_BASE+97)       //»ñÈ¡ÌåÎÂ²¹³¥²ÎÊýÅäÖÃÄÜÁ¦
-#define USB_GET_THERMAL_ROI_MAX_TEMPERATURE_SEARCH_CAPABILITIES         (USB_THERMAL_BASE+98)       //»ñÈ¡ROI×î¸ßÎÂÐÅÏ¢²éÑ¯ÄÜÁ¦
-#define USB_GET_THERMAL_THERMOMETRY_CALIBRATION_FILE_CAPABILITIES       (USB_THERMAL_BASE+99)       //»ñÈ¡²âÎÂ±ê¶¨ÎÄ¼þµ¼Èëµ¼³öÄÜÁ¦
-#define USB_GET_THERMAL_THERMOMETRY_EXPERT_REGIONS_CAPABILITIES         (USB_THERMAL_BASE+100)       //»ñÈ¡×¨¼Ò²âÎÂ¹æÔòÅäÖÃÄÜÁ¦
-#define USB_GET_THERMAL_THERMOMETRY_EXPERT_CORRECTION_PARAM_CAPABILITIES    (USB_THERMAL_BASE+101)   //»ñÈ¡×¨¼Ò²âÎÂÐ£Õý²ÎÊýÅäÖÃÄÜÁ¦
-#define USB_GET_SYSTEM_DEVICE_DESCRIPTION_INFO                (USB_THERMAL_BASE+102)       //»ñÈ¡Éè±¸ÃèÊöÐÅÏ¢
-#define USB_GET_SYSTEM_SERIAL_DATA_TRANSMISSION               (USB_THERMAL_BASE+103)       //»ñÈ¡´®¿ÚÍ¸´«Êý¾Ý
-#define USB_SET_SYSTEM_SERIAL_DATA_TRANSMISSION               (USB_THERMAL_BASE+104)       //ÉèÖÃ´®¿ÚÍ¸´«Êý¾Ý
-#define USB_GET_IMAGE_PALETTE_DATA                            (USB_THERMAL_BASE+105)       //»ñÈ¡Î±²ÊÓ³Éä±í
-#define USB_GET_THERAML_THERMOMETRY_OFFLINE_DATA_EXPORT       (USB_THERMAL_BASE+106)       //²âÎÂÀëÏß·ÖÎöÊý¾Ýµ¼³ö
-#define USB_GET_IMAGE_OUTPUT_CFG                              (USB_THERMAL_BASE+107)       //»ñÈ¡Í¼ÏñÊä³öÅäÖÃ²ÎÊý
-#define USB_SET_IMAGE_OUTPUT_CFG                              (USB_THERMAL_BASE+108)       //ÉèÖÃÍ¼ÏñÊä³öÅäÖÃ²ÎÊý
-#define USB_GET_SYSTEM_DEVICE_DESCRIPTION_INFO_CAPABILITIES   (USB_THERMAL_BASE+109)       //»ñÈ¡Éè±¸ÃèÊöÐÅÏ¢ÄÜÁ¦
-#define USB_GET_THERMAL_STREAM_CTRL                           (USB_THERMAL_BASE+110)       //»ñÈ¡ÂëÁ÷ÆôÍ£×´Ì¬
-#define USB_SET_THERMAL_STREAM_CTRL                           (USB_THERMAL_BASE+111)       //ÉèÖÃÂëÁ÷ÆôÍ£
+//#define USB_GET_VIDEO_CAP        (USB_THERMAL_BASE+1)          //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+//#define USB_GET_AUDIO_CAP        (USB_THERMAL_BASE+2)          //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+//#define USB_GET_VIDEO_FORMAT     (USB_THERMAL_BASE+3)            //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½Ê½
+//#define USB_SET_VIDEO_FORMAT     (USB_THERMAL_BASE+4)             //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ê½
+//#define USB_GET_AUDIO_FORMAT     (USB_THERMAL_BASE+5)           //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½Ê½
+//#define USB_SET_AUDIO_FORMAT     (USB_THERMAL_BASE+6)            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ê½
+//#define USB_GET_RESOLUTION       (USB_THERMAL_BASE+7)            //ï¿½ï¿½È¡ï¿½Ö±ï¿½ï¿½ï¿½
+//#define USB_SET_RESOLUTION    (USB_THERMAL_BASE+8)            //ï¿½ï¿½ï¿½Ã·Ö±ï¿½ï¿½ï¿½
+//#define USB_GET_FRAMERATE     (USB_THERMAL_BASE+9)           //ï¿½ï¿½È¡Ö¡ï¿½ï¿½
+//#define USB_SET_FRAMERATE     (USB_THERMAL_BASE+10)          //ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½
+#define USB_GET_SYSTEM_DEVICE_INFO					(USB_THERMAL_BASE+11)   //ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½Ï¢
+#define USB_SET_SYSTEM_REBOOT						(USB_THERMAL_BASE+12)   //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_SYSTEM_RESET						(USB_THERMAL_BASE+13)   //ï¿½Ö¸ï¿½Ä¬ï¿½ï¿½
+#define USB_GET_SYSTEM_HARDWARE_SERVER				(USB_THERMAL_BASE+14)   //ï¿½ï¿½È¡Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_SYSTEM_HARDWARE_SERVER				(USB_THERMAL_BASE+15)   //ï¿½ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_LOCALTIME					(USB_THERMAL_BASE+16)   //ï¿½ï¿½È¡ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+#define USB_SET_SYSTEM_LOCALTIME					(USB_THERMAL_BASE+17)   //ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+#define USB_GET_IMAGE_BRIGHTNESS					(USB_THERMAL_BASE+18)   //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_BRIGHTNESS					(USB_THERMAL_BASE+19)   //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_CONTRAST						(USB_THERMAL_BASE+20)   //ï¿½ï¿½È¡Í¼ï¿½ï¿½Ô±È¶È²ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_CONTRAST						(USB_THERMAL_BASE+21)   //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ô±È¶È²ï¿½ï¿½ï¿½
+#define USB_SET_SYSTEM_UPDATE_FIRMWARE				(USB_THERMAL_BASE+22)   //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_BACKGROUND_CORRECT			(USB_THERMAL_BASE+23)   //Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½
+#define USB_GET_SYSTEM_DIAGNOSED_DATA				(USB_THERMAL_BASE+24)   //ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_MANUAL_CORRECT				(USB_THERMAL_BASE+25)   //Ò»ï¿½ï¿½ï¿½Ö¶ï¿½Ð£ï¿½ï¿½
+#define USB_GET_IMAGE_ENHANCEMENT					(USB_THERMAL_BASE+26)   //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_ENHANCEMENT					(USB_THERMAL_BASE+27)   //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_VIDEO_ADJUST					(USB_THERMAL_BASE+28)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_ADJUST					(USB_THERMAL_BASE+29)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMOMETRY_BASIC_PARAM				(USB_THERMAL_BASE+30)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_THERMOMETRY_BASIC_PARAM				(USB_THERMAL_BASE+31)   //ï¿½ï¿½ï¿½Ã²ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMOMETRY_MODE					(USB_THERMAL_BASE+32)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+#define USB_SET_THERMOMETRY_MODE					(USB_THERMAL_BASE+33)   //ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Ä£Ê½
+#define USB_GET_THERMOMETRY_REGIONS					(USB_THERMAL_BASE+34)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_THERMOMETRY_REGIONS					(USB_THERMAL_BASE+35)   //ï¿½ï¿½ï¿½Ã²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_ALG_VERSION					(USB_THERMAL_BASE+36)   //ï¿½ï¿½È¡ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½æ±¾ï¿½ï¿½Ï¢
+//#define USB_SET_THERMAL_ALG_VERSION				(USB_THERMAL_BASE+37)   //Ô¤ï¿½ï¿½
+#define USB_GET_THERMAL_STREAM_PARAM				(USB_THERMAL_BASE+38)   //ï¿½ï¿½È¡ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_THERMAL_STREAM_PARAM				(USB_THERMAL_BASE+39)   //ï¿½ï¿½ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_TEMPERATURE_CORRECT					(USB_THERMAL_BASE+40)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEMPERATURE_CORRECT					(USB_THERMAL_BASE+41)   //ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_BLACK_BODY							(USB_THERMAL_BASE+42)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_BLACK_BODY							(USB_THERMAL_BASE+43)   //ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_BODYTEMP_COMPENSATION				(USB_THERMAL_BASE+44)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_BODYTEMP_COMPENSATION				(USB_THERMAL_BASE+45)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_JPEGPIC_WITH_APPENDDATA				(USB_THERMAL_BASE+46)   //ï¿½ï¿½È¡ï¿½ï¿½Í¼
+#define USB_GET_ROI_MAX_TEMPERATURE_SEARCH			(USB_THERMAL_BASE+47)   //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯
+#define USB_GET_P2P_PARAM							(USB_THERMAL_BASE+48)   //ï¿½ï¿½È¡È«ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½
+#define USB_SET_P2P_PARAM							(USB_THERMAL_BASE+49)   //ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_DIAGNOSED_DATA_EX            (USB_THERMAL_BASE+50)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+#define USB_POST_DOUBLE_LIGHTS_CORRECT				(USB_THERMAL_BASE+51)   //Ë«ï¿½ï¿½Ð£×¼
+#define USB_GET_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL	(USB_THERMAL_BASE+52)	//ï¿½ï¿½È¡Ë«ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½
+#define USB_SET_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL   (USB_THERMAL_BASE+53)   //ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½
+#define USB_GET_THERMOMETRY_CALIBRATION_FILE		(USB_THERMAL_BASE+54)   //ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_THERMOMETRY_CALIBRATION_FILE		(USB_THERMAL_BASE+55)   //ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMOMETRY_EXPERT_REGIONS			(USB_THERMAL_BASE+56)   //ï¿½ï¿½È¡×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½
+#define USB_SET_THERMOMETRY_EXPERT_REGIONS			(USB_THERMAL_BASE+57)   //ï¿½ï¿½ï¿½ï¿½×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½
+#define USB_GET_EXPERT_CORRECTION_PARAM				(USB_THERMAL_BASE+58)   //ï¿½ï¿½È¡×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_EXPERT_CORRECTION_PARAM				(USB_THERMAL_BASE+59)   //ï¿½ï¿½ï¿½ï¿½×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_START_EXPERT_CORRECTION					(USB_THERMAL_BASE+60)   //ï¿½ï¿½Ê¼×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½
+#define USB_GET_THERMOMETRY_RISE_SETTINGS           (USB_THERMAL_BASE+61)    //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+#define USB_SET_THERMOMETRY_RISE_SETTINGS           (USB_THERMAL_BASE+62)    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+#define USB_GET_ENVIROTEMPERATURE_CORRECT           (USB_THERMAL_BASE+63)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_ENVIROTEMPERATURE_CORRECT           (USB_THERMAL_BASE+64)       //ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_CAPABILITIES                 (USB_THERMAL_BASE+65)       //ï¿½ï¿½È¡ÏµÍ³ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_ISP_BIN_FILE                 (USB_THERMAL_BASE+66)       //ï¿½ï¿½È¡ï¿½è±¸ISP binï¿½Ä¼ï¿½
+#define USB_GET_SYSTEM_FUSION_BIN_FILE              (USB_THERMAL_BASE+67)       //ï¿½ï¿½È¡ï¿½è±¸ï¿½ÚºÏ²ï¿½ï¿½ï¿½binï¿½Ä¼ï¿½
+#define USB_GET_VIDEO_CODE                          (USB_THERMAL_BASE+68)       //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_CODE                          (USB_THERMAL_BASE+69)       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_FUSION                        (USB_THERMAL_BASE+70)       //ï¿½ï¿½È¡ï¿½ï¿½ÆµÍ¼ï¿½ï¿½ï¿½ÚºÏ²ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_FUSION                        (USB_THERMAL_BASE+71)       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµÍ¼ï¿½ï¿½ï¿½ÚºÏ²ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_LEN_CALIBRATION               (USB_THERMAL_BASE+72)       //ï¿½ï¿½È¡ï¿½ï¿½Í·ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_LEN_CALIBRATION               (USB_THERMAL_BASE+73)       //ï¿½ï¿½ï¿½Ã¾ï¿½Í·ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_CAPABILITIES                  (USB_THERMAL_BASE+74)       //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_ENHANCEMENT_CAPABILITIES      (USB_THERMAL_BASE+75)       //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_CAPABILITIES                (USB_THERMAL_BASE+76)       //ï¿½ï¿½È¡ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMOMETRY_BASIC_PARAM_CAPABILITIES          (USB_THERMAL_BASE+77)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_COMMON_CAPABILITIES           (USB_THERMAL_BASE+78)       //ï¿½ï¿½È¡ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_LEN_CALIBRATION_CAPABILITIES            (USB_THERMAL_BASE+79)       //ï¿½ï¿½È¡ï¿½ï¿½Í·ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_ENHANCEMENT_V20               (USB_THERMAL_BASE+80)    //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½V20
+#define USB_SET_IMAGE_ENHANCEMENT_V20               (USB_THERMAL_BASE+81)     //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½V20
+#define USB_GET_THERMAL_STREAM_PARAM_CAPABILITIES   (USB_THERMAL_BASE+82)     //ï¿½ï¿½È¡ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_CODE_CAPABILITIES             (USB_THERMAL_BASE+83)     //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_INIT                         (USB_THERMAL_BASE+84)     //ï¿½ï¿½È¡ÏµÍ³ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_SYSTEM_INIT                         (USB_THERMAL_BASE+85)     //ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_CTRL_CAPABILITIES            (USB_THERMAL_BASE+86)     //ï¿½ï¿½È¡ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_DEVICE_INFO_CAPABILITIES     (USB_THERMAL_BASE+87)     //ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_HARDWARE_SERVER_CAPABILITIES           (USB_THERMAL_BASE+88)     //ï¿½ï¿½È¡Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_LOCALTIME_CAPABILITIES       (USB_THERMAL_BASE+89)     //ï¿½ï¿½È¡ÏµÍ³Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_BRIGHTNESS_CAPABILITIES       (USB_THERMAL_BASE+90)     //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_CONTRAST_CAPABILITIES         (USB_THERMAL_BASE+91)     //ï¿½ï¿½È¡Í¼ï¿½ï¿½Ô±È¶Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_VIDEO_ADJUST_CAPABILITIES     (USB_THERMAL_BASE+92)     //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_THERMOMETRY_MODE_CAPABILITIES         (USB_THERMAL_BASE+93)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_THERMOMETRY_REGIONS_CAPABILITIES      (USB_THERMAL_BASE+94)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_TEMPERATURE_CORRECT_CAPABILITIES      (USB_THERMAL_BASE+95)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_BLACK_BODY_CAPABILITIES               (USB_THERMAL_BASE+96)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_BODYTEMP_COMPENSATION_CAPABILITIES    (USB_THERMAL_BASE+97)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_ROI_MAX_TEMPERATURE_SEARCH_CAPABILITIES         (USB_THERMAL_BASE+98)       //ï¿½ï¿½È¡ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_THERMOMETRY_CALIBRATION_FILE_CAPABILITIES       (USB_THERMAL_BASE+99)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ëµ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_THERMOMETRY_EXPERT_REGIONS_CAPABILITIES         (USB_THERMAL_BASE+100)       //ï¿½ï¿½È¡×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_THERMOMETRY_EXPERT_CORRECTION_PARAM_CAPABILITIES    (USB_THERMAL_BASE+101)   //ï¿½ï¿½È¡×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_DEVICE_DESCRIPTION_INFO                (USB_THERMAL_BASE+102)       //ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+#define USB_GET_SYSTEM_SERIAL_DATA_TRANSMISSION               (USB_THERMAL_BASE+103)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_SYSTEM_SERIAL_DATA_TRANSMISSION               (USB_THERMAL_BASE+104)       //ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_PALETTE_DATA                            (USB_THERMAL_BASE+105)       //ï¿½ï¿½È¡Î±ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
+#define USB_GET_THERAML_THERMOMETRY_OFFLINE_DATA_EXPORT       (USB_THERMAL_BASE+106)       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_OUTPUT_CFG                              (USB_THERMAL_BASE+107)       //ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_OUTPUT_CFG                              (USB_THERMAL_BASE+108)       //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_DEVICE_DESCRIPTION_INFO_CAPABILITIES   (USB_THERMAL_BASE+109)       //ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_THERMAL_STREAM_CTRL                           (USB_THERMAL_BASE+110)       //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£×´Ì¬
+#define USB_SET_THERMAL_STREAM_CTRL                           (USB_THERMAL_BASE+111)       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£
 
-//Ç°¶ËÃüÁîÂë
+//Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define USB_CAMERA_BASE                 3000
-#define USB_GET_VIDEO_CAP           (USB_CAMERA_BASE+1)               // »ñÈ¡ÊÓÆµÄÜÁ¦¼¯
-#define USB_GET_AUDIO_CAP           (USB_CAMERA_BASE+2)               // »ñÈ¡ÒôÆµÄÜÁ¦¼¯
-#define USB_GET_VIDEO_PARAM         (USB_CAMERA_BASE+3)               // »ñÈ¡ÊÓÆµ²ÎÊý
-#define USB_SET_VIDEO_PARAM         (USB_CAMERA_BASE+4)               // ÉèÖÃÊÓÆµ²ÎÊý
-//#define USB_GET_AUDIO_PARAM         (USB_CAMERA_BASE+5)               // »ñÈ¡ÒôÆµ²ÎÊý
-#define USB_SET_AUDIO_PARAM         (USB_CAMERA_BASE+6)               // ÉèÖÃÒôÆµ²ÎÊý
-#define USB_SET_SRC_STREAM_TYPE     (USB_CAMERA_BASE+7)               // ÉèÖÃÔ­Ê¼ÂëÁ÷ÀàÐÍ
-#define USB_SET_EVENT_CALLBACK      (USB_CAMERA_BASE+9)               // ÉèÖÃÊÂ¼þ»Øµ÷²ÎÊý
-#define USB_SET_ROTATE_ANGLE        (USB_CAMERA_BASE+10)              // ÉèÖÃÔ¤ÀÀ»­ÃæÐý×ª½Ç¶È
-#define USB_GET_IRFRAME             (USB_CAMERA_BASE+11)              // »ñÈ¡IRÖ¡
-#define USB_INIT_LIVE_DETECT        (USB_CAMERA_BASE+12)              // ´´½¨»îÌåËã·¨×ÊÔ´
-#define USB_GET_LIVEDETECT          (USB_CAMERA_BASE+13)              // »îÌå¼ì²â
+#define USB_GET_VIDEO_CAP           (USB_CAMERA_BASE+1)               // ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_CAP           (USB_CAMERA_BASE+2)               // ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_PARAM         (USB_CAMERA_BASE+3)               // ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_PARAM         (USB_CAMERA_BASE+4)               // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+//#define USB_GET_AUDIO_PARAM         (USB_CAMERA_BASE+5)               // ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_PARAM         (USB_CAMERA_BASE+6)               // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_SRC_STREAM_TYPE     (USB_CAMERA_BASE+7)               // ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_EVENT_CALLBACK      (USB_CAMERA_BASE+9)               // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_ROTATE_ANGLE        (USB_CAMERA_BASE+10)              // ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶ï¿½
+#define USB_GET_IRFRAME             (USB_CAMERA_BASE+11)              // ï¿½ï¿½È¡IRÖ¡
+#define USB_INIT_LIVE_DETECT        (USB_CAMERA_BASE+12)              // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½Ô´
+#define USB_GET_LIVEDETECT          (USB_CAMERA_BASE+13)              // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-//±ê×¼UVCÐ­Òé
-#define USB_GET_VIDEO_PROPERTY_CAP			(USB_CAMERA_BASE+14)	// »ñÈ¡ÊÓÆµÊôÐÔÄÜÁ¦¼¯
-#define USB_GET_VIDEO_BRIGHTNESS			(USB_CAMERA_BASE+15)	// »ñÈ¡ÊÓÆµÁÁ¶È
-#define USB_SET_VIDEO_BRIGHTNESS			(USB_CAMERA_BASE+16)	// ÉèÖÃÊÓÆµÁÁ¶È
-#define USB_GET_VIDEO_CONTRAST				(USB_CAMERA_BASE+17)	// »ñÈ¡ÊÓÆµ¶Ô±È¶È
-#define USB_SET_VIDEO_CONTRAST				(USB_CAMERA_BASE+18)	// ÉèÖÃÊÓÆµ¶Ô±È¶È
-#define USB_GET_VIDEO_HUE					(USB_CAMERA_BASE+19)	// »ñÈ¡ÊÓÆµÉ«µ÷
-#define USB_SET_VIDEO_HUE					(USB_CAMERA_BASE+20)	// ÉèÖÃÊÓÆµÉ«µ÷
-#define USB_GET_VIDEO_SATURATION			(USB_CAMERA_BASE+21)	// »ñÈ¡ÊÓÆµ±¥ºÍ¶È
-#define USB_SET_VIDEO_SATURATION			(USB_CAMERA_BASE+22)	// ÉèÖÃÊÓÆµ±¥ºÍ¶È
-#define USB_GET_VIDEO_SHARPNESS				(USB_CAMERA_BASE+23)	// »ñÈ¡ÊÓÆµÇåÎú¶È
-#define USB_SET_VIDEO_SHARPNESS				(USB_CAMERA_BASE+24)	// ÉèÖÃÊÓÆµÇåÎú¶È
-#define USB_GET_VIDEO_GAMMA					(USB_CAMERA_BASE+25)	// »ñÈ¡ÊÓÆµÙ¤Âê
-#define USB_SET_VIDEO_GAMMA					(USB_CAMERA_BASE+26)	// ÉèÖÃÊÓÆµÙ¤Âê
-#define USB_GET_VIDEO_COLORENABLE			(USB_CAMERA_BASE+27)	// »ñÈ¡ÊÓÆµÆôÓÃÑÕÉ«
-#define USB_SET_VIDEO_COLORENABLE			(USB_CAMERA_BASE+28)	// ÉèÖÃÊÓÆµÆôÓÃÑÕÉ«
-#define USB_GET_VIDEO_WHITEBALANCE			(USB_CAMERA_BASE+29)	// »ñÈ¡ÊÓÆµ°×Æ½ºâ
-#define USB_SET_VIDEO_WHITEBALANCE			(USB_CAMERA_BASE+30)	// ÉèÖÃÊÓÆµ°×Æ½ºâ
-#define USB_GET_VIDEO_BACKLIGHTCOMPENSATION	(USB_CAMERA_BASE+31)	// »ñÈ¡ÊÓÆµÄæ¹â¶Ô±È
-#define USB_SET_VIDEO_BACKLIGHTCOMPENSATION	(USB_CAMERA_BASE+32)	// ÉèÖÃÊÓÆµÄæ¹â¶Ô±È
-#define USB_GET_VIDEO_GAIN					(USB_CAMERA_BASE+33)	// »ñÈ¡ÊÓÆµÔöÒæ
-#define USB_SET_VIDEO_GAIN					(USB_CAMERA_BASE+34)	// ÉèÖÃÊÓÆµÔöÒæ
-#define USB_GET_VIDEO_POWERLINEFREQUENCY	(USB_CAMERA_BASE+35)	// »ñÈ¡ÊÓÆµµçÁ¦ÏßÆµÂÊ
-#define USB_SET_VIDEO_POWERLINEFREQUENCY	(USB_CAMERA_BASE+36)	// ÉèÖÃÊÓÆµµçÁ¦ÏßÆµÂÊ
-#define USB_GET_VIDEO_PAN					(USB_CAMERA_BASE+37)	// »ñÈ¡ÊÓÆµÈ«¾°
-#define USB_SET_VIDEO_PAN					(USB_CAMERA_BASE+38)	// ÉèÖÃÊÓÆµÈ«¾°
-#define USB_GET_VIDEO_TILT					(USB_CAMERA_BASE+39)	// »ñÈ¡ÊÓÆµÇãÐ±
-#define USB_SET_VIDEO_TILT					(USB_CAMERA_BASE+40)	// ÉèÖÃÊÓÆµÇãÐ±
-#define USB_GET_VIDEO_ROLL					(USB_CAMERA_BASE+41)	// »ñÈ¡ÊÓÆµ¹ö¶¯
-#define USB_SET_VIDEO_ROLL					(USB_CAMERA_BASE+42)	// ÉèÖÃÊÓÆµ¹ö¶¯
-#define USB_GET_VIDEO_ZOOM					(USB_CAMERA_BASE+43)	// »ñÈ¡ÊÓÆµËõ·Å
-#define USB_SET_VIDEO_ZOOM					(USB_CAMERA_BASE+44)	// ÉèÖÃÊÓÆµËõ·Å
-#define USB_GET_VIDEO_EXPOSURE				(USB_CAMERA_BASE+45)	// »ñÈ¡ÊÓÆµÆØ¹â
-#define USB_SET_VIDEO_EXPOSURE				(USB_CAMERA_BASE+46)	// ÉèÖÃÊÓÆµÆØ¹â
-#define USB_GET_VIDEO_IRIS					(USB_CAMERA_BASE+47)	// »ñÈ¡ÊÓÆµ¹âÈ¦
-#define USB_SET_VIDEO_IRIS					(USB_CAMERA_BASE+48)	// ÉèÖÃÊÓÆµ¹âÈ¦
-#define USB_GET_VIDEO_FOCUS					(USB_CAMERA_BASE+49)	// »ñÈ¡ÊÓÆµ½¹µã
-#define USB_SET_VIDEO_FOCUS					(USB_CAMERA_BASE+50)	// ÉèÖÃÊÓÆµ½¹µã
-#define USB_GET_VIDEO_LOWBRIGHTNESSCOMPENSATION	(USB_CAMERA_BASE+51)// »ñÈ¡ÊÓÆµµÍÁÁ¶È²¹³¥
-#define USB_SET_VIDEO_LOWBRIGHTNESSCOMPENSATION	(USB_CAMERA_BASE+52)// ÉèÖÃÊÓÆµµÍÁÁ¶È²¹³¥
-#define USB_GET_VIDEO_VOLUME				(USB_CAMERA_BASE+53)	// »ñÈ¡Éè±¸ÒôÁ¿
-#define USB_SET_VIDEO_VOLUME				(USB_CAMERA_BASE+54)	// ÉèÖÃÉè±¸ÒôÁ¿
+//ï¿½ï¿½×¼UVCÐ­ï¿½ï¿½
+#define USB_GET_VIDEO_PROPERTY_CAP			(USB_CAMERA_BASE+14)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_BRIGHTNESS			(USB_CAMERA_BASE+15)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_BRIGHTNESS			(USB_CAMERA_BASE+16)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_CONTRAST				(USB_CAMERA_BASE+17)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½Ô±È¶ï¿½
+#define USB_SET_VIDEO_CONTRAST				(USB_CAMERA_BASE+18)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ô±È¶ï¿½
+#define USB_GET_VIDEO_HUE					(USB_CAMERA_BASE+19)	// ï¿½ï¿½È¡ï¿½ï¿½ÆµÉ«ï¿½ï¿½
+#define USB_SET_VIDEO_HUE					(USB_CAMERA_BASE+20)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµÉ«ï¿½ï¿½
+#define USB_GET_VIDEO_SATURATION			(USB_CAMERA_BASE+21)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¶ï¿½
+#define USB_SET_VIDEO_SATURATION			(USB_CAMERA_BASE+22)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¶ï¿½
+#define USB_GET_VIDEO_SHARPNESS				(USB_CAMERA_BASE+23)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_SHARPNESS				(USB_CAMERA_BASE+24)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_GAMMA					(USB_CAMERA_BASE+25)	// ï¿½ï¿½È¡ï¿½ï¿½ÆµÙ¤ï¿½ï¿½
+#define USB_SET_VIDEO_GAMMA					(USB_CAMERA_BASE+26)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµÙ¤ï¿½ï¿½
+#define USB_GET_VIDEO_COLORENABLE			(USB_CAMERA_BASE+27)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+#define USB_SET_VIDEO_COLORENABLE			(USB_CAMERA_BASE+28)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+#define USB_GET_VIDEO_WHITEBALANCE			(USB_CAMERA_BASE+29)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½Æ½ï¿½ï¿½
+#define USB_SET_VIDEO_WHITEBALANCE			(USB_CAMERA_BASE+30)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Æ½ï¿½ï¿½
+#define USB_GET_VIDEO_BACKLIGHTCOMPENSATION	(USB_CAMERA_BASE+31)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½Ô±ï¿½
+#define USB_SET_VIDEO_BACKLIGHTCOMPENSATION	(USB_CAMERA_BASE+32)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Ô±ï¿½
+#define USB_GET_VIDEO_GAIN					(USB_CAMERA_BASE+33)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_GAIN					(USB_CAMERA_BASE+34)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_POWERLINEFREQUENCY	(USB_CAMERA_BASE+35)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
+#define USB_SET_VIDEO_POWERLINEFREQUENCY	(USB_CAMERA_BASE+36)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
+#define USB_GET_VIDEO_PAN					(USB_CAMERA_BASE+37)	// ï¿½ï¿½È¡ï¿½ï¿½ÆµÈ«ï¿½ï¿½
+#define USB_SET_VIDEO_PAN					(USB_CAMERA_BASE+38)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµÈ«ï¿½ï¿½
+#define USB_GET_VIDEO_TILT					(USB_CAMERA_BASE+39)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½Ð±
+#define USB_SET_VIDEO_TILT					(USB_CAMERA_BASE+40)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ð±
+#define USB_GET_VIDEO_ROLL					(USB_CAMERA_BASE+41)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_ROLL					(USB_CAMERA_BASE+42)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_ZOOM					(USB_CAMERA_BASE+43)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_ZOOM					(USB_CAMERA_BASE+44)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_EXPOSURE				(USB_CAMERA_BASE+45)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½Ø¹ï¿½
+#define USB_SET_VIDEO_EXPOSURE				(USB_CAMERA_BASE+46)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ø¹ï¿½
+#define USB_GET_VIDEO_IRIS					(USB_CAMERA_BASE+47)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½È¦
+#define USB_SET_VIDEO_IRIS					(USB_CAMERA_BASE+48)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½È¦
+#define USB_GET_VIDEO_FOCUS					(USB_CAMERA_BASE+49)	// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_FOCUS					(USB_CAMERA_BASE+50)	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_LOWBRIGHTNESSCOMPENSATION	(USB_CAMERA_BASE+51)// ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_LOWBRIGHTNESSCOMPENSATION	(USB_CAMERA_BASE+52)// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½
+#define USB_GET_VIDEO_VOLUME				(USB_CAMERA_BASE+53)	// ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VIDEO_VOLUME				(USB_CAMERA_BASE+54)	// ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
 
-//Ë½ÓÐUVCÐ­Òé
-#define USB_SET_OSD                         (USB_CAMERA_BASE+100)   // ÉèÖÃOSD
-//¸´ÓÃ #define USB_SET_SYSTEM_RESET          (USB_THERMAL_BASE+13)   // »Ö¸´Ä¬ÈÏ
-#define USB_GET_PRIVATE_UVC_CABABILITIES    (USB_CAMERA_BASE+102)   // »ñÈ¡Ë½ÓÐÐ­ÒéUVCÄÜÁ¦¼¯
-#define USB_GET_PRIVATE_UAC_CABABILITIES    (USB_CAMERA_BASE+103)   // »ñÈ¡Ë½ÓÐÐ­ÒéUACÄÜÁ¦¼¯
-#define USB_GET_IMAGE_ENHANCEMENT_CAMERA    USB_GET_IMAGE_ENHANCEMENT_V20   // »ñÈ¡Í¼ÏñÔöÇ¿²ÎÊý
-#define USB_SET_IMAGE_ENHANCEMENT_CAMERA    USB_SET_IMAGE_ENHANCEMENT_V20   // ÉèÖÃÍ¼ÏñÔöÇ¿²ÎÊý
-#define USB_GET_IMAGE_VIDEO_ADJUST_CAMERA   USB_GET_IMAGE_VIDEO_ADJUST  // »ñÈ¡ÊÓÆµµ÷Õû²ÎÊý
-#define USB_SET_IMAGE_VIDEO_ADJUST_CAMERA   USB_SET_IMAGE_VIDEO_ADJUST  // ÉèÖÃÊÓÆµµ÷Õû²ÎÊý
-#define USB_GET_IMAGE_WDR_CAMERA            USB_GET_IMAGE_WDR        // »ñÈ¡Í¼ÏñWDR²ÎÊý
-#define USB_SET_IMAGE_WDR_CAMERA            USB_SET_IMAGE_WDR        // ÉèÖÃÍ¼ÏñWDR²ÎÊý
-#define USB_SET_IMAGE_VIDEO_OSD_CFG_CAMERA  USB_SET_IMAGE_VIDEO_OSD_CFG // ÉèÖÃOSD²ÎÊýÉèÖÃ
-#define USB_GET_IMAGE_MODE                  (USB_CAMERA_BASE+111)   // »ñÈ¡Í¼ÏñÄ£Ê½
-#define USB_SET_IMAGE_MODE                  (USB_CAMERA_BASE+112)   // ÉèÖÃÍ¼ÏñÄ£Ê½
-#define USB_GET_IMAGE_WHITE_BALANCE         (USB_CAMERA_BASE+113)   // »ñÈ¡°×Æ½ºâ²ÎÊý
-#define USB_SET_IMAGE_WHITE_BALANCE         (USB_CAMERA_BASE+114)   // ÉèÖÃ°×Æ½ºâ²ÎÊý
-#define USB_GET_IMAGE_GAMUT                 (USB_CAMERA_BASE+115)   // »ñÈ¡É«Óò²ÎÊý
-#define USB_SET_IMAGE_GAMUT                 (USB_CAMERA_BASE+116)   // ÉèÖÃÉ«Óò²ÎÊý
-#define USB_GET_IMAGE_SHUTTER               (USB_CAMERA_BASE+117)   // »ñÈ¡¿ìÃÅ²ÎÊý
-#define USB_SET_IMAGE_SHUTTER               (USB_CAMERA_BASE+118)   // ÉèÖÃ¿ìÃÅ²ÎÊý
-#define USB_GET_VCA_FACE_AE                 (USB_CAMERA_BASE+119)   // »ñÈ¡Face AE²ÎÊý
-#define USB_SET_VCA_FACE_AE                 (USB_CAMERA_BASE+120)   // ÉèÖÃFace AE²ÎÊý
-#define USB_GET_VCA_FACE_CENTERED           (USB_CAMERA_BASE+121)   // »ñÈ¡ÈËÁ³¾ÓÖÐ²ÎÊý
-#define USB_SET_VCA_FACE_CENTERED           (USB_CAMERA_BASE+122)   // ÉèÖÃÈËÁ³¾ÓÖÐ²ÎÊý
-#define USB_GET_VCA_SPOKESMAN_TRACK         (USB_CAMERA_BASE+123)   // »ñÈ¡·¢ÑÔÈË¸ú×Ù²ÎÊý
-#define USB_SET_VCA_SPOKESMAN_TRACK         (USB_CAMERA_BASE+124)   // ÉèÖÃ·¢ÑÔÈË¸ú×Ù²ÎÊý
-#define USB_GET_VCA_BEAUTY                  (USB_CAMERA_BASE+125)   // »ñÈ¡ÃÀÑÕ²ÎÊý
-#define USB_GET_AUDIO_PICK_UP               (USB_CAMERA_BASE+126)   // »ñÈ¡Ê°Òô
-#define USB_SET_AUDIO_PICK_UP               (USB_CAMERA_BASE+127)   // ÉèÖÃÊ°Òô
-#define USB_GET_IMAGE_FOCUS                 (USB_CAMERA_BASE+128)   // »ñÈ¡¾Û½¹ÁéÃô¶È
-#define USB_SET_IMAGE_FOCUS                 (USB_CAMERA_BASE+129)   // ÉèÖÃ¾Û½¹ÁéÃô¶È
-#define USB_GET_IMAGE_OVERHEAD_SHOT         (USB_CAMERA_BASE+130)   // »ñÈ¡Õý¸©ÅÄÄ£Ê½
-#define USB_SET_IMAGE_OVERHEAD_SHOT         (USB_CAMERA_BASE+131)   // ÉèÖÃÕý¸©ÅÄÄ£Ê½
-#define USB_CTRL_MENU                       (USB_CAMERA_BASE+132)   // ÊÓÆµ²Ëµ¥¿ØÖÆ
-#define USB_CTRL_IMAGE_PARAM_LOCK           (USB_CAMERA_BASE+133)   // Í¼Ïñ²ÎÊýËø¶¨
-#define USB_GET_IMAGE_DYNAMIC_RANGE         (USB_CAMERA_BASE+134)   // »ñÈ¡Í¼ÏñÉ«²Ê¿Õ¼ä
-#define USB_CTRL_PTZ_BASIC_CONTORL          (USB_CAMERA_BASE+135)   // ÔÆÌ¨»ù´¡¿ØÖÆ
-#define USB_CTRL_PTZ_AUTO_FOCUS             (USB_CAMERA_BASE+136)   // Ò»¼ü×Ô¶¯¾Û½¹
-#define USB_CTRL_PTZ_FOCUS_EXCHANGE         (USB_CAMERA_BASE+137)   // ¾Û½¹Ä£Ê½ÇÐ»»
+//Ë½ï¿½ï¿½UVCÐ­ï¿½ï¿½
+#define USB_SET_OSD                         (USB_CAMERA_BASE+100)   // ï¿½ï¿½ï¿½ï¿½OSD
+//ï¿½ï¿½ï¿½ï¿½ #define USB_SET_SYSTEM_RESET          (USB_THERMAL_BASE+13)   // ï¿½Ö¸ï¿½Ä¬ï¿½ï¿½
+#define USB_GET_PRIVATE_UVC_CABABILITIES    (USB_CAMERA_BASE+102)   // ï¿½ï¿½È¡Ë½ï¿½ï¿½Ð­ï¿½ï¿½UVCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_PRIVATE_UAC_CABABILITIES    (USB_CAMERA_BASE+103)   // ï¿½ï¿½È¡Ë½ï¿½ï¿½Ð­ï¿½ï¿½UACï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_ENHANCEMENT_CAMERA    USB_GET_IMAGE_ENHANCEMENT_V20   // ï¿½ï¿½È¡Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_ENHANCEMENT_CAMERA    USB_SET_IMAGE_ENHANCEMENT_V20   // ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_VIDEO_ADJUST_CAMERA   USB_GET_IMAGE_VIDEO_ADJUST  // ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_ADJUST_CAMERA   USB_SET_IMAGE_VIDEO_ADJUST  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_WDR_CAMERA            USB_GET_IMAGE_WDR        // ï¿½ï¿½È¡Í¼ï¿½ï¿½WDRï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_WDR_CAMERA            USB_SET_IMAGE_WDR        // ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½WDRï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_OSD_CFG_CAMERA  USB_SET_IMAGE_VIDEO_OSD_CFG // ï¿½ï¿½ï¿½ï¿½OSDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_MODE                  (USB_CAMERA_BASE+111)   // ï¿½ï¿½È¡Í¼ï¿½ï¿½Ä£Ê½
+#define USB_SET_IMAGE_MODE                  (USB_CAMERA_BASE+112)   // ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ä£Ê½
+#define USB_GET_IMAGE_WHITE_BALANCE         (USB_CAMERA_BASE+113)   // ï¿½ï¿½È¡ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_WHITE_BALANCE         (USB_CAMERA_BASE+114)   // ï¿½ï¿½ï¿½Ã°ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_GAMUT                 (USB_CAMERA_BASE+115)   // ï¿½ï¿½È¡É«ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_GAMUT                 (USB_CAMERA_BASE+116)   // ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_SHUTTER               (USB_CAMERA_BASE+117)   // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Å²ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_SHUTTER               (USB_CAMERA_BASE+118)   // ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Å²ï¿½ï¿½ï¿½
+#define USB_GET_VCA_FACE_AE                 (USB_CAMERA_BASE+119)   // ï¿½ï¿½È¡Face AEï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_AE                 (USB_CAMERA_BASE+120)   // ï¿½ï¿½ï¿½ï¿½Face AEï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VCA_FACE_CENTERED           (USB_CAMERA_BASE+121)   // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_CENTERED           (USB_CAMERA_BASE+122)   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+#define USB_GET_VCA_SPOKESMAN_TRACK         (USB_CAMERA_BASE+123)   // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½Ù²ï¿½ï¿½ï¿½
+#define USB_SET_VCA_SPOKESMAN_TRACK         (USB_CAMERA_BASE+124)   // ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½Ù²ï¿½ï¿½ï¿½
+#define USB_GET_VCA_BEAUTY                  (USB_CAMERA_BASE+125)   // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Õ²ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_PICK_UP               (USB_CAMERA_BASE+126)   // ï¿½ï¿½È¡Ê°ï¿½ï¿½
+#define USB_SET_AUDIO_PICK_UP               (USB_CAMERA_BASE+127)   // ï¿½ï¿½ï¿½ï¿½Ê°ï¿½ï¿½
+#define USB_GET_IMAGE_FOCUS                 (USB_CAMERA_BASE+128)   // ï¿½ï¿½È¡ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_FOCUS                 (USB_CAMERA_BASE+129)   // ï¿½ï¿½ï¿½Ã¾Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_OVERHEAD_SHOT         (USB_CAMERA_BASE+130)   // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+#define USB_SET_IMAGE_OVERHEAD_SHOT         (USB_CAMERA_BASE+131)   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+#define USB_CTRL_MENU                       (USB_CAMERA_BASE+132)   // ï¿½ï¿½Æµï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_CTRL_IMAGE_PARAM_LOCK           (USB_CAMERA_BASE+133)   // Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_DYNAMIC_RANGE         (USB_CAMERA_BASE+134)   // ï¿½ï¿½È¡Í¼ï¿½ï¿½É«ï¿½Ê¿Õ¼ï¿½
+#define USB_CTRL_PTZ_BASIC_CONTORL          (USB_CAMERA_BASE+135)   // ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_CTRL_PTZ_AUTO_FOCUS             (USB_CAMERA_BASE+136)   // Ò»ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Û½ï¿½
+#define USB_CTRL_PTZ_FOCUS_EXCHANGE         (USB_CAMERA_BASE+137)   // ï¿½Û½ï¿½Ä£Ê½ï¿½Ð»ï¿½
 
 #define USB_GET_TEST_VCM                     (USB_CAMERA_BASE+200)   // VCMÐ£×¼
 #define USB_SET_TEST_VCM                     (USB_CAMERA_BASE+201)   // VCMÐ£×¼
 #define USB_GET_TEST_DTOF_CALIBRATION        (USB_CAMERA_BASE+202)   // DTOFÐ£×¼
 #define USB_SET_TEST_DTOF_CALIBRATION        (USB_CAMERA_BASE+203)   // DTOFÐ£×¼
-#define USB_GET_TEST_DTOF_CHECK              (USB_CAMERA_BASE+204)   // DTOF¼ì²â
-#define USB_SET_TEST_DTOF_CHECK              (USB_CAMERA_BASE+205)   // DTOF¼ì²â
-#define USB_GET_TEST_PWM                     (USB_CAMERA_BASE+206)   // »ñÈ¡PWMÕ¼¿Õ±È
-#define USB_GET_TEST_ITOF_DISTANCE           (USB_CAMERA_BASE+207)   // ITOF¾àÀë¼ì²â
-#define USB_SET_TEST_ITOF_DISTANCE           (USB_CAMERA_BASE+208)   // ITOF¾àÀë¼ì²â
-#define USB_GET_TEST_ITOF_FACTORY            (USB_CAMERA_BASE+209)   // ITOF³ö³§¼ì²â
-#define USB_SET_TEST_ITOF_FACTORY            (USB_CAMERA_BASE+210)   // ITOF³ö³§¼ì²â
-#define USB_GET_TEST_ITOF_FRAME              (USB_CAMERA_BASE+211)   // ITOFµ¥Ö¡¼ì²â
-#define USB_SET_TEST_ITOF_FRAME              (USB_CAMERA_BASE+212)   // ITOFµ¥Ö¡¼ì²â
-#define USB_GET_TEST_ITOF_FACTORY2           (USB_CAMERA_BASE+213)   // ITOF³ö³§¼ì²â2
-#define USB_SET_TEST_ITOF_FACTORY2           (USB_CAMERA_BASE+214)   // ITOF³ö³§¼ì²â2
-#define USB_GET_TEST_ITOF_CALIBRATION        (USB_CAMERA_BASE+215)   // ITOF±ê¶¨
-#define USB_SET_TEST_ITOF_CALIBRATION        (USB_CAMERA_BASE+216)   // ITOF±ê¶¨
-#define USB_GET_TEST_SCENE_CURVE_CHECK       (USB_CAMERA_BASE+217)   // ¾µÍ·ÇúÏß¼ì²â
-#define USB_SET_TEST_SCENE_CURVE_CHECK       (USB_CAMERA_BASE+218)   // ¾µÍ·ÇúÏß¼ì²â
-#define USB_GET_TEST_SCENE_AGE_CHECK         (USB_CAMERA_BASE+219)   // ¾µÍ·ÀÏ»¯¼ì²â
-#define USB_SET_TEST_SCENE_AGE_CHECK         (USB_CAMERA_BASE+220)   // ¾µÍ·ÀÏ»¯¼ì²â
-#define USB_SET_TEST_LAMP_CHECK             (USB_CAMERA_BASE+221)   // Ö¸Ê¾µÆ¼ì²â
-#define USB_GET_TEST_BATTERY_CHECK           (USB_CAMERA_BASE+222)   // µç³Ø¼ì²â
-#define USB_SET_TEST_BATTERY_CHECK           (USB_CAMERA_BASE+223)   // µç³Ø¼ì²â
-#define USB_GET_TEST_KNOB_CALIBRATION        (USB_CAMERA_BASE+224)   // ÐýÅ¥±ê¶¨
-#define USB_SET_TEST_KNOB_CALIBRATION        (USB_CAMERA_BASE+225)   // ÐýÅ¥±ê¶¨
-#define USB_SET_TEST_PARAM_RESET             (USB_CAMERA_BASE+226)   // ²ÎÊýÅäÖÃ±í»Ö¸´Ä¬ÈÏ
-#define USB_SET_TEST_HIDE_ENDPOINTS          (USB_CAMERA_BASE+227)   // Òþ²Ø¶Ëµã
-#define USB_GET_TEST_HALL                    (USB_CAMERA_BASE+228)   // »ô¶û×´Ì¬»ñÈ¡
-#define USB_GET_TEST_DEVICE_LOCATION         (USB_CAMERA_BASE+229)   // »ñÈ¡Éè±¸ÎïÀíÎ»ÖÃ
-#define USB_GET_TEST_TOUCH_BUTTON            (USB_CAMERA_BASE+230)   // ´¥Ãþ°´¼ü¼ì²â
-#define USB_SET_TEST_TOUCH_BUTTON            (USB_CAMERA_BASE+231)   // ´¥Ãþ°´¼ü¼ì²â
-#define USB_GET_TEST_FRAME                   (USB_CAMERA_BASE+232)   // ·ùÃæ±ê¶¨
-#define USB_SET_TEST_FRAME                   (USB_CAMERA_BASE+233)   // ·ùÃæ±ê¶¨
+#define USB_GET_TEST_DTOF_CHECK              (USB_CAMERA_BASE+204)   // DTOFï¿½ï¿½ï¿½
+#define USB_SET_TEST_DTOF_CHECK              (USB_CAMERA_BASE+205)   // DTOFï¿½ï¿½ï¿½
+#define USB_GET_TEST_PWM                     (USB_CAMERA_BASE+206)   // ï¿½ï¿½È¡PWMÕ¼ï¿½Õ±ï¿½
+#define USB_GET_TEST_ITOF_DISTANCE           (USB_CAMERA_BASE+207)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEST_ITOF_DISTANCE           (USB_CAMERA_BASE+208)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_TEST_ITOF_FACTORY            (USB_CAMERA_BASE+209)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEST_ITOF_FACTORY            (USB_CAMERA_BASE+210)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_TEST_ITOF_FRAME              (USB_CAMERA_BASE+211)   // ITOFï¿½ï¿½Ö¡ï¿½ï¿½ï¿½
+#define USB_SET_TEST_ITOF_FRAME              (USB_CAMERA_BASE+212)   // ITOFï¿½ï¿½Ö¡ï¿½ï¿½ï¿½
+#define USB_GET_TEST_ITOF_FACTORY2           (USB_CAMERA_BASE+213)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+#define USB_SET_TEST_ITOF_FACTORY2           (USB_CAMERA_BASE+214)   // ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+#define USB_GET_TEST_ITOF_CALIBRATION        (USB_CAMERA_BASE+215)   // ITOFï¿½ê¶¨
+#define USB_SET_TEST_ITOF_CALIBRATION        (USB_CAMERA_BASE+216)   // ITOFï¿½ê¶¨
+#define USB_GET_TEST_SCENE_CURVE_CHECK       (USB_CAMERA_BASE+217)   // ï¿½ï¿½Í·ï¿½ï¿½ï¿½ß¼ï¿½ï¿½
+#define USB_SET_TEST_SCENE_CURVE_CHECK       (USB_CAMERA_BASE+218)   // ï¿½ï¿½Í·ï¿½ï¿½ï¿½ß¼ï¿½ï¿½
+#define USB_GET_TEST_SCENE_AGE_CHECK         (USB_CAMERA_BASE+219)   // ï¿½ï¿½Í·ï¿½Ï»ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEST_SCENE_AGE_CHECK         (USB_CAMERA_BASE+220)   // ï¿½ï¿½Í·ï¿½Ï»ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEST_LAMP_CHECK             (USB_CAMERA_BASE+221)   // Ö¸Ê¾ï¿½Æ¼ï¿½ï¿½
+#define USB_GET_TEST_BATTERY_CHECK           (USB_CAMERA_BASE+222)   // ï¿½ï¿½Ø¼ï¿½ï¿½
+#define USB_SET_TEST_BATTERY_CHECK           (USB_CAMERA_BASE+223)   // ï¿½ï¿½Ø¼ï¿½ï¿½
+#define USB_GET_TEST_KNOB_CALIBRATION        (USB_CAMERA_BASE+224)   // ï¿½ï¿½Å¥ï¿½ê¶¨
+#define USB_SET_TEST_KNOB_CALIBRATION        (USB_CAMERA_BASE+225)   // ï¿½ï¿½Å¥ï¿½ê¶¨
+#define USB_SET_TEST_PARAM_RESET             (USB_CAMERA_BASE+226)   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½Ö¸ï¿½Ä¬ï¿½ï¿½
+#define USB_SET_TEST_HIDE_ENDPOINTS          (USB_CAMERA_BASE+227)   // ï¿½ï¿½ï¿½Ø¶Ëµï¿½
+#define USB_GET_TEST_HALL                    (USB_CAMERA_BASE+228)   // ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½È¡
+#define USB_GET_TEST_DEVICE_LOCATION         (USB_CAMERA_BASE+229)   // ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+#define USB_GET_TEST_TOUCH_BUTTON            (USB_CAMERA_BASE+230)   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_TEST_TOUCH_BUTTON            (USB_CAMERA_BASE+231)   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_TEST_FRAME                   (USB_CAMERA_BASE+232)   // ï¿½ï¿½ï¿½ï¿½ê¶¨
+#define USB_SET_TEST_FRAME                   (USB_CAMERA_BASE+233)   // ï¿½ï¿½ï¿½ï¿½ê¶¨
 
 
-//´«ÏÔÃüÁîÂë
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define USB_TRANSMISSION_BASE               4000
-#define USB_SET_SYSTEM_ENCRYPT_DATA         (USB_TRANSMISSION_BASE+1)   //Éè±¸¼ÓÃÜ
-#define USB_GET_SYSTEM_ENCRYPT_STATUS       (USB_TRANSMISSION_BASE+2)   //Éè±¸¼ÓÃÜ×´Ì¬»ñÈ¡
-#define USB_GET_SYSTEM_INDICATORLIGHT       (USB_TRANSMISSION_BASE+3)   //»ñÈ¡Ö¸Ê¾µÆ×´Ì¬
-#define USB_SET_SYSTEM_INDICATORLIGHT       (USB_TRANSMISSION_BASE+4)   //ÉèÖÃÖ¸Ê¾µÆ×´Ì¬
-#define USB_GET_SYSTEM_LOG_DATA             (USB_TRANSMISSION_BASE+5)   //ÈÕÖ¾ÎÄ¼þµ¼³ö
-#define USB_GET_SYSTEM_DEVICE_STATUS_DATA   (USB_TRANSMISSION_BASE+6)   //Éè±¸×´Ì¬ÎÄ¼þµ¼³ö
-#define USB_SET_IMAGE_WDR                   (USB_TRANSMISSION_BASE+7)   //ÉèÖÃÍ¼ÏñWDR
-#define USB_SET_IMAGE_VIDEO_LOGO_SWITCH     (USB_TRANSMISSION_BASE+8)   //ÉèÖÃLOGO¿ª¹Ø
-#define USB_SET_IMAGE_VIDEO_LOGO_CFG        (USB_TRANSMISSION_BASE+9)   //ÉèÖÃLOGO²ÎÊý
-#define USB_SET_IMAGE_VIDEO_OSD_SWITCH      (USB_TRANSMISSION_BASE+10)   //ÉèÖÃOSD¿ª¹Ø
-#define USB_SET_IMAGE_VIDEO_OSD_CFG         (USB_TRANSMISSION_BASE+11)   //ÉèÖÃOSD²ÎÊýÉèÖÃ
-#define USB_SET_IMAGE_VIDEO_MULTIPLE_STREAM (USB_TRANSMISSION_BASE+12)   //ÉèÖÃ¶àÂ·¸´ºÏÈ¡Á÷
-#define USB_SET_IMAGE_VIDEO_MULTIPLE_IFRAME (USB_TRANSMISSION_BASE+13)   //ÉèÖÃ¶àÂ·¸´ºÏÇ¿ÖÆIÖ¡
-#define USB_GET_AUDIO_IN_STATUS             (USB_TRANSMISSION_BASE+14)   //»ñÈ¡ÒôÆµÊäÈë×´Ì¬
-#define USB_GET_AUDIO_OUT_STATUS            (USB_TRANSMISSION_BASE+15)   //»ñÈ¡ÒôÆµÊä³ö×´Ì¬
-#define USB_GET_AUDIO_IN_VL                 (USB_TRANSMISSION_BASE+16)   //»ñÈ¡ÒôÆµÊäÈëÒôÁ¿
-#define USB_GET_AUDIO_OUT_VL                (USB_TRANSMISSION_BASE+17)   //»ñÈ¡ÒôÆµÊä³öÒôÁ¿
-#define USB_SET_AUDIO_AMER                  (USB_TRANSMISSION_BASE+18)   //ÉèÖÃÒôÆµÊäÈëÑ¡Ôñ
-#define USB_SET_AUDIO_AO_VA                 (USB_TRANSMISSION_BASE+19)   //ÉèÖÃÒôÆµÊä³öÒôÁ¿
-#define USB_SET_AUDIO_AECSP                 (USB_TRANSMISSION_BASE+20)   //ÉèÖÃÒôÆµAECÑÓÊ±
-#define USB_GET_AUDIO_DEVICE_DELAY          (USB_TRANSMISSION_BASE+21)   //»ñÈ¡ÒôÆµÑÓÊ±×Ô¶¯ÓÅ»¯
-#define USB_SET_AUDIO_DEVICE_DELAY          (USB_TRANSMISSION_BASE+22)   //ÉèÖÃÒôÆµÑÓÊ±×Ô¶¯ÓÅ»¯
-#define USB_SET_AUDIO_BT                    (USB_TRANSMISSION_BASE+23)   //ÉèÖÃÀ¶ÑÀÉ¨Ãè×´Ì¬
-#define USB_GET_AUDIO_BT_MAC                (USB_TRANSMISSION_BASE+24)   //»ñÈ¡À¶ÑÀMACµØÖ·
-#define USB_GET_AUDIO_BT_STATUS             (USB_TRANSMISSION_BASE+25)   //»ñÈ¡À¶ÑÀÁ¬½Ó×´Ì¬
-#define USB_GET_AUDIO_DETECT                (USB_TRANSMISSION_BASE+26)   //»ñÈ¡ÒôÆµÊäÈëÊä³ö×Ô¼ì
-#define USB_SET_AUDIO_DETECT                (USB_TRANSMISSION_BASE+27)   //ÉèÖÃÒôÆµÊäÈëÊä³ö×Ô¼ì
-#define USB_GET_AUDIO_EFFICT_DETECT         (USB_TRANSMISSION_BASE+28)   //»ñÈ¡ÒôÐ§×Ô¼ì
-#define USB_SET_AUDIO_EFFICT_DETECT         (USB_TRANSMISSION_BASE+29)   //ÉèÖÃÒôÐ§×Ô¼ì
-#define USB_GET_AUDIO_FAC_TEST              (USB_TRANSMISSION_BASE+30)   //»ñÈ¡ÒôÆµÉú²ú²âÊÔ
-#define USB_SET_AUDIO_FAC_TEST              (USB_TRANSMISSION_BASE+31)   //ÉèÖÃÒôÆµÉú²ú²âÊÔ
-#define USB_SET_AUDIO_AGC_CONFIG            (USB_TRANSMISSION_BASE+32)   //ÉèÖÃÒôÆµAGCÅäÖÃ
-#define USB_SET_AUDIO_REDUCE_NOISE          (USB_TRANSMISSION_BASE+33)   //ÉèÖÃÒôÆµ½µÔë
-#define USB_GET_AUDIO_RECOG_RSLT            (USB_TRANSMISSION_BASE+34)   //»ñÈ¡ÓïÒôÊ¶±ð½á¹ûÉÏ´«
-#define USB_SET_AUDIO_RECOG_RSLT            (USB_TRANSMISSION_BASE+35)   //ÉèÖÃÓïÒôÊ¶±ð½á¹ûÉÏ´«
-#define USB_GET_AUDIO_DUMP_DATA             (USB_TRANSMISSION_BASE+36)   //ÒôÆµÊý¾Ýµ¼³ö
-#define USB_SET_PTZ_TRACK_MODE              (USB_TRANSMISSION_BASE+37)   //ÉèÖÃ¸úËæÄ£Ê½
-#define USB_SET_PTZ_PRESET_CFG              (USB_TRANSMISSION_BASE+38)   //Ô¤ÖÃµãÉèÖÃ£¬½öÊÖ¶¯Ä£Ê½Ö§³ÖÅäÖÃ
-#define USB_SET_PTZ_PRESET_CALL             (USB_TRANSMISSION_BASE+39)   //Ô¤ÖÃµãµ÷ÓÃ£¬½öÊÖ¶¯Ä£Ê½Ö§³ÖÅäÖÃ
-#define USB_SET_PTZ_PRESET_DELETE           (USB_TRANSMISSION_BASE+40)  //Ô¤ÖÃµãÉ¾³ý£¬½öÊÖ¶¯Ä£Ê½Ö§³ÖÅäÖÃ
-#define USB_SET_PTZ_AUTO_TRACK_SENSITIVITY  (USB_TRANSMISSION_BASE+41)  //ÉèÖÃ×Ô¶¯¸úËæÁéÃô¶È£¬½ö×Ô¶¯¸úËæÄ£Ê½Ö§³Ö
-#define USB_GET_PRIVACY                     (USB_TRANSMISSION_BASE+42)  //»ñÈ¡ÒþË½ÕÖ
-#define USB_SET_PRIVACY                     (USB_TRANSMISSION_BASE+43)  //ÉèÖÃÒþË½ÕÖ
-#define USB_SET_AUDIO_ECHO                  (USB_TRANSMISSION_BASE+44)  //ECHOÕï¶Ï
-//#define USB_SET_SYSTEM_DEVICE_SIGNAL_TRANS  (USB_TRANSMISSION_BASE+45)  //Ö÷¿ØÐÅÁîÉèÖÃ
-#define USB_SET_AUDIO_SIGNAL_TRANS          (USB_TRANSMISSION_BASE+46)  //ÒôÆµ¿ØÖÆÐÅÁîÉèÖÃ
-#define USB_GET_AUDIO_INPUT_OUTPUT_CHANNELINFO (USB_TRANSMISSION_BASE+47)//ÒôÆµÊäÈëÊä³öÍ¨µÀÐÅÏ¢»ñÈ¡
-#define USB_GET_AUDIO_PROCESS_LINE_CFG      (USB_TRANSMISSION_BASE+48)  //»ñÈ¡ÒôÆµ²úÏß²âÊÔÅäÖÃ
-#define USB_SET_AUDIO_PROCESS_LINE_CFG      (USB_TRANSMISSION_BASE+49)  //ÉèÖÃÒôÆµ²úÏß²âÊÔÅäÖÃ
-#define USB_GET_AUDIO_POE_LINK_STATUS       (USB_TRANSMISSION_BASE+50)  //»ñÈ¡ÒôÆµPOE¹©µçÍø¿Ú¼ì²â×´Ì¬
-#define USB_GET_SYSTEM_DEVICE_CAPABILITIES  (USB_TRANSMISSION_BASE+51)  //»ñÈ¡Éè±¸SVCÄÜÁ¦
-#define USB_GET_IMAGE_VIDEO_SVC_MULTIPLE_STREAM (USB_TRANSMISSION_BASE+52) //»ñÈ¡SVC¶àÂëÁ÷ÐÅÏ¢
-#define USB_GET_IMAGE_WDR                   (USB_TRANSMISSION_BASE+53)   //»ñÈ¡Í¼ÏñWDR
+#define USB_SET_SYSTEM_ENCRYPT_DATA         (USB_TRANSMISSION_BASE+1)   //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_ENCRYPT_STATUS       (USB_TRANSMISSION_BASE+2)   //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½È¡
+#define USB_GET_SYSTEM_INDICATORLIGHT       (USB_TRANSMISSION_BASE+3)   //ï¿½ï¿½È¡Ö¸Ê¾ï¿½ï¿½×´Ì¬
+#define USB_SET_SYSTEM_INDICATORLIGHT       (USB_TRANSMISSION_BASE+4)   //ï¿½ï¿½ï¿½ï¿½Ö¸Ê¾ï¿½ï¿½×´Ì¬
+#define USB_GET_SYSTEM_LOG_DATA             (USB_TRANSMISSION_BASE+5)   //ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_SYSTEM_DEVICE_STATUS_DATA   (USB_TRANSMISSION_BASE+6)   //ï¿½è±¸×´Ì¬ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_WDR                   (USB_TRANSMISSION_BASE+7)   //ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½WDR
+#define USB_SET_IMAGE_VIDEO_LOGO_SWITCH     (USB_TRANSMISSION_BASE+8)   //ï¿½ï¿½ï¿½ï¿½LOGOï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_LOGO_CFG        (USB_TRANSMISSION_BASE+9)   //ï¿½ï¿½ï¿½ï¿½LOGOï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_OSD_SWITCH      (USB_TRANSMISSION_BASE+10)   //ï¿½ï¿½ï¿½ï¿½OSDï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_OSD_CFG         (USB_TRANSMISSION_BASE+11)   //ï¿½ï¿½ï¿½ï¿½OSDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_MULTIPLE_STREAM (USB_TRANSMISSION_BASE+12)   //ï¿½ï¿½ï¿½Ã¶ï¿½Â·ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
+#define USB_SET_IMAGE_VIDEO_MULTIPLE_IFRAME (USB_TRANSMISSION_BASE+13)   //ï¿½ï¿½ï¿½Ã¶ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½IÖ¡
+#define USB_GET_AUDIO_IN_STATUS             (USB_TRANSMISSION_BASE+14)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½×´Ì¬
+#define USB_GET_AUDIO_OUT_STATUS            (USB_TRANSMISSION_BASE+15)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½×´Ì¬
+#define USB_GET_AUDIO_IN_VL                 (USB_TRANSMISSION_BASE+16)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_OUT_VL                (USB_TRANSMISSION_BASE+17)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_AMER                  (USB_TRANSMISSION_BASE+18)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+#define USB_SET_AUDIO_AO_VA                 (USB_TRANSMISSION_BASE+19)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_AECSP                 (USB_TRANSMISSION_BASE+20)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµAECï¿½ï¿½Ê±
+#define USB_GET_AUDIO_DEVICE_DELAY          (USB_TRANSMISSION_BASE+21)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½Ê±ï¿½Ô¶ï¿½ï¿½Å»ï¿½
+#define USB_SET_AUDIO_DEVICE_DELAY          (USB_TRANSMISSION_BASE+22)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ê±ï¿½Ô¶ï¿½ï¿½Å»ï¿½
+#define USB_SET_AUDIO_BT                    (USB_TRANSMISSION_BASE+23)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½×´Ì¬
+#define USB_GET_AUDIO_BT_MAC                (USB_TRANSMISSION_BASE+24)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½MACï¿½ï¿½Ö·
+#define USB_GET_AUDIO_BT_STATUS             (USB_TRANSMISSION_BASE+25)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+#define USB_GET_AUDIO_DETECT                (USB_TRANSMISSION_BASE+26)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
+#define USB_SET_AUDIO_DETECT                (USB_TRANSMISSION_BASE+27)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
+#define USB_GET_AUDIO_EFFICT_DETECT         (USB_TRANSMISSION_BASE+28)   //ï¿½ï¿½È¡ï¿½ï¿½Ð§ï¿½Ô¼ï¿½
+#define USB_SET_AUDIO_EFFICT_DETECT         (USB_TRANSMISSION_BASE+29)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½Ô¼ï¿½
+#define USB_GET_AUDIO_FAC_TEST              (USB_TRANSMISSION_BASE+30)   //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_FAC_TEST              (USB_TRANSMISSION_BASE+31)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_AGC_CONFIG            (USB_TRANSMISSION_BASE+32)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµAGCï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_REDUCE_NOISE          (USB_TRANSMISSION_BASE+33)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_RECOG_RSLT            (USB_TRANSMISSION_BASE+34)   //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½
+#define USB_SET_AUDIO_RECOG_RSLT            (USB_TRANSMISSION_BASE+35)   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½
+#define USB_GET_AUDIO_DUMP_DATA             (USB_TRANSMISSION_BASE+36)   //ï¿½ï¿½Æµï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½
+#define USB_SET_PTZ_TRACK_MODE              (USB_TRANSMISSION_BASE+37)   //ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½Ä£Ê½
+#define USB_SET_PTZ_PRESET_CFG              (USB_TRANSMISSION_BASE+38)   //Ô¤ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_PTZ_PRESET_CALL             (USB_TRANSMISSION_BASE+39)   //Ô¤ï¿½Ãµï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_PTZ_PRESET_DELETE           (USB_TRANSMISSION_BASE+40)  //Ô¤ï¿½Ãµï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_PTZ_AUTO_TRACK_SENSITIVITY  (USB_TRANSMISSION_BASE+41)  //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ö§ï¿½ï¿½
+#define USB_GET_PRIVACY                     (USB_TRANSMISSION_BASE+42)  //ï¿½ï¿½È¡ï¿½ï¿½Ë½ï¿½ï¿½
+#define USB_SET_PRIVACY                     (USB_TRANSMISSION_BASE+43)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½
+#define USB_SET_AUDIO_ECHO                  (USB_TRANSMISSION_BASE+44)  //ECHOï¿½ï¿½ï¿½
+//#define USB_SET_SYSTEM_DEVICE_SIGNAL_TRANS  (USB_TRANSMISSION_BASE+45)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_SIGNAL_TRANS          (USB_TRANSMISSION_BASE+46)  //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_INPUT_OUTPUT_CHANNELINFO (USB_TRANSMISSION_BASE+47)//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½È¡
+#define USB_GET_AUDIO_PROCESS_LINE_CFG      (USB_TRANSMISSION_BASE+48)  //ï¿½ï¿½È¡ï¿½ï¿½Æµï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_AUDIO_PROCESS_LINE_CFG      (USB_TRANSMISSION_BASE+49)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_AUDIO_POE_LINK_STATUS       (USB_TRANSMISSION_BASE+50)  //ï¿½ï¿½È¡ï¿½ï¿½ÆµPOEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½×´Ì¬
+#define USB_GET_SYSTEM_DEVICE_CAPABILITIES  (USB_TRANSMISSION_BASE+51)  //ï¿½ï¿½È¡ï¿½è±¸SVCï¿½ï¿½ï¿½ï¿½
+#define USB_GET_IMAGE_VIDEO_SVC_MULTIPLE_STREAM (USB_TRANSMISSION_BASE+52) //ï¿½ï¿½È¡SVCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+#define USB_GET_IMAGE_WDR                   (USB_TRANSMISSION_BASE+53)   //ï¿½ï¿½È¡Í¼ï¿½ï¿½WDR
 
-#define USB_GET_VCA_SWITCH                  (USB_TRANSMISSION_BASE+101)  //»ñÈ¡ÖÇÄÜ¹¦ÄÜ¿ª¹Ø
-#define USB_SET_VCA_SWITCH                  (USB_TRANSMISSION_BASE+102)  //ÉèÖÃÖÇÄÜ¹¦ÄÜ¿ª¹Ø
-#define USB_GET_VCA_SNAPSHOT                (USB_TRANSMISSION_BASE+103)  //»ñÈ¡ÖÇÄÜ×¥Í¼£¨Í¼Æ¬Í¨¹ý´óÎÄ¼þ´«Êä£©
-#define USB_GET_VCA_FACE_THRESHOLD          (USB_TRANSMISSION_BASE+104)  //»ñÈ¡ÖÇÄÜÄ¿±êÊ¶±ðµÄÏàËÆ¶ÈãÐÖµ
-#define USB_SET_VCA_FACE_THRESHOLD          (USB_TRANSMISSION_BASE+105)  //ÉèÖÃÖÇÄÜÄ¿±êÊ¶±ðµÄÏàËÆ¶ÈãÐÖµ
-#define USB_GET_VCA_FACE_ATTRIBUTES         (USB_TRANSMISSION_BASE+106)  //»ñÈ¡ÖÇÄÜÄ¿±êÊ¶±ðµÄÊôÐÔ
-#define USB_SET_VCA_FACE_ATTRIBUTES         (USB_TRANSMISSION_BASE+107)  //ÉèÖÃÖÇÄÜÄ¿±êÊ¶±ðµÄÊôÐÔ
-#define USB_GET_VCA_FACE_DETECT_RULE        (USB_TRANSMISSION_BASE+108)  //»ñÈ¡ÖÇÄÜÈËÁ³¼ì²âµÄ¹æÔò
-#define USB_SET_VCA_FACE_DETECT_RULE        (USB_TRANSMISSION_BASE+109)  //ÉèÖÃÖÇÄÜÈËÁ³¼ì²âµÄ¹æÔò
-#define USB_GET_VCA_FACE_QUALITY            (USB_TRANSMISSION_BASE+110)  //»ñÈ¡ÖÇÄÜÈËÁ³¼ì²âÖÊÁ¿ÆÀ¹À
-#define USB_SET_VCA_FACE_QUALITY            (USB_TRANSMISSION_BASE+111)  //ÉèÖÃÖÇÄÜÈËÁ³¼ì²âÖÊÁ¿ÆÀ¹À
-#define USB_SET_VCA_PIC_DOWNLOAD            (USB_TRANSMISSION_BASE+112)  //Í¼Æ¬ÏÂÔØ½¨Ä££¨Í¼Æ¬Í¨¹ý´óÎÄ¼þ´«Êä£©
-#define USB_GET_VCA_FACE_BASE_DATA_CFG      (USB_TRANSMISSION_BASE+113)  //»ñÈ¡ÈËÁ³µ×¿âÅäÖÃ
-#define USB_SET_VCA_FACE_BASE_DATA_CFG      (USB_TRANSMISSION_BASE+114)  //ÉèÖÃÈËÁ³µ×¿âÅäÖÃ
-#define USB_GET_VCA_ELECTRONICSIGNAGE_CFG   (USB_TRANSMISSION_BASE+115)  //»ñÈ¡µç×ÓÃúÅÆÅäÖÃ
-#define USB_SET_VCA_ELECTRONICSIGNAGE_CFG   (USB_TRANSMISSION_BASE+116)  //ÉèÖÃµç×ÓÃúÅÆÅäÖÃ
-#define USB_GET_VCA_FACE_DETECT             (USB_TRANSMISSION_BASE+117)  //»ñÈ¡ÖÇÄÜÈËÁ³¼ì²âÐÅÏ¢
-#define USB_SET_VCA_FACE_DETECT             (USB_TRANSMISSION_BASE+118)  //ÉèÖÃÖÇÄÜÈËÁ³¼ì²âÐÅÏ¢
-#define USB_GET_VCA_FACE_CONTRAST           (USB_TRANSMISSION_BASE+119)  //»ñÈ¡ÖÇÄÜÈËÁ³±È¶ÔÐÅÏ¢
-#define USB_SET_VCA_FACE_CONTRAST           (USB_TRANSMISSION_BASE+120)  //ÉèÖÃÖÇÄÜÈËÁ³±È¶ÔÐÅÏ¢
+#define USB_GET_VCA_SWITCH                  (USB_TRANSMISSION_BASE+101)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½
+#define USB_SET_VCA_SWITCH                  (USB_TRANSMISSION_BASE+102)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½
+#define USB_GET_VCA_SNAPSHOT                (USB_TRANSMISSION_BASE+103)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×¥Í¼ï¿½ï¿½Í¼Æ¬Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ä£©
+#define USB_GET_VCA_FACE_THRESHOLD          (USB_TRANSMISSION_BASE+104)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Öµ
+#define USB_SET_VCA_FACE_THRESHOLD          (USB_TRANSMISSION_BASE+105)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Öµ
+#define USB_GET_VCA_FACE_ATTRIBUTES         (USB_TRANSMISSION_BASE+106)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_ATTRIBUTES         (USB_TRANSMISSION_BASE+107)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VCA_FACE_DETECT_RULE        (USB_TRANSMISSION_BASE+108)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_DETECT_RULE        (USB_TRANSMISSION_BASE+109)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½
+#define USB_GET_VCA_FACE_QUALITY            (USB_TRANSMISSION_BASE+110)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_QUALITY            (USB_TRANSMISSION_BASE+111)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_PIC_DOWNLOAD            (USB_TRANSMISSION_BASE+112)  //Í¼Æ¬ï¿½ï¿½ï¿½Ø½ï¿½Ä£ï¿½ï¿½Í¼Æ¬Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ä£©
+#define USB_GET_VCA_FACE_BASE_DATA_CFG      (USB_TRANSMISSION_BASE+113)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½×¿ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_FACE_BASE_DATA_CFG      (USB_TRANSMISSION_BASE+114)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¿ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VCA_ELECTRONICSIGNAGE_CFG   (USB_TRANSMISSION_BASE+115)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_SET_VCA_ELECTRONICSIGNAGE_CFG   (USB_TRANSMISSION_BASE+116)  //ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_GET_VCA_FACE_DETECT             (USB_TRANSMISSION_BASE+117)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+#define USB_SET_VCA_FACE_DETECT             (USB_TRANSMISSION_BASE+118)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+#define USB_GET_VCA_FACE_CONTRAST           (USB_TRANSMISSION_BASE+119)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½Ï¢
+#define USB_SET_VCA_FACE_CONTRAST           (USB_TRANSMISSION_BASE+120)  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½Ï¢
 
-//´«ÏÔ´óÈÝÁ¿Éè±¸ÃüÁîÂë
+//ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define USB_TRANSMISSION_BULK_BASE           4500
-#define USB_CTRL_RESET_DEVICE                (USB_TRANSMISSION_BULK_BASE+0)  //ÖØÖÃÉè±¸
-#define USB_GET_DEVICE_VERSION               (USB_TRANSMISSION_BULK_BASE+1)  //»ñÈ¡Éè±¸°æ±¾ÐÅÏ¢
+#define USB_CTRL_RESET_DEVICE                (USB_TRANSMISSION_BULK_BASE+0)  //ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
+#define USB_GET_DEVICE_VERSION               (USB_TRANSMISSION_BULK_BASE+1)  //ï¿½ï¿½È¡ï¿½è±¸ï¿½æ±¾ï¿½ï¿½Ï¢
 
-#define USB_TRANS_DEVICE_ENCRYPTION_START    (USB_TRANSMISSION_BULK_BASE+100)  //Éè±¸¼ÓÃÜ¿ªÊ¼
-#define USB_TRANS_DEVICE_ENCRYPTION_PROGRESS (USB_TRANSMISSION_BULK_BASE+101)  //»ñÈ¡¼ÓÃÜ½ø¶È
-#define USB_TRANS_DEVICE_ENCRYPTION_STOP     (USB_TRANSMISSION_BULK_BASE+102)  //Éè±¸¼ÓÃÜ½áÊø
-#define USB_TRANS_FILE_UPLOAD_START          (USB_TRANSMISSION_BULK_BASE+103)  //ÎÄ¼þÉÏ´«¿ªÊ¼
-#define USB_TRANS_FILE_UPLOAD_PROGRESS       (USB_TRANSMISSION_BULK_BASE+104)  //»ñÈ¡ÉÏ´«½ø¶È
-#define USB_TRANS_FILE_UPLOAD_STOP           (USB_TRANSMISSION_BULK_BASE+105)  //ÎÄ¼þÉÏ´«½áÊø
-#define USB_TRANS_FILE_DOWNLOAD_START        (USB_TRANSMISSION_BULK_BASE+106)  //ÎÄ¼þÏÂÔØ¿ªÊ¼
-#define USB_TRANS_FILE_DOWNLOAD_PROGRESS     (USB_TRANSMISSION_BULK_BASE+107)  //»ñÈ¡ÏÂÔØ½ø¶È
-#define USB_TRANS_FILE_DOWNLOAD_STOP         (USB_TRANSMISSION_BULK_BASE+108)  //ÎÄ¼þÏÂÔØ½áÊø
+#define USB_TRANS_DEVICE_ENCRYPTION_START    (USB_TRANSMISSION_BULK_BASE+100)  //ï¿½è±¸ï¿½ï¿½ï¿½Ü¿ï¿½Ê¼
+#define USB_TRANS_DEVICE_ENCRYPTION_PROGRESS (USB_TRANSMISSION_BULK_BASE+101)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ü½ï¿½ï¿½ï¿½
+#define USB_TRANS_DEVICE_ENCRYPTION_STOP     (USB_TRANSMISSION_BULK_BASE+102)  //ï¿½è±¸ï¿½ï¿½ï¿½Ü½ï¿½ï¿½ï¿½
+#define USB_TRANS_FILE_UPLOAD_START          (USB_TRANSMISSION_BULK_BASE+103)  //ï¿½Ä¼ï¿½ï¿½Ï´ï¿½ï¿½ï¿½Ê¼
+#define USB_TRANS_FILE_UPLOAD_PROGRESS       (USB_TRANSMISSION_BULK_BASE+104)  //ï¿½ï¿½È¡ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_TRANS_FILE_UPLOAD_STOP           (USB_TRANSMISSION_BULK_BASE+105)  //ï¿½Ä¼ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_TRANS_FILE_DOWNLOAD_START        (USB_TRANSMISSION_BULK_BASE+106)  //ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½Ê¼
+#define USB_TRANS_FILE_DOWNLOAD_PROGRESS     (USB_TRANSMISSION_BULK_BASE+107)  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½
+#define USB_TRANS_FILE_DOWNLOAD_STOP         (USB_TRANSMISSION_BULK_BASE+108)  //ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½
 
 /************************************************************************
-* ¶¨ÒåÈ¡Á÷ÀàÐÍ
+* ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
 #define USB_STREAM_UNKNOW     0
-#define USB_STREAM_PCM        1    // PCMÂãÂëÁ÷(DirectShowÃ¶¾Ù³öµÄPCMÀàÐÍÎª1,±£³ÖÒ»ÖÂ)
-#define USB_STREAM_MJPEG      101  // MJPEGÂãÂëÁ÷
-#define USB_STREAM_H264       102  // H264ÂãÂëÁ÷(ÐèÏà»úÖ§³ÖH264ÂãÁ÷Êä³ö)
-#define USB_STREAM_YUY2       103  // YUV2ÂãÂëÁ÷
-#define USB_STREAM_NV12       104  // NV12ÂãÂëÁ÷
+#define USB_STREAM_PCM        1    // PCMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(DirectShowÃ¶ï¿½Ù³ï¿½ï¿½ï¿½PCMï¿½ï¿½ï¿½ï¿½Îª1,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½)
+#define USB_STREAM_MJPEG      101  // MJPEGï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_STREAM_H264       102  // H264ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½H264ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+#define USB_STREAM_YUY2       103  // YUV2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define USB_STREAM_NV12       104  // NV12ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 /************************************************************************
-* ¶¨ÒåÔ¤ÀÀ,ÂëÁ÷»Øµ÷ÂëÁ÷ÀàÐÍ
+* ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_STREAM_PS_H264    201  // PS·â×°H264ÂëÁ÷
-#define USB_STREAM_PS_MJPEG   202  // PS·â×°MJPEGÂëÁ÷
-#define USB_STREAM_PS_YUY2    203  // PS·â×°YUV2ÂëÁ÷
-#define USB_STREAM_PS_NV12    204  // PS·â×°YUV2ÂëÁ÷
+#define USB_STREAM_PS_H264    201  // PSï¿½ï¿½×°H264ï¿½ï¿½ï¿½ï¿½
+#define USB_STREAM_PS_MJPEG   202  // PSï¿½ï¿½×°MJPEGï¿½ï¿½ï¿½ï¿½
+#define USB_STREAM_PS_YUY2    203  // PSï¿½ï¿½×°YUV2ï¿½ï¿½ï¿½ï¿½
+#define USB_STREAM_PS_NV12    204  // PSï¿½ï¿½×°YUV2ï¿½ï¿½ï¿½ï¿½
 
 /************************************************************************
-* ¶¨ÒåÂ¼ÏñÂëÁ÷ÀàÐÍ
+* ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_RECORDTYPE_PS_MJPEG        301     // Â¼ÖÆPS·â×°MJPEGÂëÁ÷
-#define USB_RECORDTYPE_PS_H264         302     // Â¼ÖÆPS·â×°H264ÂëÁ÷
-#define USB_RECORDTYPE_MP4             303     // Â¼ÖÆMP4
-#define USB_RECORDTYPE_AVI             304     // Â¼ÖÆAVI
-#define USB_RECORDTYPE_PS_YUY2         305     // Â¼ÖÆPS·â×°YUY2ÂëÁ÷
-#define USB_RECORDTYPE_PS_NV12         306     // Â¼ÖÆPS·â×°NV12ÂëÁ÷
+#define USB_RECORDTYPE_PS_MJPEG        301     // Â¼ï¿½ï¿½PSï¿½ï¿½×°MJPEGï¿½ï¿½ï¿½ï¿½
+#define USB_RECORDTYPE_PS_H264         302     // Â¼ï¿½ï¿½PSï¿½ï¿½×°H264ï¿½ï¿½ï¿½ï¿½
+#define USB_RECORDTYPE_MP4             303     // Â¼ï¿½ï¿½MP4
+#define USB_RECORDTYPE_AVI             304     // Â¼ï¿½ï¿½AVI
+#define USB_RECORDTYPE_PS_YUY2         305     // Â¼ï¿½ï¿½PSï¿½ï¿½×°YUY2ï¿½ï¿½ï¿½ï¿½
+#define USB_RECORDTYPE_PS_NV12         306     // Â¼ï¿½ï¿½PSï¿½ï¿½×°NV12ï¿½ï¿½ï¿½ï¿½
 
 /************************************************************************
-* Í¨µÀÀàÐÍ: RGB»òIR
+* Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: RGBï¿½ï¿½IR
 ************************************************************************/
 #define USB_CHANNEL_RGB		1    //RGBÂ·
 #define USB_CHANNEL_IR      2    //IRÂ·
 
 /************************************************************************
-* Í¼Ïñ²ÎÊýÀàÐÍ
+* Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ************************************************************************/
-#define USB_Brightness                0                               // ÁÁ¶È
-#define USB_Contrast                  USB_Brightness   + 1      // ¶Ô±È¶È
+#define USB_Brightness                0                               // ï¿½ï¿½ï¿½ï¿½
+#define USB_Contrast                  USB_Brightness   + 1      // ï¿½Ô±È¶ï¿½
 #define USB_Hue                       USB_Contrast     + 1        
 #define USB_Saturation                USB_Hue          + 1
-#define USB_Sharpness                 USB_Saturation   + 1      // ±¥ºÍ¶È
+#define USB_Sharpness                 USB_Saturation   + 1      // ï¿½ï¿½ï¿½Í¶ï¿½
 #define USB_Gamma                     USB_Sharpness    + 1
 #define USB_ColorEnable               USB_Gamma        + 1
-#define USB_WhiteBalance              USB_ColorEnable  + 1      // °×Æ½ºâ
-#define USB_BacklightCompensation     USB_WhiteBalance + 1      // ±³¹â²¹³¥
+#define USB_WhiteBalance              USB_ColorEnable  + 1      // ï¿½ï¿½Æ½ï¿½ï¿½
+#define USB_BacklightCompensation     USB_WhiteBalance + 1      // ï¿½ï¿½ï¿½â²¹ï¿½ï¿½
 #define USB_Gain
 
 
-#define USB_VIDEO_DEVICE       100              // ÊÓÆµÉè±¸
-#define USB_AUDIO_DEVICE       101              // ÒôÆµÉè±¸
+#define USB_VIDEO_DEVICE       100              // ï¿½ï¿½Æµï¿½è±¸
+#define USB_AUDIO_DEVICE       101              // ï¿½ï¿½Æµï¿½è±¸
 
 #define USBCAMERA_INVALID_ID -1
 
 
 /**	@enum
-*  @brief ÊÂ¼þÂë¶¨Òå
+*  @brief ï¿½Â¼ï¿½ï¿½ë¶¨ï¿½ï¿½
 *
 */
 enum
 {
-    USB_EC_DEVICE_LOST = 31,      // DirectShowÉè±¸²å°ÎÊÂ¼þ
+    USB_EC_DEVICE_LOST = 31,      // DirectShowï¿½è±¸ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 };
 
 /**	@enum
-*  @brief ÊÂ¼þÀàÐÍ¶¨Òå
+*  @brief ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½
 *
 */
 #define USB_EVENTTYPE_DEV_REMOVED 0
@@ -811,7 +811,7 @@ enum
 
 
 /**	@enum
-*  @brief ÈËÁ³×¥ÅÄÄ£Ê½
+*  @brief ï¿½ï¿½ï¿½ï¿½×¥ï¿½ï¿½Ä£Ê½
 *
 */
 enum
@@ -823,7 +823,7 @@ enum
 
 
 #define MAX_THERMAL_REGIONS     10
-#define MAX_ROI_REGIONS   10   //×î´óÖ§³Ö10¸öÇøÓò
+#define MAX_ROI_REGIONS   10   //ï¿½ï¿½ï¿½Ö§ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 typedef enum tagLOG_LEVEL_ENUM
@@ -833,42 +833,42 @@ typedef enum tagLOG_LEVEL_ENUM
     ENUM_INFO_LEVEL = 3
 } LOG_LEVEL_ENUM;
 
-    // Ìõ¼þ²ÎÊý
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_COMMON_COND
     {
         DWORD dwSize;
-        BYTE  byChannelID;     //Í¨µÀºÅ
-        BYTE  bySID;           //³¡¾°ID
+        BYTE  byChannelID;     //Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE  bySID;           //ï¿½ï¿½ï¿½ï¿½ID
         BYTE  byRes[6];
     }USB_COMMON_COND, *LPUSB_COMMON_COND;
 
-    //Éè±¸ÏµÍ³ÐÅÏ¢
+    //ï¿½è±¸ÏµÍ³ï¿½ï¿½Ï¢
     typedef struct tagUSB_SYSTEM_DEVICE_INFO
     {
         DWORD  dwSize;
-        BYTE   byFirmwareVersion[64]; //Ö÷¿Ø³ÌÐò°æ±¾
-        BYTE   byEncoderVersion[64];  //±àÂë°æ±¾
-        BYTE   byHardwareVersion[64]; //»úÐ¾°æ±¾
-        BYTE   byDeviceType[64];      //Éè±¸ÐÍºÅ
-        BYTE   byProtocolVersion[4];  //Ð­Òé°æ±¾ÐÅÏ¢£º"1.0"
-        BYTE   bySerialNumber[64];    //ÐòÁÐºÅ
-		BYTE   bySecondHardwareVersion[64];	//¸±³ÌÐò°æ±¾
-        BYTE   byModuleID[32];  //»úÐ¾ID
-        BYTE   byDeviceID[64];  //Éè±¸ID
-        BYTE   byDeviceAssembleType; //Éè±¸×é×°ÀàÐÍ£º1-Õû»úÉè±¸  2-¼¯³ÉÀàÉè±¸
-        BYTE   byManufacturer; //³§ÉÌÐÅÏ¢£º1-±êÅäÉè±¸  2-ÖÐÐÔÉè±¸
-        BYTE   byLanguageType; //ÓïÑÔÀàÐÍ£º1-ÖÐÎÄ  2-Ó¢ÎÄ
-        BYTE   byDeviceClass; //Éè±¸ÖÖÀà£º1-¹Û²âÀàÉè±¸  2-ÎÂ²âÀàÉè±¸
+        BYTE   byFirmwareVersion[64]; //ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½æ±¾
+        BYTE   byEncoderVersion[64];  //ï¿½ï¿½ï¿½ï¿½æ±¾
+        BYTE   byHardwareVersion[64]; //ï¿½ï¿½Ð¾ï¿½æ±¾
+        BYTE   byDeviceType[64];      //ï¿½è±¸ï¿½Íºï¿½
+        BYTE   byProtocolVersion[4];  //Ð­ï¿½ï¿½æ±¾ï¿½ï¿½Ï¢ï¿½ï¿½"1.0"
+        BYTE   bySerialNumber[64];    //ï¿½ï¿½ï¿½Ðºï¿½
+		BYTE   bySecondHardwareVersion[64];	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾
+        BYTE   byModuleID[32];  //ï¿½ï¿½Ð¾ID
+        BYTE   byDeviceID[64];  //ï¿½è±¸ID
+        BYTE   byDeviceAssembleType; //ï¿½è±¸ï¿½ï¿½×°ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½è±¸  2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
+        BYTE   byManufacturer; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½è±¸  2-ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
+        BYTE   byLanguageType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½ï¿½ï¿½  2-Ó¢ï¿½ï¿½
+        BYTE   byDeviceClass; //ï¿½è±¸ï¿½ï¿½ï¿½à£º1-ï¿½Û²ï¿½ï¿½ï¿½ï¿½è±¸  2-ï¿½Â²ï¿½ï¿½ï¿½ï¿½è±¸
         BYTE   byRes[24];
     }USB_SYSTEM_DEVICE_INFO, *LPUSB_SYSTEM_DEVICE_INFO;
 
-    //Ó²¼þ·þÎñ²ÎÊýÅäÖÃ
+    //Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_HARDWARE_SERVER
     {
         DWORD  dwSize;
-        BYTE  byUsbMode;  //USBÄ£Ê½ÇÐ»»  1-USBµÄUVCÄ£Ê½, 2-USBµÄNCMÄ£Ê½
-        BYTE  byDeviceInitialStatus;  //Éè±¸³õÊ¼»¯×´Ì¬  1-Î´³õÊ¼»¯, 2-³õÊ¼»¯Íê³É
-        BYTE  byDeviceWorkingStatus;  //Éè±¸¹¤×÷×´Ì¬  1-ÔËÐÐÔÚfactory³ÌÐò, 2-ÔËÐÐÔÚupdate³ÌÐò
+        BYTE  byUsbMode;  //USBÄ£Ê½ï¿½Ð»ï¿½  1-USBï¿½ï¿½UVCÄ£Ê½, 2-USBï¿½ï¿½NCMÄ£Ê½
+        BYTE  byDeviceInitialStatus;  //ï¿½è±¸ï¿½ï¿½Ê¼ï¿½ï¿½×´Ì¬  1-Î´ï¿½ï¿½Ê¼ï¿½ï¿½, 2-ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byDeviceWorkingStatus;  //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½×´Ì¬  1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½factoryï¿½ï¿½ï¿½ï¿½, 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½updateï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[29];
     }USB_SYSTEM_HARDWARE_SERVER, *LPUSB_SYSTEM_HARDWARE_SERVER;
 
@@ -876,1644 +876,1644 @@ typedef enum tagLOG_LEVEL_ENUM
     typedef struct tagUSB_SYSTEM_LOCALTIME
     {
         DWORD     dwSize;
-        WORD      wMillisecond;//ºÁÃë
-        BYTE       bySecond;//Ãë
-        BYTE       byMinute;//·ÖÖÓ
+        WORD      wMillisecond;//ï¿½ï¿½ï¿½ï¿½
+        BYTE       bySecond;//ï¿½ï¿½
+        BYTE       byMinute;//ï¿½ï¿½ï¿½ï¿½
         BYTE       byHour;//Ð¡Ê±
-        BYTE       byDay;//ÈÕ
-        BYTE       byMonth;//ÔÂ
+        BYTE       byDay;//ï¿½ï¿½
+        BYTE       byMonth;//ï¿½ï¿½
         BYTE       byRes1[1];
-        WORD       wYear;//Äê
-        BYTE       byExternalTimeSourceEnabled;//Íâ²¿Ð£Ê±Ô´Ê¹ÄÜ, 0-¹Ø±Õ£¬1-¿ªÆô
+        WORD       wYear;//ï¿½ï¿½
+        BYTE       byExternalTimeSourceEnabled;//ï¿½â²¿Ð£Ê±Ô´Ê¹ï¿½ï¿½, 0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[5];
     }USB_SYSTEM_LOCALTIME, *LPUSB_SYSTEM_LOCALTIME;
 
-    //Í¼ÏñÁÁ¶Èµ÷½Ú
+    //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_BRIGHTNESS
     {
         DWORD  dwSize;
-        DWORD  dwBrightness;       //Í¼ÏñÁÁ¶È0-100
+        DWORD  dwBrightness;       //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-100
         BYTE   byRes[28];
     }USB_IMAGE_BRIGHTNESS, *LPUSB_IMAGE_BRIGHTNESS;
 
-    //Í¼Ïñ¶Ô±È¶Èµ÷½Ú
+    //Í¼ï¿½ï¿½Ô±È¶Èµï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_CONTRAST
     {
         DWORD     dwSize;
-        DWORD dwContrast;      //Í¼Ïñ¶Ô±È¶È0-100
+        DWORD dwContrast;      //Í¼ï¿½ï¿½Ô±È¶ï¿½0-100
         BYTE  byRes[28];
     }USB_IMAGE_CONTRAST, *LPUSB_IMAGE_CONTRAST;
 
-    //Õï¶ÏÐÅÏ¢µ¼³öÇ°ÖÃÌõ¼þ£¨¸Ã½á¹¹ÌåÄÚ²¿ÑÐ·¢×¨ÓÃ£¬Íâ²¿ÓÃ»§ÎÞÐè¹ØÐÄ¼°Ê¹ÓÃ£©
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã½á¹¹ï¿½ï¿½ï¿½Ú²ï¿½ï¿½Ð·ï¿½×¨ï¿½Ã£ï¿½ï¿½â²¿ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ê¹ï¿½Ã£ï¿½
     typedef struct tagUSB_SYSTEM_DIAGNOSED_DATA_COND
     {
         DWORD  dwSize;
-        BYTE    byDataType;//µ¼³öÉè±¸Êý¾ÝÎ»ÖÃ: 1-PSRAM, 2-FLASH
+        BYTE    byDataType;//ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½: 1-PSRAM, 2-FLASH
         BYTE    byRes1[3];
-        DWORD   dwAddress;//µ¼³öÉè±¸Êý¾ÝµØÖ·
-        DWORD   dwLength;//µ¼³öÉè±¸Êý¾Ý³¤¶È, ×î´óÖ§³Ö100k, ³¬³ö·µ»ØÉè±¸²»Ö§³Ö
+        DWORD   dwAddress;//ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Ýµï¿½Ö·
+        DWORD   dwLength;//ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ö§ï¿½ï¿½100k, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½Ö§ï¿½ï¿½
         BYTE    byRes[112];
     }USB_SYSTEM_DIAGNOSED_DATA_COND, *LPUSB_SYSTEM_DIAGNOSED_DATA_COND;
 
-    //Õï¶ÏÐÅÏ¢µ¼³ö
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_DIAGNOSED_DATA
     {
         DWORD     dwSize;
-        DWORD   dwDataLenth;     //Õï¶ÏÊý¾Ý³¤¶È
-        BYTE   *pDiagnosedData;     //Õï¶ÏÊý¾Ý
+        DWORD   dwDataLenth;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        BYTE   *pDiagnosedData;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[56];
     }USB_SYSTEM_DIAGNOSED_DATA, *LPUSB_SYSTEM_DIAGNOSED_DATA;
 
-    //ÏµÍ³ÄÜÁ¦
+    //ÏµÍ³ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_CAPABILITIES
     {
         DWORD	dwSize;
-        BYTE  byXuSystemCtrl;  //ÏµÍ³¹ÜÀí 0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byXuImageCtrl;  //ÊÓÆµÍ¼Ïñ¹ÜÀí  0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byXuThermalCtrl;  //ÈÈ³ÉÏñ¹ÜÀí  0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE  byXuSystemCtrl;  //ÏµÍ³ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byXuImageCtrl;  //ï¿½ï¿½ÆµÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½  0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byXuThermalCtrl;  //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE  byRes[505];
     }USB_SYSTEM_CAPABILITIES, *LPUSB_SYSTEM_CAPABILITIES;
 
-    //Éè±¸ISP binÎÄ¼þµ¼³ö
+    //ï¿½è±¸ISP binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_ISP_BIN_FILE
     {
         DWORD	dwSize;
-        DWORD dwDataLenth;      //ISP binÎÄ¼þ³¤¶È
-        BYTE   *pData;     //ISP binÎÄ¼þÊý¾Ý
+        DWORD dwDataLenth;      //ISP binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   *pData;     //ISP binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[52];
     }USB_SYSTEM_ISP_BIN_FILE, *LPUSB_SYSTEM_ISP_BIN_FILE;
 
-    //Éè±¸ÈÚºÏ²ÎÊýbinÎÄ¼þµ¼³ö
+    //ï¿½è±¸ï¿½ÚºÏ²ï¿½ï¿½ï¿½binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_FUSION_BIN_FILE
     {
         DWORD	dwSize;
-        DWORD dwDataLenth;      //ÈÚºÏ²ÎÊýbinÎÄ¼þ³¤¶È
-        BYTE   *pData;     //ÈÚºÏ²ÎÊýbinÎÄ¼þÊý¾Ý
+        DWORD dwDataLenth;      //ï¿½ÚºÏ²ï¿½ï¿½ï¿½binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   *pData;     //ï¿½ÚºÏ²ï¿½ï¿½ï¿½binï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[52];
     }USB_SYSTEM_FUSION_BIN_FILE, *LPUSB_SYSTEM_FUSION_BIN_FILE;
 
-    //ÏµÍ³³õÊ¼»¯
+    //ÏµÍ³ï¿½ï¿½Ê¼ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_INIT
     {
         DWORD dwSize;
-        BYTE byDataStorage; //Êý¾Ý´æ´¢ 0-¹Ø±Õ  1-¿ªÆô
+        BYTE byDataStorage; //ï¿½ï¿½ï¿½Ý´æ´¢ 0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[251];
     }USB_SYSTEM_INIT, *LPUSB_SYSTEM_INIT;
 
-    //Í¼ÏñÔöÇ¿
+    //Í¼ï¿½ï¿½ï¿½ï¿½Ç¿
     typedef struct tagUSB_IMAGE_ENHANCEMENT
     {
         DWORD dwSize;
-        BYTE  byNoiseReduceMode;  //Êý×Ö½µÔëÄ£Ê½£º0-¹Ø±Õ; 1-ÆÕÍ¨Ä£Ê½;  2 - ×¨¼ÒÄ£Ê½
-        BYTE  byBirdWatchingMode;  //¹ÛÄñÄ£Ê½Ê¹ÄÜ£º0-¹Ø±Õ; 1-¿ªÆô
-        BYTE  byHighLightMode;  //ºìÈÈÍ¹ÏÔÄ£Ê½Ê¹ÄÜ£º0-¹Ø±Õ; 1-¿ªÆô
-        BYTE  byHighLightLevel;  //ºìÈÈÍ¹ÏÔµÈ¼¶£º0-100
-        DWORD dwGeneralLevel;  //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ð 0-100
-        DWORD dwFrameNoiseReduceLevel; //×¨¼ÒÄ£Ê½¿ÕÓò½µÔë¼¶±ð 0-100
-        DWORD dwInterFrameNoiseReduceLevel;  //×¨¼ÒÄ£Ê½Ê±Óò½µÔë¼¶±ð 0-100
-        BYTE  byPaletteMode; //Î±²ÊÉ«ÑÕÉ«Ä£Ê½£º1-°×ÈÈ;  2-ºÚÈÈ;  10-ÈÚºÏ1; 11-²Êºç; 12-ÈÚºÏ2; 13-Ìúºì1; 14-Ìúºì2; 15-ÉîºÖÉ«; 16-É«²Ê1; 17-É«²Ê2; 18-±ù»ð; 19-Óê; 20-ºìÈÈ; 21-ÂÌÈÈ; 22-ÉîÀ¶
-        BYTE  byLSEDetailEnabled;  //Í¼ÏñÏ¸½ÚÔöÇ¿Ê¹ÄÜ: 0-¹Ø±Õ 1-¿ªÆô
-        BYTE  byHookEdgeMode;  //¹´±ßÄ£Ê½Ê¹ÄÜ: 0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byHookEdgeLevel;  //¹´±ßµÈ¼¶: 0-100
-        DWORD dwLSEDetailLevel;  //Í¼ÏñÏ¸½ÚÔöÇ¿µÈ¼¶: 0-100
-        BYTE  byWideTemperatureMode;  //ÎÂ¿íÄ£Ê½Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byWideTemperatureWork; //ÎÂ¿í¹¤×÷Ä£Ê½: 1-ÎÂ¿íÄ£Ê½ÉÏÏÂÏÞ¾ùÅäÖÃ 2-ÎÂ¿íÄ£Ê½Ö»ÅäÖÃÉÏÏÞ  3-ÎÂ¿íÄ£Ê½Ö»ÅäÖÃÏÂÏÞ
-        BYTE  byIspAgcMode; //agc¹¤×÷Ä£Ê½: 1-ÏßÐÔÄ£Ê½  2-Ö±·½Í¼Ä£Ê½  3-Ñ²¼ìÄ£Ê½  4-ÊÖ¶¯Ä£Ê½
-        BYTE  byAISuperResolution; //AI³¬·ÖÊ¹ÄÜ£º0-¹Ø±Õ 1-¿ªÆô
-        DWORD  dwWideTemperatureUpThreshold;  //ÎÂ¿íÄ£Ê½ÉÏãÐÖµ£¬-20.0¡æ~400.0¡æ(¾«È·µ½Ð¡ÊýµãºóÒ»Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwWideTemperatureDownThreshold;  //ÎÂ¿íÄ£Ê½ÏÂãÐÖµ£¬-20.0¡æ~400.0¡æ(¾«È·µ½Ð¡ÊýµãºóÒ»Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
+        BYTE  byNoiseReduceMode;  //ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½Í¨Ä£Ê½;  2 - ×¨ï¿½ï¿½Ä£Ê½
+        BYTE  byBirdWatchingMode;  //ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byHighLightMode;  //ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byHighLightLevel;  //ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ÔµÈ¼ï¿½ï¿½ï¿½0-100
+        DWORD dwGeneralLevel;  //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ 0-100
+        DWORD dwFrameNoiseReduceLevel; //×¨ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ 0-100
+        DWORD dwInterFrameNoiseReduceLevel;  //×¨ï¿½ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ 0-100
+        BYTE  byPaletteMode; //Î±ï¿½ï¿½É«ï¿½ï¿½É«Ä£Ê½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½;  2-ï¿½ï¿½ï¿½ï¿½;  10-ï¿½Úºï¿½1; 11-ï¿½Êºï¿½; 12-ï¿½Úºï¿½2; 13-ï¿½ï¿½ï¿½ï¿½1; 14-ï¿½ï¿½ï¿½ï¿½2; 15-ï¿½ï¿½ï¿½É«; 16-É«ï¿½ï¿½1; 17-É«ï¿½ï¿½2; 18-ï¿½ï¿½ï¿½ï¿½; 19-ï¿½ï¿½; 20-ï¿½ï¿½ï¿½ï¿½; 21-ï¿½ï¿½ï¿½ï¿½; 22-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byLSEDetailEnabled;  //Í¼ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ç¿Ê¹ï¿½ï¿½: 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byHookEdgeMode;  //ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½ï¿½: 0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byHookEdgeLevel;  //ï¿½ï¿½ï¿½ßµÈ¼ï¿½: 0-100
+        DWORD dwLSEDetailLevel;  //Í¼ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½È¼ï¿½: 0-100
+        BYTE  byWideTemperatureMode;  //ï¿½Â¿ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byWideTemperatureWork; //ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½: 1-ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¾ï¿½ï¿½ï¿½ï¿½ï¿½ 2-ï¿½Â¿ï¿½Ä£Ê½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  3-ï¿½Â¿ï¿½Ä£Ê½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byIspAgcMode; //agcï¿½ï¿½ï¿½ï¿½Ä£Ê½: 1-ï¿½ï¿½ï¿½ï¿½Ä£Ê½  2-Ö±ï¿½ï¿½Í¼Ä£Ê½  3-Ñ²ï¿½ï¿½Ä£Ê½  4-ï¿½Ö¶ï¿½Ä£Ê½
+        BYTE  byAISuperResolution; //AIï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwWideTemperatureUpThreshold;  //ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20.0ï¿½ï¿½~400.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwWideTemperatureDownThreshold;  //ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20.0ï¿½ï¿½~400.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[28];
     }USB_IMAGE_ENHANCEMENT, *LPUSB_IMAGE_ENHANCEMENT;
 
-    //Í¼ÏñÔöÇ¿EX
+    //Í¼ï¿½ï¿½ï¿½ï¿½Ç¿EX
     typedef struct tagUSB_IMAGE_ENHANCEMENT_EX
     {
         USB_IMAGE_ENHANCEMENT struImageEnhancement;
-        BYTE  bySkyAreaCullLevel; //Ìì¿ÕÇøÓòÌÞ³ý°Ù·Ö±È£º0-100
-        BYTE  byAGCMode; //AGCÄ£Ê½£º1-ÊÖ¶¯ 2-×Ô¶¯
-        BYTE  byGaussianFilterEnabled; //¸ßË¹ÂË²¨Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byEdgePreservingFilterEnabled; //±£±ßÂË²¨Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        DWORD  dwGaussianFilterCenterPoint; //¸ßË¹ÂË²¨ÖÐÐÄµã²ÎÊý£º64-4098
-        DWORD  dwBilateralFilterRadius; //Ë«±ßÂË²¨°ë¾¶£º1-8
-        DWORD  dwBilateralFilterEdgeThreshold; //Ë«±ßÂË²¨±ßÔµÅÐ¶ÏÃÅÏÞ£º1-1023
-        BYTE  byBurnPreventionEnabled; //·À×ÆÉÕÄ£Ê½Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byBurnPreventionMode; //·À×ÆÉÕ¿ØÖÆÄ£Ê½£º1-×Ô¶¯¿ØÖÆÄ£Ê½  2-ÊÖ¶¯¿ØÖÆÄ£Ê½
-        BYTE  byRelativeHumidityThreshold; //Ïà¶ÔÊª¶ÈãÐÖµ·¶Î§£º0-100£¬µ¥Î»£º%£¨°Ù·Ö±È£©£¬´«ÊäÊ±Êµ¼ÊÖµ + 1
-        BYTE bySharpenBoost;  //Èñ»¯ÔöÇ¿Ê¹ÄÜ£º1-¹Ø±Õ  2-¿ªÆô
-        DWORD  dwBurnPreventionShutterCloseTime; //·À×ÆÉÕµ²Æ¬±ÕºÏÊ±¼ä(½ö×Ô¶¯Ä£Ê½ÏÂÉúÐ§)£º0-3600Ãë
-        BYTE  byBurnPreventionShutterControl; //·À×ÆÉÕµ²Æ¬ÊÖ¶¯¿ØÖÆ(½öÊÖ¶¯Ä£Ê½ÏÂÉúÐ§)£º1-²»¿ØÖÆ  2-µ²Æ¬±ÕºÏ  3-µ²Æ¬Ì§Æð
-        BYTE  byBurnPreventionRecovery; //·À×ÆÉÕ×Ô»Ö¸´Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byIsothermEnabled; //µÈÎÂÏß¿ªÆôÊ¹ÄÜ£º0-¹Ø±Õ 1-¿ªÆô
-        BYTE  byRawDataNoiseReduceEnabled; //ÂãÊý¾Ý½µÔëÊ¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        DWORD  dwIsothermalUpperThreshold;  //µÈÎÂÏßÎÂ¶ÈÉÏãÐÖµ£º-20¡æ~600¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwIsothermalLowerThreshold;  //µÈÎÂÏßÎÂ¶ÈÏÂãÐÖµ£º-20¡æ~600¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        BYTE  byIsothermalType;  //µÈÎÂÏßÏÔÊ¾ÀàÐÍ£º1-°×ÈÈµÈÎÂ; 2-ºÚÈÈµÈÎÂ; 3-ÈÛÑÒµÈÎÂ; 4-ÌúºìµÈÎÂ; 5-ÈÈÌúµÈÎÂ; 6-Ò½ÁÆµÈÎÂ; 7-±±¼«µÈÎÂ; 8-²Êºç1µÈÎÂ; 9-²Êºç2µÈÎÂ; 10-ÃèºìµÈÎÂ
-        BYTE  byColorAlarmType;  //ÑÕÉ«±¨¾¯ÀàÐÍÀàÐÍ£º0 - ÎÞ±¨¾¯£¬¹Ø±ÕÑÕÉ«±¨¾¯; 1 - ¸ßÎÂ±¨¾¯ ¸ßÎÂÍ¹ÏÔ; 2 - µÍÎÂ±¨¾¯ µÍÎÂÍ¹ÏÔ; 3 - Çø¼ä±¨¾¯ Çø¼äÍ¹ÏÔ; 4 - ±£ÎÂ±¨¾¯ ±£ÎÂÍ¹ÏÔ;
-        //5 - ÀäÄý±¨¾¯; 9 - ¸ßÎÂÁ½¶ÎÊ½Î±²Ê ¸ßÎÂ¾Û½¹; 10 - µÍÎÂÁ½¶ÎÊ½Î±²Ê µÍÎÂ¾Û½¹; 11 - Çø¼äÁ½¶ÎÊ½Î±²Ê Çø¼ä¾Û½¹; 12 - Êª¶È¼ì²â; 13 - ÈÈµã¼ì²â; 14 - Àäµã¼ì²â
-        DWORD  dwColorAlarmUpperLimit; //ÑÕÉ«±¨¾¯Ä£Ê½ÉÏÏÞãÐÖµ£º-20¡æ~2000¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwColorAlarmLowerLimit; //ÑÕÉ«±¨¾¯Ä£Ê½ÏÂÏÞãÐÖµ£º-20¡æ~2000¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwRelativeHumidity; //Ïà¶ÔÊª¶È£¬ÓÃÓÚÊª¶È¼ì²â£¨±£ÁôÒ»Î»Ð¡Êý£©·¶Î§£º0.0-100.0£¬µ¥Î»£º%£¨°Ù·Ö±È£©£¬´«ÊäÊ±(Êµ¼ÊÖµ + 1) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAtmosphericTemperature;  //´óÆøÎÂ¶È£¨±£ÁôÒ»Î»Ð¡Êý£©·¶Î§£º0.0-100.0£¬µ¥Î»£º¡æ£¨ÉãÊÏ¶È£©£¬´«ÊäÊ±(Êµ¼ÊÖµ + 1) * 10»»Ëã³ÉÕýÕûÊý
-        BYTE  byAutoShutEnabled; //×Ô¶¯µ²Æ¬Ê¹ÄÜ£¬Ê¹ÄÜ¹Ø±ÕÊ±£¬Éè±¸¶Ë²»ÔÙ×Ô¶¯´¥·¢µ²Æ¬ 1 ¨C ¹Ø±Õ 2 ¨C ¿ªÆô
-        BYTE byGeneralLevelDefault;  //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ðÄ¬ÈÏÖµ
-        BYTE byGeneralLevelMin;  //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ð×îÐ¡Öµ
-        BYTE byGeneralLevelMax;  //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ð×î´óÖµ
+        BYTE  bySkyAreaCullLevel; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ³ï¿½ï¿½Ù·Ö±È£ï¿½0-100
+        BYTE  byAGCMode; //AGCÄ£Ê½ï¿½ï¿½1-ï¿½Ö¶ï¿½ 2-ï¿½Ô¶ï¿½
+        BYTE  byGaussianFilterEnabled; //ï¿½ï¿½Ë¹ï¿½Ë²ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byEdgePreservingFilterEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë²ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwGaussianFilterCenterPoint; //ï¿½ï¿½Ë¹ï¿½Ë²ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½64-4098
+        DWORD  dwBilateralFilterRadius; //Ë«ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ë¾¶ï¿½ï¿½1-8
+        DWORD  dwBilateralFilterEdgeThreshold; //Ë«ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½Ôµï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Þ£ï¿½1-1023
+        BYTE  byBurnPreventionEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byBurnPreventionMode; //ï¿½ï¿½ï¿½ï¿½ï¿½Õ¿ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½1-ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½  2-ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+        BYTE  byRelativeHumidityThreshold; //ï¿½ï¿½ï¿½Êªï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Î§ï¿½ï¿½0-100ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½%ï¿½ï¿½ï¿½Ù·Ö±È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ + 1
+        BYTE bySharpenBoost;  //ï¿½ï¿½ï¿½ï¿½Ç¿Ê¹ï¿½Ü£ï¿½1-ï¿½Ø±ï¿½  2-ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwBurnPreventionShutterCloseTime; //ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Æ¬ï¿½Õºï¿½Ê±ï¿½ï¿½(ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ð§)ï¿½ï¿½0-3600ï¿½ï¿½
+        BYTE  byBurnPreventionShutterControl; //ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Æ¬ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ð§)ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  2-ï¿½ï¿½Æ¬ï¿½Õºï¿½  3-ï¿½ï¿½Æ¬Ì§ï¿½ï¿½
+        BYTE  byBurnPreventionRecovery; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»Ö¸ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byIsothermEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byRawDataNoiseReduceEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwIsothermalUpperThreshold;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~600ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwIsothermalLowerThreshold;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~600ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byIsothermalType;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½; 2-ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½; 3-ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½; 4-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 5-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 6-Ò½ï¿½Æµï¿½ï¿½ï¿½; 7-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 8-ï¿½Êºï¿½1ï¿½ï¿½ï¿½ï¿½; 9-ï¿½Êºï¿½2ï¿½ï¿½ï¿½ï¿½; 10-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byColorAlarmType;  //ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0 - ï¿½Þ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½; 1 - ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½; 2 - ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½; 3 - ï¿½ï¿½ï¿½ä±¨ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½; 4 - ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½;
+        //5 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 9 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Î±ï¿½ï¿½ ï¿½ï¿½ï¿½Â¾Û½ï¿½; 10 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Î±ï¿½ï¿½ ï¿½ï¿½ï¿½Â¾Û½ï¿½; 11 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Î±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Û½ï¿½; 12 - Êªï¿½È¼ï¿½ï¿½; 13 - ï¿½Èµï¿½ï¿½ï¿½; 14 - ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwColorAlarmUpperLimit; //ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~2000ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwColorAlarmLowerLimit; //ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~2000ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwRelativeHumidity; //ï¿½ï¿½ï¿½Êªï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½Êªï¿½È¼ï¿½â£¨ï¿½ï¿½ï¿½ï¿½Ò»Î»Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0.0-100.0ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½%ï¿½ï¿½ï¿½Ù·Ö±È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 1) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAtmosphericTemperature;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Î»Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0.0-100.0ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½æ£¨ï¿½ï¿½ï¿½Ï¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 1) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byAutoShutEnabled; //ï¿½Ô¶ï¿½ï¿½ï¿½Æ¬Ê¹ï¿½Ü£ï¿½Ê¹ï¿½Ü¹Ø±ï¿½Ê±ï¿½ï¿½ï¿½è±¸ï¿½Ë²ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¬ 1 ï¿½C ï¿½Ø±ï¿½ 2 ï¿½C ï¿½ï¿½ï¿½ï¿½
+        BYTE byGeneralLevelDefault;  //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE byGeneralLevelMin;  //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE byGeneralLevelMax;  //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE  byRes[386];
     }USB_IMAGE_ENHANCEMENT_EX, *LPUSB_IMAGE_ENHANCEMENT_EX;
 
-    //ÊÓÆµµ÷Õû
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_ADJUST
     {
         DWORD  dwSize;
-        BYTE  byImageFlipStyle;  //¾µÏñÄ£Ê½: 0-¹Ø±Õ 1-ÖÐÐÄ 2-×óÓÒ 3-ÉÏÏÂ
-        BYTE  byPowerLineFrequencyMode;  //ÊÓÆµÖÆÊ½£º1-PAL(50HZ)
-        BYTE  byCorridor;  //¾µÍ·×ßÀÈÄ£Ê½(Ðý×ª): 0-¹Ø±Õ 1-¿ªÆô
-        BYTE  byDigitalZoom;  //Êý×Ö±ä±¶: 0-X1   1-X2   2-X4   3-X8
-        BYTE  byCursor;  //ÏÔÊ¾Éä±í: 0-¹Ø±Õ   1-¿ªÆô
-        BYTE  byBadPointCursor;  //ÏÔÊ¾»µµãÊ®×Ö¹â±ê£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byBadPointCursorShiftMode; //ÒÆ¶¯»µµãÊ®×Ö¹â±ê·½Ê½£º0-ÏÂ·¢×ø±ê  1-ÒÆ¶¯Ö¸Áî
-        BYTE  byMappingStyle;  //Éä±íÑùÊ½£º1-5
-        DWORD  dwCursorPointX;  //Éä±íX×ø±ê, ¹éÒ»»¯0-1000, ×óÉÏÎªÔ­µã
-        DWORD  dwCursorPointY;  //Éä±íY×ø±ê, ¹éÒ»»¯0-1000, ×óÉÏÎªÔ­µã
-        DWORD  dwBadCursorPointX;  //»µµãÊ®×Ö¹â±êX×ø±ê£¬¹éÒ»»¯0-1000£¬×óÉÏÎªÔ­µã£¨byBadPointCursorShiftModeÎª0Ê±ÓÐÐ§£©
-        DWORD  dwBadCursorPointY;  //»µµãÊ®×Ö¹â±êY×ø±ê£¬¹éÒ»»¯0-1000£¬×óÉÏÎªÔ­µã£¨byBadPointCursorShiftModeÎª0Ê±ÓÐÐ§£©
-        BYTE  byPointXShiftLeft;  //»µµãÊ®×Ö¹â±êX×ø±êÏò×óÒÆ¶¯£¬·¶Î§£º0-15£¨byBadPointCursorShiftModeÎª1Ê±ÓÐÐ§£©
-        BYTE  byPointXShiftRight;  //»µµãÊ®×Ö¹â±êX×ø±êÏòÓÒÒÆ¶¯£¬·¶Î§£º0-15£¨byBadPointCursorShiftModeÎª1Ê±ÓÐÐ§£©
-        BYTE  byPointYShiftUp;  //»µµãÊ®×Ö¹â±êY×ø±êÏòÉÏÒÆ¶¯£¬·¶Î§£º0-15£¨byBadPointCursorShiftModeÎª1Ê±ÓÐÐ§£©
-        BYTE  byPointYShiftDown;  //»µµãÊ®×Ö¹â±êY×ø±êÏòÏÂÒÆ¶¯£¬·¶Î§£º0-15£¨byBadPointCursorShiftModeÎª1Ê±ÓÐÐ§£©
-        BYTE  byDeleteBadPoint;  //È¥»µµã²Ù×÷£º0-ÎÞÐ§²Ù×÷; 1-Ôö¼ÓÊ®×Ö¹â±êÖÐÐÄµã×ø±êµ½»µµã±íÖÐ; 2-´Ó»µµã±íÖÐÉ¾³ýÊ®×Ö¹â±êÖÐÐÄµã×ø±ê
-        BYTE  byCursorColor; //Éä±íÑÕÉ«£º1-°×É«  2-ºÚÉ«  3-ÂÌÉ«  4-ºìÉ«
-        BYTE  byImageFlipStyleDefaultState;  //¾µÏñÄ£Ê½Ä¬ÈÏ×´Ì¬: 0-¹Ø±Õ 1-ÖÐÐÄ 2-×óÓÒ 3-ÉÏÏÂ
-        BYTE  byPowerLineFrequencyModeDefaultState;  //ÊÓÆµÖÆÊ½Ä¬ÈÏ×´Ì¬£º1-PAL(50HZ) 2-NTSC(60HZ)
+        BYTE  byImageFlipStyle;  //ï¿½ï¿½ï¿½ï¿½Ä£Ê½: 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½ 3-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byPowerLineFrequencyMode;  //ï¿½ï¿½Æµï¿½ï¿½Ê½ï¿½ï¿½1-PAL(50HZ)
+        BYTE  byCorridor;  //ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Ä£Ê½(ï¿½ï¿½×ª): 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byDigitalZoom;  //ï¿½ï¿½ï¿½Ö±ä±¶: 0-X1   1-X2   2-X4   3-X8
+        BYTE  byCursor;  //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½: 0-ï¿½Ø±ï¿½   1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byBadPointCursor;  //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ê£º0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byBadPointCursorShiftMode; //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ê·½Ê½ï¿½ï¿½0-ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½  1-ï¿½Æ¶ï¿½Ö¸ï¿½ï¿½
+        BYTE  byMappingStyle;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½1-5
+        DWORD  dwCursorPointX;  //ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000, ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
+        DWORD  dwCursorPointY;  //ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000, ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
+        DWORD  dwBadCursorPointX;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½0-1000ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ã£¨byBadPointCursorShiftModeÎª0Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        DWORD  dwBadCursorPointY;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½0-1000ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ã£¨byBadPointCursorShiftModeÎª0Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE  byPointXShiftLeft;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0-15ï¿½ï¿½byBadPointCursorShiftModeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE  byPointXShiftRight;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0-15ï¿½ï¿½byBadPointCursorShiftModeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE  byPointYShiftUp;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0-15ï¿½ï¿½byBadPointCursorShiftModeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE  byPointYShiftDown;  //ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½0-15ï¿½ï¿½byBadPointCursorShiftModeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE  byDeleteBadPoint;  //È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½; 1-ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½êµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 2-ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byCursorColor; //ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½1-ï¿½ï¿½É«  2-ï¿½ï¿½É«  3-ï¿½ï¿½É«  4-ï¿½ï¿½É«
+        BYTE  byImageFlipStyleDefaultState;  //ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ä¬ï¿½ï¿½×´Ì¬: 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½ 3-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byPowerLineFrequencyModeDefaultState;  //ï¿½ï¿½Æµï¿½ï¿½Ê½Ä¬ï¿½ï¿½×´Ì¬ï¿½ï¿½1-PAL(50HZ) 2-NTSC(60HZ)
     }USB_IMAGE_VIDEO_ADJUST, *LPUSB_IMAGE_VIDEO_ADJUST;
 
-    //¼ÓÃÜ×´Ì¬
+    //ï¿½ï¿½ï¿½ï¿½×´Ì¬
     typedef struct tagUSB_SYSTEM_ENCRYPT_STATUS
     {
         DWORD	dwSize;
-        BYTE	byEncryptStatus;	//¼ÓÃÜ×´Ì¬£º0-±£Áô£¬1-¼ÓÃÜ³É¹¦£¬2-¼ÓÃÜÊ§°Ü
-        BYTE	byErrMsg;			//¼ÓÃÜÊ§°ÜÔ­Òò£º0-±£Áô£¬0xFF-ÆäËû´íÎó
+        BYTE	byEncryptStatus;	//ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½Ü³É¹ï¿½ï¿½ï¿½2-ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+        BYTE	byErrMsg;			//ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ô­ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0xFF-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[30];
     } USB_SYSTEM_ENCRYPT_STATUS, *LPUSB_SYSTEM_ENCRYPT_STATUS;
 
-    //Ö¸Ê¾µÆ¿ØÖÆ
+    //Ö¸Ê¾ï¿½Æ¿ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_INDICATORLIGHT
     {
         DWORD	dwSize;
-        BYTE	byStatus;			//ÉÁË¸×´Ì¬£º0-Î´ÉÁË¸£¬1-ÉÁË¸
-        BYTE	byColour;			//ÑÕÉ«£º1-red£¬2-white
+        BYTE	byStatus;			//ï¿½ï¿½Ë¸×´Ì¬ï¿½ï¿½0-Î´ï¿½ï¿½Ë¸ï¿½ï¿½1-ï¿½ï¿½Ë¸
+        BYTE	byColour;			//ï¿½ï¿½É«ï¿½ï¿½1-redï¿½ï¿½2-white
         BYTE	byRes[30];
     } USB_SYSTEM_INDICATORLIGHT, *LPUSB_SYSTEM_INDICATORLIGHT;
 
-    //Í¼ÏñWDR
+    //Í¼ï¿½ï¿½WDR
     typedef struct tagUSB_IMAGE_WDR
     {
         DWORD	dwSize;
-        BYTE	byEnabled;		//Ê¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byMode;			//Ä£Ê½£º0-100
-        BYTE	byLevel;		//µÈ¼¶£º0-100
-        BYTE    byEnabledDefaultState;      //Ê¹ÄÜÄ¬ÈÏ×´Ì¬£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE	byEnabled;		//Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byMode;			//Ä£Ê½ï¿½ï¿½0-100
+        BYTE	byLevel;		//ï¿½È¼ï¿½ï¿½ï¿½0-100
+        BYTE    byEnabledDefaultState;      //Ê¹ï¿½ï¿½Ä¬ï¿½ï¿½×´Ì¬ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[28];
     }USB_IMAGE_WDR, *LPUSB_IMAGE_WDR;
 
-    //LOGO¿ª¹Ø
+    //LOGOï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_LOGO_SWITCH
     {
         DWORD	dwSize;
-        BYTE	byEnabled;		//Ê¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byChannelID;	//Í¨µÀºÅ
-        BYTE	byType;			//OSDµþ¼ÓÍ¼ÏñÀàÐÍ£º1-Ô´Í¼Ïñ£¬2-ÏÔÊ¾¶Ë£¬3-ÉÏÇ½´¦µþ¼Ó£¬4-±àÂë´¦µþ¼Ó
-        BYTE	byPortID;		//¶Ë¿ÚºÅ£º0-2
-        BYTE	byPictureID;	//Í¼Æ¬Ë÷Òý
-        BYTE	byLogoID;		//Logo±àºÅ£º0-2
+        BYTE	byEnabled;		//Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byChannelID;	//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byType;			//OSDï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ô´Í¼ï¿½ï¿½2-ï¿½ï¿½Ê¾ï¿½Ë£ï¿½3-ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½4-ï¿½ï¿½ï¿½ë´¦ï¿½ï¿½ï¿½ï¿½
+        BYTE	byPortID;		//ï¿½Ë¿ÚºÅ£ï¿½0-2
+        BYTE	byPictureID;	//Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        BYTE	byLogoID;		//Logoï¿½ï¿½Å£ï¿½0-2
         BYTE	byRes[30];
     }USB_IMAGE_VIDEO_LOGO_SWITCH, *LPUSB_IMAGE_VIDEO_LOGO_SWITCH;
 
-    //LOGO²ÎÊýÉèÖÃ
+    //LOGOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_LOGO_CFG
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//Í¨µÀºÅ
-        BYTE	byLogoID;			//Logo±àºÅ£º0-2
-        BYTE	byLogoType;			//logoÀàÐÍ£º1-Í¨ÓÃ£¬2-ÒôÁ¿£¬3-Êó±ê
-        BYTE	byLogoPicNums;		//logoÍ¼Æ¬ÊýÁ¿
-        DWORD	dwRegionX;			//ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD	dwRegionY;			//ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD	dwRegionWidth;		//ÇøÓò¿í¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD	dwRegionHeight;		//ÇøÓò¸ß¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        BYTE	byFlickerControl;	//ÉÁË¸¿ØÖÆ
-        BYTE	byShieldColorY;		//ÆÁ±ÎÉ«Y
-        BYTE	byShieldColorU;		//ÆÁ±ÎÉ«U
-        BYTE	byShieldColorV;		//ÆÁ±ÎÉ«V
+        BYTE	byChannelID;		//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byLogoID;			//Logoï¿½ï¿½Å£ï¿½0-2
+        BYTE	byLogoType;			//logoï¿½ï¿½ï¿½Í£ï¿½1-Í¨ï¿½Ã£ï¿½2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3-ï¿½ï¿½ï¿½
+        BYTE	byLogoPicNums;		//logoÍ¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        DWORD	dwRegionX;			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD	dwRegionY;			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD	dwRegionWidth;		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD	dwRegionHeight;		//ï¿½ï¿½ï¿½ï¿½ß¶È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        BYTE	byFlickerControl;	//ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½
+        BYTE	byShieldColorY;		//ï¿½ï¿½ï¿½ï¿½É«Y
+        BYTE	byShieldColorU;		//ï¿½ï¿½ï¿½ï¿½É«U
+        BYTE	byShieldColorV;		//ï¿½ï¿½ï¿½ï¿½É«V
         BYTE	byRes[32];
     }USB_IMAGE_VIDEO_LOGO_CFG, *LPUSB_IMAGE_VIDEO_LOGO_CFG;
 
-    //OSD¿ª¹Ø
+    //OSDï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_OSD_SWITCH
     {
         DWORD	dwSize;
-        BYTE	byEnabled;		//Ê¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byChannelID;	//Í¨µÀºÅ
-        BYTE	byType;			//OSDµþ¼ÓÍ¼ÏñÀàÐÍ£º1-Ô´Í¼Ïñ£¬2-ÏÔÊ¾¶Ë£¬3-ÉÏÇ½´¦µþ¼Ó£¬4-±àÂë´¦µþ¼Ó
-        BYTE	byPortID;		//¶Ë¿ÚºÅ£º0-2
+        BYTE	byEnabled;		//Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byChannelID;	//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byType;			//OSDï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ô´Í¼ï¿½ï¿½2-ï¿½ï¿½Ê¾ï¿½Ë£ï¿½3-ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½4-ï¿½ï¿½ï¿½ë´¦ï¿½ï¿½ï¿½ï¿½
+        BYTE	byPortID;		//ï¿½Ë¿ÚºÅ£ï¿½0-2
         BYTE	byRes[32];
     }USB_IMAGE_VIDEO_OSD_SWITCH, *LPUSB_IMAGE_VIDEO_OSD_SWITCH;
 
-    //OSDÊôÐÔ
+    //OSDï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_OSD_PROPERTY
     {
-        BYTE    byRowID;                    //ÐÐID£¬´Ó1¿ªÊ¼µÝÔö
+        BYTE    byRowID;                    //ï¿½ï¿½IDï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes1[3];
-        DWORD   dwRegionX;                  //ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD   dwRegionY;                  //ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD   dwBackgroundColor;          //±³¾°É«
-        DWORD   dwFontColor;                //×ÖÌåÑÕÉ«
-        BYTE    byVerticalScalingRatio;     //´¹Ö±Ëõ·Å±ÈÀý£¬·¶Î§0-4
-        BYTE    byHorizontalScalingRatio;   //Ë®Æ½Ëõ·Å±ÈÀý£¬·¶Î§0-4
-        BYTE    byRowCharNums;              //¸ÃÐÐ×Ö·ûÊý£¬0-32
+        DWORD   dwRegionX;                  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD   dwRegionY;                  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD   dwBackgroundColor;          //ï¿½ï¿½ï¿½ï¿½É«
+        DWORD   dwFontColor;                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+        BYTE    byVerticalScalingRatio;     //ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§0-4
+        BYTE    byHorizontalScalingRatio;   //Ë®Æ½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§0-4
+        BYTE    byRowCharNums;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½0-32
         BYTE    byRes2;
-        WORD    wCharacterCode[32];         //×Ö·ûÂë£¬0-32
+        WORD    wCharacterCode[32];         //ï¿½Ö·ï¿½ï¿½ë£¬0-32
     }USB_OSD_PROPERTY, *LPUSB_OSD_PROPERTY;
 
-    //OSD²ÎÊýÉèÖÃ
+    //OSDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_OSD_CFG
     {
         DWORD	dwSize;
-        BYTE	byChannelID;				//Í¨µÀºÅ
-        BYTE	byType;						//OSDµþ¼ÓÍ¼ÏñÀàÐÍ£º1-Ô´Í¼Ïñ£¬2-ÏÔÊ¾¶Ë£¬3-ÉÏÇ½´¦µþ¼Ó£¬4-±àÂë´¦µþ¼Ó
-        BYTE	byPortID;					//¶Ë¿ÚºÅ£º0-2
-        BYTE	byAutoBrightness;			//×Ô¶¯µ÷ÕûÁÁ¶È£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byTranslucent;				//ÊÇ·ñ°ëÍ¸Ã÷£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE	byChannelID;				//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byType;						//OSDï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ô´Í¼ï¿½ï¿½2-ï¿½ï¿½Ê¾ï¿½Ë£ï¿½3-ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½4-ï¿½ï¿½ï¿½ë´¦ï¿½ï¿½ï¿½ï¿½
+        BYTE	byPortID;					//ï¿½Ë¿ÚºÅ£ï¿½0-2
+        BYTE	byAutoBrightness;			//ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byTranslucent;				//ï¿½Ç·ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes1[3];
-        DWORD	dwFlickerControl;			//ÉÁË¸¿ØÖÆ
-        USB_OSD_PROPERTY struOSDProperty[4];//OSD²ÎÊý
+        DWORD	dwFlickerControl;			//ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½
+        USB_OSD_PROPERTY struOSDProperty[4];//OSDï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[32];
     }USB_IMAGE_VIDEO_OSD_CFG, *LPUSB_IMAGE_VIDEO_OSD_CFG;
 
-    //¶àÂ·¸´ºÏÈ¡Á÷
+    //ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_MULTIPLE_STREAM
     {
         DWORD	dwSize;
-        BYTE	byChannelID;			//¶àÂ·¸´ºÏÁ÷Í¨µÀºÅ£¬Ä¿Ç°×î¶àÖ§³Ö3Â·Á÷¸´ºÏ£¬·¶Î§0-2
+        BYTE	byChannelID;			//ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Å£ï¿½Ä¿Ç°ï¿½ï¿½ï¿½Ö§ï¿½ï¿½3Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Î§0-2
         BYTE    byRes1[3];
-        DWORD	dwEncWidth;				//±àÂë¿í£¬·¶Î§640 - 1920
-        DWORD	dwEncHeight;			//±àÂë¸ß 360 - 1080
-        BYTE	byVideoType;			//±àÂëÀàÐÍ 1 - Standard H264
+        DWORD	dwEncWidth;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§640 - 1920
+        DWORD	dwEncHeight;			//ï¿½ï¿½ï¿½ï¿½ï¿½ 360 - 1080
+        BYTE	byVideoType;			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 - Standard H264
         BYTE    byRes2[3];
-        DWORD	dwIFrameInterval;		//IÖ¡¼ä¸ô 0 - 9000
-        DWORD	dwBitrate;				//±àÂëÂëÂÊ£¬µ¥Î»bps
-        BYTE	byBpsType;				//±àÂëÂëÂÊ¿ØÖÆÀàÐÍ£º1-VBR£¬2-CBR
-        BYTE	byProfile;				/*±àÂëÐ­Òé£º1-H.264±àÂëµÄprofile BP
-                                        2-H.264±àÂëµÄprofile MP
-                                        3-H.264±àÂëµÄprofile HP
-                                        4-H.264±àÂëµÄprofile SVC*/
-        BYTE	byFps;					//±àÂëÖ¡ÂÊ£¬·¶Î§0-30
+        DWORD	dwIFrameInterval;		//IÖ¡ï¿½ï¿½ï¿½ 0 - 9000
+        DWORD	dwBitrate;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½Î»bps
+        BYTE	byBpsType;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-VBRï¿½ï¿½2-CBR
+        BYTE	byProfile;				/*ï¿½ï¿½ï¿½ï¿½Ð­ï¿½é£º1-H.264ï¿½ï¿½ï¿½ï¿½ï¿½profile BP
+                                        2-H.264ï¿½ï¿½ï¿½ï¿½ï¿½profile MP
+                                        3-H.264ï¿½ï¿½ï¿½ï¿½ï¿½profile HP
+                                        4-H.264ï¿½ï¿½ï¿½ï¿½ï¿½profile SVC*/
+        BYTE	byFps;					//ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½Ê£ï¿½ï¿½ï¿½Î§0-30
         BYTE	byRes[29];
     }USB_IMAGE_VIDEO_MULTIPLE_STREAM, *LPUSB_IMAGE_VIDEO_MULTIPLE_STREAM;
 
-    //¶àÂ·¸´ºÏÈ¡Á÷Ç¿ÖÆIÖ¡
+    //ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ç¿ï¿½ï¿½IÖ¡
     typedef struct tagUSB_IMAGE_VIDEO_MULTIPLE_IFRAME
     {
         DWORD	dwSize;
-        BYTE	byChannelID;			//Í¨µÀºÅ
-        BYTE	byIFrameFlag;			//ÊÇ¶¼Ç¿ÖÆIÖ¡£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE	byChannelID;			//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byIFrameFlag;			//ï¿½Ç¶ï¿½Ç¿ï¿½ï¿½IÖ¡ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[30];
     }USB_IMAGE_VIDEO_MULTIPLE_IFRAME, *LPUSB_IMAGE_VIDEO_MULTIPLE_IFRAME;
 
-    //ÒôÆµ×´Ì¬
+    //ï¿½ï¿½Æµ×´Ì¬
     typedef struct tagUSB_AUDIO_STATUS
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//ÒôÆµÍ¨µÀºÅ
-        BYTE	byConnectStatus;	//ÒôÆµ×´Ì¬£º0-Î´½ÓÈë£¬1-½ÓÈë
+        BYTE	byChannelID;		//ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byConnectStatus;	//ï¿½ï¿½Æµ×´Ì¬ï¿½ï¿½0-Î´ï¿½ï¿½ï¿½ë£¬1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[30];
     }USB_AUDIO_STATUS, *LPUSB_AUDIO_STATUS;
 
-    //ÒôÆµÒôÁ¿
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_VOLUME
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//ÒôÆµÍ¨µÀºÅ
-        BYTE	byVolume;			//ÒôÁ¿Öµ
+        BYTE	byChannelID;		//ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byVolume;			//ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE	byRes[30];
     }USB_AUDIO_VOLUME, *LPUSB_AUDIO_VOLUME;
 
-    //ÒôÆµÊäÈëÑ¡Ôñ
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
     typedef struct tagUSB_AUDIO_AMER
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//ÒôÆµÍ¨µÀºÅ
-        BYTE	byEnabled;			//ÒôÆµÊäÈëÍ¨µÀÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE	byChannelID;		//ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byEnabled;			//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[30];
     }USB_AUDIO_AMER, *LPUSB_AUDIO_AMER;
 
-    //AECÑÓÊ±ÅäÖÃ
+    //AECï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_AECSP
     {
         DWORD   dwSize;
-        BYTE    byInChannelID;      //ÒôÆµÊäÈëÍ¨µÀºÅ
-        BYTE    byEnabled;          //AECÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        WORD    wAecValue;          //Ê±ÑÓÖµ£¬·¶Î§0-1000
-        BYTE    byOutChannelID;     //ÒôÆµÊä³öÍ¨µÀºÅ
+        BYTE    byInChannelID;      //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE    byEnabled;          //AECÊ¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        WORD    wAecValue;          //Ê±ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        BYTE    byOutChannelID;     //ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[31];
     }USB_AUDIO_AECSP, *LPUSB_AUDIO_AECSP;
 
-    //ÑÓÊ±×Ô¶¯ÓÅ»¯
+    //ï¿½ï¿½Ê±ï¿½Ô¶ï¿½ï¿½Å»ï¿½
     typedef struct tagUSB_AUDIO_DEVICE_DELAY
     {
         DWORD	dwSize;
-        BYTE	byInChannelID;		//ÒôÆµÊäÈëÍ¨µÀºÅ
-        BYTE	byOutChannelID;		//ÒôÆµÊä³öÍ¨µÀºÅ
-        BYTE	byProcessMode;		//²âÊÔ¹ý³Ì£º1-¿ªÊ¼²âÊÔ£¬2-»ñÈ¡½á¹û
+        BYTE	byInChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byOutChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byProcessMode;		//ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ì£ï¿½1-ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ô£ï¿½2-ï¿½ï¿½È¡ï¿½ï¿½ï¿½
         BYTE    byRes1;
-        WORD	wAecValue;			//Ê±ÑÓÖµ£¬·¶Î§0-1000
+        WORD	wAecValue;			//Ê±ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
         BYTE	byRes[30];
     }USB_AUDIO_DEVICE_DELAY, *LPUSB_AUDIO_DEVICE_DELAY;
 
-    //À¶ÑÀÉ¨Ãè×´Ì¬
+    //ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½×´Ì¬
     typedef struct tagUSB_AUDIO_BT
     {
         DWORD	dwSize;
-        BYTE	byEnabled;			//À¶ÑÀÉ¨ÃèÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE	byEnabled;			//ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[31];
     }USB_AUDIO_BT, *LPUSB_AUDIO_BT;
 
-    //À¶ÑÀMACµØÖ·
+    //ï¿½ï¿½ï¿½ï¿½MACï¿½ï¿½Ö·
     typedef struct tagUSB_AUDIO_BT_MAC
     {
         DWORD	dwSize;
-        BYTE	byMacAddress[40];	//À¶ÑÀMACµØÖ·
+        BYTE	byMacAddress[40];	//ï¿½ï¿½ï¿½ï¿½MACï¿½ï¿½Ö·
         BYTE	byRes[32];
     }USB_AUDIO_BT_MAC, *LPUSB_AUDIO_BT_MAC;
 
-    //À¶ÑÀÁ¬½Ó×´Ì¬
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
     typedef struct tagUSB_AUDIO_BT_STATUS
     {
         DWORD	dwSize;
-        BYTE	byConnectStatus;	//À¶ÑÀÁ¬½Ó×´Ì¬£º0-Î´Á¬½Ó£¬1-Á¬½Ó
+        BYTE	byConnectStatus;	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½0-Î´ï¿½ï¿½ï¿½Ó£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[31];
     }USB_AUDIO_BT_STATUS, *LPUSB_AUDIO_BT_STATUS;
 
-    //ÒôÆµ×Ô¼ì
+    //ï¿½ï¿½Æµï¿½Ô¼ï¿½
     typedef struct tagUSB_AUDIO_DETECT
     {
         DWORD	dwSize;
-        BYTE	byInChannelID;		//ÒôÆµÊäÈëÍ¨µÀºÅ
-        BYTE	byOutChannelID;		//ÒôÆµÊä³öÍ¨µÀºÅ
-        BYTE	byProcessMode;		//²âÊÔ¹ý³Ì£º1-¿ªÊ¼²âÊÔ£¬2-»ñÈ¡½á¹û
-        BYTE	byTestResult;		//²âÊÔ½á¹û£º1-×Ô¼ìÕýÈ·£¬2-×Ô¼ì´íÎó
+        BYTE	byInChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byOutChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byProcessMode;		//ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ì£ï¿½1-ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ô£ï¿½2-ï¿½ï¿½È¡ï¿½ï¿½ï¿½
+        BYTE	byTestResult;		//ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½1-ï¿½Ô¼ï¿½ï¿½ï¿½È·ï¿½ï¿½2-ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[32];
     }USB_AUDIO_DETECT, *LPUSB_AUDIO_DETECT;
 
-    //ÒôÐ§×Ô¼ì
+    //ï¿½ï¿½Ð§ï¿½Ô¼ï¿½
     typedef struct tagUSB_AUDIO_EFFICT_DETECT
     {
         DWORD	dwSize;
-        BYTE	byInChannelID;		//ÒôÆµÊäÈëÍ¨µÀºÅ
-        BYTE	byOutChannelID;		//ÒôÆµÊä³öÍ¨µÀºÅ
-        BYTE	byTestMode;			//²âÊÔÄ£Ê½£º1-»ìÏì¼ì²â£¬2-ÒôÁ¿¼ì²â£¬3-ÔëÉù²âÊÔ
-        BYTE	byProcessMode;		//²âÊÔ¹ý³Ì£º1-¿ªÊ¼²âÊÔ£¬2-»ñÈ¡½á¹û
-        BYTE	byTestResult;		//²âÊÔ½á¹û£º
-        //µ±²âÊÔÄ£Ê½Îª1Ê±£º0-»ìÏìÐ§¹û½ÏºÃ£¬1-»ìÏìÐ§¹û½Ï²î£¬2-»ìÏì²âÊÔÊ§°Ü
-        //µ±²âÊÔÄ£Ê½Îª2Ê±£º0-Êä³öÒôÁ¿½ÏÐ¡£¬1-Êä³öÒôÁ¿Õý³££¬2-Êä³öÒôÁ¿½Ï´ó
-        //µ±²âÊÔÄ£Ê½Îª3Ê±£º0-ÔëÉù¹ý´ó£¬1-ÔëÉùÕý³£
+        BYTE	byInChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byOutChannelID;		//ï¿½ï¿½Æµï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byTestMode;			//ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½â£¬2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE	byProcessMode;		//ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ì£ï¿½1-ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ô£ï¿½2-ï¿½ï¿½È¡ï¿½ï¿½ï¿½
+        BYTE	byTestResult;		//ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Îª1Ê±ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ÏºÃ£ï¿½1-ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ï²î£¬2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Îª2Ê±ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Îª3Ê±ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE	byRes[31];
     }USB_AUDIO_EFFICT_DETECT, *LPUSB_AUDIO_EFFICT_DETECT;
 
-    //Éú²ú²âÊÔ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_FAC_TEST
     {
         DWORD	dwSize;
-        BYTE	byTestMode;			//²âÊÔÄ£Ê½£º1-²âÊÔ×ÔÑÐUSB MIC£¬2-²âÊÔÍ¨Â·£¬3-²âÊÔÀ¶ÑÀÒôÆµ
-        BYTE	byProcessMode;		//²âÊÔ¹ý³Ì£º1-¿ªÊ¼²âÊÔ£¬2-»ñÈ¡½á¹û
-        BYTE	byTestResult;		//²âÊÔ½á¹û£º1-²âÊÔÕýÈ·£¬2-²âÊÔ´íÎó
+        BYTE	byTestMode;			//ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½USB MICï¿½ï¿½2-ï¿½ï¿½ï¿½ï¿½Í¨Â·ï¿½ï¿½3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ
+        BYTE	byProcessMode;		//ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ì£ï¿½1-ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ô£ï¿½2-ï¿½ï¿½È¡ï¿½ï¿½ï¿½
+        BYTE	byTestResult;		//ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½2-ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½
         BYTE	byRes[29];
     }USB_AUDIO_FAC_TEST, *LPUSB_AUDIO_FAC_TEST;
 
-    //ÒôÆµAGC
+    //ï¿½ï¿½ÆµAGC
     typedef struct tagUSB_AUDIO_AGC_CONFIG
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//ÒôÆµÍ¨µÀºÅ
-        BYTE	byEnabled;			//AGCÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byGainLevel;		//ÔöÒæÖµ£¬·¶Î§0-30
+        BYTE	byChannelID;		//ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byEnabled;			//AGCÊ¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byGainLevel;		//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-30
         BYTE	byRes[29];
     }USB_AUDIO_AGC_CONFIG, *LPUSB_AUDIO_AGC_CONFIG;
 
-    //ÒôÆµ½µÔë
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_REDUCE_NOISE
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//ÒôÆµÍ¨µÀºÅ
-        BYTE	byEnabled;			//½µÔëÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE	byLevel;			//½µÔëµÈ¼¶£º0-5
-        BYTE	byLevelDefault;     //½µÔëµÈ¼¶Ä¬ÈÏÖµ
-        BYTE	byLevelMin;         //½µÔëµÈ¼¶×îÐ¡Öµ
-        BYTE	byLevelMax;         //½µÔëµÈ¼¶×î´óÖµ
+        BYTE	byChannelID;		//ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byEnabled;			//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE	byLevel;			//ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½0-5
+        BYTE	byLevelDefault;     //ï¿½ï¿½ï¿½ï¿½È¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE	byLevelMin;         //ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE	byLevelMax;         //ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE	byRes[26];
     }USB_AUDIO_REDUCE_NOISE, *LPUSB_AUDIO_REDUCE_NOISE;
 
-    //ÓïÒôÊ¶±ð
+    //ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½
     typedef struct tagUSB_AUDIO_RECOG_RSLT
     {
         DWORD	dwSize;
-        BYTE	byAudAiCmd;			//ÓïÒôÖÇÄÜÃüÁî£¬·¶Î§£º0-100
-        BYTE	byMatchAudAi;		//Æ¥Åäµ½µÄÓïÒôÖ¸Áî£¬·¶Î§£º0-100
+        BYTE	byAudAiCmd;			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½Î§ï¿½ï¿½0-100
+        BYTE	byMatchAudAi;		//Æ¥ï¿½äµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½î£¬ï¿½ï¿½Î§ï¿½ï¿½0-100
         BYTE    byRes1[2];
-        DWORD	dwResSet;			//ÉèÖÃ²ÎÊýÖµ£º0 - (2^32 - 1)
-        DWORD	dwResRet;			//»ñÈ¡²ÎÊýÖµ£º0 - (2^32 - 1)
+        DWORD	dwResSet;			//ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Öµï¿½ï¿½0 - (2^32 - 1)
+        DWORD	dwResRet;			//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0 - (2^32 - 1)
         BYTE	byRes[32];
     }USB_AUDIO_RECOG_RSLT, *LPUSB_AUDIO_RECOG_RSLT;
 
-    //ECHO Õï¶Ï
+    //ECHO ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_ECHO_SET
     {
-        BYTE    byInChannelID;      //µ±Ç°ÊäÈëÍ¨µÀ
-        BYTE    byOutChannelID;     //µ±Ç°Êä³öÍ¨µÀ
-        BYTE    byEnabled;          //ÊÇ·ñÊ¹ÄÜ
+        BYTE    byInChannelID;      //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
+        BYTE    byOutChannelID;     //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
+        BYTE    byEnabled;          //ï¿½Ç·ï¿½Ê¹ï¿½ï¿½
         BYTE    byRes[29];
     }USB_AUDIO_ECHO_SET, *LPUSB_AUDIO_ECHO_SET;
 
-    //ÒôÆµ¿ØÖÆÐÅÁî
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_SIGNAL_TRANS
     {
-        BYTE    bySignalTransType;  //ÐÅÁîÀàÐÍ£º1-ÒôÆµÊý¾Ýµ¼³ö£¬2-logµ¼³ö£¬3-¿ªÆô½ûÑÔ£¬4-¹Ø±Õ½ûÑÔ£¬5-ÒôÆµÊäÈë×Ô¶¯Ä£Ê½¿ªÆô£¬6-ÒôÆµÊäÈë×Ô¶¯Ä£Ê½¹Ø±Õ£¬7-ÒôÆµÊä³ö×Ô¶¯Ä£Ê½¿ªÆô£¬8-ÒôÆµÊä³ö×Ô¶¯Ä£Ê½¹Ø±Õ
+        BYTE    bySignalTransType;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½Æµï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½ï¿½ï¿½2-logï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½4-ï¿½Ø±Õ½ï¿½ï¿½Ô£ï¿½5-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½6-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½Ø±Õ£ï¿½7-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½8-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½Ø±ï¿½
         BYTE    byRes[31];
     }USB_AUDIO_SIGNAL_TRANS, *LPUSB_AUDIO_SIGNAL_TRANS;
 
-    //ÒôÆµÊäÈëÊä³öÍ¨µÀÐÅÏ¢
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_AUDIO_INPUT_OUTPUT_CHANNELINFO
     {
-        BYTE    byInChannelID;      //µ±Ç°ÊäÈëÍ¨µÀ
-        BYTE    byOutChannelID;     //µ±Ç°Êä³öÍ¨µÀ
+        BYTE    byInChannelID;      //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
+        BYTE    byOutChannelID;     //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
         BYTE    byRes[30];
     }USB_AUDIO_INPUT_OUTPUT_CHANNELINFO, *LPUSB_AUDIO_INPUT_OUTPUT_CHANNELINFO;
 
-    //ÒôÆµ²úÏß²âÊÔÅäÖÃ
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_AUDIO_PROCESS_LINE_CFG
     {
-        BYTE    byEnabled;          //ÒôÆµ²úÏß²âÊÔÊ¹ÄÜ£º0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE    byEnabled;          //ï¿½ï¿½Æµï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[31];
     }USB_AUDIO_PROCESS_LINE_CFG, *LPUSB_AUDIO_PROCESS_LINE_CFG;
 
-    //»ñÈ¡ÒôÆµPOE¹©µçÍø¿Ú¼ì²â×´Ì¬
+    //ï¿½ï¿½È¡ï¿½ï¿½ÆµPOEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½×´Ì¬
     typedef struct tagUSB_AUDIO_POE_LINK_STATUS
     {
-        BYTE    byPOELinkStatus;    //poe¹©µçÍø¿Ú¼ì²â£º0-Òì³££¬1-Õý³£
+        BYTE    byPOELinkStatus;    //poeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½â£º0-ï¿½ì³£ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[31];
     }USB_AUDIO_POE_LINK_STATUS, *LPUSB_AUDIO_POE_LINK_STATUS;
 
-    //Ê°Òô
+    //Ê°ï¿½ï¿½
     typedef struct tagUSB_AUDIO_PICK_UP
     {
-        BYTE    byMode;           //Ä£Ê½£º0-È«Ïò£¬1-¶¨Ïò
-        BYTE    byModeDefault;    //Ä£Ê½Ä¬ÈÏÖµ
+        BYTE    byMode;           //Ä£Ê½ï¿½ï¿½0-È«ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE    byModeDefault;    //Ä£Ê½Ä¬ï¿½ï¿½Öµ
         BYTE    byRes[30];
     }USB_AUDIO_PICK_UP, *LPUSB_AUDIO_PICK_UP;
 
-    //¸úËæÄ£Ê½
+    //ï¿½ï¿½ï¿½ï¿½Ä£Ê½
     typedef struct tagUSB_PTZ_TRACK_MODE
     {
         DWORD	dwSize;
-        BYTE	byTrackingMode;		//¸úËæÄ£Ê½£º1-ÊÖ¶¯£¬2-×Ô¶¯£¬3-AutoFrame
+        BYTE	byTrackingMode;		//ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½1-ï¿½Ö¶ï¿½ï¿½ï¿½2-ï¿½Ô¶ï¿½ï¿½ï¿½3-AutoFrame
         BYTE	byRes[31];
     }USB_PTZ_TRACK_MODE, *LPUSB_PTZ_TRACK_MODE;
 
-    //Ô¤ÖÃµã²ÎÊý
+    //Ô¤ï¿½Ãµï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_PTZ_PRESET_CFG
     {
         DWORD	dwSize;
-        BYTE	byChannelID;		//Í¨µÀºÅ
-        BYTE	byPresetID;			//Ô¤ÖÃµãºÅ£¬·¶Î§1-5
+        BYTE	byChannelID;		//Í¨ï¿½ï¿½ï¿½ï¿½
+        BYTE	byPresetID;			//Ô¤ï¿½Ãµï¿½Å£ï¿½ï¿½ï¿½Î§1-5
         BYTE	byRes[30];
     }USB_PTZ_PRESET_CFG, *LPUSB_PTZ_PRESET_CFG;
 
-    //×Ô¶¯¸úËæÁéÃô¶È
+    //ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_PTZ_AUTO_TRACK_SENSITIVITY
     {
         DWORD	dwSize;
-        BYTE	bySensitivity;		//ÁéÃô¶È£º1-ÖÐ£¬2-¸ß
+        BYTE	bySensitivity;		//ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½1-ï¿½Ð£ï¿½2-ï¿½ï¿½
         BYTE	byRes[31];
     }USB_PTZ_AUTO_TRACK_SENSITIVITY, *LPUSB_PTZ_AUTO_TRACK_SENSITIVITY;
 
-    //²âÎÂ»ù±¾²ÎÊýÅäÖÃ
+    //ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_BASIC_PARAM
     {
         DWORD  dwSize;
-        BYTE       byTemperatureRangeAutoChangedEnabled; //²âÎÂµµÎ»×Ô¶¯ÇÐ»»Ä£Ê½Ê¹ÄÜ£º0-¹Ø±Õ  1-¿ªÆô
-        BYTE       byEnabled;//¿ªÆô²âÎÂ¹¦ÄÜÊ¹ÄÜ
-        BYTE       byDisplayMaxTemperatureEnabled;//ÏÔÊ¾×î¸ßÎÂ: 0-¹Ø±Õ; 1-¿ªÆô
-        BYTE       byDisplayMinTemperatureEnabled;//ÏÔÊ¾×îµÍÎÂ: 0-¹Ø±Õ; 1-¿ªÆô
-        BYTE       byDisplayAverageTemperatureEnabled;//ÏÔÊ¾Æ½¾ùÎÂ: 0-¹Ø±Õ; 1-¿ªÆô
-        BYTE       byTemperatureUnit;//ÎÂ¶Èµ¥Î»: 1 - ÉãÊÏÎÂ¶È;2 - »ªÊÏÎÂ¶È;3 - ¿ª¶ûÎÄÎÂ¶È(Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔÉãÊÏÎÂ¶È×÷Îªµ¥Î»´«Êä)
-        BYTE       byTemperatureRange;//²âÎÂ·¶Î§: [1~5]¸öµµÎ»£¬µµÎ»ÄÜÁ¦¼°¶ÔÓ¦ÎÂ¶È·¶Î§£¬¾ßÌå²Î¿¼Éè±¸²úÆ·ËµÃ÷
-        BYTE       byCalibrationCoefficientEnabled;//ÆôÓÃ±ê¶¨ÏµÊý:0 - ¹Ø±Õ;1 - ¿ªÆô
-        DWORD       dwCalibrationCoefficient;//±ê¶¨ÏµÊý: 0.00~30.00 ,´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD       dwExternalOpticsWindowCorrection;//Íâ²¿¹âÑ§ÎÂ¶È: -40.0~80.0¡æ ,´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý   ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î£¬¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        DWORD       dwEmissivity;//·¢ÉäÂÊ: 0.01~1(¾«È·µ½Ð¡ÊýµãºóÁ½Î»), ´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý   ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î£¬¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        BYTE       byDistanceUnit;//¾àÀëµ¥Î»: 1 - Ã×; 2 - ÀåÃ×; 3 - Ó¢³ß
-        BYTE       byShowAlarmColorEnabled; //±¨¾¯ÑÕÉ«ÏÔÊ¾Ê¹ÄÜ: 0-¹Ø±Õ  1-¿ªÆô
-        BYTE       byAlarmType; //±¨¾¯ÀàÐÍ: 1-×î¸ßÎÂ, 2-×îµÍÎÂ, 3-Æ½¾ùÎÂ, 4-ÎÂ²î
-        BYTE       byAlarmRult;  //±¨¾¯¹æÔòÀàÐÍ: 1-´óÓÚ  2-Ð¡ÓÚ
-        DWORD       dwDistance;//¾àÀë: 0.3-2m£¨Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä, ¾«È·µ½Ð¡Êýµãºó1Î»£©  ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î£¬¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        BYTE       byReflectiveEnable;//·´ÉäÎÂ¶ÈÊ¹ÄÜ: 0 - ¹Ø±Õ; 1 - ¿ªÆô
-        BYTE       byAutoDrift;  //×Ô¶¯ÎÂÆ¯ÒÖÖÆÀàÐÍ: 1-²âÎÂËã·¨¿â×öÎÂÆ¯   2-NUC×öÎÂÆ¯
-        BYTE       bySSECompensation;  //SSE²¹³¥: 1-Ö§³Ö²âÎÂ¾àÀë×ÔÊÊÓ¦   2-²»Ö§³Ö
-        BYTE       byThermalRawData;  //ÈÈ³ÉÏñÂãÊý¾ÝÑ¹Ëõ·½Ê½: 0-²»Ö§³ÖÑ¹Ëõ   1-LPLÑ¹Ëõ·½·¨
-        DWORD       dwReflectiveTemperature;//·´ÉäÎÂ¶È: -100.0~1000.0¡æ£¨¾«È·µ½Ð¡Êýµãºó1Î»£©,´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý   ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î£¬¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        BYTE       byThermomrtryInfoDisplayPosition;//²âÎÂÐÅÏ¢ÏÔÊ¾Î»ÖÃ: 1-¸úËæ¹æÔò 2-ÆÁÄ»×óÉÏ½Ç
-        BYTE       byThermometryStreamOverlay; //ÂëÁ÷µþ¼ÓÎÂ¶ÈÐÅÏ¢: 1-²»µþ¼Ó  2-µþ¼Ó
-        BYTE       byDisplayCenTempEnabled;  //ÏÔÊ¾ÖÐÐÄÎÂ£º0-¹Ø±Õ   1-¿ªÆô
-        BYTE       byBackcolorEnabled;  //ÏÔÊ¾±³¾°É«£º0-¹Ø±Õ  1-¿ªÆô
-        DWORD       dwAlert;//Ô¤¾¯ÎÂ¶È: -20¡æ~400¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD       dwAlarm;//±¨¾¯ÎÂ¶È: -20¡æ~400¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD       dwExternalOpticsTransmit;//Íâ²¿¹âÑ§Í¸¹ýÂÊ: 0.01~1(¾«È·µ½Ð¡ÊýµãºóÁ½Î»), ´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý   ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î£¬¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        DWORD       dwTemperatureRangeUpperLimit; //²âÎÂµµÎ»ÉÏÏÞÎÂ¶ÈÖµ£¨Ö»¶Á£©£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        //ÓÃÓÚÔ¤ÀÀ»­ÃæÎÂ¶ÈÐÅÏ¢µþ¼ÓÏÔÊ¾µÄÑùÊ½£º´óÓÚ´ËÎÂ¶È·¶Î§ÓÃ > aboveMaxRangeTempÏÔÊ¾£¬Ð¡ÓÚ´ËÎÂ¶È·¶Î§ÓÃ¡ÖÏÔÊ¾
-        DWORD       dwTemperatureRangeLowerLimit; //²âÎÂµµÎ»ÏÂÏÞÎÂ¶ÈÖµ£¨Ö»¶Á£©£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        //ÓÃÓÚÔ¤ÀÀ»­ÃæÎÂ¶ÈÐÅÏ¢µþ¼ÓÏÔÊ¾µÄÑùÊ½£ºÐ¡ÓÚ´ËÎÂ¶È·¶Î§ÓÃ < aboveMaxRangeTempÏÔÊ¾£¬´óÓÚ´ËÎÂ¶È·¶Î§ÓÃ¡ÖÏÔÊ¾
-        DWORD       dwTemperatureRangeExcursionUpperLimit; //²âÎÂµµÎ»Æ«ÒÆÉÏÏÞÎÂ¶ÈÖµ£¨Ö»¶Á£©£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        //ÓÃÓÚÔ¤ÀÀ»­ÃæÎÂ¶ÈÐÅÏ¢µþ¼ÓÏÔÊ¾µÄÑùÊ½£º´óÓÚ´ËÎÂ¶È·¶Î§ÓÃ¡ÖÏÔÊ¾£¬Ð¡ÓÚÕý³£ÏÔÊ¾
-        DWORD       dwTemperatureRangeExcursionLowerLimit; //²âÎÂµµÎ»Æ«ÒÆÏÂÏÞÎÂ¶ÈÖµ£¨Ö»¶Á£©£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        //ÓÃÓÚÔ¤ÀÀ»­ÃæÎÂ¶ÈÐÅÏ¢µþ¼ÓÏÔÊ¾µÄÑùÊ½£ºÐ¡ÓÚ´ËÎÂ¶È·¶Î§ÓÃ¡ÖÏÔÊ¾£¬´óÓÚÕý³£ÏÔÊ¾
-        DWORD       dwAtmosphericHumidity;  //´óÆøÊª¶ÈÖµ£¨²âÎÂÊ¹ÓÃ£©£º·¶Î§0.0~100.0£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕýÕûÊý
-        BYTE       byFloatTransMode; //¸¡µãÊý´«Êä·½Ê½  1 - ÕûÐÍ´«Êä  2 - ÒÆÎ»´«Êä      ÕûÐÍ´«Êä : ÏÈ½«¸¡µãÊý×ª»»ÎªÕýÊý£¬ÔÙ³ËÒÔ10µÄ±¶Êý£¬×ª»»³ÉÕýÕûÊý£¬È»ºó´«Êä    ÒÆÎ»´«Êä : Ö±½Ó½«¸¡µãÊý³ËÒÔ2n£¬½Ø¶ÏÐ¡Êý£¬È»ºó´«Êä
-        BYTE       byShiftLength; //¸¡µãÊýÒÆÎ»´«Êä³ËÒÔ2µÄN´Î·½£¬ÆäÖÐNµÄ´óÐ¡ 1-6; 2-9; 3-13; 4-16; 5-19;
-        BYTE       byEnviromentTemperatureEnable; //»·¾³ÎÂ¶ÈÊ¹ÄÜ£º1 - ¹Ø±Õ 2 - ¿ªÆô
+        BYTE       byTemperatureRangeAutoChangedEnabled; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½Ô¶ï¿½ï¿½Ð»ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byEnabled;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+        BYTE       byDisplayMaxTemperatureEnabled;//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½: 0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byDisplayMinTemperatureEnabled;//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½: 0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byDisplayAverageTemperatureEnabled;//ï¿½ï¿½Ê¾Æ½ï¿½ï¿½ï¿½ï¿½: 0-ï¿½Ø±ï¿½; 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byTemperatureUnit;//ï¿½Â¶Èµï¿½Î»: 1 - ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½;2 - ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½;3 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½(Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½)
+        BYTE       byTemperatureRange;//ï¿½ï¿½ï¿½Â·ï¿½Î§: [1~5]ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Â¶È·ï¿½Î§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½è±¸ï¿½ï¿½Æ·Ëµï¿½ï¿½
+        BYTE       byCalibrationCoefficientEnabled;//ï¿½ï¿½ï¿½Ã±ê¶¨Ïµï¿½ï¿½:0 - ï¿½Ø±ï¿½;1 - ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwCalibrationCoefficient;//ï¿½ê¶¨Ïµï¿½ï¿½: 0.00~30.00 ,ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwExternalOpticsWindowCorrection;//ï¿½â²¿ï¿½ï¿½Ñ§ï¿½Â¶ï¿½: -40.0~80.0ï¿½ï¿½ ,ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶Î£ï¿½ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        DWORD       dwEmissivity;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 0.01~1(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»), ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶Î£ï¿½ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        BYTE       byDistanceUnit;//ï¿½ï¿½ï¿½ëµ¥Î»: 1 - ï¿½ï¿½; 2 - ï¿½ï¿½ï¿½ï¿½; 3 - Ó¢ï¿½ï¿½
+        BYTE       byShowAlarmColorEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ê¾Ê¹ï¿½ï¿½: 0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byAlarmType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-ï¿½ï¿½ï¿½ï¿½ï¿½, 2-ï¿½ï¿½ï¿½ï¿½ï¿½, 3-Æ½ï¿½ï¿½ï¿½ï¿½, 4-ï¿½Â²ï¿½
+        BYTE       byAlarmRult;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-ï¿½ï¿½ï¿½ï¿½  2-Ð¡ï¿½ï¿½
+        DWORD       dwDistance;//ï¿½ï¿½ï¿½ï¿½: 0.3-2mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½  ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶Î£ï¿½ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        BYTE       byReflectiveEnable;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½ï¿½: 0 - ï¿½Ø±ï¿½; 1 - ï¿½ï¿½ï¿½ï¿½
+        BYTE       byAutoDrift;  //ï¿½Ô¶ï¿½ï¿½ï¿½Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¯   2-NUCï¿½ï¿½ï¿½ï¿½Æ¯
+        BYTE       bySSECompensation;  //SSEï¿½ï¿½ï¿½ï¿½: 1-Ö§ï¿½Ö²ï¿½ï¿½Â¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦   2-ï¿½ï¿½Ö§ï¿½ï¿½
+        BYTE       byThermalRawData;  //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½Ê½: 0-ï¿½ï¿½Ö§ï¿½ï¿½Ñ¹ï¿½ï¿½   1-LPLÑ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwReflectiveTemperature;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: -100.0~1000.0ï¿½æ£¨ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶Î£ï¿½ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        BYTE       byThermomrtryInfoDisplayPosition;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾Î»ï¿½ï¿½: 1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2-ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ï½ï¿½
+        BYTE       byThermometryStreamOverlay; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢: 1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  2-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byDisplayCenTempEnabled;  //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½Ø±ï¿½   1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byBackcolorEnabled;  //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwAlert;//Ô¤ï¿½ï¿½ï¿½Â¶ï¿½: -20ï¿½ï¿½~400ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwAlarm;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: -20ï¿½ï¿½~400ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwExternalOpticsTransmit;//ï¿½â²¿ï¿½ï¿½Ñ§Í¸ï¿½ï¿½ï¿½ï¿½: 0.01~1(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»), ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶Î£ï¿½ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        DWORD       dwTemperatureRangeUpperLimit; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Öµï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½ï¿½ > aboveMaxRangeTempï¿½ï¿½Ê¾ï¿½ï¿½Ð¡ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½Ã¡ï¿½ï¿½ï¿½Ê¾
+        DWORD       dwTemperatureRangeLowerLimit; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Öµï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ð¡ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½ï¿½ < aboveMaxRangeTempï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½Ã¡ï¿½ï¿½ï¿½Ê¾
+        DWORD       dwTemperatureRangeExcursionUpperLimit; //ï¿½ï¿½ï¿½Âµï¿½Î»Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Öµï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½Ã¡ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+        DWORD       dwTemperatureRangeExcursionLowerLimit; //ï¿½ï¿½ï¿½Âµï¿½Î»Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Öµï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ð¡ï¿½Ú´ï¿½ï¿½Â¶È·ï¿½Î§ï¿½Ã¡ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+        DWORD       dwAtmosphericHumidity;  //ï¿½ï¿½ï¿½ï¿½Êªï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Î§0.0~100.0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE       byFloatTransMode; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä·½Ê½  1 - ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½  2 - ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ : ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù³ï¿½ï¿½ï¿½10ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½    ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ : Ö±ï¿½Ó½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2nï¿½ï¿½ï¿½Ø¶ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½
+        BYTE       byShiftLength; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Nï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Ä´ï¿½Ð¡ 1-6; 2-9; 3-13; 4-16; 5-19;
+        BYTE       byEnviromentTemperatureEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½Ü£ï¿½1 - ï¿½Ø±ï¿½ 2 - ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes1;
-        DWORD      dwEnviromentTemperature;  //»·¾³ÎÂ¶È£º-100.0~1000.0¡æ£¨¾«È·µ½Ð¡Êýµãºó2Î»£©´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 100»»Ëã³É·Ç¸ºÕûÊý
+        DWORD      dwEnviromentTemperature;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È£ï¿½-100.0~1000.0ï¿½æ£¨ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½2Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 100ï¿½ï¿½ï¿½ï¿½É·Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[176];
     }USB_THERMOMETRY_BASIC_PARAM, *LPUSB_THERMOMETRY_BASIC_PARAM;
 
-    //²âÎÂÄ£Ê½ÅäÖÃ
+    //ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_MODE
     {
         DWORD  dwSize;
-        BYTE       byThermometryMode;//²âÎÂÄ£Ê½: 1-ÆÕÍ¨; 2-×¨¼Ò
-        BYTE       byThermometryROIEnabled;//²âÎÂROIÊ¹ÄÜ: 0 - ¹Ø±Õ; 1 - ¿ªÆô
+        BYTE       byThermometryMode;//ï¿½ï¿½ï¿½ï¿½Ä£Ê½: 1-ï¿½ï¿½Í¨; 2-×¨ï¿½ï¿½
+        BYTE       byThermometryROIEnabled;//ï¿½ï¿½ï¿½ï¿½ROIÊ¹ï¿½ï¿½: 0 - ï¿½Ø±ï¿½; 1 - ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[62];
     }USB_THERMOMETRY_MODE, *LPUSB_THERMOMETRY_MODE;
 
-    //²âÎÂ¹æÔòÇøÓò
+    //ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagTHERMAL_REGION
     {
         DWORD  dwSize;
-        BYTE  byRegionID;  //ÇøÓòID£¬´Ó1¿ªÊ¼µÝÔö
-        BYTE  byRegionEnabled;  //ÇøÓòÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
+        BYTE  byRegionID;  //ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+        BYTE  byRegionEnabled;  //ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes1[2];
-        DWORD dwRegionX;  //ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD dwRegionY;  //ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD dwRegionWidth;  //ÇøÓò¿í¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD dwRegionHeight;  //ÇøÓò¸ß¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
+        DWORD dwRegionX;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD dwRegionY;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD dwRegionWidth;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD dwRegionHeight;  //ï¿½ï¿½ï¿½ï¿½ß¶È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
         BYTE  byRes[12];
     }THERMAL_REGION, *LPTHERMAL_REGION;
 
-    //²âÎÂ¹æÔòÅäÖÃ
+    //ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_REGIONS
     {
         DWORD  dwSize;
-        BYTE         byRegionNum;    //¹æÔòÇøÓò×Ü¸öÊý
+        BYTE         byRegionNum;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½
         BYTE         byRes1[3];
         THERMAL_REGION    struRegion[MAX_THERMAL_REGIONS];
         BYTE         byRes[188];
     }USB_THERMOMETRY_REGIONS, *LPUSB_THERMOMETRY_REGIONS;
 
-    //ÈÈ³ÉÏñÂëÁ÷²ÎÊýÅäÖÃ
+    //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_STREAM_PARAM
     {
         DWORD  dwSize;
-        BYTE       byVideoCodingType;//ÂëÁ÷Êý¾Ý±à½âÂëÀàÐÍ: 1-ÈÈ³ÉÏñÂãÊý¾Ý; 2-È«ÆÁ²âÎÂÊý¾Ý; 3-ÊµÊ±ÂãÊý¾Ý; 4-ÈÈÍ¼Êý¾Ý; 5-ÈÈ³ÉÏñÊµÊ±Á÷; 6-YUVÊµÊ±Êý; 7-PS·â×°MJPEGÊµÊ±Á÷;
-        //8-È«ÆÁ²âÎÂÊý¾Ý+YUVÊµÊ±Á÷; 9-YUV+ÂãÊý¾Ý; 10-½öYUV²»º¬²âÎÂÍ·;  11-²âÎÂÍ·+YUV+ÂãÊý¾Ý
+        BYTE       byVideoCodingType;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 2-È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 3-ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 4-ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½; 5-ï¿½È³ï¿½ï¿½ï¿½ÊµÊ±ï¿½ï¿½; 6-YUVÊµÊ±ï¿½ï¿½; 7-PSï¿½ï¿½×°MJPEGÊµÊ±ï¿½ï¿½;
+        //8-È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+YUVÊµÊ±ï¿½ï¿½; 9-YUV+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 10-ï¿½ï¿½YUVï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·;  11-ï¿½ï¿½ï¿½ï¿½Í·+YUV+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[3];
         DWORD dwWidth;
         DWORD dwHeight;
         DWORD dwFrameRate;
     }USB_THERMAL_STREAM_PARAM, *LPUSB_THERMAL_STREAM_PARAM;
 
-    //²âÎÂÐÞÕý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEMPERATURE_CORRECT
     {
         DWORD  dwSize;
-        BYTE   byRes1;  //±£Áô
-        BYTE   byEnabled;  //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byStreamOverlay;  //ÐÞÕýÎÂ¶ÈÂëÁ÷µþ¼ÓÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byCorrectEnabled; //²âÎÂÐÞÕýÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        DWORD  dwEmissivity; //ºÚÌå·¢ÉäÂÊ:0.01-1.00, ´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwDistance;   //¾àÀë 0.3-2m, Ð­Òé´«ÊäÊ±ÒÔÀåÃ×Îªµ¥Î»
-        DWORD  dwTemperature;  //ºÚÌåÎÂ¶È 30.0~50.0¡æ, ´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
-        DWORD  dwCentrePointX;  //ºÚÌåÖÐÐÄµãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD  dwCentrePointY;  //ºÚÌåÖÐÐÄµãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD  dwCorrectTemperature;  //ÐÞÕýÎÂ¶È -99.0-99.0¡æ ´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
+        BYTE   byRes1;  //ï¿½ï¿½ï¿½ï¿½
+        BYTE   byEnabled;  //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byStreamOverlay;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byCorrectEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEmissivity; //ï¿½ï¿½ï¿½å·¢ï¿½ï¿½ï¿½ï¿½:0.01-1.00, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistance;   //ï¿½ï¿½ï¿½ï¿½ 0.3-2m, Ð­ï¿½é´«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»
+        DWORD  dwTemperature;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ 30.0~50.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCentrePointX;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD  dwCentrePointY;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD  dwCorrectTemperature;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ -99.0-99.0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[36];
     }USB_TEMPERATURE_CORRECT, *LPUSB_TEMPERATURE_CORRECT;
 
-    //ºÚÌå²ÎÊýÅäÖÃ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_BLACK_BODY
     {
         DWORD  dwSize;
-        BYTE   byEnabled;  //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
+        BYTE   byEnabled;  //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes1[3];
-        DWORD  dwEmissivity; //ºÚÌå·¢ÉäÂÊ:0.01 - 1.00, ´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD  dwDistance;   //¾àÀë 0.3-2m, Ð­Òé´«ÊäÊ±ÒÔÀåÃ×Îªµ¥Î»
-        DWORD  dwTemperature;   //ºÚÌåÎÂ¶È 30.0~50.0¡æ, ´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
-        DWORD  dwCentrePointX;  //ºÚÌåÖÐÐÄµãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD  dwCentrePointY;  //ºÚÌåÖÐÐÄµãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
+        DWORD  dwEmissivity; //ï¿½ï¿½ï¿½å·¢ï¿½ï¿½ï¿½ï¿½:0.01 - 1.00, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistance;   //ï¿½ï¿½ï¿½ï¿½ 0.3-2m, Ð­ï¿½é´«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»
+        DWORD  dwTemperature;   //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ 30.0~50.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCentrePointX;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD  dwCentrePointY;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
         BYTE   byRes[40];
     }USB_BLACK_BODY, *LPUSB_BLACK_BODY;
 
-    //ÌåÎÂ²¹³¥²ÎÊýÅäÖÃ
+    //ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_BODYTEMP_COMPENSATION
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE       byEnabled;  //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE       byType;   //²¹³¥·½Ê½:1-ÊÖ¶¯²¹³¥ 2-×Ô¶¯²¹³¥
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE       byEnabled;  //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE       byType;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½:1-ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ 2-ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes1[2];
-        int        iCompensationValue; //²¹³¥ÎÂ¶È [-10.0 10.0]ÉãÊÏ¶È, ´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
-        DWORD      dwSmartCorrection; //ÊÖ¶¯Ð£×¼ -99.0~990.¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD      dwEnvironmentalTemperature;    //»·¾³ÎÂ¶È -99.0~99.0¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        BYTE       byEnvironmentalTemperatureMode;   //»·¾³ÎÂ¶ÈÄ£Ê½ 1-×Ô¶¯Ä£Ê½ 2-ÊÖ¶¯Ä£Ê½
-        BYTE       byTemperatureCurveSensitivityLevel;//ÎÂ¶ÈÇúÏßÁéÃô¶ÈµÈ¼¶: 1-µÍ 2-ÖÐ 3-¸ß  
-        BYTE       byEnvironmentCompensationenabled;//»·¾³²¹³¥Ê¹ÄÜ: 1-¹Ø±Õ  2-¿ªÆô
+        int        iCompensationValue; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ [-10.0 10.0]ï¿½ï¿½ï¿½Ï¶ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD      dwSmartCorrection; //ï¿½Ö¶ï¿½Ð£×¼ -99.0~990.ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD      dwEnvironmentalTemperature;    //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ -99.0~99.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE       byEnvironmentalTemperatureMode;   //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ä£Ê½ 1-ï¿½Ô¶ï¿½Ä£Ê½ 2-ï¿½Ö¶ï¿½Ä£Ê½
+        BYTE       byTemperatureCurveSensitivityLevel;//ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½: 1-ï¿½ï¿½ 2-ï¿½ï¿½ 3-ï¿½ï¿½  
+        BYTE       byEnvironmentCompensationenabled;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½: 1-ï¿½Ø±ï¿½  2-ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[45];
     }USB_BODYTEMP_COMPENSATION, *LPUSB_BODYTEMP_COMPENSATION;
 
-    //È«ÆÁ²âÎÂ²ÎÊýÅäÖÃ
+    //È«ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_P2P_PARAM
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE byJpegPicEnabled;  //Éè±¸ÊÇ·ñ·µ»ØjpegÍ¼Æ¬ 0-¹Ø±Õ 1-¿ªÆô
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE byJpegPicEnabled;  //ï¿½è±¸ï¿½Ç·ñ·µ»ï¿½jpegÍ¼Æ¬ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[31];
     }USB_P2P_PARAM, *LPUSB_P2P_PARAM;
 
-    //Ë«¹âÐ£×¼×ø±ê¿ØÖÆ
+    //Ë«ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE byDoubleLightsCorrectPointsEnabled;  //Ë«¹âÐ£×¼×ø±êÊ¹ÄÜ¿ª¹Ø 0-¹Ø±Õ 1-¿ªÆô
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE byDoubleLightsCorrectPointsEnabled;  //Ë«ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü¿ï¿½ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[31];
     }USB_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL, *LPUSB_DOUBLE_LIGHTS_CORRECT_POINTS_CTRL;
 
-    //ÈÈ³ÉÏñ²âÎÂËã·¨°æ±¾
+    //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½æ±¾
     typedef struct tagUSB_THERMAL_ALG_VERSION
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE   byThermometryAlgName[64];  //²âÎÂËã·¨¿â°æ±¾ÐÅÏ¢
-        BYTE   byThermometryAlgLogicVersion; //²âÎÂËã·¨Âß¼­°æ±¾£º
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byThermometryAlgName[64];  //ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½æ±¾ï¿½ï¿½Ï¢
+        BYTE   byThermometryAlgLogicVersion; //ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ß¼ï¿½ï¿½æ±¾ï¿½ï¿½
         /*
-        0 - V0°æ±¾£¬×Ö¶Î³öÏÖÇ°µÄ°æ±¾±»±êÊ¶ÎªV0
-        1 - V1°æ±¾£¬»ùÓÚDV 5.5.29µÄ²âÎÂ´¦ÀíÂß¼­
-        2 - V2°æ±¾£¬»ùÓÚ´óÊ¦ÐÍ 5.5.27µÄ²âÎÂÂß¼­£¬ÒýÈëÁË²âÎÂÖÐ¼ä²ÎÊý
-        3 - V3°æ±¾£¬»ùÓÚV2°æ±¾£¬ÐÞ¸ÄÁË¶Ô²âÎÂ½á¹ûµÄ´¦Àí·½Ê½Îª±£Áô2Î»¾«¶È
-        4 - V4°æ±¾£¬»ùÓÚV3°æ±¾£¬Ëã·¨¿âÊä³ö½á¹û²ÉÓÃÒÆÎ»µÄ·½Ê½½Ø¶Ï£¬²¢ÇÒ±£Áô2Î»Ð¡Êý¾«¶È
+        0 - V0ï¿½æ±¾ï¿½ï¿½ï¿½Ö¶Î³ï¿½ï¿½ï¿½Ç°ï¿½Ä°æ±¾ï¿½ï¿½ï¿½ï¿½Ê¶ÎªV0
+        1 - V1ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DV 5.5.29ï¿½Ä²ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ß¼ï¿½
+        2 - V2ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Ê¦ï¿½ï¿½ 5.5.27ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½
+        3 - V3ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½V2ï¿½æ±¾ï¿½ï¿½ï¿½Þ¸ï¿½ï¿½Ë¶Ô²ï¿½ï¿½Â½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½ï¿½ï¿½2Î»ï¿½ï¿½ï¿½ï¿½
+        4 - V4ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½V3ï¿½æ±¾ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ä·ï¿½Ê½ï¿½Ø¶Ï£ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½2Î»Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         */
         BYTE   byRes[63];
     }USB_THERMAL_ALG_VERSION, *LPUSB_THERMAL_ALG_VERSION;
 
-    //²âÎÂ±ê¶¨ÎÄ¼þµ¼Èëµ¼³ö
+    //ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ëµ¼ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_CALIBRATION_FILE
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE   byFileName[64];  //ÎÄ¼þÃû³Æ
-        DWORD   dwFileLenth;      //±ê¶¨ÎÄ¼þ³¤¶È
-        BYTE   *pCalibrationFile;     //±ê¶¨ÎÄ¼þÊý¾Ý
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byFileName[64];  //ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwFileLenth;      //ï¿½ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   *pCalibrationFile;     //ï¿½ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[56];
     }USB_THERMOMETRY_CALIBRATION_FILE, *LPUSB_THERMOMETRY_CALIBRATION_FILE;
 
-    //×¥ÈÈÍ¼
+    //×¥ï¿½ï¿½Í¼
     typedef struct tagUSB_JPEGPIC_WITH_APPENDDATA
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        DWORD       dwJpegPicLen;//JpegÍ¼Æ¬³¤¶È
-        DWORD       dwJpegPicWidth;//Í¼Ïñ¿í¶È
-        DWORD       dwJpegPicHeight;//Í¼Ïñ¸ß¶È
-        DWORD       dwP2pDataLen;//È«ÆÁ²âÎÂÊý¾Ý³¤¶È
-        BYTE       byIsFreezedata;//ÊÇ·ñÊý¾Ý¶³½á: 0-·ñ; 1-ÊÇ
-        BYTE       byTemperatureDataLength;//²âÎÂÊý¾Ý³¤¶È£¨2¡¢4£©
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD       dwJpegPicLen;//JpegÍ¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwJpegPicWidth;//Í¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwJpegPicHeight;//Í¼ï¿½ï¿½ß¶ï¿½
+        DWORD       dwP2pDataLen;//È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        BYTE       byIsFreezedata;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½ï¿½: 0-ï¿½ï¿½; 1-ï¿½ï¿½
+        BYTE       byTemperatureDataLength;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½È£ï¿½2ï¿½ï¿½4ï¿½ï¿½
         BYTE       byRes2[2];
-        DWORD       dwScale;//·Å´ó±¶Êý£¨²âÎÂÊý¾Ý³¤¶ÈÎª2Ê±·µ»Ø£©
-        int        iOffset;//Æ«ÒÆÁ¿£¨²âÎÂÊý¾Ý³¤¶ÈÎª2Ê±·µ»Ø£©
-        BYTE       *pJpegPic;//ÈÈ³ÉÏñÍ¼Æ¬Êý¾Ý
-        BYTE       *pP2pData;//È«ÆÁ²âÎÂÊý¾Ý
+        DWORD       dwScale;//ï¿½Å´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½Îª2Ê±ï¿½ï¿½ï¿½Ø£ï¿½
+        int        iOffset;//Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½Îª2Ê±ï¿½ï¿½ï¿½Ø£ï¿½
+        BYTE       *pJpegPic;//ï¿½È³ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        BYTE       *pP2pData;//È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[28];
     }USB_JPEGPIC_WITH_APPENDDATA, *LPUSB_JPEGPIC_WITH_APPENDDATA;
 
 
-    //ROIÇøÓò
+    //ROIï¿½ï¿½ï¿½ï¿½
     typedef struct tagROI_REGION
     {
-        BYTE       byROIRegionID;//ROIÇøÓòID£¬´Ó1¿ªÊ¼µÝÔö£¬+1µÝÔö
-        BYTE       byROIRegionEnabled;//ROIÇøÓòÊ¹ÄÜ£º0 - ¹Ø±Õ£¬1 - ¿ªÆô
+        BYTE       byROIRegionID;//ROIï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+1ï¿½ï¿½ï¿½ï¿½
+        BYTE       byROIRegionEnabled;//ROIï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0 - ï¿½Ø±Õ£ï¿½1 - ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes1[2];
-        DWORD       dwROIRegionX;//ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwROIRegionY;//ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwROIRegionWidth;//ÇøÓò¿í¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwROIRegionHeight;//ÇøÓò¸ß¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwDistance;//¾àÀë£º0.3-2m£¨Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä, ¾«È·µ½Ð¡Êýµãºó1Î»£©
+        DWORD       dwROIRegionX;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwROIRegionY;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwROIRegionWidth;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwROIRegionHeight;//ï¿½ï¿½ï¿½ï¿½ß¶È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwDistance;//ï¿½ï¿½ï¿½ë£º0.3-2mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½
         BYTE       byRes[8];
     }ROI_REGION, *LPROI_REGION;
 
-    //ROI×î¸ßÎÂÐÅÏ¢²éÑ¯
+    //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯
     typedef struct tagUSB_ROI_MAX_TEMPERATURE_SEARCH
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        WORD       wMillisecond;//ºÁÃë
-        BYTE       byRes2;//±£Áô
-        BYTE       bySecond;//Ãë
-        BYTE       byMinute;//·ÖÖÓ
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD       wMillisecond;//ï¿½ï¿½ï¿½ï¿½
+        BYTE       byRes2;//ï¿½ï¿½ï¿½ï¿½
+        BYTE       bySecond;//ï¿½ï¿½
+        BYTE       byMinute;//ï¿½ï¿½ï¿½ï¿½
         BYTE       byHour;//Ð¡Ê±
-        BYTE       byDay;//ÈÕ
-        BYTE       byMonth;//ÔÂ
-        WORD       wYear;//Äê
-        BYTE       byJpegPicEnabled;//Éè±¸ÊÇ·ñ·µ»ØjpegÍ¼Æ¬
-        BYTE       byMaxTemperatureOverlay;//ÊÇ·ñµþ¼Ó×î¸ßÎÂ
-        BYTE       byRegionsOverlay;//ÊÇ·ñµþ¼Ó¹æÔò¿ò
-        BYTE       byROIRegionNum;//ROIÇøÓò×Ü¸öÊý
+        BYTE       byDay;//ï¿½ï¿½
+        BYTE       byMonth;//ï¿½ï¿½
+        WORD       wYear;//ï¿½ï¿½
+        BYTE       byJpegPicEnabled;//ï¿½è±¸ï¿½Ç·ñ·µ»ï¿½jpegÍ¼Æ¬
+        BYTE       byMaxTemperatureOverlay;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE       byRegionsOverlay;//ï¿½Ç·ï¿½ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½
+        BYTE       byROIRegionNum;//ROIï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½
         BYTE       byRes1[2];
         ROI_REGION      struThermalROIRegion[MAX_ROI_REGIONS];
         BYTE       byRes[176];
     }USB_ROI_MAX_TEMPERATURE_SEARCH, *LPUSB_ROI_MAX_TEMPERATURE_SEARCH;
 
-    //ROIÇøÓòÐÅÏ¢
+    //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagROI_REGION_INFO
     {
-        BYTE       byROIRegionID;//ROIÇøÓòID£¬´Ó1¿ªÊ¼µÝÔö£¬+1µÝÔö
+        BYTE       byROIRegionID;//ROIï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+1ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes1[3];
-        DWORD       dwMaxROIRegionTemperature;//×î¸ßÎÂ: 30.0~50.0¡æ, ´«ÊäÊ±Êµ¼ÊÖµ * 10»»Ëã³ÉÕûÊý
-        DWORD       dwVisibleROIRegionMaxTemperaturePointX;//ROIÇøÓò¿É¼û¹â×î¸ßÎÂX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwVisibleROIRegionMaxTemperaturePointY;//ROIÇøÓò¿É¼û¹â×î¸ßÎÂY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwThermalROIRegionMaxTemperaturePointX;//ROIÇøÓòÈÈ³ÉÏñ×î¸ßÎÂX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwThermalROIRegionMaxTemperaturePointY;//ROIÇøÓòÈÈ³ÉÏñ×î¸ßÎÂY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
+        DWORD       dwMaxROIRegionTemperature;//ï¿½ï¿½ï¿½ï¿½ï¿½: 30.0~50.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwVisibleROIRegionMaxTemperaturePointX;//ROIï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwVisibleROIRegionMaxTemperaturePointY;//ROIï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwThermalROIRegionMaxTemperaturePointX;//ROIï¿½ï¿½ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwThermalROIRegionMaxTemperaturePointY;//ROIï¿½ï¿½ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
         BYTE       byRes[8];
     }ROI_REGION_INFO, *LPROI_REGION_INFO;
 
-    //ROI×î¸ßÎÂÐÅÏ¢²éÑ¯ÏìÓ¦
+    //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯ï¿½ï¿½Ó¦
     typedef struct tagUSB_ROI_MAX_TEMPERATURE_SEARCH_RESULT
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        DWORD       dwMaxP2PTemperature;//È«ÆÁ×î¸ßÎÂ: 30.0~50.0¡æ, ´«ÊäÊ±Êµ¼ÊÖµ * 10»»Ëã³ÉÕûÊý
-        DWORD       dwVisibleP2PMaxTemperaturePointX;//È«ÆÁ¿É¼û¹â×î¸ßÎÂX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwVisibleP2PMaxTemperaturePointY;//È«ÆÁ¿É¼û¹â×î¸ßÎÂY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwThermalP2PMaxTemperaturePointX;//È«ÆÁÈÈ³ÉÏñ×î¸ßÎÂX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        DWORD       dwThermalP2PMaxTemperaturePointY;//È«ÆÁÈÈ³ÉÏñ×î¸ßÎÂY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0-1000
-        BYTE       byROIRegionNum;//ROIÇøÓò×Ü¸öÊý
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD       dwMaxP2PTemperature;//È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 30.0~50.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwVisibleP2PMaxTemperaturePointX;//È«ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwVisibleP2PMaxTemperaturePointY;//È«ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwThermalP2PMaxTemperaturePointX;//È«ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        DWORD       dwThermalP2PMaxTemperaturePointY;//È«ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0-1000
+        BYTE       byROIRegionNum;//ROIï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½
         BYTE       byRes2[3];
-        DWORD       dwJpegPicLen;//JpegÍ¼Æ¬³¤¶È
+        DWORD       dwJpegPicLen;//JpegÍ¼Æ¬ï¿½ï¿½ï¿½ï¿½
         ROI_REGION_INFO       struThermalROIRegionInfo[MAX_ROI_REGIONS];
-        BYTE       *pJpegPic;//Í¼Æ¬Êý¾Ý£¨ËùÓÐÇøÓòÐÅÏ¢Ö®ºó£¬Ä©Î²Ö»³öÏÖ1´Î£©
+        BYTE       *pJpegPic;//Í¼Æ¬ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢Ö®ï¿½ï¿½Ä©Î²Ö»ï¿½ï¿½ï¿½ï¿½1ï¿½Î£ï¿½
         BYTE       byRes[160];
     }USB_ROI_MAX_TEMPERATURE_SEARCH_RESULT, *LPUSB_ROI_MAX_TEMPERATURE_SEARCH_RESULT;
 
-    //Ë«¹âÐ£×¼
+    //Ë«ï¿½ï¿½Ð£×¼
     typedef struct tagUSB_DOUBLE_LIGHTS_CORRECT
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE       byVisiblePicHorizontalScale;//Åä×¼²Ã¼ô¿É¼û¹âÍ¼ÏñË®Æ½Ëõ·ÅÏµÊý£¬µ¥Î»¹éÒ»»¯128£¬[12,128]
-        BYTE       byVisiblePicVerticalScale;//Åä×¼²Ã¼ô¿É¼û¹âÍ¼Ïñ´¹Ö±Ëõ·ÅÏµÊý£¬µ¥Î»¹éÒ»»¯128£¬[12,128]
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE       byVisiblePicHorizontalScale;//ï¿½ï¿½×¼ï¿½Ã¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ò»ï¿½ï¿½128ï¿½ï¿½[12,128]
+        BYTE       byVisiblePicVerticalScale;//ï¿½ï¿½×¼ï¿½Ã¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ò»ï¿½ï¿½128ï¿½ï¿½[12,128]
         BYTE       byRes1[2];
-        WORD       wHorizontalCalibrationOffset;//Ë®Æ½±ê¶¨Æ«²î£¬¸ÃÊýÖµÎª±ê¶¨Ê±¼ÆËã»ñµÃ£¬µ¥Î»¹éÒ»»¯1000£¬[0,1000]
-        WORD       wVerticalCalibrationOffset;//´¹Ö±±ê¶¨Æ«²î£¬¸ÃÊýÖµÎª±ê¶¨Ê±¼ÆËã»ñµÃ£¬µ¥Î»¹éÒ»»¯1000£¬[0,1000]
-        DWORD       dwVisibleFocusDistance;//¿É¼û¹â¾µÍ·½¹¾à£¬µ¥Î»ºÁÃ×
-        DWORD       dwVisiblePixelInterval;//¿É¼û¹âÌ½²âÆ÷ÏñÔª³ß´ç£¬µ¥Î»Î¢Ã×
-        DWORD       dwHorizontalCenterDistance;//¿É¼û¹âºÍÈÈ³ÉÏñÖÐÐÄµãË®Æ½¾àÀë£¬µ¥Î»ºÁÃ×
-        DWORD       dwVerticalCenterDistance;//¿É¼û¹âºÍÈÈ³ÉÏñÖÐÐÄµã´¹Ö±¾àÀë£¬µ¥Î»ºÁÃ×
-        DWORD       dwCalibrationDistance;//±ê¶¨¾àÀë[0.3,2]m,Ð­Òé´«ÊäÊ±Í³Ò»Ê¹ÓÃcmÎªµ¥Î»
-        DWORD       dwVisiblePicLen;//¿É¼û¹âÍ¼Æ¬³¤¶È
-        BYTE       *pVisiblePic;//¿É¼û¹âÍ¼Æ¬Êý¾Ý
+        WORD       wHorizontalCalibrationOffset;//Ë®Æ½ï¿½ê¶¨Æ«ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ÖµÎªï¿½ê¶¨Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ò»ï¿½ï¿½1000ï¿½ï¿½[0,1000]
+        WORD       wVerticalCalibrationOffset;//ï¿½ï¿½Ö±ï¿½ê¶¨Æ«ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ÖµÎªï¿½ê¶¨Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ò»ï¿½ï¿½1000ï¿½ï¿½[0,1000]
+        DWORD       dwVisibleFocusDistance;//ï¿½É¼ï¿½ï¿½â¾µÍ·ï¿½ï¿½ï¿½à£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwVisiblePixelInterval;//ï¿½É¼ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ß´ç£¬ï¿½ï¿½Î»Î¢ï¿½ï¿½
+        DWORD       dwHorizontalCenterDistance;//ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ë®Æ½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwVerticalCenterDistance;//ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµã´¹Ö±ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwCalibrationDistance;//ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½[0.3,2]m,Ð­ï¿½é´«ï¿½ï¿½Ê±Í³Ò»Ê¹ï¿½ï¿½cmÎªï¿½ï¿½Î»
+        DWORD       dwVisiblePicLen;//ï¿½É¼ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        BYTE       *pVisiblePic;//ï¿½É¼ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
         BYTE       byRes[92];
     }USB_DOUBLE_LIGHTS_CORRECT, *LPUSB_DOUBLE_LIGHTS_CORRECT;
 
-    //Ë«¹âÐ£×¼ÏìÓ¦
+    //Ë«ï¿½ï¿½Ð£×¼ï¿½ï¿½Ó¦
     typedef struct tagUSB_DOUBLE_LIGHTS_CORRECT_RESULT
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        DWORD      dwJpegPicLen;//ÈÚºÏµþ¼ÓÍ¼Æ¬³¤¶È
-        BYTE       *pJpegPic;//ÈÚºÏµþ¼ÓÍ¼Æ¬
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD      dwJpegPicLen;//ï¿½ÚºÏµï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        BYTE       *pJpegPic;//ï¿½ÚºÏµï¿½ï¿½ï¿½Í¼Æ¬
         BYTE       byRes[120];
     }USB_DOUBLE_LIGHTS_CORRECT_RESULT, *LPUSB_DOUBLE_LIGHTS_CORRECT_RESULT;
 
-#define MAX_REGION_POINT_NUM   10 //×î´óÖ§³Ö10¸öÇøÓò¶¥µã
-#define MAX_EXPERT_REGIONS    21 //×î´óÖ§³Ö21¸öÇøÓò
+#define MAX_REGION_POINT_NUM   10 //ï¿½ï¿½ï¿½Ö§ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½ï¿½ò¶¥µï¿½
+#define MAX_EXPERT_REGIONS    21 //ï¿½ï¿½ï¿½Ö§ï¿½ï¿½21ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    //ÇøÓò¶¥µã×ø±ê
+    //ï¿½ï¿½ï¿½ò¶¥µï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagREGION_VERTEX_COORDINATES
     {
-        DWORD   dwPointX; //X×ø±ê, ¹éÒ»»¯0-1000    º¬Òå1£º¹éÒ»»¯µ½0-1000µÄ¹éÒ»»¯ºó×ø±ê, º¬Òå2£ºÂãÊý¾ÝÕæÊµ×ø±ê   ¾ßÌåÊÇÊ²Ã´º¬ÒåÓÉ×Ö¶ÎregionCoordinateMode¾ö¶¨   Ä¬ÈÏ¹éÒ»»¯×ø±ê
-        DWORD   dwPointY; //Y×ø±ê, ¹éÒ»»¯0-1000    º¬Òå1£º¹éÒ»»¯µ½0-1000µÄ¹éÒ»»¯ºó×ø±ê, º¬Òå2£ºÂãÊý¾ÝÕæÊµ×ø±ê   ¾ßÌåÊÇÊ²Ã´º¬ÒåÓÉ×Ö¶ÎregionCoordinateMode¾ö¶¨   Ä¬ÈÏ¹éÒ»»¯×ø±ê
+        DWORD   dwPointX; //Xï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000    ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½0-1000ï¿½Ä¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½regionCoordinateModeï¿½ï¿½ï¿½ï¿½   Ä¬ï¿½Ï¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwPointY; //Yï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000    ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½0-1000ï¿½Ä¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½regionCoordinateModeï¿½ï¿½ï¿½ï¿½   Ä¬ï¿½Ï¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[24];
     }REGION_VERTEX_COORDINATES, *LPREGION_VERTEX_COORDINATES;
 
-    //×¨¼Ò²âÎÂ¹æÔòÇøÓò
+    //×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagTHERMAL_EXPERT_REGIONS
     {
-        BYTE   byRegionID;  //ÇøÓòID£¬´Ó1¿ªÊ¼µÝÔö
-        BYTE   byEnabled;  //ÇøÓòÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
+        BYTE   byRegionID;  //ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+        BYTE   byEnabled;  //ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes1[2];
-        BYTE   byName[32]; //¹æÔòÃû³Æ
-        DWORD   dwEmissivity; //·¢ÉäÂÊ: 0.01~1(¾«È·µ½Ð¡ÊýµãºóÁ½Î»), ´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý  ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î,¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        DWORD   dwDistance;  //¾àÀë: 0.3-3m£¨Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»ÕûÊý´«Êä£©  ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î, ¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        BYTE   byReflectiveEnable; //·´ÉäÎÂ¶ÈÊ¹ÄÜ£º0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byHighestTempEnable; //×î¸ßÎÂÏÔÊ¾Ê¹ÄÜ: 1-¹Ø±Õ  2-¿ªÆô
-        BYTE   byLowestTempEnable; //×îµÍÎÂÏÔÊ¾Ê¹ÄÜ: 1-¹Ø±Õ  2-¿ªÆô
-        BYTE   byAverageTempEnable; //Æ½¾ùÎÂÏÔÊ¾Ê¹ÄÜ: 1-¹Ø±Õ  2-¿ªÆô
-        DWORD   dwReflectiveTemperature; //·´ÉäÎÂ¶È: -73.3~1000.0¡æ£¨¾«È·µ½Ð¡Êýµãºó1Î», ´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý   ×ª»»·½Ê½2£º´«ÊäÊ± Êµ¼ÊÖµ*2n£¬Ð¡Êý²¿·Ö½Ø¶Ï£¬nµÄ´óÐ¡À´×ÔshiftLength×Ö¶Î,¸Ã×Ö¶Î¾ßÌåÈçºÎ´«Êä£¬ÓÉ×Ö¶ÎfloatTransMode¾ö¶¨£¬ÈôÊÇÃ»ÓÐfloatTransMode×Ö¶Î£¬Ä¬ÈÏÕûÐÍ´«Êä
-        BYTE   byType; //¹æÔò±ê¶¨ÀàÐÍ: 1-µã 2-Ïß 3-¿ò
-        BYTE   byShowAlarmColorEnabled; //±¨¾¯ÑÕÉ«ÏÔÊ¾Ê¹ÄÜ: 1-¿ªÆô 0-¹Ø±Õ
-        BYTE   byRule; //±¨¾¯ÎÂ¶È±È½Ï·½Ê½: 
-        //µ±typeÎª1-µãÊ±£º1-Æ½¾ùÎÂ¶È´óÓÚ 2-Æ½¾ùÎÂ¶ÈÐ¡ÓÚ; 
-        //µ±typeÎª2-ÏßÊ±£º1-¸ßÎÂ´óÓÚ 2-¸ßÎÂÐ¡ÓÚ 3-µÍÎÂ´óÓÚ 4-µÍÎÂÐ¡ÓÚ 5-Æ½¾ùÎÂ¶È´óÓÚ 6-Æ½¾ùÎÂ¶ÈÐ¡ÓÚ;
-        //µ±typeÎª3-¿òÊ±£º1-¸ßÎÂ´óÓÚ 2-¸ßÎÂÐ¡ÓÚ 3-µÍÎÂ´óÓÚ 4-µÍÎÂÐ¡ÓÚ 5-Æ½¾ùÎÂ¶È´óÓÚ 6-Æ½¾ùÎÂ¶ÈÐ¡ÓÚ 7-ÎÂ²î´óÓÚ 8-ÎÂ²îÐ¡ÓÚ
+        BYTE   byName[32]; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwEmissivity; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 0.01~1(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»), ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶ï¿½,ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        DWORD   dwDistance;  //ï¿½ï¿½ï¿½ï¿½: 0.3-3mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£©  ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶ï¿½, ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        BYTE   byReflectiveEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byHighestTempEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ê¹ï¿½ï¿½: 1-ï¿½Ø±ï¿½  2-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byLowestTempEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ê¹ï¿½ï¿½: 1-ï¿½Ø±ï¿½  2-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byAverageTempEnable; //Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ê¹ï¿½ï¿½: 1-ï¿½Ø±ï¿½  2-ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwReflectiveTemperature; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: -73.3~1000.0ï¿½æ£¨ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î», ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ×ªï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± Êµï¿½ï¿½Öµ*2nï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ø¶Ï£ï¿½nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½shiftLengthï¿½Ö¶ï¿½,ï¿½ï¿½ï¿½Ö¶Î¾ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Ö¶ï¿½floatTransModeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½floatTransModeï¿½Ö¶Î£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½
+        BYTE   byType; //ï¿½ï¿½ï¿½ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½: 1-ï¿½ï¿½ 2-ï¿½ï¿½ 3-ï¿½ï¿½
+        BYTE   byShowAlarmColorEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ê¾Ê¹ï¿½ï¿½: 1-ï¿½ï¿½ï¿½ï¿½ 0-ï¿½Ø±ï¿½
+        BYTE   byRule; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È±È½Ï·ï¿½Ê½: 
+        //ï¿½ï¿½typeÎª1-ï¿½ï¿½Ê±ï¿½ï¿½1-Æ½ï¿½ï¿½ï¿½Â¶È´ï¿½ï¿½ï¿½ 2-Æ½ï¿½ï¿½ï¿½Â¶ï¿½Ð¡ï¿½ï¿½; 
+        //ï¿½ï¿½typeÎª2-ï¿½ï¿½Ê±ï¿½ï¿½1-ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ 3-ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ 4-ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ 5-Æ½ï¿½ï¿½ï¿½Â¶È´ï¿½ï¿½ï¿½ 6-Æ½ï¿½ï¿½ï¿½Â¶ï¿½Ð¡ï¿½ï¿½;
+        //ï¿½ï¿½typeÎª3-ï¿½ï¿½Ê±ï¿½ï¿½1-ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ 3-ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ 4-ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ 5-Æ½ï¿½ï¿½ï¿½Â¶È´ï¿½ï¿½ï¿½ 6-Æ½ï¿½ï¿½ï¿½Â¶ï¿½Ð¡ï¿½ï¿½ 7-ï¿½Â²ï¿½ï¿½ï¿½ï¿½ 8-ï¿½Â²ï¿½Ð¡ï¿½ï¿½
         BYTE   byRes3;
-        DWORD   dwAlert; //Ô¤¾¯ÎÂ¶È£º-20¡æ~400¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD   dwAlarm; //±¨¾¯ÎÂ¶È£º-20¡æ~400¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        BYTE   byPointNum; //ÇøÓò¶¥µã×Ü¸öÊý£ºµ±typeÎª1-µãÊ±¸öÊýÎª1;   µ±typeÎª2-ÏßÊ±¸öÊýÎª2 ;   µ±typeÎª3-¿òÊ±¸öÊýÎª3-10
+        DWORD   dwAlert; //Ô¤ï¿½ï¿½ï¿½Â¶È£ï¿½-20ï¿½ï¿½~400ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwAlarm; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È£ï¿½-20ï¿½ï¿½~400ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   byPointNum; //ï¿½ï¿½ï¿½ò¶¥µï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½typeÎª1-ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îª1;   ï¿½ï¿½typeÎª2-ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îª2 ;   ï¿½ï¿½typeÎª3-ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îª3-10
         BYTE   byRes4[3];
         REGION_VERTEX_COORDINATES   struRegionCoordinate[MAX_REGION_POINT_NUM];
         BYTE   byRes[200];
     }THERMAL_EXPERT_REGIONS, *LPTHERMAL_EXPERT_REGIONS;
 
-    //×¨¼Ò²âÎÂ¹æÔòÅäÖÃ
+    //×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_EXPERT_REGIONS
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE   byRegionNum; //¹æÔòÇøÓò×Ü¸öÊý
-        BYTE   byRegionCoordinateMode; //ÇøÓò×ø±êÉúÐ§Ä£Ê½ 1 - ¹éÒ»»¯×ø±ê 2 - ÂãÊý¾ÝÊµ¼Ê×ø±ê.  ¸Ã×Ö¶ÎÓÃÀ´ÅÐ¶ÏÇøÓò×ø±ê¶¥µãÉúÐ§µÄ×Ö¶ÎÊÇ¹éÒ»»¯×ø±ê»¹ÊÇÂãÊý¾ÝÊµ¼Ê×ø±ê
-        BYTE   byFloatTransMode; //¸¡µãÊý´«Êä·½Ê½ 1 - ÕûÐÍ´«Êä 2 - ÒÆÎ»´«Êä. ÕûÐÍ´«Êä : ÏÈ½«¸¡µãÊý×ª»»ÎªÕýÊý£¬ÔÙ³ËÒÔ10µÄ±¶Êý£¬×ª»»³ÉÕýÕûÊý£¬È»ºó´«Êä; ÒÆÎ»´«Êä : Ö±½Ó½«¸¡µãÊý³ËÒÔ2n£¬½Ø¶ÏÐ¡Êý£¬È»ºó´«Êä
-        BYTE   byShiftLength; //¸¡µãÊýÒÆÎ»´«Êä³ËÒÔ2µÄN´Î·½£¬ÆäÖÐNµÄ´óÐ¡ 1-6; 2-9; 3-13; 4-16; 5-19
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byRegionNum; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½
+        BYTE   byRegionCoordinateMode; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§Ä£Ê½ 1 - ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.  ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê¶¥ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ç¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ê»¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   byFloatTransMode; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä·½Ê½ 1 - ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ 2 - ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ : ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù³ï¿½ï¿½ï¿½10ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½; ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ : Ö±ï¿½Ó½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2nï¿½ï¿½ï¿½Ø¶ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½
+        BYTE   byShiftLength; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Nï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Ä´ï¿½Ð¡ 1-6; 2-9; 3-13; 4-16; 5-19
         THERMAL_EXPERT_REGIONS  struExpertRegions[MAX_EXPERT_REGIONS];
         BYTE   byRes[220];
     }USB_THERMOMETRY_EXPERT_REGIONS, *LPUSB_THERMOMETRY_EXPERT_REGIONS;
 
 #define MAX_TEMPERATURE_NUM  4
 
-    //×¨¼Ò²âÎÂÎÂ¶ÈµãÐÅÏ¢
+    //×¨ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Â¶Èµï¿½ï¿½ï¿½Ï¢
     typedef struct tagTHERMAL_EXPERT_TEMPERATURE
     {
-        BYTE   byID; //ÐòºÅ£¬´Ó1¿ªÊ¼µÝÔö
+        BYTE   byID; //ï¿½ï¿½Å£ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes1[3];
-        DWORD   dwPresetTemperature; //Ô¤ÉèÎÂ¶È: -40.0-650.0¡æ, ´«ÊäÊ±(Êµ¼ÊÖµ+100) * 10»»Ëã³ÉÕûÊý
-        DWORD   dwPointX; //X×ø±ê, ¹éÒ»»¯0-1000, ×óÉÏ½ÇÎªÔ­µã£¨ÓÉÓÚDSPÏÞÖÆ£¬Êµ¼Ê¹éÒ»»¯ºó·¶Î§Îª13-993£©
-        DWORD   dwPointY; //Y×ø±ê, ¹éÒ»»¯0-1000, ×óÉÏ½ÇÎªÔ­µã£¨ÓÉÓÚDSPÏÞÖÆ£¬Êµ¼Ê¹éÒ»»¯ºó·¶Î§Îª17-991£©
+        DWORD   dwPresetTemperature; //Ô¤ï¿½ï¿½ï¿½Â¶ï¿½: -40.0-650.0ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwPointX; //Xï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000, ï¿½ï¿½ï¿½Ï½ï¿½ÎªÔ­ï¿½ã£¨ï¿½ï¿½ï¿½ï¿½DSPï¿½ï¿½ï¿½Æ£ï¿½Êµï¿½Ê¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î§Îª13-993ï¿½ï¿½
+        DWORD   dwPointY; //Yï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ò»ï¿½ï¿½0-1000, ï¿½ï¿½ï¿½Ï½ï¿½ÎªÔ­ï¿½ã£¨ï¿½ï¿½ï¿½ï¿½DSPï¿½ï¿½ï¿½Æ£ï¿½Êµï¿½Ê¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î§Îª17-991ï¿½ï¿½
         BYTE   byRes[24];
     }THERMAL_EXPERT_TEMPERATURE, *LPTHERMAL_EXPERT_TEMPERATURE;
 
-    //×¨¼Ò²âÎÂÐ£Õý²ÎÊýÅäÖÃ
+    //×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_EXPERT_CORRECTION_PARAM
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        DWORD   dwDistance; //¾àÀë: 0.3-3m, Ð­Òé´«ÊäÊ±ÒÔÀåÃ×Îªµ¥Î»
-        DWORD   dwEnviroTemperature; //»·¾³ÎÂ¶È: -273.0-1000.0, ´«ÊäÊ±£¨Êµ¼ÊÖµ + 300£© * 10»»Ëã³ÉÕûÊý
-        DWORD   dwEmissivity; //·¢ÉäÂÊ: 0.01-1.00, ´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        BYTE   byPointNum; //ÎÂ¶Èµã¸öÊý: 4¸ö
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD   dwDistance; //ï¿½ï¿½ï¿½ï¿½: 0.3-3m, Ð­ï¿½é´«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»
+        DWORD   dwEnviroTemperature; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: -273.0-1000.0, ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Êµï¿½ï¿½Öµ + 300ï¿½ï¿½ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwEmissivity; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 0.01-1.00, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   byPointNum; //ï¿½Â¶Èµï¿½ï¿½ï¿½ï¿½: 4ï¿½ï¿½
         BYTE   byRes2[3];
         THERMAL_EXPERT_TEMPERATURE  struExpertTemperature[MAX_TEMPERATURE_NUM];
         BYTE   byRes[64];
     }USB_THERMOMETRY_EXPERT_CORRECTION_PARAM, *LPUSB_THERMOMETRY_EXPERT_CORRECTION_PARAM;
 
-    //ÎÂÉýÅäÖÃ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_RISE_SETTINGS
     {
-        DWORD  dwSize;  //½á¹¹Ìå´óÐ¡
-        BYTE  byEnabled; //ÆôÓÃÎÂÉýÉèÖÃ 0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byType; //ÎÂÉý²ÎÊý»ñÈ¡·½Ê½ 0-×Ô¶¯»ñÈ¡ 1-ÊÖ¶¯ÊäÈë
-        BYTE  byResult; //ÎÂÉý²ÎÊý¼ÆËã×´Ì¬£¨Ö»¶Á£¬ÎÂÉý²ÎÊý»ñÈ¡·½Ê½Îª×Ô¶¯»ñÈ¡Ä£Ê½ÓÐÐ§£©: 0-³É¹¦(ÏÂÁÐ²ÎÊýÖµÓÐÐ§)  1-µÈ´ý(ÏÂÁÐ²ÎÊýÖµÎÞÐ§)  2-Ê§°Ü(ÏÂÁÐ²ÎÊýÖµÎÞÐ§)
+        DWORD  dwSize;  //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE  byEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ê½ 0-ï¿½Ô¶ï¿½ï¿½ï¿½È¡ 1-ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byResult; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ê½Îªï¿½Ô¶ï¿½ï¿½ï¿½È¡Ä£Ê½ï¿½ï¿½Ð§ï¿½ï¿½: 0-ï¿½É¹ï¿½(ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð§)  1-ï¿½È´ï¿½(ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð§)  2-Ê§ï¿½ï¿½(ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð§)
         BYTE  byRes1;
-        DWORD  dwEnvTemperature; //»·¾³ÎÂ¶È: -99.0~99.0¡æ (¾«È·µ½Ð¡ÊýµãºóÁ½Î»), ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        int  dwCoefficient;  //ÎÂÉýÏµÊý: -10~10
-        DWORD  dwMaxTemperatureRise;  //×î´óÎÂÉý: 2~20
-        DWORD  dwColdStartRate; //Àä¿ª»úÎÂÉýËÙÂÊ: 0.01~0.5 (¾«È·µ½Ð¡ÊýµãºóÁ½Î»), ´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwColdStartRise; //Àä¿ª»úÎÂÉý: -3.0~3.0 (¾«È·µ½Ð¡Êýµãºó1Î»), ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
+        DWORD  dwEnvTemperature; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: -99.0~99.0ï¿½ï¿½ (ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»), ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int  dwCoefficient;  //ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½: -10~10
+        DWORD  dwMaxTemperatureRise;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 2~20
+        DWORD  dwColdStartRate; //ï¿½ä¿ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 0.01~0.5 (ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»), ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwColdStartRise; //ï¿½ä¿ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: -3.0~3.0 (ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»), ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[128];
     }USB_THERMOMETRY_RISE_SETTINGS, *LPUSB_THERMOMETRY_RISE_SETTINGS;
 
-    //»·¾³ÎÂ¶ÈÐ£Õý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ð£ï¿½ï¿½
     typedef struct tagUSB_ENVIROTEMPERATURE_CORRECT
     {
-        DWORD dwSize;  //½á¹¹Ìå´óÐ¡
-        BYTE  byEnabled;  //×ÜÊ¹ÄÜ, ÓÃÓÚ¿ª¹ØÐ£×¼²ÎÊýÊÇ·ñÉúÐ§  0-¹Ø±Õ  1-¿ªÆô
-        BYTE  byCorrectEnabled;  //»·¾³ÎÂ¶ÈÐ£×¼Ê¹ÄÜ, ÓÃÓÚÉú³ÉÐ£×¼²ÎÊý  0-¹Ø±Õ  1-¿ªÆô
+        DWORD dwSize;  //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE  byEnabled;  //ï¿½ï¿½Ê¹ï¿½ï¿½, ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§  0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE  byCorrectEnabled;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ð£×¼Ê¹ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½  0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes1[2];
-        DWORD  dwEnviroTemperature;  //»·¾³ÎÂ¶ÈÐ£×¼Öµ, -20.0~50.0¡æ(¾«È·µ½Ð¡Êýµãºó1Î»), ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwCalibrationTemperature;  //(Ö»¶Á)ÎÂ±äÐ£×¼Öµ½á¹û, -20.0~50.0¡æ(¾«È·µ½Ð¡Êýµãºó1Î»), ´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
+        DWORD  dwEnviroTemperature;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ð£×¼Öµ, -20.0~50.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»), ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCalibrationTemperature;  //(Ö»ï¿½ï¿½)ï¿½Â±ï¿½Ð£×¼Öµï¿½ï¿½ï¿½, -20.0~50.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»), ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[112];
     }USB_ENVIROTEMPERATURE_CORRECT, *LPUSB_ENVIROTEMPERATURE_CORRECT;
 
-    //ÊÓÆµ±àÂë²ÎÊý
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_CODE
     {
         DWORD	dwSize;
-        BYTE  byVideoResolution; //ÊÓÆµ·Ö±æÂÊ£º1-256*192, 2-384*288, 3-720*576, 4-1024*768, 5-96*96, 6-160*120, 7-640*512, 8-192*144, 9-480*360, 10-640*480
-        BYTE  byUnpackedResolution;//·ÇÑ¹ËõÖ¡·Ö±æÂÊ£¨Ö»¶Á£©£ºµ±Ö¡ÂÊÐ¡ÓÚ5Ö¡Ê±, Éè±¸»áÊ¹ÓÃ·ÇÑ¹ËõÖ¡ÉÏ´«Êý¾Ý, ¸ù¾Ý´ËÖ»¶Á²ÎÊýÅäÖÃÊÓÆµÊôÐÔÐÅÏ¢, ±ÜÃâÒò·ÇÑ¹ËõÖ¡·Ö±æÂÊÀ©´óµ¼ÖÂÊý¾Ý±»°´Ñ¹ËõÖ¡·Ö±æÂÊÅäÖÃµÄYVCÍ¨µÀ¹ýÂËµô
+        BYTE  byVideoResolution; //ï¿½ï¿½Æµï¿½Ö±ï¿½ï¿½Ê£ï¿½1-256*192, 2-384*288, 3-720*576, 4-1024*768, 5-96*96, 6-160*120, 7-640*512, 8-192*144, 9-480*360, 10-640*480
+        BYTE  byUnpackedResolution;//ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½Ê£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½Ð¡ï¿½ï¿½5Ö¡Ê±, ï¿½è±¸ï¿½ï¿½Ê¹ï¿½Ã·ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ý´ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½YVCÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
         //1-320*240, 2-640*480, 3-640*512, 4-1024*600, 5-1280*720, 6-640*256
         BYTE  byRes1[2];
-        DWORD  dwMaxFrameRate; //ÊÓÆµÖ¡ÂÊ£º1-30fps
+        DWORD  dwMaxFrameRate; //ï¿½ï¿½ÆµÖ¡ï¿½Ê£ï¿½1-30fps
         BYTE  byRes[244];
     }USB_VIDEO_CODE, *LPUSB_VIDEO_CODE;
 
-    //»­ÖÐ»­Ä£Ê½¾ØÐÎ¿ò
+    //ï¿½ï¿½ï¿½Ð»ï¿½Ä£Ê½ï¿½ï¿½ï¿½Î¿ï¿½
     typedef struct tagUSB_PIP_RECT
     {
-        DWORD dwPointX; //»­ÖÐ»­¾ØÐÎ¿ò×óÉÏ¶¥µã£ºX×ø±ê£¬Êµ¼ÊÏñËØÎ»£¬ÆÁÄ»×óÉÏÎªÔ­µã
-        DWORD dwPointY; //»­ÖÐ»­¾ØÐÎ¿ò×óÉÏ¶¥µã£ºY×ø±ê£¬Êµ¼ÊÏñËØÎ»£¬ÆÁÄ»×óÉÏÎªÔ­µã
-        DWORD dwWidth; //»­ÖÐ»­¾ØÐÎ¿ò£º¿í£¬Êµ¼ÊÏñËØÎ»£¬ÆÁÄ»×óÉÏÎªÔ­µã
-        DWORD dwHeight; //»­ÖÐ»­¾ØÐÎ¿ò£º¸ß£¬Êµ¼ÊÏñËØÎ»£¬ÆÁÄ»×óÉÏÎªÔ­µã
+        DWORD dwPointX; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ã£ºXï¿½ï¿½ï¿½ê£¬Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
+        DWORD dwPointY; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ã£ºYï¿½ï¿½ï¿½ê£¬Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
+        DWORD dwWidth; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Î¿ò£º¿ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
+        DWORD dwHeight; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Î¿ò£º¸ß£ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ÎªÔ­ï¿½ï¿½
         BYTE  byRes[16];
     }USB_PIP_RECT, *LPUSB_PIP_RECT;
 
-    //Í¼ÏñÈÚºÏ²ÎÊý
+    //Í¼ï¿½ï¿½ï¿½ÚºÏ²ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_FUSION
     {
         DWORD	dwSize;
-        DWORD dwAutoFocusObjectDistance;  //×Ô¶¯¾Û½¹·´À¡µÄÎï¾àÐÅÏ¢, ·¶Î§:0-100, µ¥Î»:dm
-        DWORD dwHistoryFocusObjectDistance;  //ÀúÊ·×Ô¶¯¾Û½¹·´À¡µÄÎï¾àÐÅÏ¢, ·¶Î§:0-100, µ¥Î»:dm
-        DWORD dwCurrentFocusObjectDistance; //µ±Ç°×Ô¶¯¾Û½¹·´À¡µÄÎï¾àÐÅÏ¢¼ÓÈ¨±ÈÀý, ·¶Î§:0-256
-        DWORD dwHorizontalScaleRatio; //Ë®Æ½Ëõ·ÅÒò×Ó, ·¶Î§: 12-19200
-        DWORD dwVerticalScaleRatio; //´¹Ö±Ëõ·ÅÒò×Ó, ·¶Î§: 12-19200
-        DWORD dwVerticalCroppingOffset; //´¹Ö±¼ô²ÃÆ«ÒÆÁ¿, ·¶Î§: [-212, 212], ´«ÊäÊ±Êµ¼ÊÖµ+500
-        DWORD dwHorizontalCroppingOffset; //Ë®Æ½¼ô²ÃÆ«ÒÆÁ¿, ·¶Î§: [-212, 212], ´«ÊäÊ±Êµ¼ÊÖµ+500
-        DWORD dwRotationAngle; //Ðý×ª½Ç¶È, ·¶Î§:[0.0, 360.0], µ¥Î»: ¶È, ´«ÊäÊ±Êµ¼ÊÖµ*10
-        DWORD dwHighExplosionSuppressionThreshold; //¸ß±¬ÒÖÖÆÃÅÏÞ, ·¶Î§:0-255
-        DWORD dwHighPassFilterSelectionVariable; //¸ßÍ¨ÂË²¨Ñ¡Ôñ±äÁ¿, ·¶Î§:0,1
-        DWORD dwHighPassFilteRadius; //¸ßÍ¨ÂË²¨°ë¾¶
-        DWORD dwHighFrequencyInformationThreshold; //¸ßÆµÐÅÏ¢ÃÅÏÞ, ·¶Î§:0-32767
-        DWORD dwSuperpositionGain; //µþ¼ÓÔöÒæ, ·¶Î§:0-127
-        DWORD dwLimitingGain; //ÏÞÖÆÔöÒæ, ·¶Î§:0-127
-        DWORD dwLowFrequencyFusionControlLowerThreshold; //µÍÆµÈÚºÏ¿ØÖÆÏÂÃÅÏÞ, ·¶Î§:0-255
-        DWORD dwLowFrequencyFusionControlUpperThreshold; //µÍÆµÈÚºÏ¿ØÖÆÉÏÃÅÏÞ, ·¶Î§:0-255
-        BYTE byVideoFusionMode; //Í¼ÏñÈÚºÏ´¦ÀíÄ£Ê½: 1-µ¥ÈÈ³ÉÏñÄ£Ê½, 2-¿É¼û¹âÄ£Ê½, 3-ÈÚºÏÄ£Ê½, 4-»­ÖÐ»­Ä£Ê½, 5-±ê¶¨Ä£Ê½, 6-ÈÚºÏ²ÊÉ«Ä£Ê½--²ÝµØ, 
-        //7-ÈÚºÏ²ÊÉ«Ä£Ê½--»ÄÄ®, 8-ÈÚºÏ²ÊÉ«Ä£Ê½--Ñ©µØ, 10-ÈÚºÏ²ÊÉ«Ä£Ê½--³ÇÊÐ, 11-»ìºÏÄ£Ê½--¿É¼û¹â+ÈÈ³ÉÏñ
+        DWORD dwAutoFocusObjectDistance;  //ï¿½Ô¶ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢, ï¿½ï¿½Î§:0-100, ï¿½ï¿½Î»:dm
+        DWORD dwHistoryFocusObjectDistance;  //ï¿½ï¿½Ê·ï¿½Ô¶ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢, ï¿½ï¿½Î§:0-100, ï¿½ï¿½Î»:dm
+        DWORD dwCurrentFocusObjectDistance; //ï¿½ï¿½Ç°ï¿½Ô¶ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-256
+        DWORD dwHorizontalScaleRatio; //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§: 12-19200
+        DWORD dwVerticalScaleRatio; //ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§: 12-19200
+        DWORD dwVerticalCroppingOffset; //ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§: [-212, 212], ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ+500
+        DWORD dwHorizontalCroppingOffset; //Ë®Æ½ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§: [-212, 212], ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ+500
+        DWORD dwRotationAngle; //ï¿½ï¿½×ªï¿½Ç¶ï¿½, ï¿½ï¿½Î§:[0.0, 360.0], ï¿½ï¿½Î»: ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10
+        DWORD dwHighExplosionSuppressionThreshold; //ï¿½ß±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-255
+        DWORD dwHighPassFilterSelectionVariable; //ï¿½ï¿½Í¨ï¿½Ë²ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0,1
+        DWORD dwHighPassFilteRadius; //ï¿½ï¿½Í¨ï¿½Ë²ï¿½ï¿½ë¾¶
+        DWORD dwHighFrequencyInformationThreshold; //ï¿½ï¿½Æµï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-32767
+        DWORD dwSuperpositionGain; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-127
+        DWORD dwLimitingGain; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-127
+        DWORD dwLowFrequencyFusionControlLowerThreshold; //ï¿½ï¿½Æµï¿½ÚºÏ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-255
+        DWORD dwLowFrequencyFusionControlUpperThreshold; //ï¿½ï¿½Æµï¿½ÚºÏ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§:0-255
+        BYTE byVideoFusionMode; //Í¼ï¿½ï¿½ï¿½ÚºÏ´ï¿½ï¿½ï¿½Ä£Ê½: 1-ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½Ä£Ê½, 2-ï¿½É¼ï¿½ï¿½ï¿½Ä£Ê½, 3-ï¿½Úºï¿½Ä£Ê½, 4-ï¿½ï¿½ï¿½Ð»ï¿½Ä£Ê½, 5-ï¿½ê¶¨Ä£Ê½, 6-ï¿½ÚºÏ²ï¿½É«Ä£Ê½--ï¿½Ýµï¿½, 
+        //7-ï¿½ÚºÏ²ï¿½É«Ä£Ê½--ï¿½ï¿½Ä®, 8-ï¿½ÚºÏ²ï¿½É«Ä£Ê½--Ñ©ï¿½ï¿½, 10-ï¿½ÚºÏ²ï¿½É«Ä£Ê½--ï¿½ï¿½ï¿½ï¿½, 11-ï¿½ï¿½ï¿½Ä£Ê½--ï¿½É¼ï¿½ï¿½ï¿½+ï¿½È³ï¿½ï¿½ï¿½
         BYTE byRes2[2];
-        BYTE byPipEnabled; //»­ÖÐ»­ÈÚºÏÊ¹ÄÜ, 0-¹Ø±Õ 1-¿ªÆô
-        USB_PIP_RECT struPipRect; //»­ÖÐ»­¾ØÐÎ¿òÐÅÏ¢
-        BYTE byMixModeVisibleScale; //»ìºÏÄ£Ê½¿É¼û¹â±ÈÀý, ·¶Î§0-100 (µ±videoFusionModeÎª11-»ìºÏÄ£Ê½Ê±, ¸Ã²ÎÊýÉúÐ§)
+        BYTE byPipEnabled; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½Úºï¿½Ê¹ï¿½ï¿½, 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        USB_PIP_RECT struPipRect; //ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½Ï¢
+        BYTE byMixModeVisibleScale; //ï¿½ï¿½ï¿½Ä£Ê½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Î§0-100 (ï¿½ï¿½videoFusionModeÎª11-ï¿½ï¿½ï¿½Ä£Ê½Ê±, ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½Ð§)
         BYTE byRes[407];
     }USB_VIDEO_FUSION, *LPUSB_VIDEO_FUSION;
 
-    //¾µÍ·±ê¶¨²ÎÊý
+    //ï¿½ï¿½Í·ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_LEN_CALIBRATION
     {
         DWORD	dwSize;
-        BYTE byVideoResolution; //±¶¾µÀàÐÍ: 1-1X±¶¾µ, 2-0.5X±¶¾µ, 3-2X±¶¾µ, 4-3X±¶¾µ, 5-0.85XÎ¢¾à¾µÍ·, 6-0.34XÎ¢¾à¾µÍ·,
-        //7-×¨ÃÅ³¬¸ßÎÂ±¶¾µ, 8-MAX±¶¾µ, 9-¿ª»úÆô¶¯ÖÐ, 10-¼ì²âµ½±¶¾µµ«²»Ö§³Ö, 11-Ã»ÓÐ¼ì²âµ½±¶¾µ
-        BYTE byAdditiveMultiplicationFactor; //¼Ó³ËÒò×ÓÊ¹ÄÜ£¨Ö»¶Á£©: 0-¹Ø±Õ  1-¿ªÆô
+        BYTE byVideoResolution; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-1Xï¿½ï¿½ï¿½ï¿½, 2-0.5Xï¿½ï¿½ï¿½ï¿½, 3-2Xï¿½ï¿½ï¿½ï¿½, 4-3Xï¿½ï¿½ï¿½ï¿½, 5-0.85XÎ¢ï¿½à¾µÍ·, 6-0.34XÎ¢ï¿½à¾µÍ·,
+        //7-×¨ï¿½Å³ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½, 8-MAXï¿½ï¿½ï¿½ï¿½, 9-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 10-ï¿½ï¿½âµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½, 11-Ã»ï¿½Ð¼ï¿½âµ½ï¿½ï¿½ï¿½ï¿½
+        BYTE byAdditiveMultiplicationFactor; //ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½: 0-ï¿½Ø±ï¿½  1-ï¿½ï¿½ï¿½ï¿½
         BYTE byRes1[2];
-        DWORD dwTeleconverterAdditiveFactor1; //±¶¾µ¼ÓÐÔÒò×Ó1
-        DWORD dwTeleconverterAdditiveFactor2; //±¶¾µ¼ÓÐÔÒò×Ó2
-        DWORD dwTeleconverterAdditiveFactor3; //±¶¾µ¼ÓÐÔÒò×Ó3
-        DWORD dwTeleconverterAdditiveFactor4; //±¶¾µ¼ÓÐÔÒò×Ó4
-        DWORD dwTeleconverterMultiplicationFactor1; //±¶¾µ³ËÐÔÒò×Ó1
-        DWORD dwTeleconverterMultiplicationFactor2; //±¶¾µ³ËÐÔÒò×Ó2
-        DWORD dwTeleconverterMultiplicationFactor3; //±¶¾µ³ËÐÔÒò×Ó3
-        DWORD dwTeleconverterMultiplicationFactor4; //±¶¾µ³ËÐÔÒò×Ó4
-        DWORD dwFocus; //¾Û½¹Öµ
-        DWORD dwPixelSize; //Ô­Ïà´óÐ¡, 0-1000¦Ìm, µ¥Î»: Î¢Ã×
-        DWORD dwDistance; //Îï¾à, 0-50000©L, µ¥Î»: ºÁÃ×
-        DWORD dwTeleconverterFOV; //±¶¾µÊÓ³¡½Ç, ·¶Î§0.0-360.0, µ¥Î»: ¶È, ´«ÊäÊ±Êµ¼ÊÖµ*10
+        DWORD dwTeleconverterAdditiveFactor1; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+        DWORD dwTeleconverterAdditiveFactor2; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+        DWORD dwTeleconverterAdditiveFactor3; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3
+        DWORD dwTeleconverterAdditiveFactor4; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4
+        DWORD dwTeleconverterMultiplicationFactor1; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+        DWORD dwTeleconverterMultiplicationFactor2; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+        DWORD dwTeleconverterMultiplicationFactor3; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3
+        DWORD dwTeleconverterMultiplicationFactor4; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4
+        DWORD dwFocus; //ï¿½Û½ï¿½Öµ
+        DWORD dwPixelSize; //Ô­ï¿½ï¿½ï¿½Ð¡, 0-1000ï¿½ï¿½m, ï¿½ï¿½Î»: Î¢ï¿½ï¿½
+        DWORD dwDistance; //ï¿½ï¿½ï¿½, 0-50000ï¿½L, ï¿½ï¿½Î»: ï¿½ï¿½ï¿½ï¿½
+        DWORD dwTeleconverterFOV; //ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½, ï¿½ï¿½Î§0.0-360.0, ï¿½ï¿½Î»: ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10
         BYTE byRes[200];
     }USB_VIDEO_LEN_CALIBRATION, *LPUSB_VIDEO_LEN_CALIBRATION;
 
-    //ÏµÍ³¹ÜÀí×ÜÄÜÁ¦
+    //ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_CTRL_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE  byDeviceInfo; //Éè±¸ÐÅÏ¢»ñÈ¡£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byReboot; //Éè±¸ÖØÆô£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byReset; //»Ö¸´Ä¬ÈÏ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byHardwareServer; // Ó²¼þ·þÎñ²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byLocalTime; //Ð£Ê±£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byUpdateFirmware; //Éè±¸Éý¼¶£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDiagnoseData;  //Õï¶ÏÐÅÏ¢µ¼³ö£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byScreenVirtualMenu;  //ÆÁÄ»ÐéÄâ²Ëµ¥£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDeviceMenuArouse;  //Éè±¸²Ëµ¥»½ÐÑ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byTouchScreenMessagePoster;  //´¥ÆÁÏûÏ¢·¢ËÍ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDeviceDescriptionInfo;  //Éè±¸ÃèÊöÐÅÏ¢£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBigDataTransInfo;  //´óÊý¾Ý´«ÊäÐÅÏ¢£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byUVCMenuControl;  //ÊÓÆµ²Ëµ¥¿ØÖÆ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  bySerialDataTransmission;  //´®¿ÚÊý¾ÝÍ¸´«£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE  byDeviceInfo; //ï¿½è±¸ï¿½ï¿½Ï¢ï¿½ï¿½È¡ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byReboot; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byReset; //ï¿½Ö¸ï¿½Ä¬ï¿½Ï£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byHardwareServer; // Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byLocalTime; //Ð£Ê±ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byUpdateFirmware; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDiagnoseData;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byScreenVirtualMenu;  //ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDeviceMenuArouse;  //ï¿½è±¸ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ñ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byTouchScreenMessagePoster;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDeviceDescriptionInfo;  //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBigDataTransInfo;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byUVCMenuControl;  //ï¿½ï¿½Æµï¿½Ëµï¿½ï¿½ï¿½ï¿½Æ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  bySerialDataTransmission;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE  byRes[494];
     }USB_SYSTEM_CTRL_CAPABILITIES, *LPUSB_SYSTEM_CTRL_CAPABILITIES;
 
-    //Éè±¸ÐÅÏ¢ÄÜÁ¦
+    //ï¿½è±¸ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_DEVICE_INFO_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byFirmwareVersion; //Ö÷¿Ø³ÌÐò°æ±¾£º0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE byEncoderVersion; //±àÂë°æ±¾£º0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE byHardwareVersion; //»úÐ¾°æ±¾£º0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE byDeviceName; //Éè±¸Ãû³Æ£º0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE byProtocolVersion; //Ð­Òé°æ±¾ÐÅÏ¢£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE bySerialNumber; //Éè±¸ÐòÁÐºÅ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE bySecondhardwareVersion; //¸±³ÌÐò°æ±¾£º0-²»Ö§³Ö   1-Ö§³Ö
-        BYTE byModuleID; //»úÐ¾ID£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byDeviceID; //Éè±¸ID£º0-²»Ö§³Ö   1-Ö§³Ö
-        BYTE byDeviceAssembleType; //Éè±¸×é×°ÀàÐÍ£º1-²»Ö§³Ö  2-Ö§³Ö
-        BYTE byManufacturer; //³§ÉÌÐÅÏ¢£º1-²»Ö§³Ö  2-Ö§³Ö
-        BYTE byLanguageType; //ÓïÑÔÀàÐÍ£º1-²»Ö§³Ö  2-Ö§³Ö
-        BYTE byDeviceClass; //Éè±¸ÖÖÀà£º1-²»Ö§³Ö  2-Ö§³Ö
+        BYTE byFirmwareVersion; //ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE byEncoderVersion; //ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE byHardwareVersion; //ï¿½ï¿½Ð¾ï¿½æ±¾ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE byDeviceName; //ï¿½è±¸ï¿½ï¿½ï¿½Æ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE byProtocolVersion; //Ð­ï¿½ï¿½æ±¾ï¿½ï¿½Ï¢ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE bySerialNumber; //ï¿½è±¸ï¿½ï¿½ï¿½ÐºÅ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE bySecondhardwareVersion; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½   1-Ö§ï¿½ï¿½
+        BYTE byModuleID; //ï¿½ï¿½Ð¾IDï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byDeviceID; //ï¿½è±¸IDï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½   1-Ö§ï¿½ï¿½
+        BYTE byDeviceAssembleType; //ï¿½è±¸ï¿½ï¿½×°ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½Ö§ï¿½ï¿½  2-Ö§ï¿½ï¿½
+        BYTE byManufacturer; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½1-ï¿½ï¿½Ö§ï¿½ï¿½  2-Ö§ï¿½ï¿½
+        BYTE byLanguageType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½Ö§ï¿½ï¿½  2-Ö§ï¿½ï¿½
+        BYTE byDeviceClass; //ï¿½è±¸ï¿½ï¿½ï¿½à£º1-ï¿½ï¿½Ö§ï¿½ï¿½  2-Ö§ï¿½ï¿½
         BYTE byRes[495];
     }USB_SYSTEM_DEVICE_INFO_CAPABILITIES, *LPUSB_SYSTEM_DEVICE_INFO_CAPABILITIES;
 
-    //Ó²¼þ·þÎñÄÜÁ¦
+    //Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_HARDWARE_SERVER_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byUsbMode; //USBÄ£Ê½ÇÐ»»£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE byUsbMode; //USBÄ£Ê½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºUSBµÄUVCÄ£Ê½
-        bit1£ºUSBµÄNCMÄ£Ê½
+        bit0ï¿½ï¿½USBï¿½ï¿½UVCÄ£Ê½
+        bit1ï¿½ï¿½USBï¿½ï¿½NCMÄ£Ê½
         */
-        BYTE byDeviceinitialstatus; //Éè±¸³õÊ¼»¯×´Ì¬£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byDeviceworkingstatus; //Éè±¸¹¤×÷×´Ì¬£º0-²»Ö§³Ö   1-Ö§³Ö
+        BYTE byDeviceinitialstatus; //ï¿½è±¸ï¿½ï¿½Ê¼ï¿½ï¿½×´Ì¬ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byDeviceworkingstatus; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½   1-Ö§ï¿½ï¿½
         BYTE byRes[505];
     }USB_SYSTEM_HARDWARE_SERVER_CAPABILITIES, *LPUSB_SYSTEM_HARDWARE_SERVER_CAPABILITIES;
 
-    //ÏµÍ³Ê±¼äÄÜÁ¦
+    //ÏµÍ³Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_LOCALTIME_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byMillisecond; //ºÁÃë£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE bySecond; //Ãë£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byMinute; //·ÖÖÓ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byHour; //Ð¡Ê±£º0-²»Ö§³Ö   1-Ö§³Ö
-        BYTE byDay; //ÈÕ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byMonth; //ÔÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  wYear; //Äê£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byExternalTimeSourceEnabled; //Íâ²¿Ð£Ê±Ô´Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byMillisecond; //ï¿½ï¿½ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE bySecond; //ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byMinute; //ï¿½ï¿½ï¿½Ó£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byHour; //Ð¡Ê±ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½   1-Ö§ï¿½ï¿½
+        BYTE byDay; //ï¿½Õ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byMonth; //ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  wYear; //ï¿½ê£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byExternalTimeSourceEnabled; //ï¿½â²¿Ð£Ê±Ô´Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes[499];
     }USB_SYSTEM_LOCALTIME_CAPABILITIES, *LPUSB_SYSTEM_LOCALTIME_CAPABILITIES;
 
-    //Í¼Ïñ¹ÜÀí×ÜÄÜÁ¦
+    //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_CAPABILITIES
     {
         DWORD	dwSize;
-        BYTE  byImageBrightness; //Í¼ÏñÁÁ¶Èµ÷½Ú£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byImageContrast; //Í¼Ïñ¶Ô±È¶Èµ÷½Ú£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byImageBackgroundCorrect; //Ò»¼ü±³¾°Ð£Õý£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byImageManualCorrect;  //Ò»¼üÊÖ¶¯Ð£Õý£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byImageEnhancement;  //Í¼ÏñÔöÇ¿£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byImageVideoAdjust;  //ÊÓÆµµ÷Õû£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE  byImageBrightness; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½Ú£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byImageContrast; //Í¼ï¿½ï¿½Ô±È¶Èµï¿½ï¿½Ú£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byImageBackgroundCorrect; //Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byImageManualCorrect;  //Ò»ï¿½ï¿½ï¿½Ö¶ï¿½Ð£ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byImageEnhancement;  //Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byImageVideoAdjust;  //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes[502];
     }USB_IMAGE_CAPABILITIES, *LPUSB_IMAGE_CAPABILITIES;
 
-    //Í¼ÏñÁÁ¶Èµ÷½ÚÄÜÁ¦
+    //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_BRIGHTNESS_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byBrightnessUpperLimit; //Í¼ÏñÁÁ¶ÈÉÏÏßãÐÖµ
-        BYTE byBrightnessLowerLimit; //Í¼ÏñÁÁ¶ÈÏÂÏßãÐÖµ
+        BYTE byBrightnessUpperLimit; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byBrightnessLowerLimit; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE byRes[506];
     }USB_IMAGE_BRIGHTNESS_CAPABILITIES, *LPUSB_IMAGE_BRIGHTNESS_CAPABILITIES;
 
-    //Í¼Ïñ¶Ô±È¶Èµ÷½ÚÄÜÁ¦
+    //Í¼ï¿½ï¿½Ô±È¶Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_CONTRAST_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byContrastUpperLimit; //Í¼Ïñ¶Ô±È¶ÈÉÏÏÞãÐÖµ
-        BYTE byContrastLowerLimit; //Í¼Ïñ¶Ô±È¶ÈÏÂÏÞãÐÖµ
+        BYTE byContrastUpperLimit; //Í¼ï¿½ï¿½Ô±È¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byContrastLowerLimit; //Í¼ï¿½ï¿½Ô±È¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE byRes[506];
     }USB_IMAGE_CONTRAST_CAPABILITIES, *LPUSB_IMAGE_CONTRAST_CAPABILITIES;
 
-    //Í¼ÏñÔöÇ¿ÄÜÁ¦
+    //Í¼ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_ENHANCEMENT_CAPABILITIES
     {
         DWORD  dwSize;
-        DWORD  dwHighLightLevelUpperLimit; //ºìÈÈÍ¹ÏÔµÈ¼¶ÉÏÏÞãÐÖµ
-        DWORD  dwHighLightLevelLowerLimit; //ºìÈÈÍ¹ÏÔµÈ¼¶ÏÂÏßãÐÖµ
-        DWORD  dwAGCUpperLimit;  //AGCÉÏÏÞãÐÖµ
-        DWORD  dwAGCLowerLimit;  //AGCÏÂÏÞãÐÖµ
-        BYTE  byNoiseReduceMode; //Êý×Ö½µÔëÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        DWORD  dwHighLightLevelUpperLimit; //ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ÔµÈ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        DWORD  dwHighLightLevelLowerLimit; //ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ÔµÈ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        DWORD  dwAGCUpperLimit;  //AGCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        DWORD  dwAGCLowerLimit;  //AGCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byNoiseReduceMode; //ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0:¹Ø±Õ
-        bit1:ÆÕÍ¨Ä£Ê½
-        bit2:×¨¼ÒÄ£Ê½
+        bit0:ï¿½Ø±ï¿½
+        bit1:ï¿½ï¿½Í¨Ä£Ê½
+        bit2:×¨ï¿½ï¿½Ä£Ê½
         */
-        BYTE  byGeneralLevelUpperLimit; //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ðÉÏÏÞãÐÖµ
-        BYTE  byGeneralLevelLowerLimit; //ÆÕÍ¨Ä£Ê½½µÔë¼¶±ðÏÂÏÞãÐÖµ
-        BYTE  byFrameNoiseReduceLevelUpperLimit; //×¨¼ÒÄ£Ê½¿ÕÓò½µÔë¼¶±ðÉÏÏÞãÐÖµ
-        BYTE  byFrameNoiseReduceLevelLowerLimit; //×¨¼ÒÄ£Ê½¿ÕÓò½µÔë¼¶±ðÏÂÏÞãÐÖµ
-        BYTE  byInterFrameNoiseReduceLevelUpperLimit; //×¨¼ÒÄ£Ê½Ê±Óò½µÔë¼¶±ðÉÏÏÞãÐÖµ
-        BYTE  byInterFrameNoiseReduceLevelLowerLimit; //×¨¼ÒÄ£Ê½Ê±Óò½µÔë¼¶±ðÏÂÏÞãÐÖµ
-        BYTE  bySharpenBoost; //Èñ»¯ÔöÇ¿:1 - ²»Ö§³Ö 2 - Ö§³Ö
-        DWORD  dwPaletteMode; //Î±²ÊÉ«ÑÕÉ«Ä£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byGeneralLevelUpperLimit; //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byGeneralLevelLowerLimit; //ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byFrameNoiseReduceLevelUpperLimit; //×¨ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byFrameNoiseReduceLevelLowerLimit; //×¨ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byInterFrameNoiseReduceLevelUpperLimit; //×¨ï¿½ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byInterFrameNoiseReduceLevelLowerLimit; //×¨ï¿½ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ë¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  bySharpenBoost; //ï¿½ï¿½ï¿½ï¿½Ç¿:1 - ï¿½ï¿½Ö§ï¿½ï¿½ 2 - Ö§ï¿½ï¿½
+        DWORD  dwPaletteMode; //Î±ï¿½ï¿½É«ï¿½ï¿½É«Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£º°×ÈÈ
-        bit1£ººÚÈÈ
-        bit2£ºÈÚºÏ1
-        bit3£º²Êºç
-        bit4£ºÈÚºÏ2
-        bit5£ºÌúºì1
-        bit6£ºÌúºì2
-        bit7£ºÉîºÖÉ«
-        bit8£ºÉ«²Ê1
-        bit9£ºÉ«²Ê2
-        bit10£º±ù»ð
-        bit11£ºÓê
-        bit12£ººìÈÈ
-        bit13£ºÂÌÈÈ
-        bit14£ºÉîÀ¶
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit2ï¿½ï¿½ï¿½Úºï¿½1
+        bit3ï¿½ï¿½ï¿½Êºï¿½
+        bit4ï¿½ï¿½ï¿½Úºï¿½2
+        bit5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+        bit6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+        bit7ï¿½ï¿½ï¿½ï¿½ï¿½É«
+        bit8ï¿½ï¿½É«ï¿½ï¿½1
+        bit9ï¿½ï¿½É«ï¿½ï¿½2
+        bit10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit11ï¿½ï¿½ï¿½ï¿½
+        bit12ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit13ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit14ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         */
-        BYTE  byLSEDetailEnabled; //Í¼ÏñÏ¸½ÚÔöÇ¿Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byLSEDetailLevelUpperLimit; //Í¼ÏñÏ¸½ÚÔöÇ¿µÈ¼¶ÉÏÏÞãÐÖµ
-        BYTE  byLSEDetailLevelLowerLimit; //Í¼ÏñÏ¸½ÚÔöÇ¿µÈ¼¶ÏÂÏÞãÐÖµ
-        BYTE  byWideTemperatureRange; //ÎÂ¿íÄ£Ê½Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        DWORD  dwWideTemperatureRangeUpThr; //ÎÂ¿íÄ£Ê½ÉÏãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwWideTemperatureRangeDownThr; //ÎÂ¿íÄ£Ê½ÏÂãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        BYTE  byBirdWatchingMode; //¹ÛÄñÄ£Ê½Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byHighLightMode; //ºìÈÈÍ¹ÏÔÄ£Ê½Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byHookEdgeMode; //¹´±ßÄ£Ê½Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byHookEdgeStrUpperLimit; //¹´±ßµÈ¼¶ÉÏÏÞãÐÖµ
-        BYTE  byHookEdgeStrLowerLimit; //¹´±ßµÈ¼¶ÏÂÏÞãÐÖµ
-        BYTE  byWideTemperatureRangemode; //ÎÂ¿í¹¤×÷Ä£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byLSEDetailEnabled; //Í¼ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ç¿Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byLSEDetailLevelUpperLimit; //Í¼ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byLSEDetailLevelLowerLimit; //Í¼ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byWideTemperatureRange; //ï¿½Â¿ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        DWORD  dwWideTemperatureRangeUpThr; //ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwWideTemperatureRangeDownThr; //ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byBirdWatchingMode; //ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byHighLightMode; //ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byHookEdgeMode; //ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byHookEdgeStrUpperLimit; //ï¿½ï¿½ï¿½ßµÈ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byHookEdgeStrLowerLimit; //ï¿½ï¿½ï¿½ßµÈ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byWideTemperatureRangemode; //ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÎÂ¿íÄ£Ê½ÉÏÏÂÏÞ¾ùÅäÖÃ
-        bit1£ºÎÂ¿íÄ£Ê½Ö»ÅäÖÃÉÏÏÞ
-        bit2£ºÎÂ¿íÄ£Ê½Ö»ÅäÖÃÏÂÏÞ
+        bit0ï¿½ï¿½ï¿½Â¿ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¾ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½Â¿ï¿½Ä£Ê½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit2ï¿½ï¿½ï¿½Â¿ï¿½Ä£Ê½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         */
-        BYTE  byIspAgcmode; //agc¹¤×÷Ä£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byIspAgcmode; //agcï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÏßÐÔÄ£Ê½
-        bit1£ºÖ±·½Í¼Ä£Ê½
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+        bit1ï¿½ï¿½Ö±ï¿½ï¿½Í¼Ä£Ê½
         */
-        BYTE  byAISuperResolution; //AI³¬·ÖÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  bySkyAreaCullLevel; //Ìì¿ÕÇøÓòÌÞ³ý°Ù·Ö±È£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBurnPreventionEnabled; //·À×ÆÉÕÄ£Ê½Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBurnPreventionMode; //·À×ÆÉÕ¿ØÖÆÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byAISuperResolution; //AIï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  bySkyAreaCullLevel; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ³ï¿½ï¿½Ù·Ö±È£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBurnPreventionEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBurnPreventionMode; //ï¿½ï¿½ï¿½ï¿½ï¿½Õ¿ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£º×Ô¶¯¿ØÖÆÄ£Ê½
-        bit1£ºÊÖ¶¯¿ØÖÆÄ£Ê½
+        bit0ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+        bit1ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
         */
-        BYTE  byAutoShutEnabled; //×Ô¶¯µ²Æ¬Ê¹ÄÜ 1 - ²»Ö§³Ö 2 - Ö§³Ö
-        DWORD  dwBurnPreventionShutterCloseTimeUpperLimit; //·À×ÆÉÕµ²Æ¬±ÕºÏÊ±¼ä(½ö×Ô¶¯Ä£Ê½ÏÂÉúÐ§) ÉÏÏÞãÐÖµ0 - 3600Ãë
-        BYTE  byBurnPreventionShutterControl; //·À×ÆÉÕµ²Æ¬ÊÖ¶¯¿ØÖÆ((½öÊÖ¶¯Ä£Ê½ÏÂÉúÐ§)) £¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byAutoShutEnabled; //ï¿½Ô¶ï¿½ï¿½ï¿½Æ¬Ê¹ï¿½ï¿½ 1 - ï¿½ï¿½Ö§ï¿½ï¿½ 2 - Ö§ï¿½ï¿½
+        DWORD  dwBurnPreventionShutterCloseTimeUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Æ¬ï¿½Õºï¿½Ê±ï¿½ï¿½(ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ð§) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ0 - 3600ï¿½ï¿½
+        BYTE  byBurnPreventionShutterControl; //ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Æ¬ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½((ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ð§)) ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£º²»¿ØÖÆ
-        bit1£ºµ²Æ¬±ÕºÏ
-        bit2£ºµ²Æ¬Ì§Æð
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½Æ¬ï¿½Õºï¿½
+        bit2ï¿½ï¿½ï¿½ï¿½Æ¬Ì§ï¿½ï¿½
         */
-        BYTE  byBurnPreventionRecovery; //·À×ÆÉÕ×Ô»Ö¸´Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byIsothermEnabled; //µÈÎÂÏß¿ªÆô£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE  byBurnPreventionRecovery; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»Ö¸ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byIsothermEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE  byRes3;
-        DWORD  dwIsothermalUpperThreshold; //µÈÎÂÏßÎÂ¶ÈÉÏãÐÖµ-20¡æ~600¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwIsothermalLowerThreshold; //µÈÎÂÏßÎÂ¶ÈÏÂãÐÖµ-20¡æ~600¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwIsothermalType; //µÈÎÂÏßÏÔÊ¾ÀàÐÍ£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        DWORD  dwIsothermalUpperThreshold; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµ-20ï¿½ï¿½~600ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwIsothermalLowerThreshold; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµ-20ï¿½ï¿½~600ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwIsothermalType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£º°×ÈÈµÈÎÂ
-        bit1£ººÚÈÈµÈÎÂ
-        bit2£ºÈÛÑÒµÈÎÂ
-        bit3£ºÌúºìµÈÎÂ
-        bit4£ºÈÈÌúµÈÎÂ
-        bit5£ºÒ½ÁÆµÈÎÂ
-        bit6£º±±¼«µÈÎÂ
-        bit7£º²Êºç1µÈÎÂ
-        bit8£º²Êºç2µÈÎÂ
-        bit9£ºÃèºìµÈÎÂ
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½
+        bit2ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½
+        bit3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit5ï¿½ï¿½Ò½ï¿½Æµï¿½ï¿½ï¿½
+        bit6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit7ï¿½ï¿½ï¿½Êºï¿½1ï¿½ï¿½ï¿½ï¿½
+        bit8ï¿½ï¿½ï¿½Êºï¿½2ï¿½ï¿½ï¿½ï¿½
+        bit9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         */
         BYTE  byRes[436];
     }USB_IMAGE_ENHANCEMENT_CAPABILITIES, *LPUSB_IMAGE_ENHANCEMENT_CAPABILITIES;
 
-    //ÊÓÆµµ÷ÕûÄÜÁ¦
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_VIDEO_ADJUST_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE  byImageFlipStyle; //¾µÏñÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE  byPowerLineFrequencyMode; //ÊÓÆµÖÆÊ½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£bit0£ºPAL(²»Ö§³Ö)
-        BYTE  byCorridor; //¾µÍ·×ßÀÈÄ£Ê½£¨Ðý×ª£©£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDigitalZoom; //Êý×Ö±ä±¶£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byImageFlipStyle; //ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE  byPowerLineFrequencyMode; //ï¿½ï¿½Æµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½bit0ï¿½ï¿½PAL(ï¿½ï¿½Ö§ï¿½ï¿½)
+        BYTE  byCorridor; //ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDigitalZoom; //ï¿½ï¿½ï¿½Ö±ä±¶ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºX1
-        bit1£ºX2
-        bit2£ºX4
-        bit3£ºX8
+        bit0ï¿½ï¿½X1
+        bit1ï¿½ï¿½X2
+        bit2ï¿½ï¿½X4
+        bit3ï¿½ï¿½X8
         */
-        BYTE  byCursor; //ÏÔÊ¾Éä±í£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBadPointCursor; //ÏÔÊ¾»µµãÊ®×Ö¹â±ê£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBadPointCursorShiftMode; //ÒÆ¶¯»µµãÊ®×Ö¹â±ê·½Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byCursor; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBadPointCursor; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ê£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBadPointCursorShiftMode; //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Ö¹ï¿½ê·½Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÖ±½ÓÏÂ·¢×ø±ê
-        bit1£ºÏÂ·¢ÒÆ¶¯Ö¸Áî
+        bit0ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½Â·ï¿½ï¿½Æ¶ï¿½Ö¸ï¿½ï¿½
         */
-        BYTE  byBadPointCursorShiftStep; //ÒÆ¶¯»µµãÊ®×Öµ÷½Ú×î´ó²½³¤
+        BYTE  byBadPointCursorShiftStep; //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ó²½³ï¿½
         BYTE  byRes[500];
     }USB_IMAGE_VIDEO_ADJUST_CAPABILITIES, *LPUSB_IMAGE_VIDEO_ADJUST_CAPABILITIES;
 
-    //ÈÈ³ÉÏñ×ÜÄÜÁ¦
+    //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE  byIsSupportThermometryBasicParam; //ÊÇ·ñÖ§³Ö²âÎÂ»ù±¾²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermometryType; //²âÎÂÀàÐÍ£º1-ÈËÌå²âÎÂ  2-¹¤Òµ²âÎÂ
-        BYTE  byThermalThermometryRegions; //²âÎÂ¹æÔòÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalAlgVersion; //ÈÈ³ÉÏñÏà¹ØËã·¨°æ±¾£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalStreamParam; //ÈÈ³ÉÏñÂëÁ÷²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalTempeatureCorrect; //²âÎÂÐÞÕý£¨ÈËÌå²âÎÂ£©£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalBlackBody; //ºÚÌå²ÎÊýÉèÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalBodyTempCompensation; //ÌåÎÂ²¹³¥²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalJpecpic; //×¥ÈÈÍ¼£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalROIMaxTemperatrueSearch; //ROI×î¸ßÎÂÐÅÏ¢²éÑ¯£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermalP2PParam; //È«ÆÁ²âÎÂ²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermometryCalibrationFile; //²âÎÂ±ê¶¨ÎÄ¼þµ¼Èëµ¼³ö£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermometryExpertRegions; //×¨¼Ò²âÎÂ¹æÔòÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermometryExpertCorrection; //×¨¼Ò²âÎÂÐ£Õý²ÎÊýÅäÖÃ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE  byIsSupportThermometryBasicParam; //ï¿½Ç·ï¿½Ö§ï¿½Ö²ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermometryType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  2-ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½
+        BYTE  byThermalThermometryRegions; //ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalAlgVersion; //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½æ±¾ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalStreamParam; //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalTempeatureCorrect; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalBlackBody; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalBodyTempCompensation; //ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalJpecpic; //×¥ï¿½ï¿½Í¼ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalROIMaxTemperatrueSearch; //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermalP2PParam; //È«ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermometryCalibrationFile; //ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ëµ¼ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermometryExpertRegions; //×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermometryExpertCorrection; //×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE  byRes[494];
     }USB_THERMAL_CAPABILITIES, *LPUSB_THERMAL_CAPABILITIES;
 
 #define MAX_TEMP_RANGE_NUM  10
 
-    //²âÎÂµµÎ»ÐÅÏ¢
+    //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½Ï¢
     typedef struct tagUSB_TEMPERATURE_RANGE_INFO
     {
-        BYTE byTemperatureRangeID; //²âÎÂµµÎ»
+        BYTE byTemperatureRangeID; //ï¿½ï¿½ï¿½Âµï¿½Î»
         BYTE byRes[3];
-        DWORD  dwTemperatureRangeUpperLimit; //²âÎÂµµÎ»ÎÂ¶ÈÉÏÏÞ£¬µ¥Î»¡æ
-        DWORD  dwTemperatureRangeLowerLimit;  //²âÎÂµµÎ»ÎÂ¶ÈÏÂÏÞ£¬µ¥Î»¡æ
+        DWORD  dwTemperatureRangeUpperLimit; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½Â¶ï¿½ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        DWORD  dwTemperatureRangeLowerLimit;  //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½Â¶ï¿½ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     }USB_TEMPERATURE_RANGE_INFO, *LPUSB_TEMPERATURE_RANGE_INFO;
 
-    //²âÎÂ»ù±¾²ÎÊýÄÜÁ¦
+    //ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMOMETRY_BASIC_PARAM_CAPABILITIES
     {
         DWORD  dwSize;
-        DWORD  dwTemperatureRange; //²âÎÂµµÎ»£¬°´Î»±íÊ¾µµÎ»Ö§³ÖÇé¿ö£º0-²»Ö§³Ö 1-Ö§³Ö
+        DWORD  dwTemperatureRange; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾ï¿½ï¿½Î»Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
         /*
-        bit0£º -20~150¡æ
-        bit1£º0~550¡æ
-        bit2£º0~650¡æ
-        bit3£º -4~302¡æ
-        bit4£º32~1022¡æ
-        bit5£º32~1200¡æ
-        bit6£º -20~650¡æ
-        bit7£º -20~1500¡æ
-        bit8£ºautomatic¡æ
-        bit9£º -20~120¡æ
-        bit10£º100~550¡æ
-        bit11£º28~45¡æ
-        bit12£º20~350¡æ
-        bit13£º20~45¡æ
-        bit14£º0~400¡æ
-        bit15£º30~45¡æ
-        bit16£º100~400¡æ
-        bit17£º100~350¡æ
-        bit18£º -40~150¡æ
-        bit19£º100~650¡æ
-        bit20£º300~2200¡æ
-        bit22£º -20~200¡æ
-        bit23£º0~800¡æ
-        bit24£º600~1800¡æ
-        bit25£º300~2000¡æ
-        bit26£º300~1500¡æ
-        bit27£º0~1200¡æ
+        bit0ï¿½ï¿½ -20~150ï¿½ï¿½
+        bit1ï¿½ï¿½0~550ï¿½ï¿½
+        bit2ï¿½ï¿½0~650ï¿½ï¿½
+        bit3ï¿½ï¿½ -4~302ï¿½ï¿½
+        bit4ï¿½ï¿½32~1022ï¿½ï¿½
+        bit5ï¿½ï¿½32~1200ï¿½ï¿½
+        bit6ï¿½ï¿½ -20~650ï¿½ï¿½
+        bit7ï¿½ï¿½ -20~1500ï¿½ï¿½
+        bit8ï¿½ï¿½automaticï¿½ï¿½
+        bit9ï¿½ï¿½ -20~120ï¿½ï¿½
+        bit10ï¿½ï¿½100~550ï¿½ï¿½
+        bit11ï¿½ï¿½28~45ï¿½ï¿½
+        bit12ï¿½ï¿½20~350ï¿½ï¿½
+        bit13ï¿½ï¿½20~45ï¿½ï¿½
+        bit14ï¿½ï¿½0~400ï¿½ï¿½
+        bit15ï¿½ï¿½30~45ï¿½ï¿½
+        bit16ï¿½ï¿½100~400ï¿½ï¿½
+        bit17ï¿½ï¿½100~350ï¿½ï¿½
+        bit18ï¿½ï¿½ -40~150ï¿½ï¿½
+        bit19ï¿½ï¿½100~650ï¿½ï¿½
+        bit20ï¿½ï¿½300~2200ï¿½ï¿½
+        bit22ï¿½ï¿½ -20~200ï¿½ï¿½
+        bit23ï¿½ï¿½0~800ï¿½ï¿½
+        bit24ï¿½ï¿½600~1800ï¿½ï¿½
+        bit25ï¿½ï¿½300~2000ï¿½ï¿½
+        bit26ï¿½ï¿½300~1500ï¿½ï¿½
+        bit27ï¿½ï¿½0~1200ï¿½ï¿½
         */
-        DWORD  dwEnviroTemperatureUpperLimit; //»·¾³ÎÂ¶ÈÉÏÏÞãÐÖµ: -99.00~99.00¡æ(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*100»»Ëã³ÉÕýÕûÊý
-        DWORD  dwEnviroTemperatureLowerLimit; //»·¾³ÎÂ¶ÈÏÂÏÞãÐÖµ: -99.00~99.00¡æ(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*100»»Ëã³ÉÕýÕûÊý
-        DWORD  dwReflectiveTemperatureUpperLimit; //·´ÉäÎÂ¶ÈÉÏÏÞãÐÖµ: -100.0~1000.0¡æ(¾«È·µ½Ð¡Êýµãºó1Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwReflectiveTemperatureLowerLimit; //·´ÉäÎÂ¶ÈÏÂÏÞãÐÖµ: -100.0~1000.0¡æ(¾«È·µ½Ð¡Êýµãºó1Î»)£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAtmosphericHumidityUpperLimit; //´óÆøÊª¶ÈÖµÉÏÏÞãÐÖµ: 0.0~100.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAtmosphericHumidityLowerLimit; //´óÆøÊª¶ÈÖµÏÂÏÞãÐÖµ: 0.0~100.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwEmissivityUpperLimit; //·¢ÉäÂÊÉÏÏÞãÐÖµ: 0.01~1(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwEmissivityLowerLimit; //·¢ÉäÂÊÏÂÏÞãÐÖµ: 0.01~1(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwDistanceUpperLimit; //¾àÀëÉÏÏÞãÐÖµ£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä
-        DWORD  dwDistanceLowerLimit; //¾àÀëÏÂÏÞãÐÖµ£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä
-        BYTE  byThermometryEnabled; //¿ªÆô²âÎÂ¹¦ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDisplayMaxTemperatureEnabled; //ÏÔÊ¾×î¸ßÎÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDisplayMinTemperatureEnabled; //ÏÔÊ¾×îµÍÎÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDisplayAverageTemperatureEnabled; //ÏÔÊ¾Æ½¾ùÎÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byTemperatureUnit; //ÎÂ¶Èµ¥Î»£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡££¨Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔÉãÊÏÎÂ¶È×÷Îªµ¥Î»´«Êä£©
+        DWORD  dwEnviroTemperatureUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: -99.00~99.00ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEnviroTemperatureLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: -99.00~99.00ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwReflectiveTemperatureUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: -100.0~1000.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwReflectiveTemperatureLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: -100.0~1000.0ï¿½ï¿½(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAtmosphericHumidityUpperLimit; //ï¿½ï¿½ï¿½ï¿½Êªï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: 0.0~100.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAtmosphericHumidityLowerLimit; //ï¿½ï¿½ï¿½ï¿½Êªï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: 0.0~100.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEmissivityUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: 0.01~1(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEmissivityLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ: 0.01~1(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistanceUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistanceLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        BYTE  byThermometryEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¹ï¿½ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDisplayMaxTemperatureEnabled; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDisplayMinTemperatureEnabled; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDisplayAverageTemperatureEnabled; //ï¿½ï¿½Ê¾Æ½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byTemperatureUnit; //ï¿½Â¶Èµï¿½Î»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½ï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ä£©
         /*
-        bit0£ºÉãÊÏÎÂ¶È
-        bit1£º»ªÊÏÎÂ¶È
-        bit2£º¿ª¶ûÎÄÎÂ¶È
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½
+        bit2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½
         */
-        BYTE  byCalibrationCoefficientEnabled; //ÆôÓÃ±ê¶¨ÏµÊý£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byModifyTemperatureRange; //ÊÇ·ñÖ§³ÖÐÞ¸Ä²âÎÂµµÎ»£º1-²»Ö§³Ö 2-Ö§³Ö
+        BYTE  byCalibrationCoefficientEnabled; //ï¿½ï¿½ï¿½Ã±ê¶¨Ïµï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byModifyTemperatureRange; //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ï¿½Þ¸Ä²ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
         BYTE  byRes1;
-        DWORD  dwCalibrationCoefficientUpperLimit; //±ê¶¨ÏµÊýÉÏÏÞãÐÖµ£º0.00~30.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD  dwCalibrationCoefficientLowerLimit; //±ê¶¨ÏµÊýÏÂÏÞãÐÖµ£º0.00~30.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD  dwExternalOpticsWindowCorrectionUpperLimit; //Íâ²¿¹âÑ§ÎÂ¶ÈÉÏÏÞãÐÖµ£º-40.0~80.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwExternalOpticsWindowCorrectionLowerLimit; //Íâ²¿¹âÑ§ÎÂ¶ÈÏÂÏÞãÐÖµ£º-40.0~80.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        BYTE  byDistanceUnit; //¾àÀëµ¥Î»£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        DWORD  dwCalibrationCoefficientUpperLimit; //ï¿½ê¶¨Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.00~30.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCalibrationCoefficientLowerLimit; //ï¿½ê¶¨Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.00~30.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwExternalOpticsWindowCorrectionUpperLimit; //ï¿½â²¿ï¿½ï¿½Ñ§ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-40.0~80.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwExternalOpticsWindowCorrectionLowerLimit; //ï¿½â²¿ï¿½ï¿½Ñ§ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-40.0~80.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byDistanceUnit; //ï¿½ï¿½ï¿½ëµ¥Î»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÃ×
-        bit1£ºÀåÃ×
-        bit2£ºÓ¢³ß
+        bit0ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit2ï¿½ï¿½Ó¢ï¿½ï¿½
         */
-        BYTE  byReflectiveEnable; //·´ÉäÎÂ¶ÈÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byThermometryInfoDisplayposition; //²âÎÂÐÅÏ¢ÏÔÊ¾Î»ÖÃ£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byReflectiveEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byThermometryInfoDisplayposition; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾Î»ï¿½Ã£ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£º¸úËæ¹æÔò
-        bit1£ºÆÁÄ»×óÉÏ½Ç
+        bit0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ï½ï¿½
         */
-        BYTE  byThermometryStreamOverlay; //ÂëÁ÷µþ¼ÓÎÂ¶ÈÐÅÏ¢£º0-²»Ö§³Ö  1-Ö§³Ö
-        DWORD  dwAlertUpperLimit; //Ô¤¾¯ÎÂ¶ÈÉÏÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlertLowerLimit; //Ô¤¾¯ÎÂ¶ÈÏÂÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlarmUpperLimit; //±¨¾¯ÎÂ¶ÈÉÏÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlarmLowerLimit; //±¨¾¯ÎÂ¶ÈÏÂÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwExternalOpticsTransmit; //Íâ²¿¹âÑ§Í¸¹ýÂÊ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byDisplayCenTempEnabled; //ÏÔÊ¾ÖÐÐÄÎÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byBackcolorEnabled; //ÏÔÊ¾±³¾°É«£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byShowAlarmColorEnabled; //±¨¾¯ÑÕÉ«ÏÔÊ¾Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE  byTemperatureRangeAmount;  //²âÎÂµµÎ»×ÜÊý£¬¶ÔÓ¦struTempTangeInfo¾ßÌåÄÚÈÝ¸öÊý
-        USB_TEMPERATURE_RANGE_INFO  struTempRangeInfo[MAX_TEMP_RANGE_NUM]; //²âÎÂµµÎ»ÐÅÏ¢ÁÐ±í
-        BYTE byFloatTransMode; //¸¡µãÊý´«ÊäÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö0-²»Ö§³Ö£¬1-Ö§³Ö   bit0 - ÕûÐÍ´«Êä  bit1 - ÒÆÎ»´«Êä
-        BYTE byShiftLength; //¸¡µãÊýÒÆÎ»´«Êä³ËÒÔ2µÄN´Î·½£¬ÆäÖÐNµÄ´óÐ¡£¬°²Î¿±íÊ¾Ã¶¾ÙÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö  bit0£º6  bit1£º9 bit2£º13 bit3£º16 bit4£º19
-        BYTE byEnviromentTemperatureEnable; //»·¾³ÎÂ¶ÈÊ¹ÄÜ1 - ²»Ö§³Ö 2 - Ö§³Ö
+        BYTE  byThermometryStreamOverlay; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        DWORD  dwAlertUpperLimit; //Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlertLowerLimit; //Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlarmUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlarmLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwExternalOpticsTransmit; //ï¿½â²¿ï¿½ï¿½Ñ§Í¸ï¿½ï¿½ï¿½Ê£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byDisplayCenTempEnabled; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byBackcolorEnabled; //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byShowAlarmColorEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ê¾Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE  byTemperatureRangeAmount;  //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦struTempTangeInfoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½
+        USB_TEMPERATURE_RANGE_INFO  struTempRangeInfo[MAX_TEMP_RANGE_NUM]; //ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½Ï¢ï¿½Ð±ï¿½
+        BYTE byFloatTransMode; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½   bit0 - ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½  bit1 - ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        BYTE byShiftLength; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Nï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½  bit0ï¿½ï¿½6  bit1ï¿½ï¿½9 bit2ï¿½ï¿½13 bit3ï¿½ï¿½16 bit4ï¿½ï¿½19
+        BYTE byEnviromentTemperatureEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½ï¿½1 - ï¿½ï¿½Ö§ï¿½ï¿½ 2 - Ö§ï¿½ï¿½
         BYTE  byRes[289];
     }USB_THERMOMETRY_BASIC_PARAM_CAPABILITIES, *LPUSB_THERMOMETRY_BASIC_PARAM_CAPABILITIES;
 
-    //²âÎÂÄ£Ê½ÅäÖÃÄÜÁ¦
+    //ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_THERMOMETRY_MODE_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE  byThermometryMode; //²âÎÂÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        BYTE  byThermometryMode; //ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÆÕÍ¨
-        bit1£º×¨¼Ò
+        bit0ï¿½ï¿½ï¿½ï¿½Í¨
+        bit1ï¿½ï¿½×¨ï¿½ï¿½
         */
-        BYTE  byThermometryROIEnabled;//²âÎÂROIÊ¹ÄÜ£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        BYTE  byThermometryROIEnabled;//ï¿½ï¿½ï¿½ï¿½ROIÊ¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         BYTE  byRes[506];
     }USB_THERMAL_THERMOMETRY_MODE_CAPABILITIES, *LPUSB_THERMAL_THERMOMETRY_MODE_CAPABILITIES;
 
-    //²âÎÂ¹æÔòÅäÖÃÄÜÁ¦
+    //ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_THERMOMETRY_REGIONS_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE byRegionNumUpperLimit;//¹æÔòÇøÓò×Ü¸öÊýÉÏÏßãÐÖµ
-        BYTE byRegionEnabled;//ÇøÓòÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byRegionNumUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRegionEnabled;//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes[506];
     }USB_THERMAL_THERMOMETRY_REGIONS_CAPABILITIES, *LPUSB_THERMAL_THERMOMETRY_REGIONS_CAPABILITIES;
 
-    //ÈÈ³ÉÏñÂëÁ÷²ÎÊýÅäÖÃÄÜÁ¦
+    //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_STREAM_PARAM_CAPABILITIES
     {
         DWORD  dwSize;
-        DWORD  dwVideoCodingType; //ÂëÁ÷Êý¾Ý±à½âÂëÀàÐÍ£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö¡£
+        DWORD  dwVideoCodingType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö¡ï¿½
         /*
-        bit0£ºÈÈ³ÉÏñÂãÊý¾Ý
-        bit1£ºÈ«ÆÁ²âÎÂÊý¾Ý
-        bit2£ºÊµÊ±ÂãÊý¾Ý
-        bit3£ºÈÈÍ¼Êý¾Ý£¨Êý¾Ý¸ñÊ½¼û¸½Â¼£©
-        bit4£ºÈÈ³ÉÏñÊµÊ±Á÷
-        bit5£º YUVÊµÊ±Êý¾Ý£¨Êý¾Ý¸ñÊ½¼û¸½Â¼£©
-        bit6£ºPS·â×°MJPEGÊµÊ±Á÷
-        bit7£ºÈ«ÆÁ²âÎÂÊý¾Ý + YUVÊµÊ±Á÷
-        bit8£ºYUV + ÂãÊý¾Ý
-        bit9£º½öYUV²»º¬²âÎÂÍ·
-        bit10£º²âÎÂÍ· + ÀëÏß²âÎÂÐÅÏ¢ + ÂãÊý¾Ý + YUV
+        bit0ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit2ï¿½ï¿½ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit3ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½
+        bit4ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ÊµÊ±ï¿½ï¿½
+        bit5ï¿½ï¿½ YUVÊµÊ±ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½
+        bit6ï¿½ï¿½PSï¿½ï¿½×°MJPEGÊµÊ±ï¿½ï¿½
+        bit7ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ + YUVÊµÊ±ï¿½ï¿½
+        bit8ï¿½ï¿½YUV + ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit9ï¿½ï¿½ï¿½ï¿½YUVï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+        bit10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í· + ï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ + ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ + YUV
         */
         BYTE byRes[504];
     }USB_THERMAL_STREAM_PARAM_CAPABILITIES, *LPUSB_THERMAL_STREAM_PARAM_CAPABILITIES;
 
-    //²âÎÂÐÞÕý£¨ÈËÌå²âÎÂ£©ÄÜÁ¦
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_TEMPERATURE_CORRECT_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE byEnabled; //Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byStreamOverlay; //ÐÞÕýÎÂ¶ÈÂëÁ÷µþ¼ÓÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byCorrectEnabled; //²âÎÂÐÞÕýÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byEnabled; //Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byStreamOverlay; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byCorrectEnabled; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes1;
-        DWORD  dwEmissivityUpperLimit; //·¢ÉäÂÊÉÏÏÞãÐÖµ£º0.01~1.00£¬´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwEmissivityLowerLimit; //·¢ÉäÂÊÏÂÏÞãÐÖµ£º0.01~1.00£¬´«ÊäÊ±Êµ¼ÊÖµ*100»»Ëã³ÉÕûÊý
-        DWORD  dwDistanceUpperLimit; //¾àÀëÉÏÏÞãÐÖµ£º0.3~2m£¬´«ÊäÊ±ÒÔÀåÃ×(cm)Îªµ¥Î»
-        DWORD  dwDistanceLowerLimit; //¾àÀëÏÂÏÞãÐÖµ£º0.3~2m£¬´«ÊäÊ±ÒÔÀåÃ×(cm)Îªµ¥Î»
-        DWORD  dwTemperatureUpperLimit;  //ÎÂ¶ÈÉÏÏÞãÐÖµ£º30.0~50.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
-        DWORD  dwTemperatureLowerLimit;  //ÎÂ¶ÈÏÂÏÞãÐÖµ£º30.0~50.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
+        DWORD  dwEmissivityUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEmissivityLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistanceUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~2mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(cm)Îªï¿½ï¿½Î»
+        DWORD  dwDistanceLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~2mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(cm)Îªï¿½ï¿½Î»
+        DWORD  dwTemperatureUpperLimit;  //ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½30.0~50.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwTemperatureLowerLimit;  //ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½30.0~50.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[480];
     }USB_THERMAL_TEMPERATURE_CORRECT_CAPABILITIES, *LPUSB_THERMAL_TEMPERATURE_CORRECT_CAPABILITIES;
 
-    //ºÚÌå²ÎÊýÅäÖÃÄÜÁ¦
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_BLACK_BODY_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byEnabled;//Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byEnabled;//Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes1[3];
-        DWORD dwEmissivityUpperLimit; //ºÚÌå·¢ÉäÂÊÉÏÏÞãÐÖµ£º0.01~1.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD dwEmissivityLowerLimit; //ºÚÌå·¢ÉäÂÊÏÂÏÞãÐÖµ£º0.01~1.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD dwDistanceUpperLimit; //¾àÀëÉÏÏÞãÐÖµ£º0.3~2m£¬Ð­Òé´«ÊäÊ±ÒÔÀåÃ×(cm)Îªµ¥Î»
-        DWORD dwDistanceLowerLimit; //¾àÀëÏÂÏÞãÐÖµ£º0.3~2m£¬Ð­Òé´«ÊäÊ±ÒÔÀåÃ×(cm)Îªµ¥Î»
-        DWORD dwTemperatureUpperLimit; //ºÚÌåÎÂ¶ÈÉÏÏÞãÐÖµ£º30.0~50.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
-        DWORD dwTemperatureLowerLimit; //ºÚÌåÎÂ¶ÈÏÂÏÞãÐÖµ£º30.0~50.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ*10»»Ëã³ÉÕûÊý
+        DWORD dwEmissivityUpperLimit; //ï¿½ï¿½ï¿½å·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEmissivityLowerLimit; //ï¿½ï¿½ï¿½å·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwDistanceUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~2mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(cm)Îªï¿½ï¿½Î»
+        DWORD dwDistanceLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~2mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(cm)Îªï¿½ï¿½Î»
+        DWORD dwTemperatureUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½30.0~50.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwTemperatureLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½30.0~50.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[480];
     }USB_THERMAL_BLACK_BODY_CAPABILITIES, *LPUSB_THERMAL_BLACK_BODY_CAPABILITIES;
 
-    //ÌåÎÂ²¹³¥²ÎÊýÅäÖÃÄÜÁ¦
+    //ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_BODYTEMP_COMPENSATION_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byEnabled;//Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byType;//²¹³¥·½Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byEnabled;//Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byType;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         /*
-        bit0£ºÊÖ¶¯²¹³¥
-        bit1£º×Ô¶¯²¹³¥
+        bit0ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½
+        bit1ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
         */
         BYTE byRes1[2];
-        DWORD dwCompensationValueUpperLimit;//²¹³¥ÎÂ¶ÈÉÏÏÞãÐÖµ£º-10.0~10.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ * 10»»Ëã³ÉÕûÊý
-        DWORD dwCompensationValueLowerLimit;//²¹³¥ÎÂ¶ÈÏÂÏÞãÐÖµ£º-10.0~10.0¡æ£¬´«ÊäÊ±Êµ¼ÊÖµ * 10»»Ëã³ÉÕûÊý
-        DWORD dwSmartCorrectionUpperLimit;//ÊÖ¶¯Ð£×¼ÉÏÏÞãÐÖµ£º-99.0~99.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD dwSmartCorrectionLowerLimit;//ÊÖ¶¯Ð£×¼ÏÂÏÞãÐÖµ£º-99.0~99.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD dwEnvironmentalTemperatureUpperLimit;//»·¾³ÎÂ¶ÈÉÏÏÞãÐÖµ£º-99.0~99.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD dwEnvironmentalTemperatureLowerLimit; //»·¾³ÎÂ¶ÈÏÂÏÞãÐÖµ£º-99.0~99.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        BYTE byEnvironmentalTemperatureMode; //»·¾³ÎÂ¶ÈÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        DWORD dwCompensationValueUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-10.0~10.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwCompensationValueLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-10.0~10.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwSmartCorrectionUpperLimit;//ï¿½Ö¶ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-99.0~99.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwSmartCorrectionLowerLimit;//ï¿½Ö¶ï¿½Ð£×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-99.0~99.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEnvironmentalTemperatureUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-99.0~99.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEnvironmentalTemperatureLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-99.0~99.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE byEnvironmentalTemperatureMode; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         /*
-        bit0£º×Ô¶¯Ä£Ê½
-        bit1£ºÊÖ¶¯Ä£Ê½
+        bit0ï¿½ï¿½ï¿½Ô¶ï¿½Ä£Ê½
+        bit1ï¿½ï¿½ï¿½Ö¶ï¿½Ä£Ê½
         */
         BYTE byRes[479];
     }USB_THERMAL_BODYTEMP_COMPENSATION_CAPABILITIES, *LPUSB_THERMAL_BODYTEMP_COMPENSATION_CAPABILITIES;
 
-    //ROI×î¸ßÎÂÐÅÏ¢²éÑ¯ÄÜÁ¦
+    //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_ROI_MAX_TEMPERATURE_SEARCH_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byROITimeSynchronizationConfig;//ROIÐ£Ê±ÅäÖÃÄÜÁ¦£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byJpegPicEnabled;//Éè±¸ÊÇ·ñ·µ»ØJPEGÍ¼Æ¬£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byMaxTemperatureOverlay;//ÊÇ·ñµþ¼Ó×î¸ßÎÂ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byRegionOverlay;//ÊÇ·ñµþ¼Ó¹æÔò¿ò£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byROIRegionNumUpperLimit;//ROIÇøÓò×Ü¸öÊýÉÏÏÞãÐÖµ
-        BYTE byROIRegionEnabled;//ROIÇøÓòÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byROITimeSynchronizationConfig;//ROIÐ£Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byJpegPicEnabled;//ï¿½è±¸ï¿½Ç·ñ·µ»ï¿½JPEGÍ¼Æ¬ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byMaxTemperatureOverlay;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byRegionOverlay;//ï¿½Ç·ï¿½ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byROIRegionNumUpperLimit;//ROIï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byROIRegionEnabled;//ROIï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes1[2];
-        DWORD dwDistanceUpperLimit;//¾àÀëÉÏÏÞãÐÖµ£º0.3-2m£¬¾«È·µ½Ð¡Êýµãºó1Î»£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä
-        DWORD dwDistanceLowerLimit;//¾àÀëÏÂÏÞãÐÖµ£º0.3-2m£¬¾«È·µ½Ð¡Êýµãºó1Î»£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»´«Êä
+        DWORD dwDistanceUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3-2mï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        DWORD dwDistanceLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3-2mï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[492];
     }USB_THERMAL_ROI_MAX_TEMPERATURE_SEARCH_CAPABILITIES, *LPUSB_THERMAL_ROI_MAX_TEMPERATURE_SEARCH_CAPABILITIES;
 
-    //²âÎÂ±ê¶¨ÎÄ¼þµ¼Èëµ¼³öÄÜÁ¦
+    //ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ëµ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_THERMOMETRY_CALIBRATION_FILE_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byThermometryCalibrationFileImport;//²âÎÂ±ê¶¨ÎÄ¼þµ¼Èë£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byThermometryCalibrationFileExport;//²âÎÂ±ê¶¨ÎÄ¼þµ¼³ö£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byThermometryCalibrationFileImport;//ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byThermometryCalibrationFileExport;//ï¿½ï¿½ï¿½Â±ê¶¨ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes[506];
     }USB_THERMAL_THERMOMETRY_CALIBRATION_FILE_CAPABILITIES, *LPUSB_THERMAL_THERMOMETRY_CALIBRATION_FILE_CAPABILITIES;
 
-    //×¨¼Ò²âÎÂ¹æÔòÅäÖÃÄÜÁ¦
+    //×¨ï¿½Ò²ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_THERMOMETRY_EXPERT_REGIONS_CAPABILITIES
     {
         DWORD dwSize;
-        BYTE byRegionNumUpperLimit;//¹æÔòÇøÓò×Ü¸öÊýÉÏÏÞãÐÖµ
-        BYTE byRuleRegionNumUpperLimit;//¶à±ßÐÎÇøÓò¸öÊýÉÏÏÞãÐÖµ
-        BYTE byRuleRegionEnabled;//ÇøÓòÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byRuleRegionname;//¹æÔòÃû³Æ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byRuleRegionPointNumUpperLimit;//¶à±ßÐÎÇøÓò¶¥µã×Ü¸öÊýÉÏÏÞãÐÖµ
-        BYTE byRuleRegionPointNumLowerLimit;//¶à±ßÐÎÇøÓò¶¥µã×Ü¸öÊýÉÏÏÞãÐÖµ
-        BYTE byRulePointNumUpperLimit;//µã¹æÔò¸öÊýÉÏãÐÖµ
-        BYTE byRuleLineNumUpperLimit;//Ïß¹æÔò¸öÊýÉÏãÐÖµ
-        DWORD  dwEmissivityUpperLimit;//·¢ÉäÂÊÉÏÏÞãÐÖµ£º0.01~1.00(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD  dwEmissivityLowerLimit;//·¢ÉäÂÊÏÂÏÞãÐÖµ£º0.01~1.00(¾«È·µ½Ð¡ÊýµãºóÁ½Î»)£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD  dwDistanceUpperLimit;//¾àÀëÉÏÏÞãÐÖµ£º0.3-3m£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»ÕûÊý´«Êä
-        DWORD  dwDistanceLowerLimit;//¾àÀëÏÂÏÞãÐÖµ£º0.3-3m£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»ÕûÊý´«Êä
-        BYTE byReflectiveEnable;//·´ÉäÎÂ¶ÈÊ¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byRegionCoordinateMode;//ÇøÓò×ø±êÉúÐ§Ä£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£¬0-²»Ö§³Ö£¬1-Ö§³Ö  bit0 - ¹éÒ»»¯×ø±ê bit1 - ÂãÊý¾ÝÊµ¼Ê×ø±ê
-        BYTE byFloatTransMode;//¸¡µãÊý´«ÊäÄ£Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£¬0-²»Ö§³Ö£¬1-Ö§³Ö  bit0 - ÕûÐÍ´«Êä bit1 - ÒÆÎ»´«Êä
-        BYTE byShiftLength;//¸¡µãÊýÒÆÎ»´«Êä³ËÒÔ2µÄN´Î·½£¬ÆäÖÐNµÄ´óÐ¡£¬°²Î¿±íÊ¾Ã¶¾ÙÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö bit0£º6 bit1£º9 bit2£º13 bit3£º16 bit4£º19
-        DWORD  dwReflectiveTemperatureUpperLimit;//·´ÉäÎÂ¶ÈÉÏÏÞãÐÖµ£º-100.0~1000.0¡æ£¨¾«È·µ½Ð¡Êýµãºó1Î»£©£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwReflectiveTemperatureLowerLimit;//·´ÉäÎÂ¶ÈÏÂÏÞãÐÖµ£º-100.0~1000.0¡æ£¨¾«È·µ½Ð¡Êýµãºó1Î»£©£¬´«ÊäÊ±(Êµ¼ÊÖµ+100)*10»»Ëã³ÉÕýÕûÊý
-        BYTE byShowAlarmColorEnabled;//±¨¾¯ÑÕÉ«ÏÔÊ¾Ê¹ÄÜ£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byRegionNumUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRuleRegionNumUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRuleRegionEnabled;//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byRuleRegionname;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byRuleRegionPointNumUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò¶¥µï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRuleRegionPointNumLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò¶¥µï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRulePointNumUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRuleLineNumUpperLimit;//ï¿½ß¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        DWORD  dwEmissivityUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwEmissivityLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01~1.00(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistanceUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3-3mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwDistanceLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3-3mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE byReflectiveEnable;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byRegionCoordinateMode;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½  bit0 - ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ bit1 - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE byFloatTransMode;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½  bit0 - ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ bit1 - ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+        BYTE byShiftLength;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Nï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½ bit0ï¿½ï¿½6 bit1ï¿½ï¿½9 bit2ï¿½ï¿½13 bit3ï¿½ï¿½16 bit4ï¿½ï¿½19
+        DWORD  dwReflectiveTemperatureUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-100.0~1000.0ï¿½æ£¨ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwReflectiveTemperatureLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-100.0~1000.0ï¿½æ£¨ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ+100)*10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE byShowAlarmColorEnabled;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ê¾Ê¹ï¿½Ü£ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes2[3];
-        DWORD  dwAlertUpperLimit;//Ô¤¾¯ÎÂ¶ÈÉÏÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlertLowerLimit;//Ô¤¾¯ÎÂ¶ÈÏÂÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlarmUpperLimit;//±¨¾¯ÎÂ¶ÈÉÏÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwAlarmLowerLimit;//±¨¾¯ÎÂ¶ÈÏÂÏÞãÐÖµ£º-20¡æ~400¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
+        DWORD  dwAlertUpperLimit;//Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlertLowerLimit;//Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlarmUpperLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwAlarmLowerLimit;//ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-20ï¿½ï¿½~400ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[452];
     }USB_THERMAL_THERMOMETRY_EXPERT_REGIONS_CAPABILITIES, *LPUSB_THERMAL_THERMOMETRY_EXPERT_REGIONS_CAPABILITIES;
 
-    //×¨¼Ò²âÎÂÐ£Õý²ÎÊýÅäÖÃÄÜÁ¦
+    //×¨ï¿½Ò²ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERMAL_THERMOMETRY_EXPERT_CORRECTION_PARAM_CAPABILITIES
     {
         DWORD dwSize;
-        DWORD dwDistanceUpperLimit; //¾àÀëÉÏÏÞãÐÖµ£º0.3~3m£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»ÕûÊý´«Êä
-        DWORD dwDistanceLowerLimit; //¾àÀëÏÂÏÞãÐÖµ£º0.3~3m£¬Ð­Òé´«ÊäÖÐÔ¼¶¨ÒÔcm×÷Îªµ¥Î»ÕûÊý´«Êä
-        DWORD dwEnviroTemperatureUpperLimit; //»·¾³ÎÂ¶ÈÉÏÏÞãÐÖµ£º-273.0 - 1000.0(¾«È·µ½Ð¡Êýµãºó1Î»)£¬´«ÊäÊ±£¨Êµ¼ÊÖµ + 300£© * 10»»Ëã³ÉÕûÊý
-        DWORD dwEnviroTemperatureLowerLimit; //»·¾³ÎÂ¶ÈÏÂÏÞãÐÖµ£º-273.0 - 1000.0(¾«È·µ½Ð¡Êýµãºó1Î»)£¬´«ÊäÊ±£¨Êµ¼ÊÖµ + 300£© * 10»»Ëã³ÉÕûÊý
-        DWORD dwEmissivityUpperLimit; //·¢ÉäÂÊÉÏÏÞãÐÖµ£º0.01 - 1.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        DWORD dwEmissivityLowerLimit; //·¢ÉäÂÊÏÂÏÞãÐÖµ£º0.01 - 1.00£¬´«ÊäÊ±Êµ¼ÊÖµ * 100»»Ëã³ÉÕûÊý
-        BYTE  byPointNumUpperLimit; //ÎÂ¶Èµã¸öÊýÉÏÏÞãÐÖµ
-        BYTE  byPointNumLowerLimit; //ÎÂ¶Èµã¸öÊýÏÂÏÞãÐÖµ
+        DWORD dwDistanceUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~3mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwDistanceLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.3~3mï¿½ï¿½Ð­ï¿½é´«ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½cmï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEnviroTemperatureUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-273.0 - 1000.0(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Êµï¿½ï¿½Öµ + 300ï¿½ï¿½ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEnviroTemperatureLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-273.0 - 1000.0(ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½1Î»)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Êµï¿½ï¿½Öµ + 300ï¿½ï¿½ * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEmissivityUpperLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01 - 1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwEmissivityLowerLimit; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½0.01 - 1.00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Êµï¿½ï¿½Öµ * 100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE  byPointNumUpperLimit; //ï¿½Â¶Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE  byPointNumLowerLimit; //ï¿½Â¶Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE  byRes1[2];
-        DWORD  dwPresetTemperatureUpperLimit; //Ô¤ÉèÎÂ¶ÈÉÏÏÞãÐÖµ£º-40.0 - 650.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
-        DWORD  dwPresetTemperatureLowerLimit; //Ô¤ÉèÎÂ¶ÈÏÂÏÞãÐÖµ£º-40.0 - 650.0¡æ£¬´«ÊäÊ±(Êµ¼ÊÖµ + 100) * 10»»Ëã³ÉÕýÕûÊý
+        DWORD  dwPresetTemperatureUpperLimit; //Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-40.0 - 650.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwPresetTemperatureLowerLimit; //Ô¤ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-40.0 - 650.0ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½Ê±(Êµï¿½ï¿½Öµ + 100) * 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[472];
     }USB_THERMAL_THERMOMETRY_EXPERT_CORRECTION_PARAM_CAPABILITIES, *LPUSB_THERMAL_THERMOMETRY_EXPERT_CORRECTION_PARAM_CAPABILITIES;
 
-    //Éè±¸ÃèÊöÐÅÏ¢
+    //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_SYSTEM_DEVICE_DESCRIPTION_INFO
     {
         DWORD dwSize;
-        BYTE  szDeviceSerialNumber[64]; //Éè±¸ÐòÁÐºÅ£¨Éè±¸ÐÍºÅ+Éú³ÉÈÕÆÚ+4byteÐÅÏ¢+ÐòÁÐºÅ£©
-        BYTE  szMachineSerialNumber[32]; //Õû»úÐòÁÐºÅ£¨Ö¸µÄÊÇÉè±¸ÐòÁÐºÅÖÐ°üº¬µÄÐòÁÐºÅ£©
-        BYTE  szModel[32]; //Éè±¸ÐÍºÅ
-        BYTE  szMechanismSerialNumber[32]; //»úÐ¾ÐòÁÐºÅ£¨»úÐ¾±ê¶¨¹¤ÐòÖÐÐ´ÈëµÄ»úÐ¾ÐòÁÐºÅ£©
-        BYTE  szNUCParaVersion[64]; //NUC²ÎÊý°æ±¾ºÅ
-        BYTE  szISPParaVersion[64]; //ISP²ÎÊý°æ±¾ºÅ
-        BYTE  byConnectMode; //Éè±¸Á¬½Ó·½Ê½£º1-USB2.0  2-USB3.0
+        BYTE  szDeviceSerialNumber[64]; //ï¿½è±¸ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½è±¸ï¿½Íºï¿½+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+4byteï¿½ï¿½Ï¢+ï¿½ï¿½ï¿½ÐºÅ£ï¿½
+        BYTE  szMachineSerialNumber[32]; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ£ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ£ï¿½
+        BYTE  szModel[32]; //ï¿½è±¸ï¿½Íºï¿½
+        BYTE  szMechanismSerialNumber[32]; //ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½ï¿½Ð¾ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ä»ï¿½Ð¾ï¿½ï¿½ï¿½ÐºÅ£ï¿½
+        BYTE  szNUCParaVersion[64]; //NUCï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½
+        BYTE  szISPParaVersion[64]; //ISPï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½
+        BYTE  byConnectMode; //ï¿½è±¸ï¿½ï¿½ï¿½Ó·ï¿½Ê½ï¿½ï¿½1-USB2.0  2-USB3.0
         BYTE  byRes[1023];
     }USB_SYSTEM_DEVICE_DESCRIPTION_INFO, *LPUSB_SYSTEM_DEVICE_DESCRIPTION_INFO;
 
-    //´®¿ÚÍ¸´«
+    //ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_SERIAL_DATA_TRANSMISSION
     {
         DWORD dwSize;
-        BYTE  byMode; //Ä£Ê½£º0-±£Áô£¬1-¶Á£¬2-Ð´
+        BYTE  byMode; //Ä£Ê½ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½2-Ð´
         BYTE  byRes1;
-        WORD  wDeviceCMDFlag; //ÃüÁî±êÊ¶·û£º[0,255]
-        DWORD dwDeviceCMD; //ÃüÁî£º[0,10000]
-        DWORD dwValue; //Öµ£º[0,10000]
+        WORD  wDeviceCMDFlag; //ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½[0,255]
+        DWORD dwDeviceCMD; //ï¿½ï¿½ï¿½î£º[0,10000]
+        DWORD dwValue; //Öµï¿½ï¿½[0,10000]
         BYTE  byRes[512];
     }USB_SYSTEM_SERIAL_DATA_TRANSMISSION, *LPUSB_THERMAL_SERIAL_DATA_TRANSMISSION;
 
-    //ÊÓÆµÍ¨ÓÃ×ÜÄÜÁ¦
+    //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_COMMON_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE byVideoCode; //ÊÓÆµ±àÂë£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byVideoFusion; //ÊÓÆµÍ¼ÏñÈÚºÏ²ÎÊý£º0-²»Ö§³Ö  1-Ö§³Ö
-        BYTE byLenCalibration; //¾µÍ·±ê¶¨£º0-²»Ö§³Ö  1-Ö§³Ö
+        BYTE byVideoCode; //ï¿½ï¿½Æµï¿½ï¿½ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byVideoFusion; //ï¿½ï¿½ÆµÍ¼ï¿½ï¿½ï¿½ÚºÏ²ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
+        BYTE byLenCalibration; //ï¿½ï¿½Í·ï¿½ê¶¨ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½ï¿½  1-Ö§ï¿½ï¿½
         BYTE byRes[505];
     }USB_VIDEO_COMMON_CAPABILITIES, *LPUSB_VIDEO_COMMON_CAPABILITIES;
 
-    //¾µÍ·±ê¶¨ÄÜÁ¦
+    //ï¿½ï¿½Í·ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_LEN_CALIBRATION_CAPABILITIES
     {
         DWORD  dwSize;
-        DWORD  dwFocusUpperLimit; //¾Û½¹ÖµÉÏÏÞãÐÖµ
-        DWORD  dwFocusLowerLimit; //¾Û½¹ÖµÏÂÏÞãÐÖµ
+        DWORD  dwFocusUpperLimit; //ï¿½Û½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        DWORD  dwFocusLowerLimit; //ï¿½Û½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE  byRes[500];
     }USB_VIDEO_LEN_CALIBRATION_CAPABILITIES, *LPUSB_VIDEO_LEN_CALIBRATION_CAPABILITIES;
 
 #define MAX_RESOLUTION_INFO_NUM  10
 
-    //·Ö±æÂÊÐÅÏ¢
+    //ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_VIDEO_RESOLUTION_INFO
     {
-        BYTE byVideoResolutionID;  //·Ö±æÂÊid£º1-256*192, 2-384 * 288, 3-720 * 576, 4-1024 * 768, 5-96 * 96, 6-160 * 120, 7-640 * 512, 8-192 * 144, 9-480 * 360, 10-640 * 480
+        BYTE byVideoResolutionID;  //ï¿½Ö±ï¿½ï¿½ï¿½idï¿½ï¿½1-256*192, 2-384 * 288, 3-720 * 576, 4-1024 * 768, 5-96 * 96, 6-160 * 120, 7-640 * 512, 8-192 * 144, 9-480 * 360, 10-640 * 480
         BYTE byRes1[3];
-        DWORD dwVideoResolutionWidth;  //·Ö±æÂÊ¿í
-        DWORD dwVideoResolutionHeight;  //·Ö±æÂÊ¸ß
+        DWORD dwVideoResolutionWidth;  //ï¿½Ö±ï¿½ï¿½Ê¿ï¿½
+        DWORD dwVideoResolutionHeight;  //ï¿½Ö±ï¿½ï¿½Ê¸ï¿½
         BYTE byRes[4];
     }USB_VIDEO_RESOLUTION_INFO, *LPUSB_VIDEO_RESOLUTION_INFO;
 
-    //·ÇÑ¹ËõÖ¡·Ö±æÂÊÐÅÏ¢
+    //ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_UNPACKED_RESOLUTION_INFO
     {
-        BYTE byUnpackedResolution;  //·ÇÑ¹ËõÖ¡·Ö±æÂÊ£¨Ö»¶Á£©£ºµ±Ö¡ÂÊÐ¡ÓÚ5Ö¡Ê±, Éè±¸»áÊ¹ÓÃ·ÇÑ¹ËõÖ¡ÉÏ´«Êý¾Ý, ¸ù¾Ý´ËÖ»¶Á²ÎÊýÅäÖÃÊÓÆµÊôÐÔÐÅÏ¢, ±ÜÃâÒò·ÇÑ¹ËõÖ¡·Ö±æÂÊÀ©´óµ¼ÖÂÊý¾Ý±»°´Ñ¹ËõÖ¡·Ö±æÂÊÅäÖÃµÄYVCÍ¨µÀ¹ýÂËµô
+        BYTE byUnpackedResolution;  //ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½Ê£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½Ð¡ï¿½ï¿½5Ö¡Ê±, ï¿½è±¸ï¿½ï¿½Ê¹ï¿½Ã·ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ý´ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½YVCÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
         //1-320*240, 2-640*480, 3-640*512, 4-1024*600, 5-1280*720
         BYTE byRes1[3];
-        DWORD dwUnpackedResolutionWidth;  //·ÇÑ¹ËõÖ¡·Ö±æÂÊ¿í
-        DWORD dwUnpackedResolutionHeight;  //·ÇÑ¹ËõÖ¡·Ö±æÂÊ¸ß
+        DWORD dwUnpackedResolutionWidth;  //ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½Ê¿ï¿½
+        DWORD dwUnpackedResolutionHeight;  //ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½Ê¸ï¿½
         BYTE byRes[4];
     }USB_UNPACKED_RESOLUTION_INFO, *LPUSB_UNPACKED_RESOLUTION_INFO;
 
-    //ÊÓÆµ±àÂëÄÜÁ¦
+    //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VIDEO_CODE_CAPABILITIES
     {
         DWORD  dwSize;
-        DWORD dwMaxFrameRateUpperLimit; //Ö¡ÂÊÉÏÏÞãÐÖµ£º1-30fps
-        DWORD dwMaxFrameRateLowerLimit; //Ö¡ÂÊÏÂÏÞãÐÖµ£º1-30fps
-        DWORD dwVideoResolutionListNum; //·Ö±æÂÊÁÐ±í×ÓÏî×Ü¸öÊý£¬ÉÏÏÞÖµÎª10
-        DWORD dwUnpackedResolutionListNum; //·ÇÑ¹ËõÖ¡·Ö±æÂÊÁÐ±í×ÓÏî×Ü¸öÊý£¬ÉÏÏÞÖµÎª10
+        DWORD dwMaxFrameRateUpperLimit; //Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1-30fps
+        DWORD dwMaxFrameRateLowerLimit; //Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1-30fps
+        DWORD dwVideoResolutionListNum; //ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎª10
+        DWORD dwUnpackedResolutionListNum; //ï¿½ï¿½Ñ¹ï¿½ï¿½Ö¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎª10
         USB_VIDEO_RESOLUTION_INFO struVideoResolution[MAX_RESOLUTION_INFO_NUM];
         USB_UNPACKED_RESOLUTION_INFO struUnpackedResolution[MAX_RESOLUTION_INFO_NUM];
-        DWORD dwMaxFrameRate3UpperLimit; //USB3.0Ö¡ÂÊÉÏÏÞãÐÖµ£º1-30fps
-        DWORD dwMaxFrameRate3LowerLimit; //USB3.0Ö¡ÂÊÏÂÏÞãÐÖµ£º1-30fps
+        DWORD dwMaxFrameRate3UpperLimit; //USB3.0Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1-30fps
+        DWORD dwMaxFrameRate3LowerLimit; //USB3.0Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1-30fps
         BYTE  byRes[164];
     }USB_VIDEO_CODE_CAPABILITIES, *LPUSB_VIDEO_CODE_CAPABILITIES;
 
-    //Î±²ÊÓ³Éä±í
+    //Î±ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_PALETTE_DATA{
-        DWORD dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE byPaletteMode; //Î±²ÊÉ«ÑÕÉ«Ä£Ê½: 1-°×ÈÈ 2-ºÚÈÈ 10-ÈÚºÏ1 11-²Êºç 12-ÈÚºÏ2 13-Ìúºì1 14-Ìúºì2 15-ÉîºÖÉ« 16-É«²Ê1 17-É«²Ê2 18-±ù»ð 19-Óê 20-ºìÈÈ 21-ÂÌÈÈ 22-ÉîÀ¶
+        DWORD dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE byPaletteMode; //Î±ï¿½ï¿½É«ï¿½ï¿½É«Ä£Ê½: 1-ï¿½ï¿½ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½ 10-ï¿½Úºï¿½1 11-ï¿½Êºï¿½ 12-ï¿½Úºï¿½2 13-ï¿½ï¿½ï¿½ï¿½1 14-ï¿½ï¿½ï¿½ï¿½2 15-ï¿½ï¿½ï¿½É« 16-É«ï¿½ï¿½1 17-É«ï¿½ï¿½2 18-ï¿½ï¿½ï¿½ï¿½ 19-ï¿½ï¿½ 20-ï¿½ï¿½ï¿½ï¿½ 21-ï¿½ï¿½ï¿½ï¿½ 22-ï¿½ï¿½ï¿½ï¿½
         BYTE byRes1[3];
-        DWORD dwDataLen;//Î±²ÊÓ³Éä±í³¤¶È
+        DWORD dwDataLen;//Î±ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE byRes2[4];
-        BYTE  *pData; //Î±²ÊÓ³Éä±í
+        BYTE  *pData; //Î±ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
         BYTE byRes[1024];
     } USB_IMAGE_PALETTE_DATA, *LPUSB_IMAGE_PALETTE_DATA;
 
-    //²âÎÂÀëÏß·ÖÎöÊý¾Ý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_THERAML_THERMOMETRY_OFFLINE_DATA{
-        DWORD dwSize; //½á¹¹Ìå´óÐ¡
-        DWORD dwDataLen;//[in]pData»º³åÇø´óÐ¡,[out]²âÎÂÀëÏß·ÖÎöÊý¾Ý³¤¶È
+        DWORD dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD dwDataLen;//[in]pDataï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡,[out]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
         BYTE byRes2[4];
-        BYTE  *pData; //²âÎÂÀëÏß·ÖÎöÊý¾Ý
+        BYTE  *pData; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE byRes[1024];
     } USB_THERAML_THERMOMETRY_OFFLINE_DATA, *LPUSB_THERAML_THERMOMETRY_OFFLINE_DATA;
 
-    //Í¼ÏñÊä³öÅäÖÃ
+    //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IMAGE_OUTPUT_CFG
     {
-        DWORD dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE byEnable; //Êä³öÊ¹ÄÜ: 1-¹Ø±Õ 2-¿ªÆô
-        BYTE byType; //Í¼ÏñÀàÐÍ: 1-¼ÙÍ¼ 2-ÀëÏß²âÎÂÍ¼
+        DWORD dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE byEnable; //ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½: 1-ï¿½Ø±ï¿½ 2-ï¿½ï¿½ï¿½ï¿½
+        BYTE byType; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: 1-ï¿½ï¿½Í¼ 2-ï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½Í¼
         BYTE byRes[506];
     }USB_IMAGE_OUTPUT_CFG, *LPUSB_IMAGE_OUTPUT_CFG;
 
-    //Éè±¸ÃèÊöÐÅÏ¢ÄÜÁ¦
+    //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_DEVICE_DESCRIPTION_INFO_CAPABILITIES
     {
         DWORD  dwSize;
-        BYTE  byDeviceSerialNumber; //Éè±¸ÐòÁÐºÅ£¨Éè±¸ÐÍºÅ+Éú³ÉÈÕÆÚ+4byteÐÅÏ¢+ÐòÁÐºÅ£©: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byMachineSerialNumber; //Õû»úÐòÁÐºÅ£¨Ö¸µÄÊÇÉè±¸ÐòÁÐºÅÖÐ°üº¬µÄÐòÁÐºÅ£©: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byModel; //Éè±¸ÐÍºÅ: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byMechanismSerialNumber; //»úÐ¾ÐòÁÐºÅ£¨»úÐ¾±ê¶¨¹¤ÐòÖÐÐ´ÈëµÄ»úÐ¾ÐòÁÐºÅ£©: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byNUCParaVersion; //NUC²ÎÊý°æ±¾ºÅ: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byISPParaVersion; //ISP²ÎÊý°æ±¾ºÅ: 1-²»Ö§³Ö 2-Ö§³Ö
-        BYTE  byConnectMode; //Éè±¸Á¬½Ó·½Ê½£¬°´Î»±íÊ¾Ã¶¾ÙÏîÖ§³ÖÇé¿ö£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        BYTE  byDeviceSerialNumber; //ï¿½è±¸ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½è±¸ï¿½Íºï¿½+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+4byteï¿½ï¿½Ï¢+ï¿½ï¿½ï¿½ÐºÅ£ï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byMachineSerialNumber; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ£ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ£ï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byModel; //ï¿½è±¸ï¿½Íºï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byMechanismSerialNumber; //ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½ï¿½Ð¾ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ä»ï¿½Ð¾ï¿½ï¿½ï¿½ÐºÅ£ï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byNUCParaVersion; //NUCï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byISPParaVersion; //ISPï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½: 1-ï¿½ï¿½Ö§ï¿½ï¿½ 2-Ö§ï¿½ï¿½
+        BYTE  byConnectMode; //ï¿½è±¸ï¿½ï¿½ï¿½Ó·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê¾Ã¶ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         /*
         bit0 - USB 2.0
         bit1 - USB 3.0
@@ -2521,19 +2521,19 @@ typedef enum tagLOG_LEVEL_ENUM
         BYTE byRes[245];
     }USB_SYSTEM_DEVICE_DESCRIPTION_INFO_CAPABILITIES, *LPUSB_SYSTEM_DEVICE_DESCRIPTION_INFO_CAPABILITIES;
 
-    //¿ØÖÆÂëÁ÷ÆôÍ££¨µ÷ÊÔ£©
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½
     typedef struct tagUSB_CTRL_THERMAL_STREAM_PARAM
     {
         DWORD dwSize;
-        BYTE byEnable;//Ê¹ÄÜ£º0-¹Ø±ÕÈ¡Á÷  1-¿ªÆôÈ¡Á÷
+        BYTE byEnable;//Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½È¡ï¿½ï¿½  1-ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
         BYTE byRes[27];
     }USB_CTRL_THERMAL_STREAM_PARAM, *LPUSB_CTRL_THERMAL_STREAM_PARAM;
 
 
-    //////////////////////////////////////////////////////////ÈÈ³ÉÏñÂëÁ÷½âÎö½á¹¹Ìå¶¨Òå¿ªÊ¼//////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½å¶¨ï¿½å¿ªÊ¼//////////////////////////////////////////////////////////////////////
 #define INT_MINI    (-2147483647 - 1)  /* minimum (signed) int value */
 #define INT_MAXI    2147483647  /* maximum (signed) int value */
-    //ÂëÁ÷ÀàÐÍ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef enum tagUSB_STREAM_TYPE_E
     {
         ENUM_STREAM_H264_TYPE,
@@ -2541,215 +2541,215 @@ typedef enum tagLOG_LEVEL_ENUM
         ENUM_STREAM_JPEG_TYPE,
         ENUM_STREAM_AUD_TYPE,
         ENUM_STREAM_META_TYPE,
-        ENUM_STREAM_UPDATE_TYPE,  //ÖØÐÂË¢ÐÂ°ü£¬¸æÖªAPPµ±Ç°Ö¡ÓëÖ®Ç°µÄ²ÎÊý´æÔÚ²»Í¬£¬»òÕß×îÐÂ²ÎÊý 
-        ENUM_STREAM_RTDATA_TYPE,  //ÊµÊ±ÉÏ´«Êý¾Ý 
+        ENUM_STREAM_UPDATE_TYPE,  //ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½Â°ï¿½ï¿½ï¿½ï¿½ï¿½ÖªAPPï¿½ï¿½Ç°Ö¡ï¿½ï¿½Ö®Ç°ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ 
+        ENUM_STREAM_RTDATA_TYPE,  //ÊµÊ±ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ 
         ENUM_STREAM_TYPE_INT_MIN = INT_MINI,
         ENUM_STREAM_TYPE_INT_MAX = INT_MAXI
     }USB_STREAM_TYPE_E;
 
-    //Ê±¼ä´Á
+    //Ê±ï¿½ï¿½ï¿½
     typedef struct tagUSB_DATE_TIME
     {
-        WORD  wYear; //Äê
-        WORD  wMonth;//ÔÂ
-        WORD  wDayOfWeek;//0-ÐÇÆÚÈÕ, 1-ÐÇÆÚÒ», 2-ÐÇÆÚ¶þ, 3-ÐÇÆÚÈý, 4-ÐÇÆÚËÄ, 5-ÐÇÆÚÎå, 6-ÐÇÆÚÁù
-        WORD  wDay;//ÈÕ
+        WORD  wYear; //ï¿½ï¿½
+        WORD  wMonth;//ï¿½ï¿½
+        WORD  wDayOfWeek;//0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 1-ï¿½ï¿½ï¿½ï¿½Ò», 2-ï¿½ï¿½ï¿½Ú¶ï¿½, 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 4-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 5-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 6-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        WORD  wDay;//ï¿½ï¿½
         WORD  wHour;//Ð¡Ê±, 0~23
-        WORD  wMinute;//·ÖÖÓ, 0~59
-        WORD  wSecond;//Ãë, 0~59
-        WORD  wMillisecond;//ºÁÃë, 0~999
+        WORD  wMinute;//ï¿½ï¿½ï¿½ï¿½, 0~59
+        WORD  wSecond;//ï¿½ï¿½, 0~59
+        WORD  wMillisecond;//ï¿½ï¿½ï¿½ï¿½, 0~999
     }USB_DATE_TIME, *LPUSB_DATE_TIME;
 
-    //ÊµÊ±ÎÂ¶ÈÊý¾ÝÊä³ö½á¹¹Ìå
+    //ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     typedef struct tagUSB_STREAM_RT_DATA_INFO_S
     {
-        DWORD  dwRTDataType; // 1-14bitÂãÊý¾Ý; 2-È«ÆÁ²âÎÂ½á¹ûÊý¾Ý; 3-YUVÊý¾Ý
-        DWORD  dwFrmNum; //Ö¡ÐòÁÐºÅ£¬ÊµÊ±ÉÏ´«µÄÖ¡ÐòÁÐºÅÊÇÁ¬ÐøµÝÔöµÄÅ¼Êý1000¡¢1002¡¢1004¡¢1006
-        DWORD  dwStdStamp; //DSPÏà¶ÔÊ±¼ä´Á
-        USB_DATE_TIME struTime;//ÄêÔÂÈÕÊ±¼ä£¬¸ÃÊ±¼äÓÃÓÚ¼ÇÂ¼µ±Ç°Ö¡Êý¾ÝµÄ²É¼¯Ê±¼ä£¬ÊÇsensor²É¼¯Íê³ÉºóµÄÊ±¼ä£¬¸ÃÊ±¼äÓÃÓÚÓÃ»§Æ¥ÅäËÑË÷¶ÔÓ¦Ö¡Ê±Ê¹ÓÃ
-        DWORD  dwWidth;//ÂãÊý¾Ý¿í
-        DWORD  dwHeight;//ÂãÊý¾Ý¸ß
-        DWORD  dwLen;//ÊµÊ±²âÎÂ¾ØÕóµÄ³¤¶È£¬ÒÔ×Ö½ÚÎªµ¥Î»£¬ÔÙ¼ÓÉÏ4¸ö×Ö½Ú£¬ Èç4×Ö½ÚµÄfloat²âÎÂ¾ØÕó£º120*160*4+4 
-        DWORD  dwFps;//ÊµÊ±ÉÏ´«µÄÖ¡ÂÊ£¬µ±Ç°¹Ì¶¨ÅäÖÃÎªÓÃ»§ÅäÖÃµÄÖ¡ÂÊ
-        DWORD  dwChan;//Í¨µÀºÅ£¬ÔÝÊ±¹Ì¶¨Îª0
+        DWORD  dwRTDataType; // 1-14bitï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 2-È«ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½; 3-YUVï¿½ï¿½ï¿½ï¿½
+        DWORD  dwFrmNum; //Ö¡ï¿½ï¿½ï¿½ÐºÅ£ï¿½ÊµÊ±ï¿½Ï´ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½1000ï¿½ï¿½1002ï¿½ï¿½1004ï¿½ï¿½1006
+        DWORD  dwStdStamp; //DSPï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½
+        USB_DATE_TIME struTime;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½Â¼ï¿½ï¿½Ç°Ö¡ï¿½ï¿½ï¿½ÝµÄ²É¼ï¿½Ê±ï¿½ä£¬ï¿½ï¿½sensorï¿½É¼ï¿½ï¿½ï¿½Éºï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦Ö¡Ê±Ê¹ï¿½ï¿½
+        DWORD  dwWidth;//ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½
+        DWORD  dwHeight;//ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½
+        DWORD  dwLen;//ÊµÊ±ï¿½ï¿½ï¿½Â¾ï¿½ï¿½ï¿½Ä³ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½Ù¼ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½Ö½Ú£ï¿½ ï¿½ï¿½4ï¿½Ö½Úµï¿½floatï¿½ï¿½ï¿½Â¾ï¿½ï¿½ï¿½120*160*4+4 
+        DWORD  dwFps;//ÊµÊ±ï¿½Ï´ï¿½ï¿½ï¿½Ö¡ï¿½Ê£ï¿½ï¿½ï¿½Ç°ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ö¡ï¿½ï¿½
+        DWORD  dwChan;//Í¨ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½Ê±ï¿½Ì¶ï¿½Îª0
     }USB_STREAM_RT_DATA_INFO_S, *LPUSB_STREAM_RT_DATA_INFO_S;
 
-    //ÊµÊ±ÎÂ¶ÈÊý¾Ý¸½¼ÓÐÅÏ¢½á¹¹Ìå
+    //ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½á¹¹ï¿½ï¿½
     typedef struct tagUSB_STREAM_FS_SUPPLE_INFO_TEMP
     {
-        DWORD  dwTmDataMode;  //0Îª4×Ö½Ú£¬1Îª2×Ö½Ú 
-        DWORD  dwTmScale;   //²âÎÂËõ·Å±ÈÀý 
-        DWORD  dwTmOffset;  //²âÎÂÆ«ÒÆÁ¿£¬µ±Ç°¹Ì¶¨Îª0 
-        DWORD  dwIsFreezedata;  //ÊÇ·ñÊÇ¶³½áÊý¾Ý£¬1-¶³½á£¬0-·Ç¶³½á 
+        DWORD  dwTmDataMode;  //0Îª4ï¿½Ö½Ú£ï¿½1Îª2ï¿½Ö½ï¿½ 
+        DWORD  dwTmScale;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ 
+        DWORD  dwTmOffset;  //ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ì¶ï¿½Îª0 
+        DWORD  dwIsFreezedata;  //ï¿½Ç·ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½1-ï¿½ï¿½ï¿½á£¬0-ï¿½Ç¶ï¿½ï¿½ï¿½ 
     }USB_STREAM_FS_SUPPLE_INFO_TEMP, *LPUSB_STREAM_FS_SUPPLE_INFO_TEMP;
 
-    //ÊµÊ±JPEGµÄÊä³ö½á¹¹Ìå
+    //ÊµÊ±JPEGï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     typedef struct tagUSB_RT_JPEG_DATA_INFO_S
     {
-        DWORD  dwFrmNum;  //Ö¡ÐòÁÐºÅ£¬ÊµÊ±ÉÏ´«µÄÖ¡ÐòÁÐºÅÊÇÁ¬ÐøµÝÔöµÄÅ¼Êý 1000¡¢1002¡¢1004¡¢1006 
-        DWORD  dwWidth;  //JPEGÊý¾Ý¿í 
-        DWORD  dwHeight;  //JPEGÊý¾Ý¸ß 
-        DWORD  dwJpegLen;  //JPEGÊý¾Ý³¤¶È(DATA2)
-        DWORD  dwStdStamp;  //DSPÏà¶ÔÊ±¼ä´Á 
-        USB_DATE_TIME struTime;  //µ±Ç°Ê±¼ä 
+        DWORD  dwFrmNum;  //Ö¡ï¿½ï¿½ï¿½ÐºÅ£ï¿½ÊµÊ±ï¿½Ï´ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ 1000ï¿½ï¿½1002ï¿½ï¿½1004ï¿½ï¿½1006 
+        DWORD  dwWidth;  //JPEGï¿½ï¿½ï¿½Ý¿ï¿½ 
+        DWORD  dwHeight;  //JPEGï¿½ï¿½ï¿½Ý¸ï¿½ 
+        DWORD  dwJpegLen;  //JPEGï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½(DATA2)
+        DWORD  dwStdStamp;  //DSPï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ 
+        USB_DATE_TIME struTime;  //ï¿½ï¿½Ç°Ê±ï¿½ï¿½ 
     }USB_RT_JPEG_DATA_INFO_S, *LPUSB_RT_JPEG_DATA_INFO_S;
 
-    //ÎÂ¶Èµ¥Î»
+    //ï¿½Â¶Èµï¿½Î»
     typedef enum tagUSB_IFR_TEMP_UNIT
     {
-        IFR_TEMP_CENTIGRADE = 0,  //ÉãÊÏ¶È 
-        IFR_TEMP_FAHRENHEIT = 1,  //»ªÊÏ¶È 
-        IFR_TEMP_KELVIN = 2,  //¿ª¶ûÎÄ
+        IFR_TEMP_CENTIGRADE = 0,  //ï¿½ï¿½ï¿½Ï¶ï¿½ 
+        IFR_TEMP_FAHRENHEIT = 1,  //ï¿½ï¿½ï¿½Ï¶ï¿½ 
+        IFR_TEMP_KELVIN = 2,  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
         IFR_TEMP_UNIT_MIN = INT_MINI,
         IFR_TEMP_UNIT_MAX = INT_MAXI
     }USB_IFR_TEMP_UNIT;
 
-    //×ø±ê
+    //ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_IFR_POINT
     {
         int  x;
         int  y;
     }USB_IFR_POINT, *LPUSB_IFR_POINT;
 
-    //µ¥¸öÇøÓò²âÎÂ½á¹û	  
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½	  
     typedef struct tagUSB_IFR_SQUARE_ROI_OUTCOME_INFO
     {
-        BYTE byEnable;  //ÊÇ·ñÆôÓÃ£º0-·ñ£¬1-ÊÇ
-        BYTE byRegionId;  //ÇøÓòID
-        BYTE byRes[34];  //±£Áô×Ö¶Î
-        char szName[32];  //ÇøÓòÃû³Æ
-        float fEmissionRate;  //·¢ÉäÂÊ: [0.00, 1.00]
-        float fDistance;  //Ô¤ÉèµÄ²âÎÂ¾àÀë
-        float fMinTmp;  //×îµÍÎÂ¶È: [-40.0, 1000.0]£¬µ¥Î»ÉãÊÏ¶È
-        float fMaxTmp;  //×î¸ßÎÂ¶È: [-40.0, 1000.0]£¬µ¥Î»ÉãÊÏ¶È
-        float fAvgTmp;  //Æ½¾ùÎÂ¶È: [-40.0, 1000.0]£¬µ¥Î»ÉãÊÏ¶È
-        USB_IFR_POINT struPoints[2];  //±£´æ²âÊÔ½á¹ûÖÐµÄ×î¸ßÎÂºÍ×îµÍÎÂ×ø±ê£¬¹éÒ»»¯µ½0-1000£¬Êý×éÏÂ±ê: 0-×î¸ßÎÂ£¬1-×îµÍÎÂ
+        BYTE byEnable;  //ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ã£ï¿½0-ï¿½ï¿½1-ï¿½ï¿½
+        BYTE byRegionId;  //ï¿½ï¿½ï¿½ï¿½ID
+        BYTE byRes[34];  //ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½
+        char szName[32];  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        float fEmissionRate;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: [0.00, 1.00]
+        float fDistance;  //Ô¤ï¿½ï¿½Ä²ï¿½ï¿½Â¾ï¿½ï¿½ï¿½
+        float fMinTmp;  //ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: [-40.0, 1000.0]ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ï¶ï¿½
+        float fMaxTmp;  //ï¿½ï¿½ï¿½ï¿½Â¶ï¿½: [-40.0, 1000.0]ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ï¶ï¿½
+        float fAvgTmp;  //Æ½ï¿½ï¿½ï¿½Â¶ï¿½: [-40.0, 1000.0]ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ï¶ï¿½
+        USB_IFR_POINT struPoints[2];  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½0-1000ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½: 0-ï¿½ï¿½ï¿½ï¿½Â£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½
     }USB_IFR_SQUARE_ROI_OUTCOME_INFO, *LPUSB_IFR_SQUARE_ROI_OUTCOME_INFO;
 
 #define IFR_MAX_SQUARE_REGION_NUM  10
-    //ROI¾ØÐÎÇøÓò²âÎÂÊä³ö¸øÍâ²¿µÄÐÅÏ¢ÁÐ±í
+    //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½Ð±ï¿½
     typedef struct tagUSB_IFR_SQUARE_ROI_OUTCOME_LIST
     {
-        DWORD dwRoiRegionNum;  //ÓÐÐ§²âÎÂÇøÓòÊýÁ¿ 
-        USB_IFR_SQUARE_ROI_OUTCOME_INFO struIfrRoiOutcome[IFR_MAX_SQUARE_REGION_NUM];  // ²âÎÂ½á¹û
+        DWORD dwRoiRegionNum;  //ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+        USB_IFR_SQUARE_ROI_OUTCOME_INFO struIfrRoiOutcome[IFR_MAX_SQUARE_REGION_NUM];  // ï¿½ï¿½ï¿½Â½ï¿½ï¿½
     }USB_IFR_SQUARE_ROI_OUTCOME_LIST, *LPUSB_IFR_SQUARE_ROI_OUTCOME_LIST;
 
-    //ÊµÊ±²âÎÂÐÅÏ¢µÄÊä³ö½á¹¹Ìå
+    //ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     typedef struct tagUSB_IFR_REALTIME_TM_UPLOAD_INFO
     {
-        USB_IFR_TEMP_UNIT  enumTempUnit;  // ÎÂ¶Èµ¥Î»£¬Ä¬ÈÏÉãÊÏ¶È£¬Ö÷ÒªÓÃÓÚÉÏ´« 
-        BYTE  byRefTempkey;  //·´ÉäÎÂ¶È¿ª¹Ø
-        BYTE  byRes1[3];  //±£Áô 
-        float  fDistance;  //²âÁ¿¾àÀë
-        float  fRefTemp;  //·´ÉäÎÂ¶È£¬¸ù¾Ý·´ÉäÎÂ¶È¿ª¹Ø
-        float  fEmissionRate;  //·¢ÉäÂÊ£¬[0.00, 1.0] 
-        float  fEnvTemp;  //»·¾³ÎÂ¶È, ÎÞÎÂ¸ÐÊ±´Ó²âÎÂËã·¨¿âÖÐ»ñÈ¡
-        float  fMinTmp;  //È«ÆÁ×îµÍÎÂ¶È
-        float  fMaxTmp;  // È«ÆÁ×î¸ßÎÂ¶È
-        float  fAvrTmp;  //È«ÆÁÆ½¾ùÎÂ¶È
-        USB_IFR_POINT  struPoints[3];  //±£´æ²âÊÔ½á¹ûÖÐµÄ×î¸ßÎÂºÍ×îµÍÎÂ×ø±ê£¬¹éÒ»»¯µ½0-1000£¬Êý×éÏÂ±ê: 0-×î¸ßÎÂ£¬1-×îµÍÎÂ £¬2-Æ½¾ùÎÂ
+        USB_IFR_TEMP_UNIT  enumTempUnit;  // ï¿½Â¶Èµï¿½Î»ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶È£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ 
+        BYTE  byRefTempkey;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È¿ï¿½ï¿½ï¿½
+        BYTE  byRes1[3];  //ï¿½ï¿½ï¿½ï¿½ 
+        float  fDistance;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        float  fRefTemp;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶È£ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½Â¶È¿ï¿½ï¿½ï¿½
+        float  fEmissionRate;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½[0.00, 1.0] 
+        float  fEnvTemp;  //ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½, ï¿½ï¿½ï¿½Â¸ï¿½Ê±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½Ð»ï¿½È¡
+        float  fMinTmp;  //È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½
+        float  fMaxTmp;  // È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½
+        float  fAvrTmp;  //È«ï¿½ï¿½Æ½ï¿½ï¿½ï¿½Â¶ï¿½
+        USB_IFR_POINT  struPoints[3];  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½0-1000ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½: 0-ï¿½ï¿½ï¿½ï¿½Â£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½2-Æ½ï¿½ï¿½ï¿½ï¿½
         BYTE  byRes[24];
-        USB_IFR_SQUARE_ROI_OUTCOME_LIST struRoiOutList; //ROI²âÎÂÊä³öµÄÐÅÏ¢
+        USB_IFR_SQUARE_ROI_OUTCOME_LIST struRoiOutList; //ROIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     }USB_IFR_REALTIME_TM_UPLOAD_INFO, *LPUSB_IFR_REALTIME_TM_UPLOAD_INFO;
 
 
-    //ÈÈ³ÉÏñÈ«ÆÁ²âÎÂÊµÊ±Á÷Êý¾Ý½á¹¹£¬Ã¿Ö¡Á÷Êý¾ÝÎª£ºUSB_THERMAL_STREAM_TEMP_S(Í·Êý¾Ý) + DATA(È«ÆÁ²âÎÂÊý¾Ý)
+    //ï¿½È³ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½Ã¿Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½USB_THERMAL_STREAM_TEMP_S(Í·ï¿½ï¿½ï¿½ï¿½) + DATA(È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
     typedef struct tagUSB_THERMAL_STREAM_TEMP_S
     {
-        DWORD  dwMagicNo;  //Ä§Êõ×Ö, ¹æ¶¨Îª0x70827773, ¼´"FRMI"µÄASCIIÂë
-        DWORD  dwHeadLen; //Head³¤¶È
-        DWORD  dwStreamType; //Êý¾ÝÀàÐÍRTData, ²Î¼ûSTREAM_TYPE_E
-        DWORD  dwStreamLen; //È«ÆÁ²âÎÂÊý¾Ý³¤¶È(DATA)
-        USB_STREAM_RT_DATA_INFO_S  struRTDataInfo;//ÊµÊ±ÎÂ¶ÈÊý¾ÝÐÅÏ¢
-        USB_STREAM_FS_SUPPLE_INFO_TEMP  struFsSuppleInfo;//ÊµÊ±ÎÂ¶ÈÊý¾Ý¸½¼ÓÐÅÏ¢
+        DWORD  dwMagicNo;  //Ä§ï¿½ï¿½ï¿½ï¿½, ï¿½æ¶¨Îª0x70827773, ï¿½ï¿½"FRMI"ï¿½ï¿½ASCIIï¿½ï¿½
+        DWORD  dwHeadLen; //Headï¿½ï¿½ï¿½ï¿½
+        DWORD  dwStreamType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RTData, ï¿½Î¼ï¿½STREAM_TYPE_E
+        DWORD  dwStreamLen; //È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½(DATA)
+        USB_STREAM_RT_DATA_INFO_S  struRTDataInfo;//ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+        USB_STREAM_FS_SUPPLE_INFO_TEMP  struFsSuppleInfo;//ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
         BYTE  byRes[48];
-        DWORD  dwCrcVal;//½á¹¹ÌåÐ£ÑéÂë£¬¶Ô½á¹¹ÌåÖÐÇ°ÃæÊý¾Ý½øÐÐÐ£Ñé
+        DWORD  dwCrcVal;//ï¿½á¹¹ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ë£¬ï¿½Ô½á¹¹ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½
     }USB_THERMAL_STREAM_TEMP_S, *LPUSB_THERMAL_STREAM_TEMP_S;
 
-    //ÈÈ³ÉÏñÈÈÍ¼ÊµÊ±Á÷Êý¾Ý½á¹¹£¬Ã¿Ö¡Á÷Êý¾ÝÎª£ºUSB_THERMAL_STREAM_TEMP_HOT(Í·Êý¾Ý) + DATA1(È«ÆÁ²âÎÂÊý¾Ý) + DATA2(JPEGÊý¾Ý)
+    //ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½Ã¿Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½USB_THERMAL_STREAM_TEMP_HOT(Í·ï¿½ï¿½ï¿½ï¿½) + DATA1(È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) + DATA2(JPEGï¿½ï¿½ï¿½ï¿½)
     typedef struct tagUSB_THERMAL_STREAM_TEMP_HOT
     {
-        DWORD  dwMagicNo;  //Ä§Êõ×Ö, ¹æ¶¨Îª 0x70827773
-        DWORD  dwHeadLen; //Head³¤¶È, ÒÔ×Ö½ÚÎªµ¥Î»
-        DWORD  dwStreamType; //Êý¾ÝÀàÐÍ, ²Î¼ûSTREAM_TYPE_E
-        DWORD  dwStreamLen; //È«ÆÁ²âÎÂÊý¾Ý³¤¶È(DATA1)
-        DWORD  dwIRFJpg;//ÊÇ·ñÐ¯´øJPEGÍ¼Æ¬
-        USB_STREAM_RT_DATA_INFO_S  struRTDataInfo;//ÊµÊ±ÎÂ¶ÈÊý¾ÝÐÅÏ¢
-        USB_STREAM_FS_SUPPLE_INFO_TEMP  struFsSuppleInfo;//ÊµÊ±ÎÂ¶ÈÊý¾Ý¸½¼ÓÐÅÏ¢
-        USB_RT_JPEG_DATA_INFO_S  struRTJpegDataInfo;//ÊµÊ±JPEGÊý¾ÝÐÅÏ¢
-        USB_IFR_REALTIME_TM_UPLOAD_INFO  struRTDataUpload;//ÊµÊ±²âÎÂÐÅÏ¢
+        DWORD  dwMagicNo;  //Ä§ï¿½ï¿½ï¿½ï¿½, ï¿½æ¶¨Îª 0x70827773
+        DWORD  dwHeadLen; //Headï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ö½ï¿½Îªï¿½ï¿½Î»
+        DWORD  dwStreamType; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Î¼ï¿½STREAM_TYPE_E
+        DWORD  dwStreamLen; //È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½(DATA1)
+        DWORD  dwIRFJpg;//ï¿½Ç·ï¿½Ð¯ï¿½ï¿½JPEGÍ¼Æ¬
+        USB_STREAM_RT_DATA_INFO_S  struRTDataInfo;//ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+        USB_STREAM_FS_SUPPLE_INFO_TEMP  struFsSuppleInfo;//ÊµÊ±ï¿½Â¶ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+        USB_RT_JPEG_DATA_INFO_S  struRTJpegDataInfo;//ÊµÊ±JPEGï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+        USB_IFR_REALTIME_TM_UPLOAD_INFO  struRTDataUpload;//ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
         BYTE  byRes[48];
-        DWORD  dwCrcVal;//½á¹¹ÌåÐ£ÑéÂë£¬¶Ô½á¹¹ÌåÖÐÇ°ÃæÊý¾Ý½øÐÐÐ£Ñé
+        DWORD  dwCrcVal;//ï¿½á¹¹ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ë£¬ï¿½Ô½á¹¹ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½
     }USB_THERMAL_STREAM_TEMP_HOT, *LPUSB_THERMAL_STREAM_TEMP_HOT;
 
-    //////////////////////////////////////////////////////////ÈÈ³ÉÏñÂëÁ÷½âÎö½á¹¹Ìå¶¨Òå½áÊø//////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½å¶¨ï¿½ï¿½ï¿½ï¿½ï¿½//////////////////////////////////////////////////////////////////////
 
     typedef struct tagUSB_DEVICE_INFO
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        DWORD   dwIndex; // Éè±¸Ë÷Òý 
-        DWORD   dwVID;   //Éè±¸VID
-        DWORD   dwPID;   //Éè±¸PID
-        char    szManufacturer[MAX_MANUFACTURE_LEN/*32*/];//ÖÆÔìÉÌ£¨À´×ÔÃèÊö·û£©
-        char    szDeviceName[MAX_DEVICE_NAME_LEN/*32*/];//Éè±¸Ãû³Æ£¨À´×ÔÃèÊö·û£©
-        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/];//Éè±¸ÐòÁÐºÅ£¨À´×ÔÃèÊö·û£©
-        BYTE    byHaveAudio;    // ÊÇ·ñ¾ßÓÐÒôÆµ
-        BYTE    iColorType;     // 1.RGBÂ·£¬ 2.IRÂ·
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD   dwIndex; // ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ 
+        DWORD   dwVID;   //ï¿½è±¸VID
+        DWORD   dwPID;   //ï¿½è±¸PID
+        char    szManufacturer[MAX_MANUFACTURE_LEN/*32*/];//ï¿½ï¿½ï¿½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        char    szDeviceName[MAX_DEVICE_NAME_LEN/*32*/];//ï¿½è±¸ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/];//ï¿½è±¸ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byHaveAudio;    // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ
+        BYTE    iColorType;     // 1.RGBÂ·ï¿½ï¿½ 2.IRÂ·
         BYTE    szDevicePath[MAX_PATH_LEN];
-        BYTE    byDeviceType;   //Éè±¸ÀàÐÍ£¬0-HID£¬´óÈÝÁ¿Éè±¸ 1-UVC(ÊÓÆµ)Éè±¸ 2-UVC(ÊÓÆµ)Éè±¸ 4-UAC(ÒôÆµ)Éè±¸£¬5-UVC(ÊÓÆµ)Éè±¸
-        DWORD   dwBCD;          //Éè±¸Èí¼þ°æ±¾ºÅ
+        BYTE    byDeviceType;   //ï¿½è±¸ï¿½ï¿½ï¿½Í£ï¿½0-HIDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ 1-UVC(ï¿½ï¿½Æµ)ï¿½è±¸ 2-UVC(ï¿½ï¿½Æµ)ï¿½è±¸ 4-UAC(ï¿½ï¿½Æµ)ï¿½è±¸ï¿½ï¿½5-UVC(ï¿½ï¿½Æµ)ï¿½è±¸
+        DWORD   dwBCD;          //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½
         BYTE    byRes[249];
     } USB_DEVICE_INFO, *LPUSB_DEVICE_INFO;
 
     typedef struct tagUSB_USER_LOGIN_INFO
     {
-        DWORD   dwSize; //½á¹¹Ìå´óÐ¡
-        DWORD   dwTimeout; //µÇÂ¼³¬Ê±Ê±¼ä£¨µ¥Î»£ººÁÃë£©,È¡Öµ·¶Î§£º0-Ä¬ÈÏÖµ5000ºÁÃë£¬[1000,5000]-¾ßÌå³¬Ê±Ê±¼ä
-        DWORD   dwDevIndex; //Éè±¸ÏÂ±ê
-        DWORD   dwVID;  //Éè±¸VID£¬Ã¶¾ÙÉè±¸Ê±µÃµ½
-        DWORD   dwPID;  //Éè±¸PID£¬Ã¶¾ÙÉè±¸Ê±µÃµ½
-        char    szUserName[MAX_USERNAME_LEN/*32*/]; //ÓÃ»§Ãû£¬»ñÈ¡¼¤»î×´Ì¬Ê±ÎÞÐèÌî
-        char    szPassword[MAX_PASSWORD_LEN/*16*/]; //ÃÜÂë£¬»ñÈ¡¼¤»î×´Ì¬Ê±ÎÞÐèÌî
-        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/]; //Éè±¸ÐòÁÐºÅ£¬Ã¶¾ÙÉè±¸Ê±µÃµ½
-        BYTE    byLoginMode; //0-ÈÏÖ¤µÇÂ½ 1-Ä¬ÈÏÕËºÅµÇÂ½£¨²»¹ØÐÄÓÃ»§ÃûÃÜÂë£©£¨È¨ÏÞ²»Í¬£¬²¿·Ö¹¦ÄÜÐèÈÏÖ¤µÇÂ½²ÅÖ§³Ö£©
-        // £¨³¢ÊÔ²ÉÓÃÖ¸¶¨·½Ê½µÇÂ½£©
+        DWORD   dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD   dwTimeout; //ï¿½ï¿½Â¼ï¿½ï¿½Ê±Ê±ï¿½ä£¨ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ë£©,È¡Öµï¿½ï¿½Î§ï¿½ï¿½0-Ä¬ï¿½ï¿½Öµ5000ï¿½ï¿½ï¿½ë£¬[1000,5000]-ï¿½ï¿½ï¿½å³¬Ê±Ê±ï¿½ï¿½
+        DWORD   dwDevIndex; //ï¿½è±¸ï¿½Â±ï¿½
+        DWORD   dwVID;  //ï¿½è±¸VIDï¿½ï¿½Ã¶ï¿½ï¿½ï¿½è±¸Ê±ï¿½Ãµï¿½
+        DWORD   dwPID;  //ï¿½è±¸PIDï¿½ï¿½Ã¶ï¿½ï¿½ï¿½è±¸Ê±ï¿½Ãµï¿½
+        char    szUserName[MAX_USERNAME_LEN/*32*/]; //ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×´Ì¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        char    szPassword[MAX_PASSWORD_LEN/*16*/]; //ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×´Ì¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/]; //ï¿½è±¸ï¿½ï¿½ï¿½ÐºÅ£ï¿½Ã¶ï¿½ï¿½ï¿½è±¸Ê±ï¿½Ãµï¿½
+        BYTE    byLoginMode; //0-ï¿½ï¿½Ö¤ï¿½ï¿½Â½ 1-Ä¬ï¿½ï¿½ï¿½ËºÅµï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£©ï¿½ï¿½È¨ï¿½Þ²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Â½ï¿½ï¿½Ö§ï¿½Ö£ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Â½ï¿½ï¿½
         BYTE    byRes2[3];
-        DWORD   dwFd; //Éè±¸ÃèÊö·ûfd (androidÏÂÃ»ÓÐrootÈ¨ÏÞµÇÂ¼Ê±Ê¹ÓÃ)
+        DWORD   dwFd; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fd (androidï¿½ï¿½Ã»ï¿½ï¿½rootÈ¨ï¿½Þµï¿½Â¼Ê±Ê¹ï¿½ï¿½)
         BYTE    byRes[248];
     } USB_USER_LOGIN_INFO, *LPUSB_USER_LOGIN_INFO;
 
     typedef struct tagUSB_DEVICE_REG_RES
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        char    szDeviceName[MAX_DEVICE_NAME_LEN /*32*/]; //Éè±¸Ãû³Æ
-        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN /*48*/]; //Éè±¸ÐòÁÐºÅ
-        DWORD   dwSoftwareVersion; //Èí¼þ°æ±¾ºÅ,¸ß16Î»ÊÇÖ÷°æ±¾,µÍ16Î»ÊÇ´Î°æ±¾
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        char    szDeviceName[MAX_DEVICE_NAME_LEN /*32*/]; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+        char    szSerialNumber[MAX_SERIAL_NUMBER_LEN /*48*/]; //ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½
+        DWORD   dwSoftwareVersion; //ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½,ï¿½ï¿½16Î»ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾,ï¿½ï¿½16Î»ï¿½Ç´Î°æ±¾
         WORD    wYear;
         BYTE    byMonth;
         BYTE    byDay;
-        BYTE    byRetryLoginTimes; //Ê£Óà¿É³¢ÊÔµÇÂ½µÄ´ÎÊý
-        BYTE    byRes1[3];             //±£Áô
-        DWORD   dwSurplusLockTime; //Ê£ÓàÊ±¼ä£¬µ¥Î»Ãë ÓÃ»§Ëø¶¨Ê±£¬´Ë²ÎÊýÓÐÐ§
+        BYTE    byRetryLoginTimes; //Ê£ï¿½ï¿½É³ï¿½ï¿½Ôµï¿½Â½ï¿½Ä´ï¿½ï¿½ï¿½
+        BYTE    byRes1[3];             //ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwSurplusLockTime; //Ê£ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½ï¿½ ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
         BYTE    byRes[256];
     } USB_DEVICE_REG_RES, *LPUSB_DEVICE_REG_RES;
 
 
     typedef struct tagUSB_CONFIG_INPUT_INFO
     {
-        void * lpCondBuffer;        //Ö¸ÏòÌõ¼þ»º³åÇø
-        DWORD  dwCondBufferSize;//Ìõ¼þ»º³åÇø´óÐ¡
-        void * lpInBuffer;          //Ö¸ÏòÊä³ö»º³åÇø
-        DWORD  dwInBufferSize;   //ÊäÈë»º³åÇø´óÐ¡
+        void * lpCondBuffer;        //Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCondBufferSize;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
+        void * lpInBuffer;          //Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwInBufferSize;   //ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
         BYTE   byRes[48];
-    } USB_CONFIG_INPUT_INFO, *LPUSB_CONFIG_INPUT_INFO; //64×Ö½Ú
+    } USB_CONFIG_INPUT_INFO, *LPUSB_CONFIG_INPUT_INFO; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CONFIG_OUTPUT_INFO
     {
-        void * lpOutBuffer;      //Ö¸ÏòÊä³ö»º³åÇø
-        DWORD  dwOutBufferSize;  //Êä³ö»º³åÇø´óÐ¡
+        void * lpOutBuffer;      //Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwOutBufferSize;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
         BYTE   byRes[56];
-    } USB_CONFIG_OUTPUT_INFO, *LPUSB_CONFIG_OUTPUT_INFO; //64×Ö½Ú
+    } USB_CONFIG_OUTPUT_INFO, *LPUSB_CONFIG_OUTPUT_INFO; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_UPGRADE_STATE_INFO
     {
@@ -2757,83 +2757,83 @@ typedef enum tagLOG_LEVEL_ENUM
         BYTE   byState;
         BYTE   byProgress;
         BYTE   byRes[6];
-    } USB_UPGRADE_STATE_INFO, *LPUSB_UPGRADE_STATE_INFO; //12×Ö½Ú
+    } USB_UPGRADE_STATE_INFO, *LPUSB_UPGRADE_STATE_INFO; //12ï¿½Ö½ï¿½
 
     typedef struct tagUSB_UPGRADE_COND
     {
         DWORD dwSize;
         BYTE  byTimeout;
-        BYTE  byFileCrc; //ÊÇ·ñÐ£ÑéÉý¼¶°ü£º0-Ä¬ÈÏ£¬²»Ð£Ñé 1-Ð£Ñé
+        BYTE  byFileCrc; //ï¿½Ç·ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-Ä¬ï¿½Ï£ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ 1-Ð£ï¿½ï¿½
         BYTE  byRes[2];
         DWORD dwModuleID;
         BYTE  byRes1[4];
-    } USB_UPGRADE_COND, *LPUSB_UPGRADE_COND;//16×Ö½Ú
+    } USB_UPGRADE_COND, *LPUSB_UPGRADE_COND;//16ï¿½Ö½ï¿½
 
     typedef struct tagUSB_MIME_UNIT
     {
-        //HTTP¸ñÊ½ÈçÏÂ
+        //HTTPï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
         //Content-Disposition: form-data; name="upload"; filename="C:\Users\test\Desktop\11.txt"
         //Content-Type: text/plain
-        char szContentType[32];               //¶ÔÓ¦Content-Type
-        char szName[MAX_FILE_PATH_LEN];       //¶ÔÓ¦name×Ö¶Î
-        char szFilename[MAX_FILE_PATH_LEN];   //¶ÔÓ¦filename×Ö¶Î
-        DWORD dwContentLen;              //ContentµÄ³¤¶È
-        char* pContent;                       //Êý¾ÝÖ¸Õë
+        char szContentType[32];               //ï¿½ï¿½Ó¦Content-Type
+        char szName[MAX_FILE_PATH_LEN];       //ï¿½ï¿½Ó¦nameï¿½Ö¶ï¿½
+        char szFilename[MAX_FILE_PATH_LEN];   //ï¿½ï¿½Ó¦filenameï¿½Ö¶ï¿½
+        DWORD dwContentLen;              //Contentï¿½Ä³ï¿½ï¿½ï¿½
+        char* pContent;                       //ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
         BYTE byRes[16];
     }USB_MIME_UNIT, *LPUSB_MIME_UNIT;
 
     typedef struct tagUSB_DATA_BUFFER
     {
-        char szName[MAX_FILE_PATH_LEN];  //[OUT]¶ÔÓ¦name×Ö¶Î
-        void * pDataBuffer;         //[IN/OUT]Êý¾Ý»º³åÇø
-        DWORD   dwDataSize;              //[IN/OUT]Êý¾Ý»º³åÇø´óÐ¡/Êµ¼Ê´ÓÉè±¸½ÓÊÕµ½µÄÊý¾ÝµÄ³¤¶È
-        BYTE    byRes[12];               //±£Áô
+        char szName[MAX_FILE_PATH_LEN];  //[OUT]ï¿½ï¿½Ó¦nameï¿½Ö¶ï¿½
+        void * pDataBuffer;         //[IN/OUT]ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwDataSize;              //[IN/OUT]ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡/Êµï¿½Ê´ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½ï¿½
+        BYTE    byRes[12];               //ï¿½ï¿½ï¿½ï¿½
     }USB_DATA_BUFFER, *PUSB_DATA_BUFFER;
 
     typedef struct tagUSB_PT_PARAM
     {
-        DWORD   dwSize;             //½á¹¹Ìå´óÐ¡
-        void *  pRequestUrl;        //[IN]ÇëÇóURL
-        DWORD   dwRequestUrlLen;    //[IN]ÇëÇóURL³¤¶È
-        void *  pInBuffer;          //[IN]ÊäÈëÊý¾Ý
-        DWORD   dwInSize;           //[IN]ÊäÈëÊý¾Ý³¤¶È
-        void *  pOutBuffer;         //[IN/OUT]Êä³ö»º³åÇø
-        DWORD   dwOutSize;          //[IN/OUT]Êä³ö»º³åÇø´óÐ¡/Êµ¼Ê´ÓÉè±¸½ÓÊÕµ½µÄÊý¾ÝµÄ³¤¶È
-        DWORD   dwSendTimeOut;      //[IN]Ä¬ÈÏ5000ms
-        DWORD   dwRecvTimeOut;      //[IN]Ä¬ÈÏ5000ms
+        DWORD   dwSize;             //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        void *  pRequestUrl;        //[IN]ï¿½ï¿½ï¿½ï¿½URL
+        DWORD   dwRequestUrlLen;    //[IN]ï¿½ï¿½ï¿½ï¿½URLï¿½ï¿½ï¿½ï¿½
+        void *  pInBuffer;          //[IN]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwInSize;           //[IN]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        void *  pOutBuffer;         //[IN/OUT]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwOutSize;          //[IN/OUT]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡/Êµï¿½Ê´ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½ï¿½
+        DWORD   dwSendTimeOut;      //[IN]Ä¬ï¿½ï¿½5000ms
+        DWORD   dwRecvTimeOut;      //[IN]Ä¬ï¿½ï¿½5000ms
         USB_DATA_BUFFER struData[MAX_DATA_NUM];
-        BYTE    byNumOfMultiPart;   //[IN]0-ÎÞÐ§£¬ÆäËûÖµ±íÊ¾±¨ÎÄ·Ö¶Î¸öÊý£¬·ÇÁãÊ±pInBuffer´«ÈëµÄÊÇUSB_SDK_MIME_UNIT½á¹¹ÌåÊý×éµÄÖ¸Õë£¬¸ÃÖµ¼´´ú±í½á¹¹Ìå¸öÊý
-        BYTE    byNumOfData;        //[OUT]Êµ¼ÊÉè±¸·µ»ØµÄDATAÊý¾ÝÊýÁ¿£¨Èç²É¼¯ÈËÁ³ÊýÁ¿£©
-        BYTE    byRes[62];          //±£Áô
+        BYTE    byNumOfMultiPart;   //[IN]0-ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä·Ö¶Î¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±pInBufferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½USB_SDK_MIME_UNITï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ë£¬ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byNumOfData;        //[OUT]Êµï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Øµï¿½DATAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byRes[62];          //ï¿½ï¿½ï¿½ï¿½
     }USB_PT_PARAM, *LPUSB_PT_PARAM;
 
     typedef struct tagUSB_CONTROL_INPUT_INFO
     {
-        void * lpCondBuffer;     //ÊäÈë²ÎÊý»º³åÇø
-        DWORD  dwCondBufferSize; //ÊäÈë²ÎÊý»º³åÇø´óÐ¡
-        void * lpInBuffer;        //ÊäÈë»º³åÇø
-        DWORD  dwInBufferSize;    //ÊäÈë»º³åÇø´óÐ¡
+        void * lpCondBuffer;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwCondBufferSize; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
+        void * lpInBuffer;        //ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½
+        DWORD  dwInBufferSize;    //ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
         BYTE   byRes[48];
-    }USB_CONTROL_INPUT_INFO, *LPUSB_CONTROL_INPUT_INFO; //64×Ö½Ú
+    }USB_CONTROL_INPUT_INFO, *LPUSB_CONTROL_INPUT_INFO; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_PREVIEW_PARAM
     {
         DWORD  dwSize;
-        DWORD  dwStreamType;				//ÂëÁ÷ÀàÐÍ
+        DWORD  dwStreamType;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         DWORD  dwChannel;
-        HWND   hWindow;				       //´°¿Ú¾ä±ú
-        BYTE   bUseAudio;				   //ÊÇ·ñÔ¤ÀÀÒôÆµ
-        BYTE   bYUVCallback;			   //ÊÇ·ñ¿ªÆôYUV»Øµ÷
+        HWND   hWindow;				       //ï¿½ï¿½ï¿½Ú¾ï¿½ï¿½
+        BYTE   bUseAudio;				   //ï¿½Ç·ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½Æµ
+        BYTE   bYUVCallback;			   //ï¿½Ç·ï¿½ï¿½ï¿½YUVï¿½Øµï¿½
         BYTE   byRes[126];
     } USB_PREVIEW_PARAM, *LPUSB_PREVIEW_PARAM;
 
     typedef struct tagUSB_RECORD_PARAM
     {
         DWORD  dwSize;
-        DWORD  dwRecordType;                // Â¼ÏñÀàÐÍ
-        BYTE   bRecordAudio;   // ÊÇ·ñÂ¼ÖÆÒôÆµ
+        DWORD  dwRecordType;                // Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE   bRecordAudio;   // ï¿½Ç·ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Æµ
         BYTE   byRes1[3];
-        char   szFilePath[MAX_FILE_PATH_LEN];        // Â¼ÏñÎÄ¼þ´æ´¢Â·¾¶
+        char   szFilePath[MAX_FILE_PATH_LEN];        // Â¼ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½æ´¢Â·ï¿½ï¿½
         BYTE   byRes[128];
     } USB_RECORD_PARAM, *LPUSB_RECORD_PARAM;
 
@@ -2857,34 +2857,34 @@ typedef enum tagLOG_LEVEL_ENUM
 
     typedef struct tagTARGET_INFO
     {
-        ORECT    struRect;             // Ä¿±êÎ»ÖÃ
-        DWORD  dwImgHeight;          // ÈËÁ³Í¼Æ¬¸ß
-        DWORD  dwImgWidth;           // ÈËÁ³Í¼Æ¬¿í
-        LONG   nBufferLen;           // ÈËÁ³Í¼Æ¬»º³åÇø´óÐ¡
-        BYTE *  pBuffer;             // ÈËÁ³Í¼Æ¬»º³åÇø
+        ORECT    struRect;             // Ä¿ï¿½ï¿½Î»ï¿½ï¿½
+        DWORD  dwImgHeight;          // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½
+        DWORD  dwImgWidth;           // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½
+        LONG   nBufferLen;           // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
+        BYTE *  pBuffer;             // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[128];
     } TARGET_INFO;
 
     typedef struct tagUSB_FACE_DRAW_PARAM
     {
         TARGET_INFO struTargetInfoList[50];
-        DWORD    dwFaceTotalNum;             // ÈËÁ³×ÜµÄ¸öÊý                    
-        BYTE    byEnlarge;                  // ÊÇ·ñÆôÓÃÈËÁ³·Å´óÄ£Ê½ 0-²»ÆôÓÃ 1-ÆôÓÃ
-        BYTE    byShowFont;                 // ÊÇ·ñÏÔÊ¾ÌáÊ¾ÎÄ×Ö 0:ÏÔÊ¾ 1:²»ÏÔÊ¾
-        BYTE    byDisappear;                // ÈËÁ³ÊÇ·ñÏûÊ§
+        DWORD    dwFaceTotalNum;             // ï¿½ï¿½ï¿½ï¿½ï¿½ÜµÄ¸ï¿½ï¿½ï¿½                    
+        BYTE    byEnlarge;                  // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´ï¿½Ä£Ê½ 0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE    byShowFont;                 // ï¿½Ç·ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ 0:ï¿½ï¿½Ê¾ 1:ï¿½ï¿½ï¿½ï¿½Ê¾
+        BYTE    byDisappear;                // ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ê§
         BYTE    byRes[125];
     }USB_FACE_DRAW_PARAM, *LPUSB_FACE_DRAW_PARAM;
 
 
     typedef struct tagUSB_IR_FRAME
     {
-        DWORD                  nLen;               // Êý¾Ý³¤¶È
-        BYTE*       pBuffer;            // Êý¾Ý»º´æ
+        DWORD                  nLen;               // ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        BYTE*       pBuffer;            // ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½
         DWORD                  byRes[32];
     }USB_IR_FRAME, *LPUSB_IR_FRAME;
 
 
-    /**	@struct »îÌå¼ì²âÌõ¼þ½á¹¹Ìå
+    /**	@struct ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     *  @brief
     *
     */
@@ -2903,26 +2903,26 @@ typedef enum tagLOG_LEVEL_ENUM
     typedef struct tagUSB_FR_LIVE_INFO
     {
         DWORD					nLiveStatus;
-        float				fLiveConfidence;     //»îÌå¼ì²âÖÃÐÅ¶È
-        char				reserved[16];         //Ô¤Áô16¸ö×Ö½Ú                           
+        float				fLiveConfidence;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶ï¿½
+        char				reserved[16];         //Ô¤ï¿½ï¿½16ï¿½ï¿½ï¿½Ö½ï¿½                           
     }USB_FR_LIVE_INFO, *LPUSB_FR_LIVE_INFO;
 
     typedef struct tagFACE_ATTR_CLS
     {
-        DWORD                       nValue;                           //Àà±ð
-        float                      fConf;                            //ÖÃÐÅ¶È,·¶Î§0~1
+        DWORD                       nValue;                           //ï¿½ï¿½ï¿½
+        float                      fConf;                            //ï¿½ï¿½ï¿½Å¶ï¿½,ï¿½ï¿½Î§0~1
     }USB_FACE_ATTR_CLS, *LPUSB_FACE_ATTR_CLS;
 
     typedef struct tagFACE_ATTR_OUT
     {
-        USB_FACE_ATTR_CLS   stAge;                        // ÄêÁä£¬0 ~ 99
-        USB_FACE_ATTR_CLS   stGender;                     // ÐÔ±ð£¬0-Å®, 1-ÄÐ
-        USB_FACE_ATTR_CLS   stGlass;                      // ÊÇ·ñ´÷ÑÛ¾µ£¬0-ÎÞÑÛ¾µ,1-ÆÕÍ¨ÑÛ¾µ,2-Ä«¾µ
-        USB_FACE_ATTR_CLS   stExpress;                    // ±íÇé£¬0-ÖÐÐÔ£¬1-¸ßÐË£¬2-¾ªÑÈ£¬3-º¦ÅÂ£¬4-Ñá¶ñ£¬5-ÄÑ¹ý£¬6-·ßÅ­
-        USB_FACE_ATTR_CLS   stMask;                       // ¿ÚÕÖ£¬0-²»´÷¿ÚÕÖ£¬1-´÷¿ÚÕÖ
-        USB_FACE_ATTR_CLS   szReserved1;                  // ±£Áô×Ö½Ú
-        USB_FACE_ATTR_CLS   stHat;                        // Ã±×Ó£¬0-²»´÷Ã±×Ó£¬1-´÷Ã±×Ó
-        BYTE                szReserved[64];               // ±£Áô×Ö½Ú
+        USB_FACE_ATTR_CLS   stAge;                        // ï¿½ï¿½ï¿½ä£¬0 ~ 99
+        USB_FACE_ATTR_CLS   stGender;                     // ï¿½Ô±ï¿½0-Å®, 1-ï¿½ï¿½
+        USB_FACE_ATTR_CLS   stGlass;                      // ï¿½Ç·ï¿½ï¿½ï¿½Û¾ï¿½ï¿½ï¿½0-ï¿½ï¿½ï¿½Û¾ï¿½,1-ï¿½ï¿½Í¨ï¿½Û¾ï¿½,2-Ä«ï¿½ï¿½
+        USB_FACE_ATTR_CLS   stExpress;                    // ï¿½ï¿½ï¿½é£¬0-ï¿½ï¿½ï¿½Ô£ï¿½1-ï¿½ï¿½ï¿½Ë£ï¿½2-ï¿½ï¿½ï¿½È£ï¿½3-ï¿½ï¿½ï¿½Â£ï¿½4-ï¿½ï¿½ï¿½5-ï¿½Ñ¹ï¿½ï¿½ï¿½6-ï¿½ï¿½Å­
+        USB_FACE_ATTR_CLS   stMask;                       // ï¿½ï¿½ï¿½Ö£ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        USB_FACE_ATTR_CLS   szReserved1;                  // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        USB_FACE_ATTR_CLS   stHat;                        // Ã±ï¿½Ó£ï¿½0-ï¿½ï¿½ï¿½ï¿½Ã±ï¿½Ó£ï¿½1-ï¿½ï¿½Ã±ï¿½ï¿½
+        BYTE                szReserved[64];               // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     }USB_FACE_ATTR_OUT, *LPUSB_FACE_ATTR_OUT;
 
     typedef struct tagUSB_TARGET_LIVE_INFO
@@ -2933,107 +2933,107 @@ typedef enum tagLOG_LEVEL_ENUM
 
     typedef struct tagUSB_FR_LIVE_PARAM
     {
-        DWORD                   LiveNum;                                // Êµ¼ÊµÄÄ¿±ê¸öÊý,´óÓÚ0±íÊ¾ÓÐ»îÌå
-        USB_TARGET_LIVE_INFO          stTargetLiveOut[MAX_LIVE_TARGET_NUM];      // »îÌåÊä³ö
+        DWORD                   LiveNum;                                // Êµï¿½Êµï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¾ï¿½Ð»ï¿½ï¿½ï¿½
+        USB_TARGET_LIVE_INFO          stTargetLiveOut[MAX_LIVE_TARGET_NUM];      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }USB_FR_LIVE_PARAM, *LPUSB_FR_LIVE_PARAM;
 
 
     typedef struct tagUSB_FRAME_INFO
     {
-        LONG       nStamp;       // Ê±±êÐÅÏ¢
-        DWORD      dwStreamType; // Êý¾ÝÀàÐÍ
-        DWORD      dwWidth;      // »­Ãæ¿í,Èç¹ûÊÇÒôÆµÊý¾ÝÔòÎªÒôÆµÉùµÀÊý
-        DWORD      dwHeight;     // »­Ãæ¸ß,Èç¹ûÊÇÒôÆµÊý¾ÝÔòÎª²ÉÑùÎ»Êý
-        DWORD      dwFrameRate;  // Ö¡ÂÊ,±àÂëÊ±²úÉúµÄÍ¼ÏñÖ¡ÂÊ£¬Èç¹ûÊÇÒôÆµÊý¾ÝÔòÎª²ÉÑùÂÊ
-        DWORD      dwFrameType;  // ÊÓÆµÖ¡ÀàÐÍ,  ¶ÔÓ¦×ª·â×°¿âÊä³öµÄÀàÐÍ,Èç¹ûÊÇÒôÆµÊý¾ÝÔòÎªnAvgBytesPerSec
-        DWORD      dwDataType;   // Êý¾ÝÀàÐÍ,¶ÔÓ¦×ª·â×°¿âÊä³öµÄÊý¾ÝÀàÐÍ  1-ÏµÍ³Í·Êý¾Ý 2-ÊÓÆµÁ÷Êý¾Ý 3-ÒôÆµÁ÷Êý¾Ý
-        LONG       nFrameNum;    // Ö¡ºÅ, 
-        BYTE       *pBuf;        // Êý¾ÝÖ¸Õë
-        DWORD      dwBufSize;    // Êý¾Ý³¤¶È
+        LONG       nStamp;       // Ê±ï¿½ï¿½ï¿½ï¿½Ï¢
+        DWORD      dwStreamType; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD      dwWidth;      // ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD      dwHeight;     // ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        DWORD      dwFrameRate;  // Ö¡ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ö¡ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD      dwFrameType;  // ï¿½ï¿½ÆµÖ¡ï¿½ï¿½ï¿½ï¿½,  ï¿½ï¿½Ó¦×ªï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªnAvgBytesPerSec
+        DWORD      dwDataType;   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ó¦×ªï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  1-ÏµÍ³Í·ï¿½ï¿½ï¿½ï¿½ 2-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3-ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LONG       nFrameNum;    // Ö¡ï¿½ï¿½, 
+        BYTE       *pBuf;        // ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
+        DWORD      dwBufSize;    // ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
         BYTE       byRes[128];
     } USB_FRAME_INFO, *LPUSB_FRAME_INFO;
 
 
     typedef struct tagUSB_FACE_QUALITY
     {
-        float               fEyeDistance;                   // Á½ÑÛ¼ä¾à,ÕæÊµÏñËØÖµ
-        float               fGrayMean;                      // »Ò½×¾ùÖµ£¬·¶Î§0~255
-        float               fGrayVariance;                  // »Ò½×¾ù·½²î£¬·¶Î§0~128
-        float               fClearityScore;                 // ÇåÎú¶ÈÆÀ·Ö£¬·¶Î§0~1
-        float               fPosePitch;                     // Æ½ÃæÍâÉÏÏÂ¸©Ñö½Ç£¬ÈËÁ³³¯ÉÏÎªÕý£¬·¶Î§-90~90
-        float               fPoseYaw;                       // Æ½ÃæÍâ×óÓÒÆ«×ª½Ç£¬ÈËÁ³³¯×óÎªÕý£¬·¶Î§-90~90
-        float               fPoseRoll;                      // Æ½ÃæÄÚÐý×ª½Ç£¬ÈËÁ³Ë³Ê±ÕëÐý×ªÎªÕý£¬·¶Î§-90~90
-        float               fPoseConfidence;                // ×ËÌ¬(pose_pitch¡¢pose_yaw¡¢pose_roll)ÖÃÐÅ¶È£¬·¶Î§0~1
-        float               fFrontalScore;                  // ÕýÃæ³Ì¶ÈÆÀ·Ö£¬·¶Î§0~1
-        float               fVisibleScore;                  // ¿É¼ûÐÔÆÀ·Ö£¨¼´²»ÕÚµ²£©£¬·¶Î§0~1£¬0±íÊ¾ÍêÈ«ÕÚµ²£¬1±íÊ¾ÍêÈ«²»ÕÚµ²
-        float               fFaceScore;                     // ÈËÁ³ÆÀ·Ö£¬·¶Î§0~1
-        BYTE           byRes[128];                     // ±£Áô×Ö½Ú£¬ºóÐøÀ©Õ¹ÆÀ·ÖÏî
+        float               fEyeDistance;                   // ï¿½ï¿½ï¿½Û¼ï¿½ï¿½,ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Öµ
+        float               fGrayMean;                      // ï¿½Ò½×¾ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0~255
+        float               fGrayVariance;                  // ï¿½Ò½×¾ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½Î§0~128
+        float               fClearityScore;                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Î§0~1
+        float               fPosePitch;                     // Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§-90~90
+        float               fPoseYaw;                       // Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ«×ªï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§-90~90
+        float               fPoseRoll;                      // Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½Ë³Ê±ï¿½ï¿½ï¿½ï¿½×ªÎªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§-90~90
+        float               fPoseConfidence;                // ï¿½ï¿½Ì¬(pose_pitchï¿½ï¿½pose_yawï¿½ï¿½pose_roll)ï¿½ï¿½ï¿½Å¶È£ï¿½ï¿½ï¿½Î§0~1
+        float               fFrontalScore;                  // ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Î§0~1
+        float               fVisibleScore;                  // ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§0~1ï¿½ï¿½0ï¿½ï¿½Ê¾ï¿½ï¿½È«ï¿½Úµï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾ï¿½ï¿½È«ï¿½ï¿½ï¿½Úµï¿½
+        float               fFaceScore;                     // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Î§0~1
+        BYTE           byRes[128];                     // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }USB_FACE_QUALITY, *LPUSB_FACE_QUALITY;
 
     typedef struct tagUSB_SUBFACE_PIC
     {
-        DWORD       dwWidth;             // Ð¡Í¼¿í¶È
-        DWORD       dwHeight;            // Ð¡Í¼¸ß¶È
-        BYTE*       pSubFacePic;         // ÈËÁ³Ð¡Í¼
-        DWORD       dwSubFacePicLen;     // ÈËÁ³Ð¡Í¼´óÐ¡
+        DWORD       dwWidth;             // Ð¡Í¼ï¿½ï¿½ï¿½ï¿½
+        DWORD       dwHeight;            // Ð¡Í¼ï¿½ß¶ï¿½
+        BYTE*       pSubFacePic;         // ï¿½ï¿½ï¿½ï¿½Ð¡Í¼
+        DWORD       dwSubFacePicLen;     // ï¿½ï¿½ï¿½ï¿½Ð¡Í¼ï¿½ï¿½Ð¡
 #if (defined(OS_WINDOWS64) || defined(OS_POSIX64))
-        BYTE*       pSubFaceJpgPic;      // ÈËÁ³JpgÐ¡Í¼
+        BYTE*       pSubFaceJpgPic;      // ï¿½ï¿½ï¿½ï¿½JpgÐ¡Í¼
 #else
-        BYTE*       pSubFaceJpgPic;      // ÈËÁ³JpgÐ¡Í¼
-        BYTE        byRes1[4];           // ±£Áô×Ö½Ú
+        BYTE*       pSubFaceJpgPic;      // ï¿½ï¿½ï¿½ï¿½JpgÐ¡Í¼
+        BYTE        byRes1[4];           // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
 #endif
-        DWORD       dwSubFaceJpgPicLen;  // ÈËÁ³JpgÐ¡Í¼´óÐ¡
-        BYTE        byRes[4];            // ±£Áô×Ö½Ú
+        DWORD       dwSubFaceJpgPicLen;  // ï¿½ï¿½ï¿½ï¿½JpgÐ¡Í¼ï¿½ï¿½Ð¡
+        BYTE        byRes[4];            // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     }USB_SUBFACE_PIC, *LPUSB_SUBFACE_PIC;
 
     typedef struct tagUSB_FACE_PARAM
     {
         USB_FACE_QUALITY   struFaceQualityList;
         USB_SUBFACE_PIC    struSubFacePic;
-        BYTE          byRes[16];         // ±£Áô×Ö½Ú
+        BYTE          byRes[16];         // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     }USB_FACE_PARAM, *LPUSB_FACE_PARAM;
 
     /**	@struct USB_CAMERA_MEDIA_DATA
-    *  @brief   ÈËÁ³Ã½Ìå²ÎÊý½á¹¹Ìå*
+    *  @brief   ï¿½ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½*
     */
     typedef struct tagUSB_MEDIA_DATA
     {
-        DWORD   dwWidth;             // ¿í¶È
-        DWORD   dwHeight;            // ¸ß¶È
-        DWORD   dwFrameRate;         // Ö¡ÂÊ
-        DWORD   dwTimeStamp;         // Ê±¼ä´Á
-        DWORD   dwFrameNum;          // Ö¡ºÅ
-        DWORD   dwLen;               // ±³¾°Í¼Êý¾Ý³¤¶È
-        BYTE*   pBuffer;             // ±³¾°Í¼»º´æ
-        INT64   dwSysTime;           // ÏµÍ³Ê±¼ä´Á
+        DWORD   dwWidth;             // ï¿½ï¿½ï¿½ï¿½
+        DWORD   dwHeight;            // ï¿½ß¶ï¿½
+        DWORD   dwFrameRate;         // Ö¡ï¿½ï¿½
+        DWORD   dwTimeStamp;         // Ê±ï¿½ï¿½ï¿½
+        DWORD   dwFrameNum;          // Ö¡ï¿½ï¿½
+        DWORD   dwLen;               // ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        BYTE*   pBuffer;             // ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+        INT64   dwSysTime;           // ÏµÍ³Ê±ï¿½ï¿½ï¿½
 #if (defined(OS_WINDOWS64) || defined(OS_POSIX64))
-        BYTE*   pJpgBuffer;          // ±³¾°JpgÍ¼»º´æ
+        BYTE*   pJpgBuffer;          // ï¿½ï¿½ï¿½ï¿½JpgÍ¼ï¿½ï¿½ï¿½ï¿½
 #else
-        BYTE*   pJpgBuffer;          // ±³¾°JpgÍ¼»º´æ
-        BYTE    byRes1[4];           // ±£Áô×Ö½Ú
+        BYTE*   pJpgBuffer;          // ï¿½ï¿½ï¿½ï¿½JpgÍ¼ï¿½ï¿½ï¿½ï¿½
+        BYTE    byRes1[4];           // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
 #endif
-        DWORD   dwJpgLen;            // ±³¾°JpgÍ¼Êý¾Ý³¤¶È
-        BYTE    byRes[116];          // ±£Áô×Ö½Ú
+        DWORD   dwJpgLen;            // ï¿½ï¿½ï¿½ï¿½JpgÍ¼ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
+        BYTE    byRes[116];          // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     }USB_MEDIA_DATA, *LPUSB_MEDIA_DATA;
 
     typedef struct tagUSB_FD_RESULT_PARAM
     {
-        DWORD        dwFaceTotalNum;             // ÈËÁ³×ÜµÄ¸öÊý 
+        DWORD        dwFaceTotalNum;             // ï¿½ï¿½ï¿½ï¿½ï¿½ÜµÄ¸ï¿½ï¿½ï¿½ 
         USB_MEDIA_DATA    struMediaData;
-        USB_FACE_PARAM    struFaceParam[64]; //µ¥¸öÈËÁ³²ÎÊý
+        USB_FACE_PARAM    struFaceParam[64]; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE         byRes[32];
     }USB_FD_RESULT_PARAM, *LPUSB_FD_RESULT_PARAM;
 
-    //Íâ²¿ÊÂ¼þ»Øµ÷
+    //ï¿½â²¿ï¿½Â¼ï¿½ï¿½Øµï¿½
     typedef void(__stdcall *fnEventCallBack)(LONG lPort, LONG lEvent, LONG nParam1, LONG nParam2, void *pUser);
-    //ÄÚ²¿²¥·Å¿âYUVÊý¾Ý»Øµ÷
+    //ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Å¿ï¿½YUVï¿½ï¿½ï¿½Ý»Øµï¿½
     //typedef void(__stdcall *YUVDataCallBack)(LONG nPort, char *pBuf, LONG nSize, FRAME_INFO *pFrameInfo, void * nReserved1, void * nReserved2);
     //typedef void(__stdcall *DecCallBack)(LONG lPort, BYTE *pBuf, LONG nSize, FRAME_INFO *pFrameInfo, void* pUser);
-    //Íâ²¿ÂëÁ÷»Øµ÷
+    //ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
     typedef void(__stdcall *fnStreamCallBack)(LONG handle, USB_FRAME_INFO *pFrameInfo, void* pUser);
-    //Íâ²¿ÈËÁ³¼ì²â½á¹û»Øµ÷
+    //ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
     //typedef void(__stdcall *FDResultCallBack)(LONG lPort, LPUSB_FACE_DRAW_PARAM struRes);
-    //Íâ²¿ÈËÁ³¼ì²â½á¹û»Øµ÷
+    //ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
     typedef void(__stdcall *FDExtenResultCallBack)(long lPort, LPUSB_FD_RESULT_PARAM struFDResultInfo, void* pUser);
 
     typedef struct tagUSB_STREAM_CALLBACK_PARAM
@@ -3042,27 +3042,27 @@ typedef enum tagLOG_LEVEL_ENUM
         DWORD  dwStreamType; //MJPEG/H264/YUV/PCM
         fnStreamCallBack funcStreamCallBack;
         void * pUser;
-        BYTE   bUseAudio;  //ÊÇ·ñ»Øµ÷ÒôÆµ
+        BYTE   bUseAudio;  //ï¿½Ç·ï¿½Øµï¿½ï¿½ï¿½Æµ
         BYTE  byRes[127];
     } USB_STREAM_CALLBACK_PARAM, *LPUSB_STREAM_CALLBACK_PARAM;
 
     //typedef struct tagUSB_FACE_DETECT_PARAM
     //{
-    //    BYTE  byEnable;                 // ÊÇ·ñÊ¹ÄÜÈËÁ³¼ì²â   0-²»Ê¹ÄÜ   1-Ê¹ÄÜ
-    //    BYTE  byEnlarge;                // ÊÇ·ñÆôÓÃÈËÁ³·Å´óÄ£Ê½ 0-²»ÆôÓÃ 1-ÆôÓÃ
-    //    BYTE  byModel;                  // ÈËÁ³¼ì²âÄ£Ê½ 0:×î´óÈËÁ³ 1:ÆÀ·Ö×î¸ßÈËÁ³ 2:×î¿¿½üÖÐÐÄÎ»ÖÃÈËÁ³ 3:ËùÓÐÈËÁ³
-    //    BYTE  bySnapMode;               // ×¥Í¼Ä£Ê½  0:×Ô¶¯×¥Í¼ 1:ÊÖ¶¯×¥Í¼
-    //    BYTE  szFacePicPath[MAX_FILE_PATH_LEN];  // ÈËÁ³Í¼Æ¬Â·¾¶
-    //    FDResultCallBack fnFaceDetectCB;    // ÈËÁ³¼ì²âÊý¾Ý»Øµ÷
-    //    BYTE  byShowFont;               // ÊÇ·ñÏÔÊ¾ÌáÊ¾ÎÄ×Ö 0:ÏÔÊ¾ 1:²»ÏÔÊ¾¡¾²»Ö§³Ö¡¿
+    //    BYTE  byEnable;                 // ï¿½Ç·ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   0-ï¿½ï¿½Ê¹ï¿½ï¿½   1-Ê¹ï¿½ï¿½
+    //    BYTE  byEnlarge;                // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´ï¿½Ä£Ê½ 0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+    //    BYTE  byModel;                  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ 0:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2:ï¿½î¿¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    //    BYTE  bySnapMode;               // ×¥Í¼Ä£Ê½  0:ï¿½Ô¶ï¿½×¥Í¼ 1:ï¿½Ö¶ï¿½×¥Í¼
+    //    BYTE  szFacePicPath[MAX_FILE_PATH_LEN];  // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬Â·ï¿½ï¿½
+    //    FDResultCallBack fnFaceDetectCB;    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý»Øµï¿½
+    //    BYTE  byShowFont;               // ï¿½Ç·ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ 0:ï¿½ï¿½Ê¾ 1:ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö¡ï¿½
     //    BYTE  byRes[127];
     //}USB_FACE_DETECT_PARAM, *LPUSB_FACE_DETECT_PARAM;
 
     typedef struct tagUSB_FACE_DETECT_PARAM
     {
-        FDExtenResultCallBack fnFDExtenResultCallBack;  // ÈËÁ³ÊôÐÔ¼ì²â½á¹ûÊý¾Ý»Øµ÷
+        FDExtenResultCallBack fnFDExtenResultCallBack;  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý»Øµï¿½
         void*           pUser;
-        BYTE  bySnapMode;               // ×¥Í¼Ä£Ê½  0:×Ô¶¯×¥Í¼ 1:ÊÖ¶¯×¥Í¼     ¡¾Ô¤Áô£¬²»Ö§³Ö¡¿
+        BYTE  bySnapMode;               // ×¥Í¼Ä£Ê½  0:ï¿½Ô¶ï¿½×¥Í¼ 1:ï¿½Ö¶ï¿½×¥Í¼     ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö¡ï¿½
         BYTE             byRes[503];
     }USB_FACE_DETECT_PARAM, *LPUSB_FACE_DETECT_PARAM;
 
@@ -3070,354 +3070,354 @@ typedef enum tagLOG_LEVEL_ENUM
     typedef struct tagUSB_CAPTURE_PARAM
     {
         DWORD  dwSize;        // sizeof(USB_CAMERA_CAPTURE_PARAM)
-        DWORD  dwType;        // ×¥Í¼·½Ê½£º0-ÄÚ²¿Ð´ÎÄ¼þ£¬1-·µ»ØÍ¼Æ¬Êý¾Ý
-        BYTE   *pBuf;         // Êý¾Ý»º³åÇø
-        DWORD  dwBufSize;     // Êý¾Ý»º³åÇø´óÐ¡
-        DWORD  dwDataLen;     // Êý¾Ý»º³åÇøÖÐÓÐÐ§Êý¾Ý³¤¶È(¼´Í¼Æ¬´óÐ¡)
-        char   szFilePath[256]; //Í¼Æ¬´æ´¢Â·¾¶
+        DWORD  dwType;        // ×¥Í¼ï¿½ï¿½Ê½ï¿½ï¿½0-ï¿½Ú²ï¿½Ð´ï¿½Ä¼ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+        BYTE   *pBuf;         // ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD  dwBufSize;     // ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
+        DWORD  dwDataLen;     // ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½(ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ð¡)
+        char   szFilePath[256]; //Í¼Æ¬ï¿½æ´¢Â·ï¿½ï¿½
         BYTE   byRes[32];
     } USB_CAPTURE_PARAM, *LPUSB_CAPTURE_PARAM;
 
     typedef struct tagUSB_BEEP_AND_FLICKER
     {
-        DWORD     dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE      byBeepType;// ·äÃùÀàÐÍ 0ÎÞÐ§£¬1Á¬Ðø£¬2ÂýÃù£¬3¿ìÃù£¬4Í£Ö¹
-        BYTE      byBeepCount;// Ãù½Ð´ÎÊý, £¨Ö»¶ÔÂýÃù¡¢¿ìÃùÓÐÐ§£¬ÇÒ²»ÄÜÎª0£©
-        BYTE      byFlickerType;// ÉÁË¸ÀàÐÍ 0ÎÞÐ§£¬1Á¬Ðø£¬2´íÎó£¬3ÕýÈ·£¬4Í£Ö¹
-        BYTE      byFlickerCount;// ÉÁË¸´ÎÊý£¨Ö»¶Ô´íÎó¡¢ÕýÈ·ÓÐÐ§£¬ÇÒ²»ÄÜÎª0£©
+        DWORD     dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE      byBeepType;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½Ð§ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Í£Ö¹
+        BYTE      byBeepCount;// ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½, ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Îª0ï¿½ï¿½
+        BYTE      byFlickerType;// ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½Ð§ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½È·ï¿½ï¿½4Í£Ö¹
+        BYTE      byFlickerCount;// ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Îª0ï¿½ï¿½
         BYTE      byRes[24];
-    } USB_BEEP_AND_FLICKER, *LPUSB_BEEP_AND_FLICKER; //32×Ö½Ú
+    } USB_BEEP_AND_FLICKER, *LPUSB_BEEP_AND_FLICKER; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CARD_ISSUE_VERSION
     {
-        DWORD     dwSize;   //½á¹¹Ìå´óÐ¡
-        char      szDeviceName[MAX_DEVICE_NAME_LEN /*32*/]; //Éè±¸Ãû³Æ
-        char      szSerialNumber[MAX_SERIAL_NUMBER_LEN /*48*/]; //Éè±¸ÐòÁÐºÅ
-        DWORD     dwSoftwareVersion; //Èí¼þ°æ±¾ºÅ,//Èí¼þ°æ±¾ºÅ£¬¸ñÊ½Îª£º24-32Î»ÎªÖ÷°æ±¾ºÅ£¬16-24Î»Îª´Î°æ±¾ºÅ£»0-16Î»Îª×îÐ¡°æ±¾ºÅ£»
+        DWORD     dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        char      szDeviceName[MAX_DEVICE_NAME_LEN /*32*/]; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+        char      szSerialNumber[MAX_SERIAL_NUMBER_LEN /*48*/]; //ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½
+        DWORD     dwSoftwareVersion; //ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½,//ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½Å£ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½24-32Î»Îªï¿½ï¿½ï¿½æ±¾ï¿½Å£ï¿½16-24Î»Îªï¿½Î°æ±¾ï¿½Å£ï¿½0-16Î»Îªï¿½ï¿½Ð¡ï¿½æ±¾ï¿½Å£ï¿½
         WORD      wYear;
         BYTE      byMonth;
         BYTE      byDay;
-        BYTE      byLanguage; //0-ÖÐÎÄ£¬1-Ó¢ÎÄ
+        BYTE      byLanguage; //0-ï¿½ï¿½ï¿½Ä£ï¿½1-Ó¢ï¿½ï¿½
         BYTE      byRes[35];
-    } USB_CARD_ISSUE_VERSION, *LPUSB_CARD_ISSUE_VERSION; //128×Ö½Ú
+    } USB_CARD_ISSUE_VERSION, *LPUSB_CARD_ISSUE_VERSION; //128ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CARD_PROTO
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byProto; //¿¨Ð­ÒéÀàÐÍ£¨0-TypeA,1-TypeB,2-typeAB,3-125Khz,255ËùÓÐ£©
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byProto; //ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0-TypeA,1-TypeB,2-typeAB,3-125Khz,255ï¿½ï¿½ï¿½Ð£ï¿½
         BYTE    byRes[27];
-    } USB_CARD_PROTO, *LPUSB_CARD_PROTO; //32×Ö½Ú
+    } USB_CARD_PROTO, *LPUSB_CARD_PROTO; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_WAIT_SECOND
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byWait; // 1Byte²Ù×÷µÈ´ýÊ±¼ä£¨0-Ò»Ö±Ö´ÐÐÖ±µ½ÓÐ¿¨ÏìÓ¦£¬ÆäËû¶ÔÓ¦1Sµ¥Î»£©
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byWait; // 1Byteï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½Ê±ï¿½ä£¨0-Ò»Ö±Ö´ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦1Sï¿½ï¿½Î»ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_WAIT_SECOND, *LPUSB_WAIT_SECOND; //32×Ö½Ú
+    } USB_WAIT_SECOND, *LPUSB_WAIT_SECOND; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_ACTIVATE_CARD_RES
     {
         DWORD  dwSize;
-        BYTE   byCardType;// ¿¨ÀàÐÍ£¨0-TypeA m1¿¨£¬1-TypeA cpu¿¨,2-TypeB,3-125kHz Id¿¨,4-Felica Card 5-Desfire Card£©
-        BYTE   bySerialLen; //¿¨ÎïÀíÐòÁÐºÅ×Ö½Ú³¤¶È
-        BYTE   bySerial[10];//¿¨ÎïÀíÐòÁÐºÅ
-        BYTE   bySelectVerifyLen; //Ñ¡ÔñÈ·ÈÏ³¤¶È
-        BYTE   bySelectVerify[3]; //Ñ¡ÔñÈ·ÈÏ(3×Ö½Ú)
+        BYTE   byCardType;// ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0-TypeA m1ï¿½ï¿½ï¿½ï¿½1-TypeA cpuï¿½ï¿½,2-TypeB,3-125kHz Idï¿½ï¿½,4-Felica Card 5-Desfire Cardï¿½ï¿½
+        BYTE   bySerialLen; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½Ö½Ú³ï¿½ï¿½ï¿½
+        BYTE   bySerial[10];//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½
+        BYTE   bySelectVerifyLen; //Ñ¡ï¿½ï¿½È·ï¿½Ï³ï¿½ï¿½ï¿½
+        BYTE   bySelectVerify[3]; //Ñ¡ï¿½ï¿½È·ï¿½ï¿½(3ï¿½Ö½ï¿½)
         BYTE   byRes[12];
-    } USB_ACTIVATE_CARD_RES, *LPUSB_ACTIVATE_CARD_RES; //32×Ö½Ú
+    } USB_ACTIVATE_CARD_RES, *LPUSB_ACTIVATE_CARD_RES; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_PWD_VERIFY_INFO
     {
-        DWORD    dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE     byPasswordType; // ÃÜÂëÀà±ð£¨0-KeyA, 1-KeyB£©
-        BYTE     bySectionNum; // ÒªÑéÖ¤ÃÜÂëµÄÉÈÇøºÅ
-        BYTE     byRes1[2];  //±£Áô×Ö½Ú
-        BYTE     byPassword[6]; // 6ByteÃÜÂë
-        BYTE     byRes[18]; //±£Áô×Ö½Ú
-    } USB_M1_PWD_VERIFY_INFO, *LPUSB_M1_PWD_VERIFY_INFO; //32×Ö½Ú
+        DWORD    dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE     byPasswordType; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-KeyA, 1-KeyBï¿½ï¿½
+        BYTE     bySectionNum; // Òªï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE     byRes1[2];  //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byPassword[6]; // 6Byteï¿½ï¿½ï¿½ï¿½
+        BYTE     byRes[18]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+    } USB_M1_PWD_VERIFY_INFO, *LPUSB_M1_PWD_VERIFY_INFO; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_BLOCK_ADDR
     {
         DWORD    dwSize;
-        WORD     wAddr; // 2Byte¿éµØÖ·
+        WORD     wAddr; // 2Byteï¿½ï¿½ï¿½Ö·
         BYTE     byRes[26];
-    } USB_M1_BLOCK_ADDR, *LPUSB_USB_M1_BLOCK_ADDR; //32×Ö½Ú
+    } USB_M1_BLOCK_ADDR, *LPUSB_USB_M1_BLOCK_ADDR; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_BLOCK_DATA
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byData[16];// 16Byte¿éÊý¾Ý
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byData[16];// 16Byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[12];
-    } USB_M1_BLOCK_DATA, *LPUSB_M1_BLOCK_DATA; //32×Ö½Ú
+    } USB_M1_BLOCK_DATA, *LPUSB_M1_BLOCK_DATA; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_BLOCK_WRITE_DATA
     {
-        DWORD    dwSize;   //½á¹¹Ìå´óÐ¡
-        WORD    wAddr;    // 2Byte¿éµØÖ·
-        BYTE     byDataLen; // Êý¾Ý³¤¶È(0-16)
-        BYTE     byRes1;    //±£Áô×Ö½Ú
-        BYTE     byData[16]; //16Byte BUFF(ÒªÐ´µÄ¿éÊý¾Ý)
-        BYTE     byRes[8];  //±£Áô×Ö½Ú
-    } USB_M1_BLOCK_WRITE_DATA, *LPUSB_M1_BLOCK_WRITE_DATA; //32×Ö½Ú
+        DWORD    dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD    wAddr;    // 2Byteï¿½ï¿½ï¿½Ö·
+        BYTE     byDataLen; // ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½(0-16)
+        BYTE     byRes1;    //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byData[16]; //16Byte BUFF(ÒªÐ´ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½)
+        BYTE     byRes[8];  //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+    } USB_M1_BLOCK_WRITE_DATA, *LPUSB_M1_BLOCK_WRITE_DATA; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_MODIFY_SCB
     {
-        DWORD    dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE     bySectionNum;  //1ByteÉÈÇøºÅ
-        BYTE     byPasswordA[6];// 6Byte ÃÜÂëA
-        BYTE     byRes1;    //±£Áô×Ö½Ú
-        BYTE     byCtrlBits[4];   // 4Byte¿ØÖÆÎ»
-        BYTE     byPasswordB[6];// 6Byte ÃÜÂëB
-        BYTE     byRes[10]; //±£Áô×Ö½Ú
-    } USB_M1_MODIFY_SCB, *LPUSB_M1_MODIFY_SCB; //32×Ö½Ú
+        DWORD    dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE     bySectionNum;  //1Byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE     byPasswordA[6];// 6Byte ï¿½ï¿½ï¿½ï¿½A
+        BYTE     byRes1;    //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byCtrlBits[4];   // 4Byteï¿½ï¿½ï¿½ï¿½Î»
+        BYTE     byPasswordB[6];// 6Byte ï¿½ï¿½ï¿½ï¿½B
+        BYTE     byRes[10]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+    } USB_M1_MODIFY_SCB, *LPUSB_M1_MODIFY_SCB; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_BLOCK_OPER
     {
-        DWORD    dwSize;   //½á¹¹Ìå´óÐ¡
-        WORD     wAddr;    // 2Byte¿éµØÖ·
-        WORD     wValue;    // 2ByteÒªÔö¼ÓµÄÖµ
+        DWORD    dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD     wAddr;    // 2Byteï¿½ï¿½ï¿½Ö·
+        WORD     wValue;    // 2ByteÒªï¿½ï¿½ï¿½Óµï¿½Öµ
         BYTE     byRes[24];
-    } USB_M1_BLOCK_OPER, *LPUSB_M1_BLOCK_OPER; //32×Ö½Ú
+    } USB_M1_BLOCK_OPER, *LPUSB_M1_BLOCK_OPER; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_BLOCK_OPER_RES
     {
         DWORD    dwSize;
-        WORD     wSuccessNum;// 2Byte Êµ¼Ê³É¹¦´ÎÊý
+        WORD     wSuccessNum;// 2Byte Êµï¿½Ê³É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE     byRes[26];
-    } USB_M1_BLOCK_OPER_RES, *LPUSB_M1_BLOCK_OPER_RES; //32×Ö½Ú
+    } USB_M1_BLOCK_OPER_RES, *LPUSB_M1_BLOCK_OPER_RES; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_MF_PACK
     {
         DWORD    dwSize;
-        BYTE     byBufLen; //Êý¾Ý³¤¶È£¨0-255£©
-        BYTE     byRes1[3]; //±£Áô×Ö½Ú
-        BYTE     byBuf[255];//Êý¾Ý
-        BYTE     byRes2; //±£Áô×Ö½Ú
-        BYTE     byDelay; //ÑÓ³ÙÊ±¼ä£¨µ¥Î»10ms£©,0ÎªÄ¬ÈÏÖµ£¨2000ms£©(ÓÉÓÚSDKÄ¬ÈÏ³¬Ê±Ê±¼ä5Ãë£¬Õâ¸öÊ±¼äÓ¦²»³¬¹ý5Ãë)
+        BYTE     byBufLen; //ï¿½ï¿½ï¿½Ý³ï¿½ï¿½È£ï¿½0-255ï¿½ï¿½
+        BYTE     byRes1[3]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byBuf[255];//ï¿½ï¿½ï¿½ï¿½
+        BYTE     byRes2; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byDelay; //ï¿½Ó³ï¿½Ê±ï¿½ä£¨ï¿½ï¿½Î»10msï¿½ï¿½,0ÎªÄ¬ï¿½ï¿½Öµï¿½ï¿½2000msï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½SDKÄ¬ï¿½Ï³ï¿½Ê±Ê±ï¿½ï¿½5ï¿½ë£¬ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½)
         BYTE     byRes[55];
-    } USB_M1_MF_PACK, *LPUSB_M1_MF_PACK; //320×Ö½Ú
+    } USB_M1_MF_PACK, *LPUSB_M1_MF_PACK; //320ï¿½Ö½ï¿½
 
     typedef struct tagUSB_SDK_M1_SECTION_ENCRYPT
     {
-        DWORD   dwSize;              //½á¹¹Ìå´óÐ¡
-        BYTE    bySectionID;         //ÉÈÇøID
-        BYTE    byKeyType;           //ÑéÖ¤ÃÜÔ¿ÀàÐÍ£¬0-º£¿µÃÜÔ¿£¬1-ÆäËüÕý³£ÃÜÔ¿
-        BYTE    byKeyAContent[6];    //ÑéÖ¤ÃÜÔ¿¾ßÌå²ÎÊý£¬ÑéÖ¤ÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byNewKeyType;        //ÐÂÃÜÔ¿ÀàÐÍ£¬0-º£¿µÃÜÔ¿£¬1-ÆäËüÕý³£ÃÜÔ¿
-        BYTE    byRes1;              //±£Áô×Ö½Ú
-        BYTE    byNewKeyAContent[6]; //ÐÂÃÜÔ¿A¾ßÌå²ÎÊý£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byCtrlBits[4];       //¿ØÖÆÎ»£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byNewKeyBContent[6]; //ÐÂÃÜÔ¿B¾ßÌå²ÎÊý£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
+        DWORD   dwSize;              //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    bySectionID;         //ï¿½ï¿½ï¿½ï¿½ID
+        BYTE    byKeyType;           //ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
+        BYTE    byKeyAContent[6];    //ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byNewKeyType;        //ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
+        BYTE    byRes1;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE    byNewKeyAContent[6]; //ï¿½ï¿½ï¿½ï¿½Ô¿Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byCtrlBits[4];       //ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byNewKeyBContent[6]; //ï¿½ï¿½ï¿½ï¿½Ô¿Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
         BYTE    byRes[34];
-    } USB_SDK_M1_SECTION_ENCRYPT, *LPUSB_SDK_M1_SECTION_ENCRYPT; //64×Ö½Ú
+    } USB_SDK_M1_SECTION_ENCRYPT, *LPUSB_SDK_M1_SECTION_ENCRYPT; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_SDK_M1_SECTION_ENCRYPT_RES
     {
-        DWORD   dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE    byStatus;    //³É¹¦·µ»Ø0£¬Ê§°ÜÊ±·µ»Ø1-´ú±íÑéÖ¤ÃÜÔ¿Ê§°Ü£¬2-ÉèÖÃÐÂÃÜÔ¿Ê§°Ü
+        DWORD   dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byStatus;    //ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê§ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿Ê§ï¿½Ü£ï¿½2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿Ê§ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_SDK_M1_SECTION_ENCRYPT_RES, *LPUSB_SDK_M1_SECTION_ENCRYPT_RES; //32×Ö½Ú
+    } USB_SDK_M1_SECTION_ENCRYPT_RES, *LPUSB_SDK_M1_SECTION_ENCRYPT_RES; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_PSAM_SEAT_INFO
     {
         DWORD   dwSize;
-        BYTE    bySeat;// 1Byte PSAM¿¨×ùÐòºÅ£¨0- ¿¨×ù1£¬1-¿¨×ù2£©
+        BYTE    bySeat;// 1Byte PSAMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½0- ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_PSAM_SEAT_INFO, *LPUSB_PSAM_SEAT_INFO; //32×Ö½Ú
+    } USB_PSAM_SEAT_INFO, *LPUSB_PSAM_SEAT_INFO; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CARD_PARAM
     {
         DWORD   dwSize;
-        BYTE    byCardType; // 1Byte¿¨ÀàÐÍ(0-13.56ÉäÆµCPU¿¨£¬1-PSAM¿¨×ù1,2-PSAM¿¨×ù2)
-        BYTE    byCardProto; // 1Byte¿¨Ð­ÒéÀàÐÍ£¨0ÎªT=0£¬1ÎªT=1£©
+        BYTE    byCardType; // 1Byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(0-13.56ï¿½ï¿½ÆµCPUï¿½ï¿½ï¿½ï¿½1-PSAMï¿½ï¿½ï¿½ï¿½1,2-PSAMï¿½ï¿½ï¿½ï¿½2)
+        BYTE    byCardProto; // 1Byteï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0ÎªT=0ï¿½ï¿½1ÎªT=1ï¿½ï¿½
         BYTE    byRes[26];
-    } USB_CARD_PARAM, *LPUSB_CARD_PARAM; //32×Ö½Ú
+    } USB_CARD_PARAM, *LPUSB_CARD_PARAM; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CPU_CARD_RESET_RES
     {
         DWORD    dwSize;
-        BYTE     byBufLen;//byBufÖÐÓÐÐ§Êý¾Ý³¤¶È£¨0-60£©
-        BYTE     byRes1[3]; //±£Áô×Ö½Ú
-        BYTE     byBuf[60];//£¨Ò»°ãÊÇ³§ÉÌÐÅÏ¢£©
-        BYTE     byRes[28]; //±£Áô×Ö½Ú
-    } USB_CPU_CARD_RESET_RES, *LPUSB_CPU_CARD_RESET_RES; //96×Ö½Ú
+        BYTE     byBufLen;//byBufï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ý³ï¿½ï¿½È£ï¿½0-60ï¿½ï¿½
+        BYTE     byRes1[3]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE     byBuf[60];//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
+        BYTE     byRes[28]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+    } USB_CPU_CARD_RESET_RES, *LPUSB_CPU_CARD_RESET_RES; //96ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CPU_CARD_PACK
     {
         DWORD    dwSize;
         BYTE     byBufLen; //0-255
-        BYTE     byRes1[3]; //±£Áô×Ö½Ú
+        BYTE     byRes1[3]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
         BYTE     byBuf[255];
-        BYTE     byDelay; //ÑÓ³ÙÊ±¼ä£¨µ¥Î»10ms£©£¬0ÎªÄ¬ÈÏ£¨200ms£©
-        BYTE     byRes[56]; //±£Áô×Ö½Ú
-    } USB_CPU_CARD_PACK, *LPUSB_CPU_CARD_PACK; //320×Ö½Ú
+        BYTE     byDelay; //ï¿½Ó³ï¿½Ê±ï¿½ä£¨ï¿½ï¿½Î»10msï¿½ï¿½ï¿½ï¿½0ÎªÄ¬ï¿½Ï£ï¿½200msï¿½ï¿½
+        BYTE     byRes[56]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+    } USB_CPU_CARD_PACK, *LPUSB_CPU_CARD_PACK; //320ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CERTIFICATE_INFO
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        WORD   wWordInfoSize; //ÎÄ×ÖÐÅÏ¢³¤¶È
-        WORD   wPicInfoSize; //ÏàÆ¬ÐÅÏ¢³¤¶È
-        WORD   wFingerPrintInfoSize; //Ö¸ÎÆÐÅÏ¢³¤¶È
-        BYTE   byCertificateType; //Ö¤¼þÀàÐÍ£º0-Éí·ÝÖ¤£¬1-ÖÐ¹úÂÌ¿¨£¬2-¸Û°ÄÌ¨¾ÓÃñÉí·ÝÖ¤£¬3-ÖÐ¹úÂÌ¿¨£¨ÐÂ£©
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wWordInfoSize; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        WORD   wPicInfoSize; //ï¿½ï¿½Æ¬ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        WORD   wFingerPrintInfoSize; //Ö¸ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        BYTE   byCertificateType; //Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½1-ï¿½Ð¹ï¿½ï¿½Ì¿ï¿½ï¿½ï¿½2-ï¿½Û°ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½3-ï¿½Ð¹ï¿½ï¿½Ì¿ï¿½ï¿½ï¿½ï¿½Â£ï¿½
         BYTE   byRes2;
-        BYTE   byWordInfo[WORD_LEN/*256*/]; //ÎÄ×ÖÐÅÏ¢
-        BYTE   byPicInfo[PIC_LEN/*1024*/]; //ÏàÆ¬ÐÅÏ¢
-        BYTE   byFingerPrintInfo[FINGER_PRINT_LEN/*1024*/]; //Ö¸ÎÆÐÅÏ¢
+        BYTE   byWordInfo[WORD_LEN/*256*/]; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+        BYTE   byPicInfo[PIC_LEN/*1024*/]; //ï¿½ï¿½Æ¬ï¿½ï¿½Ï¢
+        BYTE   byFingerPrintInfo[FINGER_PRINT_LEN/*1024*/]; //Ö¸ï¿½ï¿½ï¿½ï¿½Ï¢
         BYTE   byRes[40];
     } USB_CERTIFICATE_INFO, *LPUSB_CERTIFICATE_INFO;
 
     typedef struct tagUSB_IDENTITY_INFO_CFG
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        WORD   wPicInfoSize; //ÏàÆ¬ÐÅÏ¢³¤¶È
-        WORD   wFingerPrintInfoSize; //Ö¸ÎÆÐÅÏ¢³¤¶È
-        BYTE    byPicInfo[PIC_LEN/*1024*/]; //Éí·ÝÖ¤Í¼Æ¬ÐÅÏ¢
-        BYTE    byFingerPrintInfo[FINGER_PRINT_LEN/*1024*/]; //Ö¸ÎÆÐÅÏ¢
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wPicInfoSize; //ï¿½ï¿½Æ¬ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        WORD   wFingerPrintInfoSize; //Ö¸ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        BYTE    byPicInfo[PIC_LEN/*1024*/]; //ï¿½ï¿½ï¿½ï¿½Ö¤Í¼Æ¬ï¿½ï¿½Ï¢
+        BYTE    byFingerPrintInfo[FINGER_PRINT_LEN/*1024*/]; //Ö¸ï¿½ï¿½ï¿½ï¿½Ï¢
         BYTE    byRes[256];
     } USB_IDENTITY_INFO_CFG, *LPUSB_IDENTITY_INFO_CFG;
 
     typedef struct tagUSB_CERTIFICATE_ADD_ADDR_INFO
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        WORD   wAddrInfoSize; //×·¼Ó×¡Ö·ÐÅÏ¢³¤¶È
-        BYTE   byAddAddrInfo[ADDR_LEN/*128*/]; //×·¼Ó×¡Ö·ÐÅÏ¢
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wAddrInfoSize; //×·ï¿½ï¿½×¡Ö·ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        BYTE   byAddAddrInfo[ADDR_LEN/*128*/]; //×·ï¿½ï¿½×¡Ö·ï¿½ï¿½Ï¢
         BYTE   byRes[40];
     } USB_CERTIFICATE_ADD_ADDR_INFO, *LPUSB_CERTIFICATE_ADD_ADDR_INFO;
 
     typedef struct tagUSB_EXTERNAL_DEV_INFO
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        char      szFPModuleSoftVersion[FINGER_PRINT_MODULE_VERSION_LEN/*32*/]; //Ö¸ÎÆÄ£×éÈí¼þ°æ±¾³¤¶È
-        char      szFPModuleSerialNumber[FINGER_PRINT_MODULE_SERIAL_LEN/*64*/]; //Ö¸ÎÆÄ£×éÐòÁÐºÅ³¤¶È
-        char      szSecurityModuleSerialNumber[SECURITY_MODULE_SERIAL_LEN/*16*/]; //°²È«Ä£¿éÐòÁÐºÅ³¤¶È
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        char      szFPModuleSoftVersion[FINGER_PRINT_MODULE_VERSION_LEN/*32*/]; //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½
+        char      szFPModuleSerialNumber[FINGER_PRINT_MODULE_SERIAL_LEN/*64*/]; //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ³ï¿½ï¿½ï¿½
+        char      szSecurityModuleSerialNumber[SECURITY_MODULE_SERIAL_LEN/*16*/]; //ï¿½ï¿½È«Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅ³ï¿½ï¿½ï¿½
         BYTE     byRes[140];
-    } USB_EXTERNAL_DEV_INFO, *LPUSB_EXTERNAL_DEV_INFO; //256×Ö½Ú
+    } USB_EXTERNAL_DEV_INFO, *LPUSB_EXTERNAL_DEV_INFO; //256ï¿½Ö½ï¿½
 
     typedef struct tagUSB_FINGER_PRINT_OPER_PARAM
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byFPCompareType; //Ö¸ÎÆ±È¶ÔÄ£Ê½£º0-²»±È¶Ô£¨Ä¬ÈÏ£©£¬1-Éè±¸ÄÚ²¿±È¶Ô£¨Ä¬ÈÏ£©£¬2-Æ½Ì¨£¨¿Í»§¶Ë£©±È¶Ô
-        BYTE    byFPCaptureType; //Ö¸ÎÆ²É¼¯ÀàÐÍ£º1-Ä£°å£¨Ä¬ÈÏ£©£¬2-Í¼Æ¬£¨byFPCompareTypeÎª2Ê±ÓÐÐ§£©
-        BYTE    byFPCompareTimeout; //Éè±¸ÄÚ²¿Ö¸ÎÆ±È¶Ô³¬Ê±Ê±¼ä£º1-255s£¨Ä¬ÈÏ5s£©£¨byFPCompareTypeÎª1Ê±ÓÐÐ§£©
-        BYTE    byFPCompareMatchLevel; //Éè±¸ÄÚ²¿Ö¸ÎÆ±È¶ÔÆ¥ÅäµÈ¼¶£º1-5£¨Ä¬ÈÏ3£©£¨byFPCompareTypeÎª1Ê±ÓÐÐ§£©
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byFPCompareType; //Ö¸ï¿½Æ±È¶ï¿½Ä£Ê½ï¿½ï¿½0-ï¿½ï¿½ï¿½È¶Ô£ï¿½Ä¬ï¿½Ï£ï¿½ï¿½ï¿½1-ï¿½è±¸ï¿½Ú²ï¿½ï¿½È¶Ô£ï¿½Ä¬ï¿½Ï£ï¿½ï¿½ï¿½2-Æ½Ì¨ï¿½ï¿½ï¿½Í»ï¿½ï¿½Ë£ï¿½ï¿½È¶ï¿½
+        BYTE    byFPCaptureType; //Ö¸ï¿½Æ²É¼ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ä£ï¿½å£¨Ä¬ï¿½Ï£ï¿½ï¿½ï¿½2-Í¼Æ¬ï¿½ï¿½byFPCompareTypeÎª2Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE    byFPCompareTimeout; //ï¿½è±¸ï¿½Ú²ï¿½Ö¸ï¿½Æ±È¶Ô³ï¿½Ê±Ê±ï¿½ä£º1-255sï¿½ï¿½Ä¬ï¿½ï¿½5sï¿½ï¿½ï¿½ï¿½byFPCompareTypeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE    byFPCompareMatchLevel; //ï¿½è±¸ï¿½Ú²ï¿½Ö¸ï¿½Æ±È¶ï¿½Æ¥ï¿½ï¿½È¼ï¿½ï¿½ï¿½1-5ï¿½ï¿½Ä¬ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½byFPCompareTypeÎª1Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE    byRes[24];
-    } USB_FINGER_PRINT_OPER_PARAM, *LPUSB_FINGER_PRINT_OPER_PARAM; //32×Ö½Ú
+    } USB_FINGER_PRINT_OPER_PARAM, *LPUSB_FINGER_PRINT_OPER_PARAM; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_FINGER_PRINT_COND
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byWait; //²Ù×÷µÈ´ýÊ±¼ä£¨·¶Î§10s-60s£¬²»ÉèÖÃÊ±Ä¬ÈÏÎª60s£©
-        BYTE    byFPType; //Ö¸ÎÆÀàÐÍ£º1-Ä£°å£¬2-Í¼Æ¬
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byWait; //ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½Ê±ï¿½ä£¨ï¿½ï¿½Î§10s-60sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ä¬ï¿½ï¿½Îª60sï¿½ï¿½
+        BYTE    byFPType; //Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ä£ï¿½å£¬2-Í¼Æ¬
         BYTE    byRes[26];
-    } USB_FINGER_PRINT_COND, *LPUSB_FINGER_PRINT_COND; //32×Ö½Ú
+    } USB_FINGER_PRINT_COND, *LPUSB_FINGER_PRINT_COND; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_FINGER_PRINT
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        DWORD  dwFPBufferSize; //Ö¸ÎÆ»º´æ´óÐ¡
-        char*  pFPBuffer; //Ö¸ÎÆ»º´æ
-        DWORD  dwFPSize; //Ö¸ÎÆ´óÐ¡
-        BYTE    byFPType; //Ö¸ÎÆÀàÐÍ£º1-Ä£°å£¬2-Í¼Æ¬£¨90k×óÓÒ£©
-        BYTE    byResult; //²É¼¯½á¹û£º1-²É¼¯³É¹¦£¬2-²É¼¯Ê§°Ü£¬3-²É¼¯³¬Ê±£¬4-Ö¸ÎÆÍ¼ÏñÖÊÁ¿²î
-        BYTE    byFPTemplateQuality; //Ö¸ÎÆÄ£°åÖÊÁ¿£º0-100£¨byFPTypeÎª1-Ä£°åÊ±ÓÐÐ§£©
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        DWORD  dwFPBufferSize; //Ö¸ï¿½Æ»ï¿½ï¿½ï¿½ï¿½Ð¡
+        char*  pFPBuffer; //Ö¸ï¿½Æ»ï¿½ï¿½ï¿½
+        DWORD  dwFPSize; //Ö¸ï¿½Æ´ï¿½Ð¡
+        BYTE    byFPType; //Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-Ä£ï¿½å£¬2-Í¼Æ¬ï¿½ï¿½90kï¿½ï¿½ï¿½Ò£ï¿½
+        BYTE    byResult; //ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-ï¿½É¼ï¿½ï¿½É¹ï¿½ï¿½ï¿½2-ï¿½É¼ï¿½Ê§ï¿½Ü£ï¿½3-ï¿½É¼ï¿½ï¿½ï¿½Ê±ï¿½ï¿½4-Ö¸ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byFPTemplateQuality; //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-100ï¿½ï¿½byFPTypeÎª1-Ä£ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE    byRes[13];
-    } USB_FINGER_PRINT, *LPUSB_FINGER_PRINT; //32×Ö½Ú
+    } USB_FINGER_PRINT, *LPUSB_FINGER_PRINT; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_FINGER_PRINT_CONTRAST_RESULT
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byResult; //±È¶Ô½á¹û£º1-±È¶Ô³É¹¦£¬2-±È¶ÔÊ§°Ü£¬3-±È¶Ô³¬Ê±£¬4-Ö¸ÎÆÍ¼ÏñÖÊÁ¿²î£¬5-Á½¸öÖ¸ÎÆÌØÕ÷Ö®¼äµÄ1:1±È¶ÔÊ§°Ü£¬6-Çå¿ÕÖ¸ÎÆÌØÕ÷»º³åÇøÊ§°Ü£¬7-Éú³ÉÖ¸ÎÆÌØÕ÷Ê§°Ü
-        BYTE    byFPTemplateQuality; //Ö¸ÎÆÄ£°åÖÊÁ¿£º0-100
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byResult; //ï¿½È¶Ô½ï¿½ï¿½ï¿½ï¿½1-ï¿½È¶Ô³É¹ï¿½ï¿½ï¿½2-ï¿½È¶ï¿½Ê§ï¿½Ü£ï¿½3-ï¿½È¶Ô³ï¿½Ê±ï¿½ï¿½4-Ö¸ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬5-ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½1:1ï¿½È¶ï¿½Ê§ï¿½Ü£ï¿½6-ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½7-ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+        BYTE    byFPTemplateQuality; //Ö¸ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-100
         BYTE    byRes[26];
-    } USB_FINGER_PRINT_CONTRAST_RESULT, *LPUSB_FINGER_PRINT_CONTRAST_RESULT; //32×Ö½Ú
+    } USB_FINGER_PRINT_CONTRAST_RESULT, *LPUSB_FINGER_PRINT_CONTRAST_RESULT; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CERTIFICATE_MAC
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byMac[MAC_LEN/*16*/]; //ÎïÀíÐòÁÐºÅ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byMac[MAC_LEN/*16*/]; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½
         BYTE   byRes[40];
     } USB_CERTIFICATE_MAC, *LPUSB_CERTIFICATE_MAC;
 
     typedef struct tagUSB_IC_CARD_NO
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE    byCardNo[CARD_NO_LEN/*32*/]; //IC¿¨¿¨ºÅ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byCardNo[CARD_NO_LEN/*32*/]; //ICï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[40];
     } USB_IC_CARD_NO, *LPUSB_IC_CARD_NO;
 
     typedef struct tagUSB_DETECT_CARD_COND
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byWait; // 1BYTE²Ù×÷µÈ´ýÊ±¼ä£¨0-Ò»Ö±Ö´ÐÐÖ±µ½ÓÐ¿¨ÏìÓ¦£¬ÆäËû¶ÔÓ¦1Sµ¥Î»£©
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byWait; // 1BYTEï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½Ê±ï¿½ä£¨0-Ò»Ö±Ö´ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦1Sï¿½ï¿½Î»ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_DETECT_CARD_COND, *LPUSB_DETECT_CARD_COND; //32×Ö½Ú
+    } USB_DETECT_CARD_COND, *LPUSB_DETECT_CARD_COND; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_DETECT_CARD_CFG
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE    byCardStatus; //¿¨Æ¬×´Ì¬£º0-Î´¼ì²âµ½£¬1-¼ì²âµ½
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byCardStatus; //ï¿½ï¿½Æ¬×´Ì¬ï¿½ï¿½0-Î´ï¿½ï¿½âµ½ï¿½ï¿½1-ï¿½ï¿½âµ½
         BYTE    byRes[27];
-    } USB_DETECT_CARD_CFG, *LPUSB_DETECT_CARD_CFG; //32×Ö½Ú
+    } USB_DETECT_CARD_CFG, *LPUSB_DETECT_CARD_CFG; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CPU_CARD_ENCRYPT
     {
-        DWORD  dwSize;    //½á¹¹Ìå´óÐ¡
-        BYTE    byCardType;    //¿¨ÀàÐÍ£º0-ÎÞÐ§£¬1-°×¿¨£¨ÃÜÔ¿Îª8×Ö½Ú0xFF£©£¬2-º£¿µCPU¿¨£¬3-ÆäËüÒÑ¼ÓÃÜ¿¨Æ¬
-        BYTE    byKeyLength;    //MFÍâ²¿ÈÏÖ¤ÓÃÃØÔ¿³¤¶È£¨byCardTypeÎª3-ÆäËüÒÑ¼ÓÃÜ¿¨Æ¬Ê±£¬¸Ã×Ö¶ÎÓÐÐ§£©
+        DWORD  dwSize;    //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byCardType;    //ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½Ð§ï¿½ï¿½1-ï¿½×¿ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿Îª8ï¿½Ö½ï¿½0xFFï¿½ï¿½ï¿½ï¿½2-ï¿½ï¿½ï¿½ï¿½CPUï¿½ï¿½ï¿½ï¿½3-ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½Ü¿ï¿½Æ¬
+        BYTE    byKeyLength;    //MFï¿½â²¿ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½È£ï¿½byCardTypeÎª3-ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½Ü¿ï¿½Æ¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE    byRes2[2];
-        BYTE    byKeyContent[16];    //MFÍâ²¿ÈÏÖ¤ÓÃÃØÔ¿ÄÚÈÝ£¨byCardTypeÎª3-ÆäËüÒÑ¼ÓÃÜ¿¨Æ¬Ê±£¬¸Ã×Ö¶ÎÓÐÐ§£©
+        BYTE    byKeyContent[16];    //MFï¿½â²¿ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Ý£ï¿½byCardTypeÎª3-ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½Ü¿ï¿½Æ¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE    byRes[40];
-    } USB_CPU_CARD_ENCRYPT, *LPUSB_CPU_CARD_ENCRYPT; //64×Ö½Ú
+    } USB_CPU_CARD_ENCRYPT, *LPUSB_CPU_CARD_ENCRYPT; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_CPU_CARD_ENCRYPT_RES
     {
-        DWORD  dwSize;    //½á¹¹Ìå´óÐ¡
-        BYTE    byTryTimes;    //Ê£Óà¿É³¢ÊÔ´ÎÊý£¨255´ú±íÎÞÐ§£©£ºÅäÖÃ³É¹¦Ê±£¬·µ»Ø255£»ÅäÖÃÊ§°ÜÊ±£¬·µ»Ø¾ßÌåµÄÊ£Óà¿É³¢ÊÔ´ÎÊý
+        DWORD  dwSize;    //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byTryTimes;    //Ê£ï¿½ï¿½É³ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½255ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³É¹ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½255ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½É³ï¿½ï¿½Ô´ï¿½ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_CPU_CARD_ENCRYPT_RES, *LPUSB_CPU_CARD_ENCRYPT_RES; //32×Ö½Ú
+    } USB_CPU_CARD_ENCRYPT_RES, *LPUSB_CPU_CARD_ENCRYPT_RES; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_SECTION_ENCRYPT
     {
-        DWORD   dwSize;              //½á¹¹Ìå´óÐ¡
-        BYTE    bySectionID;         //ÉÈÇøID
-        BYTE    byKeyType;           //ÑéÖ¤ÃÜÔ¿ÀàÐÍ£¬0-º£¿µÃÜÔ¿£¬1-ÆäËüÕý³£ÃÜÔ¿
-        BYTE    byKeyAContent[6];    //ÑéÖ¤ÃÜÔ¿¾ßÌå²ÎÊý£¬ÑéÖ¤ÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byNewKeyType;        //ÐÂÃÜÔ¿ÀàÐÍ£¬0-º£¿µÃÜÔ¿£¬1-ÆäËüÕý³£ÃÜÔ¿
-        BYTE    byRes1;              //±£Áô×Ö½Ú
-        BYTE    byNewKeyAContent[6]; //ÐÂÃÜÔ¿A¾ßÌå²ÎÊý£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byCtrlBits[4];       //¿ØÖÆÎ»£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
-        BYTE    byNewKeyBContent[6]; //ÐÂÃÜÔ¿B¾ßÌå²ÎÊý£¬ÐÂÃÜÔ¿ÀàÐÍÎª1Ê±ÓÐÐ§
+        DWORD   dwSize;              //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    bySectionID;         //ï¿½ï¿½ï¿½ï¿½ID
+        BYTE    byKeyType;           //ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
+        BYTE    byKeyAContent[6];    //ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byNewKeyType;        //ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Í£ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
+        BYTE    byRes1;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+        BYTE    byNewKeyAContent[6]; //ï¿½ï¿½ï¿½ï¿½Ô¿Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byCtrlBits[4];       //ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
+        BYTE    byNewKeyBContent[6]; //ï¿½ï¿½ï¿½ï¿½Ô¿Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Îª1Ê±ï¿½ï¿½Ð§
         BYTE    byRes[34];
-    } USB_M1_SECTION_ENCRYPT, *LPUSB_M1_SECTION_ENCRYPT; //64×Ö½Ú
+    } USB_M1_SECTION_ENCRYPT, *LPUSB_M1_SECTION_ENCRYPT; //64ï¿½Ö½ï¿½
 
     typedef struct tagUSB_M1_SECTION_ENCRYPT_RES
     {
-        LONG    dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE    byStatus;    //³É¹¦·µ»Ø0£¬Ê§°ÜÊ±·µ»Ø1-´ú±íÑéÖ¤ÃÜÔ¿Ê§°Ü£¬2-ÉèÖÃÐÂÃÜÔ¿Ê§°Ü
+        LONG    dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byStatus;    //ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê§ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ô¿Ê§ï¿½Ü£ï¿½2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿Ê§ï¿½ï¿½
         BYTE    byRes[27];
-    } USB_M1_SECTION_ENCRYPT_RES, *LPUSB_M1_SECTION_ENCRYPT_RES; //32×Ö½Ú
+    } USB_M1_SECTION_ENCRYPT_RES, *LPUSB_M1_SECTION_ENCRYPT_RES; //32ï¿½Ö½ï¿½
 
     typedef struct tagUSB_ACTIVE_STATUS
     {
         DWORD  dwSize;
-        BYTE   byState; //0-ÒÑ¼¤»î 1-Î´¼¤»î
+        BYTE   byState; //0-ï¿½Ñ¼ï¿½ï¿½ï¿½ 1-Î´ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[7];
-    } USB_ACTIVE_STATUS, *LPUSB_ACTIVE_STATUS; //12×Ö½Ú
+    } USB_ACTIVE_STATUS, *LPUSB_ACTIVE_STATUS; //12ï¿½Ö½ï¿½
 
 
     /**@struct USB_CONFIG
-    *  @brief  Ïà»úÊÓÆµÄÜÁ¦²ÎÊý½á¹¹Ìå
+    *  @brief  ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     *
     *
     */
     typedef struct tagUSB_VIDEO_CAPACITY
     {
         char         nIndex;
-        char         nType;					 // ÂëÁ÷ÀàÐÍ£¨USBCamera_H264¡¢USBCamera_MJPEG¡¢USBCamera_RGB24µÈ£©
-        int          dwWidth;				 // Í¼Ïñ¿í¶È
-        int          dwHeight;				 // Í¼Ïñ¸ß¶È
-        long         lListSize;				 // Ö§³ÖµÄÖ¡ÂÊµÄ¸öÊý
-        INT64        lFrameRates[50];		 // Ö§³ÖµÄÖ¡ÂÊ(50×ã¹»´ó)
+        char         nType;					 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½USBCamera_H264ï¿½ï¿½USBCamera_MJPEGï¿½ï¿½USBCamera_RGB24ï¿½È£ï¿½
+        int          dwWidth;				 // Í¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        int          dwHeight;				 // Í¼ï¿½ï¿½ß¶ï¿½
+        long         lListSize;				 // Ö§ï¿½Öµï¿½Ö¡ï¿½ÊµÄ¸ï¿½ï¿½ï¿½
+        INT64        lFrameRates[50];		 // Ö§ï¿½Öµï¿½Ö¡ï¿½ï¿½(50ï¿½ã¹»ï¿½ï¿½)
     } USB_VIDEO_CAPACITY, *LPUSB_VIDEO_CAPACITY;
 
     typedef struct tagUSB_AUDIO_PARAM
@@ -3434,67 +3434,67 @@ typedef enum tagLOG_LEVEL_ENUM
 
     typedef struct tagUSB_VIDEO_PARAM
     {
-        DWORD dwVideoFormat; //ÊÓÆµÂëÁ÷¸ñÊ½
-        DWORD dwWidth;//·Ö±æÂÊ¿í
-        DWORD dwHeight;//·Ö±æÂÊ¸ß
-        DWORD dwFramerate;//Ö¡ÂÊ
-        DWORD dwBitrate;//±ÈÌØÂÊ
-        DWORD dwParamType; //Í¼Ïñ²ÎÊýÀàÐÍ
-        DWORD dwValue; //Í¼Ïñ²ÎÊýÖµ
-        BYTE byRes[128];//±£Áô×Ö½Ú
+        DWORD dwVideoFormat; //ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+        DWORD dwWidth;//ï¿½Ö±ï¿½ï¿½Ê¿ï¿½
+        DWORD dwHeight;//ï¿½Ö±ï¿½ï¿½Ê¸ï¿½
+        DWORD dwFramerate;//Ö¡ï¿½ï¿½
+        DWORD dwBitrate;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwParamType; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DWORD dwValue; //Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        BYTE byRes[128];//ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     } USB_VIDEO_PARAM, *LPUSB_VIDEO_PARAM;
 
 	typedef struct tagUSB_PROPERTY
 	{
-        long dwMin;						//×îÐ¡Öµ
-        long dwMax;						//×î´óÖµ
-        long dwStep;					//²½³¤
-        long dwDef;						//Ä¬ÈÏÖµ
-		BYTE byEnabled;					//ÊÇ·ñÖ§³Ö£¬0-²»Ö§³Ö£¬1-Ö§³Ö£¬2-ÊÖ¶¯£¬3-×Ô¶¯
+        long dwMin;						//ï¿½ï¿½Ð¡Öµ
+        long dwMax;						//ï¿½ï¿½ï¿½Öµ
+        long dwStep;					//ï¿½ï¿½ï¿½ï¿½
+        long dwDef;						//Ä¬ï¿½ï¿½Öµ
+		BYTE byEnabled;					//ï¿½Ç·ï¿½Ö§ï¿½Ö£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½Ö£ï¿½2-ï¿½Ö¶ï¿½ï¿½ï¿½3-ï¿½Ô¶ï¿½
         BYTE byRes[7];
 	} USB_PROPERTY, *LPUSB_PROPERTY;
 
 	typedef struct tagUSB_VIDEO_PROPERTY_CAP
 	{
-		USB_PROPERTY struBrightness;			//ÁÁ¶È
-		USB_PROPERTY struContrast;				//¶Ô±È¶È
-		USB_PROPERTY struHue;					//É«µ÷
-		USB_PROPERTY struSaturation;			//±¥ºÍ¶È
-		USB_PROPERTY struSharpness;				//ÇåÎú¶È
-		USB_PROPERTY struGamma;					//Ù¤Âê
-		USB_PROPERTY struColorEnable;			//ÆôÓÃÑÕÉ«
-		USB_PROPERTY struWhiteBalance;			//°×Æ½ºâ
-		USB_PROPERTY struBacklightCompensation;	//Äæ¹â¶Ô±È
-		USB_PROPERTY struGain;					//ÔöÒæ
-		USB_PROPERTY struPowerlineFrequency;	//µçÁ¦ÏßÆµÂÊ
-		USB_PROPERTY struPan;					//È«¾°
-		USB_PROPERTY struTilt;					//ÇãÐ±
-		USB_PROPERTY struRoll;					//¹ö¶¯
-		USB_PROPERTY struZoom;					//Ëõ·Å
-		USB_PROPERTY struExposure;				//ÆØ¹â
-		USB_PROPERTY struIris;					//¹âÈ¦
-		USB_PROPERTY struFocus;					//½¹µã
-		USB_PROPERTY struLowBrightnessCompensation;//µÍÁÁ¶È²¹³¥
-		BYTE		 byRes[128];				//±£Áô×Ö½Ú
+		USB_PROPERTY struBrightness;			//ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struContrast;				//ï¿½Ô±È¶ï¿½
+		USB_PROPERTY struHue;					//É«ï¿½ï¿½
+		USB_PROPERTY struSaturation;			//ï¿½ï¿½ï¿½Í¶ï¿½
+		USB_PROPERTY struSharpness;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struGamma;					//Ù¤ï¿½ï¿½
+		USB_PROPERTY struColorEnable;			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+		USB_PROPERTY struWhiteBalance;			//ï¿½ï¿½Æ½ï¿½ï¿½
+		USB_PROPERTY struBacklightCompensation;	//ï¿½ï¿½ï¿½Ô±ï¿½
+		USB_PROPERTY struGain;					//ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struPowerlineFrequency;	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
+		USB_PROPERTY struPan;					//È«ï¿½ï¿½
+		USB_PROPERTY struTilt;					//ï¿½ï¿½Ð±
+		USB_PROPERTY struRoll;					//ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struZoom;					//ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struExposure;				//ï¿½Ø¹ï¿½
+		USB_PROPERTY struIris;					//ï¿½ï¿½È¦
+		USB_PROPERTY struFocus;					//ï¿½ï¿½ï¿½ï¿½
+		USB_PROPERTY struLowBrightnessCompensation;//ï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½
+		BYTE		 byRes[128];				//ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
 	} USB_VIDEO_PROPERTY_CAP, *LPUSB_VIDEO_PROPERTY_CAP;
 
     typedef struct tagUSB_VIDEO_PROPERTY
     {
         long dwValue;
-        BYTE byFlag;        //SET£º±íÊ¾ÉèÖÃÄ£Ê½£¬1-×Ô¶¯£¬2-ÊÖ¶¯
-                            //GET£º·µ»ØÉè±¸ÄÜÁ¦£¬1-Ö§³Ö×Ô¶¯ºÍÊÖ¶¯£¬2-Ö»Ö§³ÖÊÖ¶¯
+        BYTE byFlag;        //SETï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½1-ï¿½Ô¶ï¿½ï¿½ï¿½2-ï¿½Ö¶ï¿½
+                            //GETï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-Ö§ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½2-Ö»Ö§ï¿½ï¿½ï¿½Ö¶ï¿½
         BYTE byRes[31];
     } USB_VIDEO_PROPERTY, *LPUSB_VIDEO_PROPERTY;
 
     typedef struct tagUSB_SRC_STREAM_CFG
     {
-        DWORD  dwStreamType;	// Ô­Ê¼ÂëÁ÷ÀàÐÍ(MJPEG/H264/YUV)
-        BYTE   bUseAudio;      // ÊÇ·ñÊ¹ÓÃÒôÆµ 0-²»Ê¹ÓÃ£¬1-Ê¹ÓÃ
+        DWORD  dwStreamType;	// Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(MJPEG/H264/YUV)
+        BYTE   bUseAudio;      // ï¿½Ç·ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Æµ 0-ï¿½ï¿½Ê¹ï¿½Ã£ï¿½1-Ê¹ï¿½ï¿½
         BYTE   byRes[4];
     }USB_SRC_STREAM_CFG, *LPUSB_SRC_STREAM_CFG;
 
     /**	@struct USB_EVENT_CALLBACK_PARAM
-    *  @brief   ÊÂ¼þ»Øµ÷²ÎÊý½á¹¹Ìå
+    *  @brief   ï¿½Â¼ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
     *
     */
     typedef struct tagUSB_EVENT_CALLBACK_PARAM
@@ -3507,14 +3507,14 @@ typedef enum tagLOG_LEVEL_ENUM
 
     typedef struct tagUSB_ROTATE_ANGLE_INFO
     {
-        LONG   dwType;  // -1(²»Ðý×ª)  0(Ïò×óÐý×ª90¶È)  1(ÏòÓÒÐý×ª90¶È)  2(Ðý×ª180¶È)
+        LONG   dwType;  // -1(ï¿½ï¿½ï¿½ï¿½×ª)  0(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª90ï¿½ï¿½)  1(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª90ï¿½ï¿½)  2(ï¿½ï¿½×ª180ï¿½ï¿½)
         BYTE   byRes[124];
     }USB_ROTATE_ANGLE_INFO, *LPUSB_ROTATE_ANGLE_INFO;
 
     typedef struct tagUSB_COMMAND_STATE
     {
         DWORD  dwSize;
-        BYTE   byState; // ²Î¼ûÅäÖÃ´íÎó×´Ì¬Âë
+        BYTE   byState; // ï¿½Î¼ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½
         //#define  USB_ERROR_NO_ERROR                                0x00    // No error: The request succeeded
         //#define  USB_ERROR_DEVICE_REQUEST_NOT_COMPLETE             0x01    // Not Ready: Previous request has not completed
         //#define  USB_ERROR_DEVICE_WRONG_STATE                      0x02    // Wrong State: In a state that disallows the specific request
@@ -3530,156 +3530,156 @@ typedef enum tagLOG_LEVEL_ENUM
         //#define  USB_ERROR_BULK_DATA_EXCEPTION                     0x0c    // Custom: Bulk data transfer process exceptions
         //#define  USB_ERROR_UNKNOWN                                 0xff    // Unknown: Unknown
         BYTE   byRes[3];
-    } USB_COMMAND_STATE, *LPUSB_COMMAND_STATE; //8×Ö½Ú
+    } USB_COMMAND_STATE, *LPUSB_COMMAND_STATE; //8ï¿½Ö½ï¿½
 
 	typedef struct tagUSB_GET_DEVICE_COUNT_INFO
 	{
-		BYTE   bySeparate;		// 0-²»·ÖÀë£¬1-ÒôÊÓÆµ·ÖÀë
-		BYTE   byIncludeAll;	// 0-Ã¶¾ÙHIK£¬1-Ã¶¾Ù°üÀ¨µÚÈý·½
+		BYTE   bySeparate;		// 0-ï¿½ï¿½ï¿½ï¿½ï¿½ë£¬1-ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+		BYTE   byIncludeAll;	// 0-Ã¶ï¿½ï¿½HIKï¿½ï¿½1-Ã¶ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	}USB_GET_DEVICE_COUNT_INFO, *LPUSB_GET_DEVICE_COUNT_INFO;
 
-    //Éè±¸SVCÄÜÁ¦
+    //ï¿½è±¸SVCï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_SYSTEM_DEVICE_CAPABILITIES
     {
-        BYTE    byIsSupportSVC;     //ÊÇ·ñÖ§³ÖSVC£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        BYTE    byIsSupportSVC;     //ï¿½Ç·ï¿½Ö§ï¿½ï¿½SVCï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         BYTE    byRes[31];
     }USB_SYSTEM_DEVICE_CAPABILITIES, *LPUSB_SYSTEM_DEVICE_CAPABILITIES;
 
-    //SVC¶àÂëÁ÷ÐÅÏ¢
+    //SVCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_IMAGE_VIDEO_SVC_MULTIPLE_STREAM
     {
-        BYTE    byMultipleStreamNum;//SVC¶àÂëÁ÷Ö§³ÖÂ·Êý
+        BYTE    byMultipleStreamNum;//SVCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½Â·ï¿½ï¿½
         BYTE    byRes[31];
     }USB_IMAGE_VIDEO_SVC_MULTIPLE_STREAM, *LPUSB_IMAGE_VIDEO_SVC_MULTIPLE_STREAM;
 
-    //ÖÇÄÜ¹¦ÄÜ¿ª¹Ø
+    //ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_SWITCH
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀºÅ
-        BYTE    byDetectEnabled;    //ÊÇ·ñ¿ªÆôÄ¿±ê¼ì²â£¬0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE    byIdentifyEnabled;  //ÊÇ·ñ¿ªÆôÄ¿±êÊ¶±ð£¬0-¹Ø±Õ£¬1-¿ªÆô
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE    byDetectEnabled;    //ï¿½Ç·ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½â£¬0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE    byIdentifyEnabled;  //ï¿½Ç·ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[29];
     } USB_VCA_SWITCH, *LPUSB_VCA_SWITCH;
 
-    //ÖÇÄÜ×¥Í¼
+    //ï¿½ï¿½ï¿½ï¿½×¥Í¼
     typedef struct tagUSB_VCA_SNAPSHOT
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀºÅ
-        BYTE    bySnapshotMode;     //×¥Í¼Ä£Ê½£¬1-¼ì²âºó×¥Í¼£¬2-Ê¶±ðºó×¥Í¼£¬3-½¨Ä£×¥Í¼£¬4-×¥È¥Ô­Ê¼Í¼Æ¬
-        BYTE    byCaptureInterval;  //×¥Í¼Ê±¼ä¼ä¸ô
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE    bySnapshotMode;     //×¥Í¼Ä£Ê½ï¿½ï¿½1-ï¿½ï¿½ï¿½ï¿½×¥Í¼ï¿½ï¿½2-Ê¶ï¿½ï¿½ï¿½×¥Í¼ï¿½ï¿½3-ï¿½ï¿½Ä£×¥Í¼ï¿½ï¿½4-×¥È¥Ô­Ê¼Í¼Æ¬
+        BYTE    byCaptureInterval;  //×¥Í¼Ê±ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[32];
     } USB_VCA_SNAPSHOT, *LPUSB_VCA_SNAPSHOT;
 
-    //ÖÇÄÜÄ¿±êÊ¶±ðÏàËÆ¶ÈãÐÖµ
+    //ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Öµ
     typedef struct tagUSB_VCA_FACE_THRESHOLD
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀºÅ
-        BYTE    byThresholdValue;   //ÏàËÆ¶ÈãÐÖµ
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE    byThresholdValue;   //ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Öµ
         BYTE    byRes[30];
     } USB_VCA_FACE_THRESHOLD, *LPUSB_VCA_FACE_THRESHOLD;
 
-    //ÖÇÄÜÊ¶±ðÈËÁ³ÊôÐÔ
+    //ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_FACE_ATTRIBUTES
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀºÅ
-        BYTE    byEnabled;          //ÊôÐÔ¿ª¹Ø£¬0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE    byFaceExpression;   //±íÇé£¬1-·ßÅ­£¬2-ÇáÃï£¬3-¸ßÐË£¬4-º¦ÅÂ£¬5-¾ªÑÈ£¬6-ÄÑ¹ý£¬7-Î´Öª
-        BYTE    byAge;              //ÄêÁä
-        BYTE    byGender;           //ÐÔ±ð£¬1-ÄÐ£¬2-Å®£¬3-Î´Öª
-        BYTE    byGlass;            //ÑÛ¾µ£¬0-Î´´÷ÑÛ¾µ£¬1-´÷ÑÛ¾µ
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½ï¿½ï¿½
+        BYTE    byEnabled;          //ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½Ø£ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE    byFaceExpression;   //ï¿½ï¿½ï¿½é£¬1-ï¿½ï¿½Å­ï¿½ï¿½2-ï¿½ï¿½ï¿½ï£¬3-ï¿½ï¿½ï¿½Ë£ï¿½4-ï¿½ï¿½ï¿½Â£ï¿½5-ï¿½ï¿½ï¿½È£ï¿½6-ï¿½Ñ¹ï¿½ï¿½ï¿½7-Î´Öª
+        BYTE    byAge;              //ï¿½ï¿½ï¿½ï¿½
+        BYTE    byGender;           //ï¿½Ô±ï¿½1-ï¿½Ð£ï¿½2-Å®ï¿½ï¿½3-Î´Öª
+        BYTE    byGlass;            //ï¿½Û¾ï¿½ï¿½ï¿½0-Î´ï¿½ï¿½ï¿½Û¾ï¿½ï¿½ï¿½1-ï¿½ï¿½ï¿½Û¾ï¿½
         BYTE    byRes[30];
     } USB_VCA_FACE_ATTRIBUTES, *LPUSB_VCA_FACE_ATTRIBUTES;
 
-    //ÖÇÄÜÈËÁ³¼ì²â¹æÔò
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_FACE_DETECT_RULE
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀ
-        BYTE    bySensitivity;      //¼ì²âÁéÃô¶È
-        BYTE    byObjGenerateRate;  //Ä¿±êÉú²úËÙ¶È
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½
+        BYTE    bySensitivity;      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byObjGenerateRate;  //Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
         BYTE    byRes1;
-        DWORD   dwRegionX;          //ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionY;          //ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionWidth;      //ÇøÓò¿í¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionHeight;     //ÇøÓò¸ß¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
+        DWORD   dwRegionX;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionY;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionWidth;      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionHeight;     //ï¿½ï¿½ï¿½ï¿½ß¶È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
         BYTE    byRes[32];
     } USB_VCA_FACE_DETECT_RULE, *LPUSB_VCA_FACE_DETECT_RULE;
 
-    //ÖÇÄÜÈËÁ³¼ì²âÖÊÁ¿ÆÀ¹À
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_FACE_QUALITY
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀ
-        BYTE    byLeftAngle;        //ÈËÁ³ÏòÓÒ±ß×ªµÄ½Ç¶È[0, 90]
-        BYTE    byRightAngle;       //ÈËÁ³Ïò×ó±ß×ªµÄ½Ç¶È[0, 90]
-        BYTE    byUpAngle;          //ÈËÁ³ÏòÉÏµÄ½Ç¶È[0, 90]
-        BYTE    byDownAngle;        //ÈËÁ³ÏòÏÂµÄ½Ç¶È[0, 90]
-        BYTE    byPupilDistance;    //Í«¾à
-        BYTE    byScore;            //ÆÀ·ÖÊýÖµ[20, 100]
-        BYTE    byShelterType;      //ÕÚµ²ÀàÐÍ£º1-ÎÞÕÚµ²£¬2-Ë²Ê±Çá¶È£¬3-¹Ì¶¨Çá¶È£¬4-ÑÏÖØ
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½
+        BYTE    byLeftAngle;        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½×ªï¿½Ä½Ç¶ï¿½[0, 90]
+        BYTE    byRightAngle;       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ä½Ç¶ï¿½[0, 90]
+        BYTE    byUpAngle;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ½Ç¶ï¿½[0, 90]
+        BYTE    byDownAngle;        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ½Ç¶ï¿½[0, 90]
+        BYTE    byPupilDistance;    //Í«ï¿½ï¿½
+        BYTE    byScore;            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ[20, 100]
+        BYTE    byShelterType;      //ï¿½Úµï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½2-Ë²Ê±ï¿½ï¿½È£ï¿½3-ï¿½Ì¶ï¿½ï¿½ï¿½È£ï¿½4-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[32];
     } USB_VCA_FACE_QUALITY, *LPUSB_VCA_FACE_QUALITY;
 
-    //Í¼Æ¬ÏÂÔØ½¨Ä£
+    //Í¼Æ¬ï¿½ï¿½ï¿½Ø½ï¿½Ä£
     typedef struct tagUSB_VCA_PIC_DOWNLOAD
     {
-        BYTE    byId;               //Í¼Æ¬ÐòºÅ
-        BYTE    byType;             //Í¼Æ¬ÀàÐÍ£º1-JPEG£¬2-PNG£¬3-BMP
-        BYTE    byPicWidth;         //Í¼Æ¬¿í£¬¸³Öµ0±íÊ¾×ÔÊÊÓ¦
-        BYTE    byPicHeight;        //Í¼Æ¬¸ß£¬¸³Öµ0±íÊ¾×ÔÊÊÓ¦
-        BYTE    byPicSize;          //Í¼Æ¬´óÐ¡
-        BYTE    byName[16];         //Í¼Æ¬¶ÔÓ¦ÈËÃû
-        BYTE    byPost[16];         //Í¼Æ¬¶ÔÓ¦ÈËÔ±Ö°Î»
+        BYTE    byId;               //Í¼Æ¬ï¿½ï¿½ï¿½
+        BYTE    byType;             //Í¼Æ¬ï¿½ï¿½ï¿½Í£ï¿½1-JPEGï¿½ï¿½2-PNGï¿½ï¿½3-BMP
+        BYTE    byPicWidth;         //Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ó¦
+        BYTE    byPicHeight;        //Í¼Æ¬ï¿½ß£ï¿½ï¿½ï¿½Öµ0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ó¦
+        BYTE    byPicSize;          //Í¼Æ¬ï¿½ï¿½Ð¡
+        BYTE    byName[16];         //Í¼Æ¬ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½
+        BYTE    byPost[16];         //Í¼Æ¬ï¿½ï¿½Ó¦ï¿½ï¿½Ô±Ö°Î»
         BYTE    byRes[32];
     } USB_VCA_PIC_DOWNLOAD, *LPUSB_VCA_PIC_DOWNLOAD;
 
-    //ÈËÁ³µ×¿âÊý¾ÝÅäÖÃ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½×¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_FACE_BASE_DATA_CFG
     {
-        BYTE    byId;               //Í¼Æ¬ÐòºÅ
-        BYTE    byOperateType;      //²Ù×÷ÀàÐÍ£º1-»ñÈ¡£¬2-É¾³ý£¬3-ÐÞ¸Ä
+        BYTE    byId;               //Í¼Æ¬ï¿½ï¿½ï¿½
+        BYTE    byOperateType;      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½1-ï¿½ï¿½È¡ï¿½ï¿½2-É¾ï¿½ï¿½ï¿½ï¿½3-ï¿½Þ¸ï¿½
         BYTE    byRes1[2];
-        BYTE    byName[16];         //Í¼Æ¬¶ÔÓ¦ÈËÃû
-        BYTE    byPost[16];         //Í¼Æ¬¶ÔÓ¦ÈËÔ±Ö°Î»
+        BYTE    byName[16];         //Í¼Æ¬ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½
+        BYTE    byPost[16];         //Í¼Æ¬ï¿½ï¿½Ó¦ï¿½ï¿½Ô±Ö°Î»
         BYTE    byRes[32];
     } USB_VCA_FACE_BASE_DATA_CFG, *LPUSB_VCA_FACE_BASE_DATA_CFG;
 
-    //µç×ÓÃúÅÆÅäÖÃ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_VCA_ELECTRONICSIGNAGE_CFG
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀ
-        BYTE    byEnabled;          //µç×ÓÃúÅÆÊÇ·ñ¿ªÆô£º0-¹Ø±Õ£¬1-¿ªÆô
-        BYTE    byFontColor;        //ÑÕÉ«
-        BYTE    byFontType;         //×ÖÌå£º1-ËÎÌå£¬2-ºÚÌå
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½
+        BYTE    byEnabled;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
+        BYTE    byFontColor;        //ï¿½ï¿½É«
+        BYTE    byFontType;         //ï¿½ï¿½ï¿½å£º1-ï¿½ï¿½ï¿½å£¬2-ï¿½ï¿½ï¿½ï¿½
         BYTE    byRes[32];
     } USB_VCA_ELECTRONICSIGNAGE_CFG, *LPUSB_VCA_ELECTRONICSIGNAGE_CFG;
 
-    //ÈËÁ³ÐÅÏ¢
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_VCA_FACE_INFO
     {
-        DWORD   dwRegionX;          //ÇøÓò×óÉÏ¶¥µãX×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionY;          //ÇøÓò×óÉÏ¶¥µãY×ø±ê£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionWidth;      //ÇøÓò¿í¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
-        DWORD   dwRegionHeight;     //ÇøÓò¸ß¶È£¬¹éÒ»»¯Öµ£¬·¶Î§0 - 1000
+        DWORD   dwRegionX;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionY;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ê£¬ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionWidth;      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
+        DWORD   dwRegionHeight;     //ï¿½ï¿½ï¿½ï¿½ß¶È£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Î§0 - 1000
     } USB_VCA_FACE_INFO, *LPUSB_VCA_FACE_INFO;
 
-    //ÖÇÄÜÈËÁ³¼ì²âÐÅÏ¢
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_VCA_FACE_DETECT
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀ
-        BYTE    byDetFaceNum;       //µ±Ç°Í¼ÏñÖÐ¼ì²âµ½µÄÈËÁ³ÊýÄ¿
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½
+        BYTE    byDetFaceNum;       //ï¿½ï¿½Ç°Í¼ï¿½ï¿½ï¿½Ð¼ï¿½âµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
         BYTE    byRes1[2];
         USB_VCA_FACE_INFO struFaceInfo[16];
         BYTE    byRes[32];
     } USB_VCA_FACE_DETECT, *LPUSB_VCA_FACE_DETECT;
 
-    //ÈËÁ³±È¶ÔÐÅÏ¢
+    //ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½Ï¢
     typedef struct tagUSB_VCA_FACE_CONTRAST
     {
-        BYTE    byChannelID;        //ÊÓÆµÍ¨µÀ
-        BYTE    byId;               //µ±Ç°½á¹ûÐòºÅ
-        BYTE    byFPID;             //µ±Ç°ÈËÁ³ÔÚµ×¿âÖÐµÄÐòºÅ
+        BYTE    byChannelID;        //ï¿½ï¿½ÆµÍ¨ï¿½ï¿½
+        BYTE    byId;               //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byFPID;             //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Úµ×¿ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½
         BYTE    byRes1;
-        BYTE    byName[16];         //Ê¶±ð³öÈËÁ³µÄÈËÃû
-        BYTE    byPost[16];         //Ê¶±ð³öÈËÁ³µÄÖ°Î»
+        BYTE    byName[16];         //Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        BYTE    byPost[16];         //Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö°Î»
         BYTE    byRes[32];
     } USB_VCA_FACE_CONTRAST, *LPUSB_VCA_FACE_CONTRAST;
 
@@ -3701,7 +3701,7 @@ typedef enum tagLOG_LEVEL_ENUM
 
 	typedef struct tagUSB_OSD
 	{
-		BYTE         byEnabled; //OSDÊÇ·ñ¿ªÆô£º0-¹Ø±Õ£¬1-¿ªÆô
+		BYTE         byEnabled; //OSDï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½
 		USB_OSD_INFO struOsdInfo;
 		USB_OSD_LINE struOsdLineList[32];
         BYTE         byRes[1024];
@@ -3709,29 +3709,29 @@ typedef enum tagLOG_LEVEL_ENUM
 
 	typedef enum tagUSB_LOCAL_CFG_TYPE
 	{
-        ENUM_LOCAL_CFG_TYPE_LOAD_PATH = 0, //(USB_InitÇ°µ÷ÓÃ)¼ÓÔØ¶¯Ì¬¿âÂ·¾¶ÅäÖÃ£¬¶ÔÓ¦½á¹¹ÌåUSB_LOCAL_LOAD_PATH
-        ENUM_LOCAL_CFG_TYPE_GUID, //(USB_Initºóµ÷ÓÃ)ÉèÖÃGUIDÅäÖÃ£¬¶ÔÓ¦½á¹¹ÌåUSB_LOCAL_GUID  ½á¹¹ÌåÔÚÉèÖÃÀ©Õ¹IDµÄÐèÇóÖÐ¶¨Òå
-        ENUM_LOCAL_CFG_TYPE_FONT_PATH,   //ÉèÖÃ×ÖÌåÎÄ¼þÂ·¾¶£¬Ö»Ö§³ÖLinux
-        ENUM_LOCAL_CFG_TYPE_FACE_DETECT //(USB_InitÇ°µ÷ÓÃ)´´½¨ÈËÁ³¼ì²â×ÊÔ´£¨LinuxÏÂÊ¹ÓÃ,winºÍandroid²»Ö§³Ö£©
+        ENUM_LOCAL_CFG_TYPE_LOAD_PATH = 0, //(USB_InitÇ°ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½Ø¶ï¿½Ì¬ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Ó¦ï¿½á¹¹ï¿½ï¿½USB_LOCAL_LOAD_PATH
+        ENUM_LOCAL_CFG_TYPE_GUID, //(USB_Initï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½GUIDï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Ó¦ï¿½á¹¹ï¿½ï¿½USB_LOCAL_GUID  ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹IDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½
+        ENUM_LOCAL_CFG_TYPE_FONT_PATH,   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ö»Ö§ï¿½ï¿½Linux
+        ENUM_LOCAL_CFG_TYPE_FACE_DETECT //(USB_InitÇ°ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Linuxï¿½ï¿½Ê¹ï¿½ï¿½,winï¿½ï¿½androidï¿½ï¿½Ö§ï¿½Ö£ï¿½
 	}USB_LOCAL_CFG_TYPE;
 
-	//ÉèÖÃ¶¯Ì¬¿âÂ·¾¶ÐèÒª¼ÓÎÄ¼þÃû 
+	//ï¿½ï¿½ï¿½Ã¶ï¿½Ì¬ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ 
 	typedef enum tagUSB_DLL_TYPE
 	{
-        ENUM_DLL_SSL_PATH = 1, //ÉèÖÃOpenSSLµÄssleay32.dll/libssl.so/libssl.dylibËùÔÚÂ·¾¶
-        ENUM_DLL_CRYPTO_PATH = 2, //ÉèÖÃOpenSSLµÄlibeay32.dll/libcrypto.so/libcrypto.dylibËùÔÚÂ·¾¶
-        ENUM_DLL_SYSTEMTRANSFORM_PATH = 3, //ÉèÖÃ×ª·â×°¿âÂ·¾¶
-        ENUM_DLL_LIBUSB_PATH = 4, //ÉèÖÃLIBUSB¿âÂ·¾¶
-        ENUM_DLL_PLAYCTRL_PATH = 5, //ÉèÖÃ²¥·Å¿âÂ·¾¶
-        ENUM_DLL_FORMATCONVERSION_PATH = 6, //ÉèÖÃ×ªÂë¿âÂ·¾¶
+        ENUM_DLL_SSL_PATH = 1, //ï¿½ï¿½ï¿½ï¿½OpenSSLï¿½ï¿½ssleay32.dll/libssl.so/libssl.dylibï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+        ENUM_DLL_CRYPTO_PATH = 2, //ï¿½ï¿½ï¿½ï¿½OpenSSLï¿½ï¿½libeay32.dll/libcrypto.so/libcrypto.dylibï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+        ENUM_DLL_SYSTEMTRANSFORM_PATH = 3, //ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½×°ï¿½ï¿½Â·ï¿½ï¿½
+        ENUM_DLL_LIBUSB_PATH = 4, //ï¿½ï¿½ï¿½ï¿½LIBUSBï¿½ï¿½Â·ï¿½ï¿½
+        ENUM_DLL_PLAYCTRL_PATH = 5, //ï¿½ï¿½ï¿½Ã²ï¿½ï¿½Å¿ï¿½Â·ï¿½ï¿½
+        ENUM_DLL_FORMATCONVERSION_PATH = 6, //ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Â·ï¿½ï¿½
         ENUM_DLL_LIBUVC_PATH = 8
 	} USB_DLL_TYPE;
 
 	typedef struct tagUSB_LOCAL_LOAD_PATH
 	{
-        USB_DLL_TYPE emType; //¼ÓÔØ¿âµÄÀàÐÍ
+        USB_DLL_TYPE emType; //ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BYTE         byLoadPath[MAX_FILE_PATH_LEN];
-		BYTE         byRes[128]; //±£Áô×Ö½Ú
+		BYTE         byRes[128]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
 	}USB_LOCAL_LOAD_PATH, *LPUSB_LOCAL_LOAD_PATH;
 
     typedef struct _USB_GUID {
@@ -3743,51 +3743,51 @@ typedef enum tagLOG_LEVEL_ENUM
 
 	typedef struct tagUSB_LOCAL_GUID
 	{
-        ULONG    ulVID; //¹©Ó¦ÉÌID
-        ULONG    ulPID;//²úÆ·Ê¶±ðÂë
+        ULONG    ulVID; //ï¿½ï¿½Ó¦ï¿½ï¿½ID
+        ULONG    ulPID;//ï¿½ï¿½Æ·Ê¶ï¿½ï¿½ï¿½ï¿½
         USB_GUID struGuid; //GUID
-		BYTE     byRes[128];                //±£Áô×Ö½Ú
+		BYTE     byRes[128];                //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
 	}USB_LOCAL_GUID, *LPUSB_LOCAL_GUID;
 
     typedef struct tagUSB_LOCAL_FONT_PATH
     {
         BYTE    byLoadPath[MAX_FILE_PATH_LEN];
-        BYTE    byRes[128]; //±£Áô×Ö½Ú
+        BYTE    byRes[128]; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     }USB_LOCAL_FONT_PATH, *LPUSB_LOCAL_FONT_PATH;
 
     typedef struct tagUSB_DEVICE_VERSION
     {
-        DWORD   dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE    byDeviceName[MAX_DEVICE_NAME_LEN/*32*/]; //Éè±¸Ãû³Æ
-        BYTE    bySerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/]; //Éè±¸ÐòÁÐºÅ
-        BYTE    bySoftwareVersion[MAX_DEVICE_NAME_LEN]; //Éè±¸°æ±¾
+        DWORD   dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE    byDeviceName[MAX_DEVICE_NAME_LEN/*32*/]; //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+        BYTE    bySerialNumber[MAX_SERIAL_NUMBER_LEN/*48*/]; //ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½
+        BYTE    bySoftwareVersion[MAX_DEVICE_NAME_LEN]; //ï¿½è±¸ï¿½æ±¾
         BYTE    byRes[44];
-    } USB_DEVICE_VERSION, *LPUSB_DEVICE_VERSION;  //160×Ö½Ú
+    } USB_DEVICE_VERSION, *LPUSB_DEVICE_VERSION;  //160ï¿½Ö½ï¿½
 
     typedef struct tagUSB_FILE_TRANSFER_INFO
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byLocalFileName[MAX_FILE_PATH_LEN]; //ÎÄ¼þÂ·¾¶ + ÎÄ¼þÃû³Æ    ÒªÉÏ´«µÄ±¾µØÎÄ¼þ
-        BYTE   byRemoteFileName[MAX_FILE_PATH_LEN]; //ÎÄ¼þÂ·¾¶ + ÎÄ¼þÃû³Æ   ÉÏ´«µ½Éè±¸ÄÄ¸öÂ·¾¶ÏÂ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byLocalFileName[MAX_FILE_PATH_LEN]; //ï¿½Ä¼ï¿½Â·ï¿½ï¿½ + ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½    Òªï¿½Ï´ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+        BYTE   byRemoteFileName[MAX_FILE_PATH_LEN]; //ï¿½Ä¼ï¿½Â·ï¿½ï¿½ + ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½Ï´ï¿½ï¿½ï¿½ï¿½è±¸ï¿½Ä¸ï¿½Â·ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[1024];
     } USB_FILE_TRANSFER_INFO, *LPUSB_FILE_TRANSFER_INFO;
 
     typedef struct tagUSB_FILE_TRANSFER_PROGRESS_INFO
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byState; //×´Ì¬Öµ¼ûÃ¶¾ÙUSB_FILE_TRANSFER_STATE
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byState; //×´Ì¬Öµï¿½ï¿½Ã¶ï¿½ï¿½USB_FILE_TRANSFER_STATE
         BYTE   byProgress;
         BYTE   byRes[1024];
     } USB_FILE_TRANSFER_PROGRESS_INFO, *LPUSB_FILE_TRANSFER_PROGRESS_INFO;
 
     typedef enum tagUSB_FILE_TRANSFER_STATE
     {
-        USB_FILE_TRANSFERING = 0,  //-ÎÄ¼þ´«ÊäÖÐ
-        USB_FILE_TRANSFER_FAIL,    //-ÎÄ¼þ´«ÊäÊ§°Ü
-        USB_FILE_TRANSFER_SUCC,    //-ÎÄ¼þ´«Êä³É¹¦
+        USB_FILE_TRANSFERING = 0,  //-ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        USB_FILE_TRANSFER_FAIL,    //-ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+        USB_FILE_TRANSFER_SUCC,    //-ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½
     }USB_FILE_TRANSFER_STATE;
 
-    //±ê×¼¿ØÖÆÃüÁîÊý¾Ý½á¹¹Ìå
+    //ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½
     typedef struct tagUSB_CONTROL_TRANSFER_DATA{
         BYTE byRequestType;
         BYTE byRequest;
@@ -3802,177 +3802,177 @@ typedef enum tagLOG_LEVEL_ENUM
 
     typedef struct tagUSB_PRIVATE_UVC_CABABILITIES
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   bySupportSoftwareVersion; //ÊÇ·ñÖ§³Ö Èí¼þ°æ±¾ºÅ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportPNSwitch;        //ÊÇ·ñÖ§³Ö PNÖÆÇÐ»»£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportImageMode;       //ÊÇ·ñÖ§³Ö Í¼ÏñÄ£Ê½£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportImageFlip;       //ÊÇ·ñÖ§³Ö ¾µÏñ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportWDR;             //ÊÇ·ñÖ§³Ö ¿í¶¯Ì¬£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportNoiseReduce;     //ÊÇ·ñÖ§³Ö ½µÔë£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportWhiteBalance;    //ÊÇ·ñÖ§³Ö °×Æ½ºâ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportGamut;           //ÊÇ·ñÖ§³Ö É«Óò£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportShutter;         //ÊÇ·ñÖ§³Ö ¿ìÃÅ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportBeauty;          //ÊÇ·ñÖ§³Ö ÃÀÑÕ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportFaceAE;          //ÊÇ·ñÖ§³Ö FaceAE£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportFocusSensitivity;//ÊÇ·ñÖ§³Ö ¾Û½¹ÁéÃô¶È£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportFaceCentered;    //ÊÇ·ñÖ§³Ö ÈËÁ³¾ÓÖÐ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportSpokesmanTrack;  //ÊÇ·ñÖ§³Ö ·¢ÑÔÈË¸ú×Ù£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   bySupportSoftwareVersion; //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½Å£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportPNSwitch;        //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ PNï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportImageMode;       //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ Í¼ï¿½ï¿½Ä£Ê½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportImageFlip;       //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportWDR;             //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportNoiseReduce;     //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportWhiteBalance;    //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½Æ½ï¿½â£º0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportGamut;           //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ É«ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportShutter;         //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½Å£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportBeauty;          //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½Õ£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportFaceAE;          //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ FaceAEï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportFocusSensitivity;//ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportFaceCentered;    //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportSpokesmanTrack;  //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½Ù£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         BYTE   byRes1[2];
         BYTE   byRes[128];
     } USB_PRIVATE_UVC_CABABILITIES, *LPUSB_PRIVATE_UVC_CABABILITIES;
 
     typedef struct tagUSB_PRIVATE_UAC_CABABILITIES
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   bySupportSoftwareVersion; //ÊÇ·ñÖ§³Ö Èí¼þ°æ±¾ºÅ£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportAEC;             //ÊÇ·ñÖ§³Ö »ØÉùÏû³ý£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportNoiseReduce;     //ÊÇ·ñÖ§³Ö ½µÔë£º0-²»Ö§³Ö£¬1-Ö§³Ö
-        BYTE   bySupportPickUp;          //ÊÇ·ñÖ§³Ö ÒôÆµÊ°Òô£º0-²»Ö§³Ö£¬1-Ö§³Ö
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   bySupportSoftwareVersion; //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½Å£ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportAEC;             //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportNoiseReduce;     //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ë£º0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
+        BYTE   bySupportPickUp;          //ï¿½Ç·ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ÆµÊ°ï¿½ï¿½ï¿½ï¿½0-ï¿½ï¿½Ö§ï¿½Ö£ï¿½1-Ö§ï¿½ï¿½
         BYTE   byRes[128];
     } USB_PRIVATE_UAC_CABABILITIES, *LPUSB_PRIVATE_UAC_CABABILITIES;
 
     typedef struct tagUSB_IAMGE_MODE_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byMode; //Í¼ÏñÄ£Ê½£º0-±ê×¼£¬1-ÏÊÑÞ£¬2-ÈáºÍ£¬3-±³¹â
-        BYTE   byDefault; //Í¼ÏñÄ£Ê½Ä¬ÈÏÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byMode; //Í¼ï¿½ï¿½Ä£Ê½ï¿½ï¿½0-ï¿½ï¿½×¼ï¿½ï¿½1-ï¿½ï¿½ï¿½Þ£ï¿½2-ï¿½ï¿½Í£ï¿½3-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byDefault; //Í¼ï¿½ï¿½Ä£Ê½Ä¬ï¿½ï¿½Öµ
         BYTE   byRes1[2];
         BYTE   byRes[128];
     } USB_IAMGE_MODE_PARAM, *LPUSB_IAMGE_MODE_PARAM;
 
     typedef struct tagUSB_WHITE_BALANCE_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable; //°×Æ½ºâ£º0-¹Ø±Õ£¬1-¿ªÆô£¬2-Ð£×¼
-        BYTE   byDefault; //°×Æ½ºâÄ¬ÈÏÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable; //ï¿½ï¿½Æ½ï¿½â£º0-ï¿½Ø±Õ£ï¿½1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2-Ð£×¼
+        BYTE   byDefault; //ï¿½ï¿½Æ½ï¿½ï¿½Ä¬ï¿½ï¿½Öµ
         BYTE   byRes1[2];
         BYTE   byRes[128];
     } USB_WHITE_BALANCE_PARAM, *LPUSB_WHITE_BALANCE_PARAM;
 
     typedef struct tagUSB_GAMUT_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byLevel; //É«ÓòÖµ
-        BYTE   byDefault; //É«ÓòÄ¬ÈÏÖµ
-        BYTE   byMin; //É«Óò×îÐ¡Öµ
-        BYTE   byMax; //É«Óò×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byLevel; //É«ï¿½ï¿½Öµ
+        BYTE   byDefault; //É«ï¿½ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //É«ï¿½ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //É«ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes[128];
     } USB_GAMUT_PARAM, *LPUSB_GAMUT_PARAM;
 
     typedef struct tagUSB_SHUTTER_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byLevel; //¿ìÃÅÊ±¼äµÈ¼¶
-        BYTE   byDefault; //¿ìÃÅÊ±¼äµÈ¼¶Ä¬ÈÏÖµ
-        BYTE   byMin; //¿ìÃÅÊ±¼äµÈ¼¶×îÐ¡Öµ
-        BYTE   byMax; //¿ìÃÅÊ±¼äµÈ¼¶×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byLevel; //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¼ï¿½
+        BYTE   byDefault; //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes[128];
     } USB_SHUTTER_PARAM, *LPUSB_SHUTTER_PARAM;
 
     typedef struct tagUSB_FOCUS_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byLevel; //¾Û½¹ÁéÃô¶ÈµÈ¼¶
-        BYTE   byDefault; //¾Û½¹ÁéÃô¶ÈµÈ¼¶Ä¬ÈÏÖµ
-        BYTE   byMin; //¾Û½¹ÁéÃô¶ÈµÈ¼¶×îÐ¡Öµ
-        BYTE   byMax; //¾Û½¹ÁéÃô¶ÈµÈ¼¶×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byLevel; //ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½
+        BYTE   byDefault; //ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes[128];
     } USB_FOCUS_PARAM, *LPUSB_FOCUS_PARAM;
 
     typedef struct tagUSB_OVERHEAD_SHOT_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byMode; //Õý¸©ÅÄÄ£Ê½: 0-ÕýÅÄ  1-¸©ÅÄ
-        BYTE   byDefault; //¾Û½¹ÁéÃô¶ÈµÈ¼¶Ä¬ÈÏÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byMode; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½: 0-ï¿½ï¿½ï¿½ï¿½  1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byDefault; //ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½Ä¬ï¿½ï¿½Öµ
         BYTE   byRes[128];
     } USB_OVERHEAD_SHOT_PARAM, *LPUSB_OVERHEAD_SHOT_PARAM;
 
     typedef struct tagUSB_VCA_FACE_AE_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable; //ÈËÁ³¾Ö²¿ÆØ¹âÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byLevel; //ÈËÁ³¾Ö²¿ÆØ¹âµÈ¼¶
-        BYTE   byDefault; //ÈËÁ³¾Ö²¿ÆØ¹âµÈ¼¶Ä¬ÈÏÖµ
-        BYTE   byMin; //ÈËÁ³¾Ö²¿ÆØ¹âµÈ¼¶×îÐ¡Öµ
-        BYTE   byMax; //ÈËÁ³¾Ö²¿ÆØ¹âµÈ¼¶×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ø¹ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byLevel; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ø¹ï¿½È¼ï¿½
+        BYTE   byDefault; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ø¹ï¿½È¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ø¹ï¿½È¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ø¹ï¿½È¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes1[3];
         BYTE   byRes[128];
     } USB_VCA_FACE_AE_PARAM, *LPUSB_VCA_FACE_AE_PARAM;
 
     typedef struct tagUSB_VCA_FACE_CENTERED_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable; //ÈËÁ³¾ÓÖÐÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byLevel; //ÈËÁ³¾ÓÖÐÁéÃô¶ÈµÈ¼¶
-        BYTE   byDefault; //ÈËÁ³¾ÓÖÐÁéÃô¶ÈµÈ¼¶Ä¬ÈÏÖµ
-        BYTE   byMin; //ÈËÁ³¾ÓÖÐÁéÃô¶ÈµÈ¼¶×îÐ¡Öµ
-        BYTE   byMax; //ÈËÁ³¾ÓÖÐÁéÃô¶ÈµÈ¼¶×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byLevel; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½
+        BYTE   byDefault; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes1[3];
         BYTE   byRes[128];
     } USB_VCA_FACE_CENTERED_PARAM, *LPUSB_VCA_FACE_CENTERED_PARAM;
 
     typedef struct tagUSB_VCA_SPOKESMAN_TRACK_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable; //·¢ÑÔÈË¸ú×ÙÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
-        BYTE   byLevel; //·¢ÑÔÈË¸ú×ÙÁéÃô¶ÈµÈ¼¶
-        BYTE   byDefault; //·¢ÑÔÈË¸ú×ÙÁéÃô¶ÈµÈ¼¶Ä¬ÈÏÖµ
-        BYTE   byMin; //·¢ÑÔÈË¸ú×ÙÁéÃô¶ÈµÈ¼¶×îÐ¡Öµ
-        BYTE   byMax; //·¢ÑÔÈË¸ú×ÙÁéÃô¶ÈµÈ¼¶×î´óÖµ
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
+        BYTE   byLevel; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½
+        BYTE   byDefault; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½Ä¬ï¿½ï¿½Öµ
+        BYTE   byMin; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½Ð¡Öµ
+        BYTE   byMax; //ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½ï¿½Öµ
         BYTE   byRes1[3];
         BYTE   byRes[128];
     } USB_VCA_SPOKESMAN_TRACK_PARAM, *LPUSB_VCA_SPOKESMAN_TRACK_PARAM;
 
     typedef struct tagUSB_VCA_BEAUTY_PARAM
     {
-        DWORD  dwSize; //½á¹¹Ìå´óÐ¡
-        BYTE   bySmoothing; //Ä¥Æ¤ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byWhitening; //ÃÀ°× 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byBlush; //ºìÈó 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   bySharpness; //Èñ»¯ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byEyeRetouch; //ÁÁÑÛ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byTeethBeautification; //ÃÀÑÀ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byDarkCircles; //ìîºÚÑÛÈ¦ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byNasolabialFolds; //ìî·¨ÁîÎÆ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   bySlimFace; //ÊÝÁ³ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byVshapedFace; //VÁ³ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byFaceWidth; //Õ­Á³ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byCheekbones; //ÊÝÈ§¹Ç 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byLowerJaw; //ÊÝÏÂò¦¹Ç 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byEyeSize; //´óÑÛ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byEyeShape; //Ô²ÑÛ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byNoseWidth; //ÊÝ±Ç 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byNoseLength; //³¤±Ç 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byMouthType; //×ìÐÍ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   bySmilingMouth; //Î¢Ð¦×ì½Ç 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byRemoveMakeup; //Ð¶×± 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byPeachBlossom; //ÌÒ»¨ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byFreckle; //È¸°ß 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byPunk; //Åó¿Ë 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byMapleLeaf; //·ãÒ¶ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byRetro; //¸´¹Å 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byKoi; //½õÀð 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byPlum; //Ã·×Ó 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   bySweet; //ÌðÃÀ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byRedTea; //³à²è 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byWinter; //¶¬ÈÕ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byStylish; //¸öÐÔ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byCream; //ÄÌÓÍ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byClear; //ÇåÍ¸ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byGrapefruit; //Î÷èÖ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byNeighbour; //ÁÚ¼Ò 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byDegree; //³Ì¶È 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byOriginal; //Ô­Í¼ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byBrightWhite; //ÁÁ°× 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byRosy; //·ÛÄÛ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byFair; //°×ðª 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byCoolColors; //ÀäÉ«µ÷ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byPeach; //ÃÛÌÒ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byWarmColors; //Å¯É«µ÷ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byFresh; //Ð¡ÇåÐÂ 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byElegantGray; //ÖÊ¸Ð»Ò 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   byNatural; //×ÔÈ» 0-²»Ö§³Ö 1-Ö§³Ö
-        BYTE   bySunshine; //Ñô¹â 0-²»Ö§³Ö 1-Ö§³Ö
+        DWORD  dwSize; //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   bySmoothing; //Ä¥Æ¤ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byWhitening; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byBlush; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   bySharpness; //ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byEyeRetouch; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byTeethBeautification; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byDarkCircles; //ï¿½ï¿½ï¿½ï¿½ï¿½È¦ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byNasolabialFolds; //ï¿½î·¨ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   bySlimFace; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byVshapedFace; //Vï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byFaceWidth; //Õ­ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byCheekbones; //ï¿½ï¿½È§ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byLowerJaw; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byEyeSize; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byEyeShape; //Ô²ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byNoseWidth; //ï¿½Ý±ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byNoseLength; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byMouthType; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   bySmilingMouth; //Î¢Ð¦ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byRemoveMakeup; //Ð¶×± 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byPeachBlossom; //ï¿½Ò»ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byFreckle; //È¸ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byPunk; //ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byMapleLeaf; //ï¿½ï¿½Ò¶ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byRetro; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byKoi; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byPlum; //Ã·ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   bySweet; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byRedTea; //ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byWinter; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byStylish; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byCream; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byClear; //ï¿½ï¿½Í¸ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byGrapefruit; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byNeighbour; //ï¿½Ú¼ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byDegree; //ï¿½Ì¶ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byOriginal; //Ô­Í¼ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byBrightWhite; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byRosy; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byFair; //ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byCoolColors; //ï¿½ï¿½É«ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byPeach; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byWarmColors; //Å¯É«ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byFresh; //Ð¡ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byElegantGray; //ï¿½Ê¸Ð»ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   byNatural; //ï¿½ï¿½È» 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
+        BYTE   bySunshine; //ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½Ö§ï¿½ï¿½ 1-Ö§ï¿½ï¿½
         BYTE   byRes1[1];
         BYTE   byRes[128];
     } USB_VCA_BEAUTY_PARAM, *LPUSB_VCA_BEAUTY_PARAM;
@@ -3980,97 +3980,97 @@ typedef enum tagLOG_LEVEL_ENUM
     //VCMÐ£×¼
     typedef struct tagUSB_TEST_VCM
     {
-        DWORD  dwSize;   //½á¹¹Ìå´óÐ¡
-        BYTE   byResult; //VCM±ê¶¨½á¹û 0-Ê§°Ü 1-³É¹¦ 2-±ê¶¨ÖÐ  £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;   //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byResult; //VCMï¿½ê¶¨ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ 2-ï¿½ê¶¨ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1[3];
-        WORD   wValue; //VCM±ê¶¨Êý¾Ý  £¨ÉèÖÃÊ±ÎÞÐ§£©
+        WORD   wValue; //VCMï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[22];
     } USB_TEST_VCM, *LPUSB_TEST_VCM;
 
     //DTOFÐ£×¼
     typedef struct tagUSB_TEST_DTOF_CALIBRATION
     {
-        DWORD  dwSize;    //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;  //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;  //DTOFÐ£×¼½á¹û 0-Ê§°Ü 1-³É¹¦ 2-Ð£×¼ÖÐ  £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;    //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;  //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;  //DTOFÐ£×¼ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ 2-Ð£×¼ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_DTOF_CALIBRATION, *LPUSB_TEST_DTOF_CALIBRATION;
 
-    //DTOFÄ£¿é
+    //DTOFÄ£ï¿½ï¿½
     typedef struct tagUSB_TEST_DTOF_INFO
     {
-        DWORD  dwSize;    //½á¹¹Ìå´óÐ¡
+        DWORD  dwSize;    //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
         BYTE   byId;    //TOF ID
-        BYTE   byStatus;    //×´Ì¬£º0-Õý³££¬1-7Òì³£
-        BYTE   byDistance;    //¾àÀë(mm)£º0-255
+        BYTE   byStatus;    //×´Ì¬ï¿½ï¿½0-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-7ï¿½ì³£
+        BYTE   byDistance;    //ï¿½ï¿½ï¿½ï¿½(mm)ï¿½ï¿½0-255
         BYTE   byRes[25];
     } USB_TEST_DTOF_INFO, *LPUSB_TEST_DTOF_INFO;
 
-    //DTOF¼ì²â
+    //DTOFï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_DTOF_CHECK
     {
-        DWORD  dwSize;    //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-Ä¬ÈÏ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byTofNum;    //TOF¸öÊý   £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;    //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byTofNum;    //TOFï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1[2];
-        USB_TEST_DTOF_INFO struDtofInfo[10];//Dtof Ä£¿éÐÅÏ¢  £¨ÉèÖÃÊ±ÎÞÐ§£©
+        USB_TEST_DTOF_INFO struDtofInfo[10];//Dtof Ä£ï¿½ï¿½ï¿½ï¿½Ï¢  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[32];
     } USB_TEST_DTOF_CHECK, *LPUSB_TEST_DTOF_CHECK;
 
-    //PWMÕ¼¿Õ±È
+    //PWMÕ¼ï¿½Õ±ï¿½
     typedef struct tagUSB_TEST_PWM
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byValue;     //Õ¼¿Õ±È£¨0-100£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byValue;     //Õ¼ï¿½Õ±È£ï¿½0-100ï¿½ï¿½
         BYTE   byRes[27];
     } USB_TEST_PWM, *LPUSB_TEST_PWM;
 
-    //ITOF¾àÀë¼ì²â
+    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_ITOF_DISTANCE
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byResult;       //ITOF¾àÀë¼ì²â½á¹û 0-Ê§°Ü 1-³É¹¦ £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byResult;       //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1;
-        WORD   wValue;   //Éî¶ÈÊý¾Ý £¨ÉèÖÃÊ±ÎÞÐ§£©
+        WORD   wValue;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[24];
     } USB_TEST_ITOF_DISTANCE, *LPUSB_TEST_ITOF_DISTANCE;
 
-    //ITOF³ö³§¼ì²â
+    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_ITOF_FACTORY
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //ITOF¾àÀë¼ì²â½á¹û 2-³É¹¦ ÆäËûÖµ-Ê§°Ü £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½Öµ-Ê§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_ITOF_FACTORY, *LPUSB_TEST_ITOF_FACTORY;
 
-    //ITOFµ¥Ö¡¼ì²â
+    //ITOFï¿½ï¿½Ö¡ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_ITOF_FRAME
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //ITOFµ¥Ö¡¼ì²â½á¹û 2-³É¹¦ ÆäËûÖµ-Ê§°Ü £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ITOFï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ 2-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½Öµ-Ê§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_ITOF_FRAME, *LPUSB_TEST_ITOF_FRAME;
 
-    //ITOF³ö³§¼ì²â2
+    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
     typedef struct tagUSB_TEST_ITOF_FACTORY2
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //ITOF¾àÀë¼ì²â2½á¹û 2-³É¹¦ ÆäËûÖµ-Ê§°Ü £¨ÉèÖÃÊ±ÎÞÐ§£©
-        WORD   wPrecision;   //¾«¶È£¨ÉèÖÃÊ±ÎÞÐ§£©
-        WORD   wAccuracy;   //×¼¶È£¨ÉèÖÃÊ±ÎÞÐ§£©
-        WORD   wIr;         //IRÆ½¾ùÖµ£¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ 2-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½Öµ-Ê§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        WORD   wPrecision;   //ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        WORD   wAccuracy;   //×¼ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        WORD   wIr;         //IRÆ½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_ITOF_FACTORY2, *LPUSB_TEST_ITOF_FACTORY2;
 
-    //ITOF±ê¶¨
+    //ITOFï¿½ê¶¨
     typedef struct tagUSB_TEST_ITOF_CALIBRATION
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //ITOF¾àÀë¼ì²â2½á¹û 0-Êý¾Ý×¼±¸ÖÐ 1-³É¹¦ 2-Ê§°Ü £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ITOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ 0-ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ 1-ï¿½É¹ï¿½ 2-Ê§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1[2];
         DWORD  dwRatioInt;
         DWORD  dwRatioDecimal;
@@ -4083,189 +4083,189 @@ typedef enum tagLOG_LEVEL_ENUM
         BYTE   byRes[16];
     } USB_TEST_ITOF_CALIBRATION, *LPUSB_TEST_ITOF_CALIBRATION;
 
-    //¾µÍ·ÀÏ»¯¼ì²â½á¹û
+    //ï¿½ï¿½Í·ï¿½Ï»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_SCENE_CURVE_CHECK
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-³õÊ¼»¯ 1-¿ªÊ¼Ð£Ñé 2-±£´æ½á¹û  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //½á¹û 0-Ê§°Ü 1-³É¹¦ £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½ï¿½Ê¼ï¿½ï¿½ 1-ï¿½ï¿½Ê¼Ð£ï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[20];
     } USB_TEST_SCENE_CURVE_CHECK, *LPUSB_TEST_SCENE_CURVE_CHECK;
 
-    //¾µÍ·ÀÏ»¯¼ì²â½á¹û
+    //ï¿½ï¿½Í·ï¿½Ï»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_SCENE_AGE_CHECK
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô  £¨»ñÈ¡Ê±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1[3];
-        DWORD  dwPan;       //PanÀÏ»¯ÂÊ   £¨ÉèÖÃÊ±ÎÞÐ§£©
-        DWORD  dwTitl;      //TitlÀÏ»¯ÂÊ    £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwPan;       //Panï¿½Ï»ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        DWORD  dwTitl;      //Titlï¿½Ï»ï¿½ï¿½ï¿½    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[16];
     } USB_TEST_SCENE_AGE_CHECK, *LPUSB_TEST_SCENE_AGE_CHECK;
 
-    //Ö¸Ê¾µÆ¼ì²â
+    //Ö¸Ê¾ï¿½Æ¼ï¿½ï¿½
     typedef struct tagUSB_TEST_LAMP_CHECK
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ£º0-¹Ø±Õ 1-¿ªÆô
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½Ü£ï¿½0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[27];
     } USB_TEST_LAMP_CHECK, *LPUSB_TEST_LAMP_CHECK;
 
-    //µç³Ø¼ì²â
+    //ï¿½ï¿½Ø¼ï¿½ï¿½
     typedef struct tagUSB_TEST_BATTERY_CHECK
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-Ä¬ÈÏ 1-¿ªÆô   £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byShutdown;    //ShutdownÄ£Ê½ÅäÖÃ 0-¹Ø±Õ 1-¿ªÆô   £¨enableÎª0Ê±ÓÐÐ§£©£¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //ShutdownÄ£Ê½½á¹û 0-Ê§°Ü 1-³É¹¦ £¨ÉèÖÃÊ±ÎÞÐ§£©
-        char   byPower;     //µçÁ¿£º-1£ºÒì³£   0-100µçÁ¿Öµ
-        WORD   wVoltageDiff;      //½á¹¹Ìå´óÐ¡
-        WORD   wCirculate;      //½á¹¹Ìå´óÐ¡
-        WORD   wTemperature;      //½á¹¹Ìå´óÐ¡
-        WORD   wVoltage;      //½á¹¹Ìå´óÐ¡
-        WORD   wCurrent;      //½á¹¹Ìå´óÐ¡
-        WORD   wVersion;      //½á¹¹Ìå´óÐ¡
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byShutdown;    //ShutdownÄ£Ê½ï¿½ï¿½ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½enableÎª0Ê±ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ShutdownÄ£Ê½ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        char   byPower;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½ï¿½ì³£   0-100ï¿½ï¿½ï¿½ï¿½Öµ
+        WORD   wVoltageDiff;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wCirculate;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wTemperature;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wVoltage;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wCurrent;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        WORD   wVersion;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
         BYTE   byRes[27];
     } USB_TEST_BATTERY_CHECK, *LPUSB_TEST_BATTERY_CHECK;
 
-    //ÐýÅ¥
+    //ï¿½ï¿½Å¥
     typedef struct tagUSB_TEST_KNOB_PARAM
     {
-        DWORD  dwSize;       //½á¹¹Ìå´óÐ¡
-        BYTE   byID;  //ÐýÅ¥id
+        DWORD  dwSize;       //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byID;  //ï¿½ï¿½Å¥id
         BYTE   byRes1[3];
-        WORD   wMin;    //×îÐ¡Öµ
-        WORD   wMax;    //×î´óÖµ
+        WORD   wMin;    //ï¿½ï¿½Ð¡Öµ
+        WORD   wMax;    //ï¿½ï¿½ï¿½Öµ
         BYTE   byRes[4];
     } USB_TEST_KNOB_PARAM, *LPUSB_TEST_KNOB_PARAM;
 
-    //ÐýÅ¥±ê¶¨
+    //ï¿½ï¿½Å¥ï¿½ê¶¨
     typedef struct tagUSB_TEST_KNOB_CALIBRATION
     {
-        DWORD  dwSize;       //½á¹¹Ìå´óÐ¡
-        BYTE   byOperation;  //¼ì²â²½Öè: 0-Ä¬ÈÏ 1-×îÐ¡Öµ±ê¶¨ 2-×î´óÖµ±ê¶¨  £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //¼ì²â½á¹ûÏÂ·¢ 0-Ä¬ÈÏ 1-¸´ºÏÒªÇó 2-²»·ûºÏÒªÇó £¨operationÎª0Ê±ÓÐÐ§£©£¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byGetResult;    //½á¹û£¨Éè±¸»ñÈ¡ÐýÅ¥µçÑ¹ÖµÊÇ·ñ½áÊø£© 0-¼ì²âÖÐ 1-¼ì²â½áÊø£¨ÉèÖÃÊ±ÎÞÐ§£©
-        BYTE   bySaveResult;    //½á¹û£¨Éè±¸±£´æÐýÅ¥±ê¶¨½á¹û£© 0-Ê§°Ü 1-³É¹¦£¨ÉèÖÃÊ±ÎÞÐ§£©
-        BYTE   byKnobNum;    //ÐýÅ¥¸öÊý
+        DWORD  dwSize;       //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byOperation;  //ï¿½ï¿½â²½ï¿½ï¿½: 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½Ð¡Öµï¿½ê¶¨ 2-ï¿½ï¿½ï¿½Öµï¿½ê¶¨  ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ ï¿½ï¿½operationÎª0Ê±ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byGetResult;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½È¡ï¿½ï¿½Å¥ï¿½ï¿½Ñ¹Öµï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0-ï¿½ï¿½ï¿½ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   bySaveResult;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ê¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byKnobNum;    //ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes1[3];
         USB_TEST_KNOB_PARAM struKnob[10];
         BYTE   byRes[16];
     } USB_TEST_KNOB_CALIBRATION, *LPUSB_TEST_KNOB_CALIBRATION;
 
-    //²ÎÊýÅäÖÃ±í»Ö¸´Ä¬ÈÏ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½Ö¸ï¿½Ä¬ï¿½ï¿½
     typedef struct tagUSB_TEST_PARAM_RESET
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //¼ì²â²½Öè 0-Ä¬ÈÏ 1-¿ªÊ¼»Ö¸´   £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //½á¹û 0-Ê§°Ü 1-³É¹¦ £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //ï¿½ï¿½â²½ï¿½ï¿½ 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½Ê¼ï¿½Ö¸ï¿½   ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_PARAM_RESET, *LPUSB_TEST_PARAM_RESET;
 
-    //¶Ëµã
+    //ï¿½Ëµï¿½
     typedef struct tagUSB_TEST_ENDPOINTS
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byID;    //¶ËµãID
-        BYTE   byEnable;    //ÐéÄâ´®¿ÚÊ¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byID;    //ï¿½Ëµï¿½ID
+        BYTE   byEnable;    //ï¿½ï¿½ï¿½â´®ï¿½ï¿½Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_ENDPOINTS, *LPUSB_TEST_ENDPOINTS;
 
-    //Òþ²Ø¶Ëµã
+    //ï¿½ï¿½ï¿½Ø¶Ëµï¿½
     typedef struct tagUSB_TEST_HIDE_ENDPOINTS
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
         USB_TEST_ENDPOINTS struEndpoints[10];
         BYTE   byRes[32];
     } USB_TEST_HIDE_ENDPOINTS, *LPUSB_TEST_HIDE_ENDPOINTS;
 
-    //»ô¶û×´Ì¬»ñÈ¡
+    //ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½È¡
     typedef struct tagUSB_TEST_HALL
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byStatus;    //»ô¶û×´Ì¬ 0-¹Ø±Õ 1-¿ªÆô
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byStatus;    //ï¿½ï¿½ï¿½ï¿½×´Ì¬ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[27];
     } USB_TEST_HALL, *LPUSB_TEST_HALL;
 
-    //Éè±¸Î»ÖÃ
+    //ï¿½è±¸Î»ï¿½ï¿½
     typedef struct tagUSB_TEST_DEVICE_LOCATION
     {
-        DWORD  dwSize;        //½á¹¹Ìå´óÐ¡
-        BYTE   byLocationID;  //Éè±¸ÎïÀíÎ»ÖÃID(·¶Î§£º1-255)
+        DWORD  dwSize;        //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byLocationID;  //ï¿½è±¸ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ID(ï¿½ï¿½Î§ï¿½ï¿½1-255)
         BYTE   byRes[27];
     } USB_TEST_DEVICE_LOCATION, *LPUSB_TEST_DEVICE_LOCATION;
 
-    //´¥Ãþµã
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_TOUCH_POINT
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byID;    //´¥ÃþµãID
-        BYTE   byStatus;    //×´Ì¬ 0-¹Ø±Õ 1-¿ªÆô
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byID;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
+        BYTE   byStatus;    //×´Ì¬ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_TOUCH_POINT, *LPUSB_TEST_TOUCH_POINT;
 
-    //´¥Ãþ°´¼ü¼ì²â
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_TEST_TOUCH_BUTTON
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //Ê¹ÄÜ 0-¹Ø±Õ 1-¿ªÆô £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byNum;    //´¥Ãþµã¸öÊý 0-¹Ø±Õ 1-¿ªÆô  £¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //Ê¹ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byNum;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0-ï¿½Ø±ï¿½ 1-ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes1[2];
-        USB_TEST_TOUCH_POINT struTouchPoint[10]; //´¥Ãþµã£¨ÉèÖÃÊ±ÎÞÐ§£©
+        USB_TEST_TOUCH_POINT struTouchPoint[10]; //ï¿½ï¿½ï¿½ï¿½ï¿½ã£¨ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[32];
     } USB_TEST_TOUCH_BUTTON, *LPUSB_TEST_TOUCH_BUTTON;
 
-    //·ùÃæ±ê¶¨
+    //ï¿½ï¿½ï¿½ï¿½ê¶¨
     typedef struct tagUSB_TEST_FRAME
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byEnable;    //¼ì²â²½Öè 0-Ä¬ÈÏ 1-¿ªÊ¼   £¨»ñÈ¡Ê±ÎÞÐ§£©
-        BYTE   byResult;    //½á¹û 0-Ê§°Ü 1-³É¹¦ 2-±ê¶¨ÖÐ£¨ÉèÖÃÊ±ÎÞÐ§£©
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byEnable;    //ï¿½ï¿½â²½ï¿½ï¿½ 0-Ä¬ï¿½ï¿½ 1-ï¿½ï¿½Ê¼   ï¿½ï¿½ï¿½ï¿½È¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½
+        BYTE   byResult;    //ï¿½ï¿½ï¿½ 0-Ê§ï¿½ï¿½ 1-ï¿½É¹ï¿½ 2-ï¿½ê¶¨ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§ï¿½ï¿½
         BYTE   byRes[26];
     } USB_TEST_FRAME, *LPUSB_TEST_FRAME;
 
-    //ÊÓÆµ²Ëµ¥¿ØÖÆ
+    //ï¿½ï¿½Æµï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_CTRL_MENU_PARAM
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byControlUnit; //²Ëµ¥¿ØÖÆ 1-µ÷³ö²Ëµ¥ 2-ÏòÉÏÒÆ¶¯²Ëµ¥À¸Ñ¡Ïî 3-ÏòÏÂÒÆ¶¯²Ëµ¥À¸Ñ¡Ïî 4-Ïò×óÒÆ¶¯²Ëµ¥À¸Ñ¡Ïî 5-ÏòÓÒÒÆ¶¯²Ëµ¥À¸Ñ¡Ïî 6-È·ÈÏ 7-·µ»Ø
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byControlUnit; //ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ 1-ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ 2-ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ 3-ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ 4-ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ 5-ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ 6-È·ï¿½ï¿½ 7-ï¿½ï¿½ï¿½ï¿½
         BYTE   byRes[27];
     } USB_CTRL_MENU_PARAM, *LPUSB_CTRL_MENU_PARAM;
 
-    //Í¼ÏñÉ«²Ê¿Õ¼ä
+    //Í¼ï¿½ï¿½É«ï¿½Ê¿Õ¼ï¿½
     typedef struct tagUSB_IMAGE_DYNAMIC_RANGE_PARAM
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byDynamicRangeType; //É«²Ê¿Õ¼äÀàÐÍ£¨ITU·¢²¼±ê×¼£©£º1-BT.601 2-BT.709 3-BT.2020
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byDynamicRangeType; //É«ï¿½Ê¿Õ¼ï¿½ï¿½ï¿½ï¿½Í£ï¿½ITUï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½1-BT.601 2-BT.709 3-BT.2020
         BYTE   byRes[27];
     } USB_IMAGE_DYNAMIC_RANGE_PARAM, *LPUSB_IMAGE_DYNAMIC_RANGE_PARAM;
 
-    //ÔÆÌ¨»ù´¡¿ØÖÆ
+    //ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     typedef struct tagUSB_PTZ_BASIC_CTRL_PARAM
     {
-        DWORD  dwSize;      //½á¹¹Ìå´óÐ¡
-        BYTE   byPtzDirection; //·½Ïò£º1-ÉÏ 2-ÏÂ 3-×ó 4-ÓÒ 5-zoom+ 6-zoom- 7-focus+ 8-focus-
-        BYTE   byPtzStatus; //×´Ì¬£º0-Í£Ö¹ 1-¿ªÊ¼
+        DWORD  dwSize;      //ï¿½á¹¹ï¿½ï¿½ï¿½Ð¡
+        BYTE   byPtzDirection; //ï¿½ï¿½ï¿½ï¿½1-ï¿½ï¿½ 2-ï¿½ï¿½ 3-ï¿½ï¿½ 4-ï¿½ï¿½ 5-zoom+ 6-zoom- 7-focus+ 8-focus-
+        BYTE   byPtzStatus; //×´Ì¬ï¿½ï¿½0-Í£Ö¹ 1-ï¿½ï¿½Ê¼
         BYTE   byRes[26];
     } USB_PTZ_BASIC_CTRL_PARAM, *LPUSB_PTZ_BASIC_CTRL_PARAM;
 
-    //USB_SDKµÄ³õÊ¼»¯
+    //USB_SDKï¿½Ä³ï¿½Ê¼ï¿½ï¿½
     USB_SDK_API BOOL  CALLBACK USB_Init();
-    //USB_SDKµÄ·´³õÊ¼»¯
+    //USB_SDKï¿½Ä·ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
     USB_SDK_API BOOL  CALLBACK USB_Cleanup();
     USB_SDK_API DWORD CALLBACK USB_GetSDKVersion(void);
 
     USB_SDK_API LONG  CALLBACK USB_GetDeviceCount();
-    //¿ÉÅäÖÃÉè±¸Ã¶¾Ù½Ó¿Ú£¨ÊÇ·ñÒôÊÓÆµÉè±¸·ÖÀë£¬ÊÇ·ñ°üÀ¨µÚÈý·½Éè±¸£©
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸Ã¶ï¿½Ù½Ó¿Ú£ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½è±¸ï¿½ï¿½ï¿½ë£¬ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½
     USB_SDK_API LONG  CALLBACK USB_GetDeviceCountEx(LPUSB_GET_DEVICE_COUNT_INFO pGetDeivceCountInfo);
     USB_SDK_API BOOL  CALLBACK USB_EnumDevices(DWORD dwCount, LPUSB_DEVICE_INFO pDevInfoList);
-    //»ñÈ¡´íÎóÂë
+    //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     USB_SDK_API DWORD CALLBACK USB_GetLastError();
-    //»ñÈ¡´íÎóÂë¶ÔÓ¦µÄÐÅÏ¢
+    //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ï¢
     USB_SDK_API char* CALLBACK USB_GetErrorMsg(DWORD dwErrorCode);
 
-    // »ñÈ¡µ±Ç°ÃüÁî×´Ì¬£¨ÈÈ³ÉÏñÉè±¸£©
-    // ³¡¾°£ºÃ÷È·µ±Ç°²Ù×÷Éè±¸ÊÇ·ñÉúÐ§Ê±£¬Í¨¹ý¸Ã½Ó¿ÚÅÐ¶ÏÉÏÒ»´ÎÖ¸ÁîÊÇ·ñÉúÐ§£¨Ò»Ö±»ñÈ¡Ö±µ½×´Ì¬²»µÈÓÚ0x01£¬ÂÖÑ¯¼ä¸ô´óÓÚ10ms£©
+    // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½Ç·ï¿½ï¿½ï¿½Ð§Ê±ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ã½Ó¿ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§ï¿½ï¿½Ò»Ö±ï¿½ï¿½È¡Ö±ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0x01ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10msï¿½ï¿½
     USB_SDK_API BOOL  CALLBACK USB_GetCommandState(LONG lUserID, LPUSB_COMMAND_STATE pCommandState);
 
     USB_SDK_API BOOL  CALLBACK USB_SetLogToFile(DWORD dwLogLevel, const char* strLogDir, BOOL bAutoDel);
@@ -4289,14 +4289,14 @@ typedef enum tagLOG_LEVEL_ENUM
     USB_SDK_API LONG  CALLBACK USB_FileTransfer(LONG lUserID, DWORD dwCommand, char *sFileName);
     USB_SDK_API BOOL  CALLBACK USB_FileTransfer_V20(LONG lUserID, DWORD dwCommand, LPUSB_FILE_TRANSFER_INFO pFileTransferInfo, LPUSB_FILE_TRANSFER_PROGRESS_INFO pProgressInfo);
     /**
-    * ¹¦ÄÜ£ºÍ£Ö¹Ô¤ÀÀ£¬Â¼Ïñ£¬ÂëÁ÷»Øµ÷£¬Ä¿±êÊ¶±ð
-    * @param in lUserID£ºÉè±¸¾ä±ú£¨¼´USB_LoginµÄ·µ»ØÖµ£©
-    * @param in lHandle£ºÔ¤ÀÀ£¬Â¼Ïñ£¬ÂëÁ÷»Øµ÷£¬ÈËÁ³¼ì²â¾ä±ú
-    * @param out HPR_TRUE - ³É¹¦£¬HPR_FALSE - Ê§°Ü
+    * ï¿½ï¿½ï¿½Ü£ï¿½Í£Ö¹Ô¤ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ê¶ï¿½ï¿½
+    * @param in lUserIDï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½USB_Loginï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½
+    * @param in lHandleï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    * @param out HPR_TRUE - ï¿½É¹ï¿½ï¿½ï¿½HPR_FALSE - Ê§ï¿½ï¿½
     */
     USB_SDK_API BOOL  CALLBACK USB_StopChannel(LONG lUserID, DWORD lHandle);
     USB_SDK_API BOOL  CALLBACK USB_SetSDKLocalCfg(USB_LOCAL_CFG_TYPE enumType, const void *lpInBuff);
-    // »ñÈ¡²¥·Å¿â¶Ë¿Ú
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Å¿ï¿½Ë¿ï¿½
     USB_SDK_API LONG  CALLBACK USB_GetPlayerPort(LONG lUserID, DWORD lHandle);
 #endif 
 

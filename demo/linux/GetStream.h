@@ -1,6 +1,8 @@
 #ifndef _GET_STREAM_H_
 #define _GET_STREAM_H_
 
+#include <cstdio>
+
 #include "DeviceBase.h"
 
 #define CUSTOM_STREAM_Base 100

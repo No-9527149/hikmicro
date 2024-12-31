@@ -3,8 +3,7 @@
 
 #include <pthread.h>
 
-#include "../../include/HCUsbSDK.h"
-
+#include "HCUsbSDK.h"
 
 #define PRINTF(value) printf("\t %d.%s.\r\n", value, (#value))
 
